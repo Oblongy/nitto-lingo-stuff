@@ -1,0 +1,20 @@
+# Ignore artifact-heavy directories that are not useful for GitNexus graphing.
+clean/
+final-clean/
+reconstructed/
+reconstructed (1)/
+tmp/
+docs/
+ProjectorRays-master/
+
+# Ignore non-code artifacts and generated evidence files.
+*.bin
+*.json
+*.lingo
+*.ls
+*.md
+*.tsv
+*.rar
+*.exe
+*.log
+*.o
