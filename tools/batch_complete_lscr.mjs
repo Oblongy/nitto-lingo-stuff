@@ -17,7 +17,17 @@ function runAnalyzer(chunkBase) {
   const child = spawnSync(process.execPath, [path.join(cwd, "tools", "analyze_lscr_chunk.mjs"), chunkBase], {
     cwd,
     encoding: "utf8",
+    timeout: 30_000,
   });
+  if (child.signal === "SIGTERM" || child.status === null) {
+    return {
+      chunkBase,
+      status: -1,
+      stdout: "",
+      stderr: `analyzer timed out for ${chunkBase}`,
+      parsed: null,
+    };
+  }
   let parsed = null;
   if (child.stdout.trim()) {
     try {

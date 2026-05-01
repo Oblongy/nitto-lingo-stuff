@@ -60,7 +60,7 @@ function findCorroboratingSiblingArtifact(handlerNames) {
     const source = fs.readFileSync(absPath, "utf8");
     const exported = extractExportedFunctionNames(source);
     if (exported.length === 0) continue;
-    if ([...exported].sort().join("\n") === expected) {
+    if (exported.sort().join("\n") === expected) {
       return {
         path: absPath,
         exported,
@@ -70,15 +70,19 @@ function findCorroboratingSiblingArtifact(handlerNames) {
   return null;
 }
 
+function buildLingoSource(handlers) {
+  return handlers.map((handler) => `on ${handler.name}\n  -- unk26\nend`).join("\n\n");
+}
+
 function maybeWriteStubArtifacts(chunkJson) {
   const lingoPath = path.join(cwd, `${chunkBase}.reconstructed.lingo`);
   const jsPath = path.join(cwd, `${chunkBase}.rebuilt-faithful.js`);
   if (!fs.existsSync(lingoPath)) {
-    const lingo = chunkJson.handlers.map((handler) => `on ${handler.name}\n  -- unk26\nend`).join("\n\n");
+    const lingo = buildLingoSource(chunkJson.handlers);
     fs.writeFileSync(lingoPath, `${lingo}\n`, "utf8");
   }
   if (!fs.existsSync(jsPath)) {
-    const lingoSource = chunkJson.handlers.map((handler) => `on ${handler.name}\n  -- unk26\nend`).join("\n\n");
+    const lingoSource = buildLingoSource(chunkJson.handlers);
     const handlerRows = chunkJson.handlers
       .map((handler) => {
         const operand = handler.bytecode?.[1]?.obj ?? null;

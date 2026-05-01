@@ -1,0 +1,94 @@
+// Lscr-103 original-style JS translation
+// Source: Lscr-103/original-style.lingo
+// MovieScript 3 - Race Engine Script (gauge/gear/dyno interface)
+// These handlers are thin bridges between the Flash UI and the RaceEngine object.
+
+function runEngineStart() {
+  // no-op (registration/prologue only)
+}
+
+function runEngineStop() {
+  _global.objRace.beginRace();
+}
+
+function runEngine() {
+  _global.objRace.endRace();
+}
+
+function runEngineGaugeInit(gaugeParam) {
+  _global.objRace.run(gaugeParam);
+}
+
+function runEngineGearUp() {
+  sprite(flashSP).runEngineGaugeInitCB(
+    _global.objRace.redLine,
+    _global.objRace.nitrousTankSize,
+    _global.objRace.nitrousRemaining,
+    _global.objRace.boostType
+  );
+}
+
+function runEngineGearDown() {
+  _global.objRace.gearUp();
+}
+
+function runEngineSetBrake() {
+  _global.objRace.gearDown();
+}
+
+function runEngineSetClutch(brakeParam) {
+  _global.objRace.setBrake(brakeParam);
+}
+
+function runEngineSetNOS(clutchParam) {
+  _global.objRace.setClutch(clutchParam);
+}
+
+function runEngineDyno(nosParam) {
+  _global.objRace.isNos = nosParam;
+}
+
+// -----------------------------------------------------------------------
+// Dyno run (embedded block)
+// Builds per-RPM arrays of HP, airflow, airfuel, and boost data,
+// then fires garageDynoRunCB with four comma-joined strings.
+// -----------------------------------------------------------------------
+function runDyno(boostParam, chipParam) {
+  if (boostParam >= 0 && boostParam <= _global.objRace.maxPsi) {
+    _global.objRace.boostSetting = boostParam;
+    _global.objRace.initBoost();
+  }
+  if (chipParam >= -5) {
+    _global.objRace.chipSetting = chipParam;
+  }
+  _global.objRace.init("DYNO");
+
+  var hpArray = [], aflArray = [], afmArray = [], boostArray = [];
+  for (var i = 0; i < _global.objRace.tqArray.length; i++) {
+    var rpm = i * 100;
+    if (rpm > _global.objRace.revLimiter) break;
+    _global.objRace.getTorque();
+    _global.objRace.calculateExtraHpi();
+    var hp = Math.floor(
+      (_global.objRace.posTq * (
+        _global.objRace.hpi +
+        _global.objRace.boostCreatedPower +
+        _global.objRace.systemPower +
+        _global.objRace.ECUtune +
+        _global.objRace.compressionPowerDelta
+      ) * 0.7512) / 100
+    );
+    hpArray.push(hp);
+    aflArray.push(_global.objRace.airFlowLimit);
+    afmArray.push(_global.objRace.airFuelMeter);
+    if (_global.objRace.overallAirFlowLimit <
+        (_global.objRace.boostPsi / _global.objRace.maxPsi) * _global.objRace.turboFlow) {
+      boostArray.push(null);
+    } else {
+      boostArray.push(true);
+    }
+  }
+  sprite(flashSP).garageDynoRunCB(
+    hpArray.join(","), aflArray.join(","), afmArray.join(","), boostArray.join(",")
+  );
+}

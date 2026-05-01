@@ -10,11 +10,11 @@ on initFileHandler
   -- registration/prologue markers=30 paddingBytes=30 -- 0x0014
   op_6d(cacheFolder) -- 0x0093
   op_6d(fileAgeCheck) -- 0x009D
-  id_20 -- 0x00B0
-  id_21 -- 0x00B4
-  id_22 -- 0x00B8
-  id_23 -- 0x00BC
-  id_24 -- 0x00C0
+  uggURL -- 0x00B0
+  exeName -- 0x00B4
+  true -- 0x00B8
+  isEnc -- 0x00BC
+  aryCacheIndex -- 0x00C0
 end
 
 on getAvatar
@@ -156,7 +156,7 @@ on uggUpload
   -- metadata-argument-count=0
   -- offset=6228 length=696 codeLen=75
   -- names: baGetFilename, open, JPG,PNG,GIF Images|*.jpg;*.jpeg;*.png;*.gif, Select image file, baFileSize, sprite, flashSP, fileBrowseCB
-  baGetFilename = baGetFilename(open, id_2, id_2, "JPG,PNG,GIF Images|*.jpg;*.jpeg;*.png;*.gif", 524288, "Select image file", 0, -1, VOID) -- 0x0032
+  baGetFilename = baGetFilename(open, openFile, openFile, "JPG,PNG,GIF Images|*.jpg;*.jpeg;*.png;*.gif", 524288, "Select image file", 0, -1, VOID) -- 0x0032
   open = baFileSize(baGetFilename) -- 0x0040
   sprite(flashSP).fileBrowseCB(param_baGetFilename, baGetFilename, open) -- 0x005E
 end
@@ -193,7 +193,7 @@ on downloadNewInstaller
   -- metadata-argument-count=0
   -- offset=8124 length=336 codeLen=22
   -- names: sprite, flashSP, uggUploadCB
-  sprite(flashSP).uggUploadCB(VOID, id_3) -- 0x0029
+  sprite(flashSP).uggUploadCB(VOID, "servers.txt") -- 0x0029
 end
 
 on downloadInstallerUpdateFlash
@@ -317,7 +317,7 @@ on downloadCacheInProgress
   -- offset=13596 length=696 codeLen=112
   -- names: clearCache, _global, cacheURL, split, _player, applicationPath, join, \, /, Array, cache, downloadNetThing, fileNetID, push
   clearCache() -- 0x001B
-  clearCache = (_global.cacheURL & param_clearCache.split(_player.applicationPath).join(id_7).split("\\").join("/")) -- 0x0051
+  clearCache = (_global.cacheURL & param_clearCache.split(_player.applicationPath).join(length).split("\\").join("/")) -- 0x0051
   -- 0x03 packed assignment prefix raw=03 -- 0x006E
   _global = (param_clearCache ^ downloadNetThing(clearCache, param_clearCache)) -- 0x006F
   cache -- 0x0072
@@ -381,7 +381,7 @@ on getTxtFileName
   -- names: xtra, fileio, setFilterMask, Text Files,*.txt, displaySave, Save Dyno, createFile, openFile, writeString, |, closeFile, sprite, flashSP, garageDynoSaveCB, getTxtFileName
   xtra = new xtra("fileio") -- 0x001E
   xtra.setFilterMask("Text Files,*.txt") -- 0x002F
-  fileio = xtra.displaySave("Save Dyno", id_6) -- 0x0040
+  fileio = xtra.displaySave("Save Dyno", Object) -- 0x0040
   -- branch 111 -- 0x0047
   xtra.createFile(fileio) -- 0x0057
   xtra.openFile(fileio, setFilterMask) -- 0x0068
@@ -475,24 +475,24 @@ on __embedded_lscr106_block30
   xtra.openFile("servers.txt", TRUE) -- 0x0030
   fileio = xtra.readFile() -- 0x003B
   openFile = (implicit_lhs_0x0043 ^ Array) -- 0x0046
-  "servers.txt" = id_6 -- 0x004D
+  "servers.txt" = Object -- 0x004D
   readFile = VOID -- 0x0052
   Array = charAt -- 0x0059
-  id_6 = VOID -- 0x005E
-  if not (id_6 < fileio.length) then -- jump 120 -- 0x006B
-  length = fileio.charAt(id_6) -- 0x007C
+  Object = VOID -- 0x005E
+  if not (Object < fileio.length) then -- jump 120 -- 0x006B
+  length = fileio.charAt(Object) -- 0x007C
   if not (length = "<") then -- jump 86 -- 0x0086
   -- 0x38 packed flush prefix raw=38 -- 0x0093
-  id_6 -- 0x0094
+  Object -- 0x0094
   if not ("servers.txt" <> ">") then -- jump 41 -- 0x009B
   -- 0x64 packed flush prefix raw=64 00 06 -- 0x009F
   readFile -- 0x00A2
   -- 0x0D boolean-chain marker left=readFile -- 0x00A9
   -- 0x38 packed flush prefix raw=38 -- 0x00AF
   (openFile[openFile] & "servers.txt") -- 0x00B0
-  "servers.txt" = fileio.charAt(id_6) -- 0x00BE
+  "servers.txt" = fileio.charAt(Object) -- 0x00BE
   -- jump -45 -- 0x00C2
-  "servers.txt" = id_6 -- 0x00C8
+  "servers.txt" = Object -- 0x00C8
   -- 0x64 packed flush prefix raw=64 00 04 -- 0x00CC
   if not (readFile >= Array) then -- jump 6 -- 0x00D6
   -- jump 10 -- 0x00DA
@@ -513,7 +513,7 @@ on __embedded_lscr106_block30
   _global -- 0x0141
   uggURL = openFile[Array] -- 0x014C
   _global -- 0x014F
-  exeName = openFile[id_6] -- 0x015A
+  exeName = openFile[Object] -- 0x015A
   _global -- 0x015D
   if not (openFile[length] = true) then -- jump 14 -- 0x0168
   isEnc = 1 -- 0x0170

@@ -20,14 +20,20 @@ export function findMarkerIndex(blockSlice) {
 }
 
 export function toHex(bufferLike) {
-  return Array.from(bufferLike, (b) => b.toString(16).padStart(2, "0")).join(" ");
+  return Buffer.from(bufferLike).toString("hex").replace(/(..)/g, "$1 ").trim();
 }
 
 export function readEmbeddedBlock(binBuffer, literalsDataOffset, block) {
   const blockFileOffset = literalsDataOffset + block.offset;
+  const blockEnd = blockFileOffset + block.length;
+  if (blockEnd > binBuffer.length) {
+    throw new Error(
+      `block at offset ${block.offset} (len ${block.length}) extends past buffer end (${binBuffer.length})`
+    );
+  }
   return {
     blockFileOffset,
-    blockSlice: binBuffer.subarray(blockFileOffset, blockFileOffset + block.length),
+    blockSlice: binBuffer.subarray(blockFileOffset, blockEnd),
   };
 }
 

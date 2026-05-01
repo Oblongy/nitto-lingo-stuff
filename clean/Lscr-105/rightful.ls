@@ -684,7 +684,7 @@ on __embedded_lscr105_block01
   -- pass26 AC-condition: if param_getAProp.getAProp("s") = TRUE then -- false branch jumps to 0x15B0
   -- pass22 structured-control: if param_getAProp.getAProp("s") = TRUE then
   if not (param_getAProp.getAProp("s") = TRUE) then -- jump 53 -- 0x157B
-  sprite(flashSP).htQualifyOKCB(param_getAProp.getAProp("s"), id_154, param_getAProp.getAProp("t")) -- 0x15AD
+  sprite(flashSP).htQualifyOKCB(param_getAProp.getAProp("s"), d, param_getAProp.getAProp("t")) -- 0x15AD
   -- jump 47 -- 0x15AE
   -- pass27 AC-branch-target: false path from 0x157B for param_getAProp.getAProp("s") = TRUE
   -- pass22 structured-control: else

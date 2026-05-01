@@ -1,0 +1,470 @@
+-- Lscr-104 original-style Lingo reconstruction
+-- Source: Lscr-104.bin / Lscr-104.json, mechanical analysis
+-- MovieScript 4 - Socket Send Commands
+-- Each handler builds a D-delimited socket message and calls ssm() to send it.
+-- D = String.fromCharCode(30)
+-- Constraint: every executable line comes from recovered bytecode evidence.
+
+-- -----------------------------------------------------------------------
+-- Session
+-- -----------------------------------------------------------------------
+
+on LOGIN
+  -- no-op body (registration/prologue only; login is initiated via ssm in Lscr-109)
+end
+
+-- -----------------------------------------------------------------------
+-- NIM (Buddy) Commands
+-- -----------------------------------------------------------------------
+
+on SENDNIMMESSAGE nimMsg
+  ssm("L" & String.fromCharCode(30) & _global.guid)
+end
+
+on UPDATENIMUSER userID, userName
+  ssm("SN" & String.fromCharCode(30) & userID & String.fromCharCode(30) & unescape(userName))
+end
+
+on DELETENIMUSER userID
+  ssm("UNU" & String.fromCharCode(30) & userID)
+end
+
+on BLOCKNIMUSER userID
+  ssm("DU" & String.fromCharCode(30) & userID)
+end
+
+on UNBLOCKNIMUSER userID
+  ssm("BU" & String.fromCharCode(30) & userID)
+end
+
+on INQUIRYNIMUSER userID
+  ssm("UU" & String.fromCharCode(30) & userID)
+end
+
+on ALLOWNIMUSER userName
+  ssm("IU" & String.fromCharCode(30) & unescape(userName))
+end
+
+on NIMOKRESPONSE userID, status
+  ssm("AU" & String.fromCharCode(30) & userID & String.fromCharCode(30) & status)
+end
+
+on DELETENIMINQUIREDUSER userID
+  ssm("OR" & String.fromCharCode(30) & userID)
+end
+
+on GETNIMINREQUESTS userID
+  ssm("DIU" & String.fromCharCode(30) & userID)
+end
+
+on GETNIMOUTREQUESTS
+  ssm(GIR)
+end
+
+-- -----------------------------------------------------------------------
+-- Race Chat Rooms
+-- -----------------------------------------------------------------------
+
+on LISTRACECHATROOMS2
+  ssm(GOR)
+end
+
+on CREATECHATROOM roomID, roomName
+  ssm("LRCR2" & String.fromCharCode(30) & roomID & String.fromCharCode(30) & roomName)
+end
+
+on JOINRACECHAT roomName, roomPass, p1, p2, p3, p4, p5
+  roomName = unescape(roomName)
+  roomPass = unescape(roomPass)
+  ssm("CRC" & String.fromCharCode(30) & roomName & String.fromCharCode(30) & roomPass & \
+      String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & \
+      String.fromCharCode(30) & p3 & String.fromCharCode(30) & p4 & \
+      String.fromCharCode(30) & p5)
+end
+
+on LEAVERACECHAT roomName, p1, p2, p3, p4
+  roomName = unescape(roomName)
+  ssm("JRC" & String.fromCharCode(30) & roomName & String.fromCharCode(30) & p1 & \
+      String.fromCharCode(30) & p2 & String.fromCharCode(30) & p3 & \
+      String.fromCharCode(30) & p4)
+end
+
+on LISTRACECHATUSERS
+  ssm(LRC)
+end
+
+on SENDRACECHAT
+  ssm(LRCU)
+end
+
+-- -----------------------------------------------------------------------
+-- Team Commands
+-- -----------------------------------------------------------------------
+
+on TEAMKICK userName
+  userName = unescape(userName)
+  ssm("SRC" & String.fromCharCode(30) & userName)
+end
+
+on TEAMCHANGEROLE userID
+  ssm("TK" & String.fromCharCode(30) & userID)
+end
+
+on TEAMUPDATEMAXBET p1, p2, p3
+  ssm("TCR" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & String.fromCharCode(30) & p3)
+end
+
+on TEAMDEPOSIT amount, p2
+  ssm("TUB" & String.fromCharCode(30) & amount & String.fromCharCode(30) & p2)
+end
+
+on TEAMWITHDRAW amount
+  ssm("TDP" & String.fromCharCode(30) & amount)
+end
+
+on TEAMQUIT teamID
+  ssm("TW" & String.fromCharCode(30) & teamID)
+end
+
+on TEAMACCEPT
+  ssm(TQ)
+end
+
+on TEAMDISPERSE teamID
+  ssm("TAT" & String.fromCharCode(30) & teamID)
+end
+
+on TEAMCREATE teamName, teamTag
+  ssm("TDB" & String.fromCharCode(30) & teamName & String.fromCharCode(30) & teamTag)
+end
+
+on TEAMSTEPDOWN teamID
+  ssm("TC" & String.fromCharCode(30) & unescape(teamID))
+end
+
+-- -----------------------------------------------------------------------
+-- KOTH (King of the Hill)
+-- -----------------------------------------------------------------------
+
+on GETKOTH
+  ssm(TL)
+end
+
+on JOINKOTH
+  ssm(GK)
+end
+
+on LEAVEKOTH roomID, acid
+  ssm("JK" & String.fromCharCode(30) & roomID & String.fromCharCode(30) & acid)
+  _global.objRace.raceType = KOTH
+  executeCall("getonecarengine", ("acid=" & roomID))
+end
+
+on KCNT
+  ssm(LK)
+end
+
+on SENDVOTE roomID, voteTarget
+  ssm("KC" & String.fromCharCode(30) & roomID & String.fromCharCode(30) & voteTarget)
+  _global.objRace.init(KOTH)
+end
+
+on KDONE p1, p2
+  ssm("SV" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2)
+end
+
+on KRT rt, rd, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15
+  rt = Math.floor(rt * 1000) / 1000
+  rd = Math.floor(rd * 100) / 100
+  afterRD = Math.floor(afterRD * 1000) / 1000
+  ssm("KD" & String.fromCharCode(30) & rt & String.fromCharCode(30) & rd & \
+      String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & \
+      String.fromCharCode(30) & p3 & String.fromCharCode(30) & p4 & \
+      String.fromCharCode(30) & p5 & String.fromCharCode(30) & p6 & \
+      String.fromCharCode(30) & p7 & String.fromCharCode(30) & p8 & \
+      String.fromCharCode(30) & p9 & String.fromCharCode(30) & p10 & \
+      String.fromCharCode(30) & p11 & String.fromCharCode(30) & p12 & \
+      String.fromCharCode(30) & p13 & String.fromCharCode(30) & isCheatEngineRunning() & \
+      String.fromCharCode(30) & afterRD & \
+      String.fromCharCode(30) & CheckProcesses(decrypt(_global.cp)) & \
+      String.fromCharCode(30) & CheckWindows(decrypt(_global.cw)) & \
+      String.fromCharCode(30) & CheckWindowsClass(decrypt(_global.cwc)))
+end
+
+on STG rt, rd
+  rt = Math.floor(rt * 1000) / 1000
+  ssm("KRT" & String.fromCharCode(30) & rt & String.fromCharCode(30) & rd)
+end
+
+on int p1, p2, p3
+  p1 = Math.floor(p1 * 1000) / 1000
+  p2 = Math.floor(p2 * 1000) / 1000
+  p3 = Math.floor(p3 * 1000) / 1000
+  ssm("S" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & String.fromCharCode(30) & p3)
+end
+
+on KOK p1, p2, p3, p4
+  p1 = Math.floor(p1 * 1000) / 1000
+  p2 = Math.floor(p2 * 1000) / 1000
+  p3 = Math.floor(p3 * 1000) / 1000
+  ssm("I" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & \
+      String.fromCharCode(30) & p3 & String.fromCharCode(30) & p4)
+end
+
+on KREADY raceID
+  ssm("KOK" & String.fromCharCode(30) & raceID)
+  _global.objRace.init(KOTH)
+end
+
+-- -----------------------------------------------------------------------
+-- Rival Race
+-- -----------------------------------------------------------------------
+
+on GETRIVALS p1, p2
+  ssm("KR" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2)
+end
+
+on RREQ
+  ssm(GR)
+end
+
+on RRSP p1, p2, p3, p4, p5
+  ssm("RRQ" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & \
+      String.fromCharCode(30) & p3 & String.fromCharCode(30) & p4 & \
+      String.fromCharCode(30) & p5)
+end
+
+on RLVE p1, p2, p3
+  ssm("RRS" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & String.fromCharCode(30) & p3)
+end
+
+on RIVOK
+  ssm(RL)
+end
+
+on RIVREADY
+  ssm(RO)
+  _global.objRace.init(RIVAL)
+end
+
+on RIVRT p1, p2
+  ssm("RR" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2)
+end
+
+on RIVDONE rt, rd
+  rt = Math.floor(rt * 1000) / 1000
+  ssm("RIVRT" & String.fromCharCode(30) & rt & String.fromCharCode(30) & rd)
+end
+
+-- -----------------------------------------------------------------------
+-- Human Tournament (HT)
+-- -----------------------------------------------------------------------
+
+on HTJOIN rt, rd, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15
+  rt = Math.floor(rt * 1000) / 1000
+  rd = Math.floor(rd * 100) / 100
+  afterRD = Math.floor(afterRD * 1000) / 1000
+  trace("before RD")
+  trace(decrypt(_global.cwc))
+  trace(CheckWindows(decrypt(_global.cw)))
+  trace(CheckWindowsClass(decrypt(_global.cwc)))
+  ssm("RD" & String.fromCharCode(30) & rt & String.fromCharCode(30) & rd & \
+      String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & \
+      String.fromCharCode(30) & p3 & String.fromCharCode(30) & p4 & \
+      String.fromCharCode(30) & p5 & String.fromCharCode(30) & p6 & \
+      String.fromCharCode(30) & p7 & String.fromCharCode(30) & p8 & \
+      String.fromCharCode(30) & p9 & String.fromCharCode(30) & p10 & \
+      String.fromCharCode(30) & p11 & String.fromCharCode(30) & p12 & \
+      String.fromCharCode(30) & p13 & String.fromCharCode(30) & isCheatEngineRunning() & \
+      String.fromCharCode(30) & afterRD & \
+      String.fromCharCode(30) & CheckProcesses(decrypt(_global.cp)) & \
+      String.fromCharCode(30) & CheckWindows(decrypt(_global.cw)) & \
+      String.fromCharCode(30) & CheckWindowsClass(decrypt(_global.cwc)))
+  trace("after RD")
+end
+
+on HQOK qualifyID
+  ssm("JT" & String.fromCharCode(30) & qualifyID)
+end
+
+on HTGET32 qualifyID
+  ssm("HQOK" & String.fromCharCode(30) & qualifyID)
+end
+
+on HTGETTREE
+  ssm(HQ32)
+end
+
+on HTSPECTATE
+  ssm(HTFT)
+end
+
+on HTQUIT
+  ssm(HTS)
+end
+
+on HTINFO
+  ssm(HTQUIT)
+end
+
+on HTQREADY
+  ssm(HTI)
+end
+
+on HTQD p1, p2
+  ssm("HQR" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2)
+end
+
+on HTQRT rt, rd, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15
+  rt = Math.floor(rt * 1000) / 1000
+  rd = Math.floor(rd * 100) / 100
+  afterRD = Math.floor(afterRD * 1000) / 1000
+  ssm("HTQD" & String.fromCharCode(30) & rt & String.fromCharCode(30) & rd & \
+      String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & \
+      String.fromCharCode(30) & p3 & String.fromCharCode(30) & p4 & \
+      String.fromCharCode(30) & p5 & String.fromCharCode(30) & p6 & \
+      String.fromCharCode(30) & p7 & String.fromCharCode(30) & p8 & \
+      String.fromCharCode(30) & p9 & String.fromCharCode(30) & p10 & \
+      String.fromCharCode(30) & p11 & String.fromCharCode(30) & p12 & \
+      String.fromCharCode(30) & p13 & String.fromCharCode(30) & isCheatEngineRunning() & \
+      String.fromCharCode(30) & afterRD & \
+      String.fromCharCode(30) & CheckProcesses(decrypt(_global.cp)) & \
+      String.fromCharCode(30) & CheckWindows(decrypt(_global.cw)) & \
+      String.fromCharCode(30) & CheckWindowsClass(decrypt(_global.cwc)))
+end
+
+on HTREADY rt, rd
+  rt = Math.floor(rt * 1000) / 1000
+  ssm("HQRT" & String.fromCharCode(30) & rt & String.fromCharCode(30) & rd)
+end
+
+on HTD p1, p2
+  ssm("HTR" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2)
+end
+
+on HTRT rt, rd, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15
+  rt = Math.floor(rt * 1000) / 1000
+  rd = Math.floor(rd * 100) / 100
+  afterRD = Math.floor(afterRD * 1000) / 1000
+  ssm("HTD" & String.fromCharCode(30) & rt & String.fromCharCode(30) & rd & \
+      String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & \
+      String.fromCharCode(30) & p3 & String.fromCharCode(30) & p4 & \
+      String.fromCharCode(30) & p5 & String.fromCharCode(30) & p6 & \
+      String.fromCharCode(30) & p7 & String.fromCharCode(30) & p8 & \
+      String.fromCharCode(30) & p9 & String.fromCharCode(30) & p10 & \
+      String.fromCharCode(30) & p11 & String.fromCharCode(30) & p12 & \
+      String.fromCharCode(30) & p13 & String.fromCharCode(30) & isCheatEngineRunning() & \
+      String.fromCharCode(30) & afterRD & \
+      String.fromCharCode(30) & CheckProcesses(decrypt(_global.cp)) & \
+      String.fromCharCode(30) & CheckWindows(decrypt(_global.cw)) & \
+      String.fromCharCode(30) & CheckWindowsClass(decrypt(_global.cwc)))
+end
+
+-- -----------------------------------------------------------------------
+-- Team Rivals
+-- -----------------------------------------------------------------------
+
+on TRGETRACERS rt, rd
+  rt = Math.floor(rt * 1000) / 1000
+  ssm("HTRT" & String.fromCharCode(30) & rt & String.fromCharCode(30) & rd)
+end
+
+on TRGETTEAMS
+  ssm(GTR)
+end
+
+on TRPREREQUEST
+  ssm(TRGT)
+end
+
+on TRREQUEST teamID
+  ssm("TRPRQ" & String.fromCharCode(30) & teamID)
+end
+
+on TRCOUNTER p1, p2, p3, p4, p5, p6, p7, p8
+  ssm("TRRQ" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & \
+      String.fromCharCode(30) & p3 & String.fromCharCode(30) & p4 & \
+      String.fromCharCode(30) & p5 & String.fromCharCode(30) & p6 & \
+      String.fromCharCode(30) & p7 & String.fromCharCode(30) & p8)
+end
+
+on TRRESPONSE p1, p2
+  ssm("TRCT" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2)
+end
+
+on TROK p1, p2
+  ssm("TRRS" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2)
+end
+
+on TRIVREADY teamID
+  ssm("TRO" & String.fromCharCode(30) & teamID)
+end
+
+on JOINELECTION p1, p2
+  ssm("TRR" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2)
+end
+
+-- -----------------------------------------------------------------------
+-- Election
+-- -----------------------------------------------------------------------
+
+on ELECTIONINTERVIEWLIST
+  ssm(JE)
+end
+
+on m
+  ssm(EIL)
+end
+
+on CLOSEGAME p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11
+  ssm("M" & String.fromCharCode(30) & p1 & String.fromCharCode(30) & p2 & \
+      String.fromCharCode(30) & p3 & String.fromCharCode(30) & p4 & \
+      String.fromCharCode(30) & p5 & String.fromCharCode(30) & p6 & \
+      String.fromCharCode(30) & p7 & String.fromCharCode(30) & p8 & \
+      String.fromCharCode(30) & p9 & String.fromCharCode(30) & p10 & \
+      String.fromCharCode(30) & p11)
+end
+
+-- -----------------------------------------------------------------------
+-- Process / Anti-cheat
+-- -----------------------------------------------------------------------
+
+on IsMyProcessNameCorrect
+  _player.quit()
+end
+
+on CheckNittoProcesses
+  result = 0
+  if _player.applicationName.search(_global.exeName) <> -1 then
+    result = 1
+  end if
+  return result
+end
+
+on CheckNittoProcessesCB param1
+  if not (_player.debugPlaybackEnabled = TRUE) then
+    _global.checkedForOneClient = VOID
+    _global.checkProcessResult = getNetText(_global.mainURL & "oneclient.html?hey=1")
+  end if
+end
+
+-- -----------------------------------------------------------------------
+-- Process check callback (embedded block)
+-- -----------------------------------------------------------------------
+
+-- trace("result: " & param1)
+-- param1 = VOID
+-- if param1 <> "0" then
+--   result = CheckProcesses(_global.exeName)
+--   parts = result.split(",")
+--   count = parts.length
+--   if count > TRUE then
+--     cheat = TRUE
+--   else
+--     if IsMyProcessNameCorrect() = 0 then
+--       cheat = "0"
+--     end if
+--   end if
+-- end if
+-- trace("flashReturnValue: " & cheat)
+-- sprite(flashSP).CheckNittoProcessesCB(cheat)

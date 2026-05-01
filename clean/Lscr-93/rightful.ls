@@ -258,21 +258,21 @@ on __embedded_lscr93_block01
   sprite(flashSP).loginCB(checkedForOneClient.getAProp("s"), checkedForOneClient.getAProp("d"), checkedForOneClient.getAProp("at"), checkedForOneClient.getAProp("am")) -- 0x05E8
   -- jump 416 -- 0x05E9
   -- pass27 action-branch-target: false path from 0x04F6 for checkedForOneClient.getAProp("s") = TRUE
-  -- pass26 action-condition chain-member: checkedForOneClient.getAProp("s") = literal_59 -- compact 0x44 branch to 0x0638
+  -- pass26 action-condition chain-member: checkedForOneClient.getAProp("s") = -2 -- compact 0x44 branch to 0x0638
   -- pass22 structured-control: else
-  if not (checkedForOneClient.getAProp("s") = literal_59) then -- jump 60 marker 0x44 -- 0x05FC
-  -- pass26 action-condition chain-member: checkedForOneClient.getAProp("s") = literal_60 -- compact 0x44 branch to 0x0638
-  if not (checkedForOneClient.getAProp("s") = literal_60) then -- jump 40 marker 0x44 -- 0x0610
+  if not (checkedForOneClient.getAProp("s") = -2) then -- jump 60 marker 0x44 -- 0x05FC
+  -- pass26 action-condition chain-member: checkedForOneClient.getAProp("s") = -11 -- compact 0x44 branch to 0x0638
+  if not (checkedForOneClient.getAProp("s") = -11) then -- jump 40 marker 0x44 -- 0x0610
   -- pass26 action-condition chain-member: checkedForOneClient.getAProp("s") = -12 -- compact 0x44 branch to 0x0638
   if not (checkedForOneClient.getAProp("s") = -12) then -- jump 20 marker 0x44 -- 0x0624
-  -- pass27 action-branch-target: false path from 0x05FC for checkedForOneClient.getAProp("s") = literal_59
-  -- pass27 action-branch-target: false path from 0x0610 for checkedForOneClient.getAProp("s") = literal_60
+  -- pass27 action-branch-target: false path from 0x05FC for checkedForOneClient.getAProp("s") = -2
+  -- pass27 action-branch-target: false path from 0x0610 for checkedForOneClient.getAProp("s") = -11
   -- pass27 action-branch-target: false path from 0x0624 for checkedForOneClient.getAProp("s") = -12
-  -- pass26 action-condition: if checkedForOneClient.getAProp("s") = literal_62 then -- false branch jumps to 0x066A
-  if not (checkedForOneClient.getAProp("s") = literal_62) then -- jump 50 -- 0x0638
+  -- pass26 action-condition: if checkedForOneClient.getAProp("s") = -99 then -- false branch jumps to 0x066A
+  if not (checkedForOneClient.getAProp("s") = -99) then -- jump 50 -- 0x0638
   sprite(flashSP).loginCB(checkedForOneClient.getAProp("s"), checkedForOneClient.getAProp("d")) -- 0x0667
   -- jump 289 -- 0x0668
-  -- pass27 action-branch-target: false path from 0x0638 for checkedForOneClient.getAProp("s") = literal_62
+  -- pass27 action-branch-target: false path from 0x0638 for checkedForOneClient.getAProp("s") = -99
   -- pass26 action-condition: if checkedForOneClient.getAProp("s") = -5 then -- false branch jumps to 0x06E9
   if not (checkedForOneClient.getAProp("s") = -5) then -- jump 110 -- 0x067B
   sprite(flashSP).loginCB(checkedForOneClient.getAProp("s"), checkedForOneClient.getAProp("d")) -- 0x06AA
@@ -284,18 +284,18 @@ on __embedded_lscr93_block01
   _global -- 0x06E6
   -- jump 162 -- 0x06E7
   -- pass27 action-branch-target: false path from 0x067B for checkedForOneClient.getAProp("s") = -5
-  -- pass26 action-condition: if checkedForOneClient.getAProp("s") = literal_70 then -- false branch jumps to 0x0733
-  if not (checkedForOneClient.getAProp("s") = literal_70) then -- jump 57 -- 0x06FA
+  -- pass26 action-condition: if checkedForOneClient.getAProp("s") = -14 then -- false branch jumps to 0x0733
+  if not (checkedForOneClient.getAProp("s") = -14) then -- jump 57 -- 0x06FA
   facebookID = checkedForOneClient.getAProp("f") -- 0x070E
   _global -- 0x0711
   sprite(flashSP).fbGetSessionCB(checkedForOneClient.getAProp("s")) -- 0x0730
   -- jump 88 -- 0x0731
-  -- pass27 action-branch-target: false path from 0x06FA for checkedForOneClient.getAProp("s") = literal_70
-  -- pass26 action-condition: if checkedForOneClient.getAProp("s") = literal_74 then -- false branch jumps to 0x0769
-  if not (checkedForOneClient.getAProp("s") = literal_74) then -- jump 37 -- 0x0744
+  -- pass27 action-branch-target: false path from 0x06FA for checkedForOneClient.getAProp("s") = -14
+  -- pass26 action-condition: if checkedForOneClient.getAProp("s") = -15 then -- false branch jumps to 0x0769
+  if not (checkedForOneClient.getAProp("s") = -15) then -- jump 37 -- 0x0744
   sprite(flashSP).fbGetSessionCB(checkedForOneClient.getAProp("s")) -- 0x0766
   -- jump 34 -- 0x0767
-  -- pass27 action-branch-target: false path from 0x0744 for checkedForOneClient.getAProp("s") = literal_74
+  -- pass27 action-branch-target: false path from 0x0744 for checkedForOneClient.getAProp("s") = -15
   sprite(flashSP).loginCB(checkedForOneClient.getAProp("s")) -- 0x0788
   -- jump 9352 -- 0x0789
   -- pass22 structured-control: end if
@@ -994,7 +994,7 @@ on __embedded_lscr93_block01
   -- jump 37 -- 0x1ED7
   -- pass27 action-branch-target: false path from 0x1EA7 for checkedForOneClient.getAProp("s") = TRUE
   -- pass22 structured-control: else
-  sprite(flashSP).raceGetTwoRacersCarsCB(checkedForOneClient.getAProp("s"), id_195) -- 0x1EFB
+  sprite(flashSP).raceGetTwoRacersCarsCB(checkedForOneClient.getAProp("s"), EMPTY) -- 0x1EFB
   -- jump 3349 -- 0x1EFC
   -- pass22 structured-control: end if
   -- else if action = "getracerscars" then -- byte-backed action dispatch target 0x1EFF
@@ -1006,7 +1006,7 @@ on __embedded_lscr93_block01
   -- jump 37 -- 0x1F3D
   -- pass27 action-branch-target: false path from 0x1F0D for checkedForOneClient.getAProp("s") = TRUE
   -- pass22 structured-control: else
-  sprite(flashSP).getRacersCarsCB(checkedForOneClient.getAProp("s"), id_195) -- 0x1F61
+  sprite(flashSP).getRacersCarsCB(checkedForOneClient.getAProp("s"), EMPTY) -- 0x1F61
   -- jump 3247 -- 0x1F62
   -- pass22 structured-control: end if
   -- else if action = "ctgr" then -- byte-backed action dispatch target 0x1F65
@@ -1092,14 +1092,14 @@ on __embedded_lscr93_block01
   -- pass22 structured-control: if checkedForOneClient.getAProp("s") = TRUE then
   if not (checkedForOneClient.getAProp("s") >= TRUE) then -- jump 137 -- 0x223E
   sprite(flashSP).getOneCarEngineCB(checkedForOneClient.getAProp("d")) -- 0x2260
-  sprite(flashSP).htJoinTournamentCB(checkedForOneClient.getAProp("s"), checkedForOneClient.getAProp("b"), id_195) -- 0x228F
+  sprite(flashSP).htJoinTournamentCB(checkedForOneClient.getAProp("s"), checkedForOneClient.getAProp("b"), EMPTY) -- 0x228F
   raceType = HTQ -- 0x2299
   _global.objRace -- 0x229C
   _global.objRace.startRace(checkedForOneClient.getAProp("d"), checkedForOneClient.getAProp("t")) -- 0x22C4
   -- jump 50 -- 0x22C5
   -- pass27 action-branch-target: false path from 0x223E for checkedForOneClient.getAProp("s") = TRUE
   -- pass22 structured-control: else
-  sprite(flashSP).htJoinTournamentCB(checkedForOneClient.getAProp("s"), id_195, checkedForOneClient.getAProp("d")) -- 0x22F6
+  sprite(flashSP).htJoinTournamentCB(checkedForOneClient.getAProp("s"), EMPTY, checkedForOneClient.getAProp("d")) -- 0x22F6
   -- jump 2330 -- 0x22F7
   -- pass22 structured-control: end if
   -- else if action = "putcaronclassified" then -- byte-backed action dispatch target 0x22FA

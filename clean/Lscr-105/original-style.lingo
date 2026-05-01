@@ -1,0 +1,599 @@
+-- Lscr-105 original-style Lingo reconstruction
+-- Source: Lscr-105.bin / Lscr-105.json, mechanical analysis
+-- Constraint: every executable line comes from recovered bytecode evidence.
+-- Variable names: msg = param_getAProp (the incoming socket message property list)
+--                 ac  = msg.getAProp("ac") (action code)
+
+on procSocket msg
+  ac = msg.getAProp("ac")
+
+  -- -----------------------------------------------------------------------
+  -- Login / Session
+  -- -----------------------------------------------------------------------
+
+  if ac = "L" then
+    timeout(sockConnTO).forget()
+    s = msg.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).loginCBS(s, msg.getAProp("ni"), msg.getAProp("ns"), msg.getAProp("tid"), msg.getAProp("trp"), msg.getAProp("trbp"))
+      _global.objRace.sendInterval = msg.getAProp("ni")
+      _global.objRace.secondBuffer = msg.getAProp("ns")
+      heartBeatTO = timeout(heartBeatTO).new(600000, symbol(sendHeartbeat))
+      _global.objRace.lagThreshold = parseFloat(msg.getAProp("lft"))
+    else
+      _global.isConnected = 0
+      sprite(flashSP).loginCBS(s)
+    end if
+
+  else if ac = "LOUT" then
+    _global.isConnected = 0
+    sprite(flashSP).noActivityCB()
+
+  -- -----------------------------------------------------------------------
+  -- Broadcast / Money / Car Updates
+  -- -----------------------------------------------------------------------
+
+  else if ac = "B" then
+    sprite(flashSP).showBroadcastCB(msg.getAProp("m"))
+
+  else if ac = "NMONEY" then
+    sprite(flashSP).addMoneyCB(msg.getAProp("c"))
+
+  else if ac = "UCL" then
+    sprite(flashSP).updateCarListCB(msg.getAProp("d"))
+
+  else if ac = "UB" then
+    sprite(flashSP).updateBalanceCB(msg.getAProp("d"))
+
+  else if ac = "UP" then
+    sprite(flashSP).updatePointsCB(msg.getAProp("d"))
+
+  -- -----------------------------------------------------------------------
+  -- NIM (Buddy / Inquiry) Messages
+  -- -----------------------------------------------------------------------
+
+  else if ac = "GN" then
+    sprite(flashSP).getNimMessage(msg.getAProp("i"), msg.getAProp("n"), msg.getAProp("r"), msg.getAProp("m"))
+
+  else if ac = "SNE" then
+    sprite(flashSP).sendNimCB(msg.getAProp("s"), msg.getAProp("r"))
+
+  else if ac = "UNU" then
+    sprite(flashSP).updateNimUser(msg.getAProp("i"), msg.getAProp("s"), msg.getAProp("ul"))
+
+  else if ac = "GNL" then
+    sprite(flashSP).addNimUser(msg.getAProp("d"))
+
+  else if ac = "AUR" then
+    if msg.getAProp("s") = TRUE then
+      sprite(flashSP).addSingleNimUser(msg.getAProp("i"), msg.getAProp("n"), msg.getAProp("us"), msg.getAProp("r"), msg.getAProp("ul"))
+    end if
+
+  else if ac = "IU" then
+    sprite(flashSP).inquiryNimUserCB(msg.getAProp("s"))
+
+  else if ac = "IA" then
+    sprite(flashSP).inquiryNimAnswerCB(msg.getAProp("i"), msg.getAProp("n"), msg.getAProp("s"))
+
+  else if ac = "RIU" then
+    sprite(flashSP).receiveNimInquiryCB(msg.getAProp("i"), msg.getAProp("n"))
+
+  else if ac = "AU" then
+    sprite(flashSP).allowNimUserCB(msg.getAProp("s"))
+
+  else if ac = "DU" then
+    sprite(flashSP).deleteNimUserCB(msg.getAProp("s"), msg.getAProp("i"))
+
+  else if ac = "RU" then
+    sprite(flashSP).removeNimUserCB(msg.getAProp("i"))
+
+  else if ac = "BU" then
+    sprite(flashSP).blockNimUserCB(msg.getAProp("s"))
+
+  else if ac = "UU" then
+    sprite(flashSP).unblockNimUserCB(msg.getAProp("s"))
+
+  else if ac = "DIU" then
+    sprite(flashSP).deleteNimInquiredUserCB(msg.getAProp("s"))
+
+  else if ac = "DREQ" then
+    sprite(flashSP).deleteNimInquireeUserCB(msg.getAProp("i"))
+
+  else if ac = "GIR" then
+    sprite(flashSP).getNimIncomingRequestsCB(msg.getAProp("d"))
+
+  else if ac = "GOR" then
+    sprite(flashSP).getNimOutgoingRequestsCB(msg.getAProp("d"))
+
+  -- -----------------------------------------------------------------------
+  -- Race Chat Rooms
+  -- -----------------------------------------------------------------------
+
+  else if ac = "LRCR" then
+    sprite(flashSP).chatListRoomCB(msg.getAProp("d"))
+
+  else if ac = "LRCR2" then
+    sprite(flashSP).chatListRoom2CB(msg.getAProp("d"))
+
+  else if ac = "CRC" then
+    s = msg.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).chatCreateRoomCB(s, msg.getAProp("d"))
+    else
+      sprite(flashSP).chatCreateRoomCB(s)
+    end if
+
+  else if ac = "JR" then
+    sprite(flashSP).chatJoinCB(msg.getAProp("s"))
+
+  else if ac = "LRCU" then
+    sprite(flashSP).chatListUsersCB(msg.getAProp("d"))
+
+  else if ac = "UCU" then
+    sprite(flashSP).chatUpdateUserCB(msg.getAProp("d"))
+
+  else if ac = "GC" then
+    sprite(flashSP).chatGetCB(msg.getAProp("c"), msg.getAProp("u"), msg.getAProp("m"))
+
+  else if ac = "KRC" then
+    sprite(flashSP).chatKickCB(msg.getAProp("d"))
+
+  -- -----------------------------------------------------------------------
+  -- Team
+  -- -----------------------------------------------------------------------
+
+  else if ac = "TKCK" then
+    sprite(flashSP).teamKickCB(msg.getAProp("s"))
+
+  else if ac = "TCR" then
+    sprite(flashSP).teamChangeRoleCB(msg.getAProp("s"))
+
+  else if ac = "TUB" then
+    sprite(flashSP).teamUpdateDealerMaxBetCB(msg.getAProp("s"))
+
+  else if ac = "TDEP" then
+    sprite(flashSP).teamDepositCB(msg.getAProp("s"))
+
+  else if ac = "TWDL" then
+    sprite(flashSP).teamWithdrawalCB(msg.getAProp("s"))
+
+  else if ac = "TQ" then
+    sprite(flashSP).teamQuitCB(msg.getAProp("s"))
+
+  else if ac = "TACPT" then
+    sprite(flashSP).teamAcceptCB(msg.getAProp("s"))
+
+  else if ac = "TDSP" then
+    sprite(flashSP).teamDisperseCB(msg.getAProp("s"))
+
+  else if ac = "TNR" then
+    sprite(flashSP).teamRoleCB(msg.getAProp("d"), msg.getAProp("m"))
+
+  else if ac = "TCRT" then
+    s = msg.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).teamCreateCB(s, msg.getAProp("id"))
+    else
+      sprite(flashSP).teamCreateCB(s)
+    end if
+
+  else if ac = "TLSD" then
+    sprite(flashSP).teamStepDownCB(msg.getAProp("s"))
+
+  -- -----------------------------------------------------------------------
+  -- Race Staging Lights
+  -- -----------------------------------------------------------------------
+
+  else if ac = "R1" then
+    _global.objRace.startLightTimer("1", msg.getAProp("td"))
+
+  else if ac = "R2" then
+    _global.objRace.startLightTimer("2", msg.getAProp("td"))
+
+  else if ac = "R4" then
+    _global.objRace.startLightTimer("s", msg.getAProp("td"))
+
+  else if ac = "R1T" then
+    _global.objRace.startLightTimer("1T", msg.getAProp("td"))
+
+  else if ac = "R2T" then
+    _global.objRace.startLightTimer("2T", msg.getAProp("td"))
+
+  else if ac = "R4T" then
+    _global.objRace.startLightTimer("sT", msg.getAProp("td"))
+
+  else if ac = "R3" then
+    _global.objRace.startLightTimer("b", msg.getAProp("td"))
+    _global.objRace.guid = msg.getAProp("guid")
+
+  else if ac = "UR" then
+    _global.objRace.startLightTimer("p", msg.getAProp("td"))
+    _global.objRace.guid = msg.getAProp("guid")
+
+  else if ac = "OR" then
+    _global.objRace.startLightTimer("o", msg.getAProp("td"))
+
+  else if ac = "RINP" then
+    sprite(flashSP).raceEngineRaceInProgressCB(msg.getAProp("d"))
+
+  -- -----------------------------------------------------------------------
+  -- KOTH (King of the Hill)
+  -- -----------------------------------------------------------------------
+
+  else if ac = "JK" then
+    sprite(flashSP).chatKOTHJoinCB(msg.getAProp("s"))
+
+  else if ac = "KU" then
+    sprite(flashSP).chatKOTHUsersCB(msg.getAProp("d"))
+
+  else if ac = "NKR" then
+    sprite(flashSP).chatKOTHNewRacerCB(msg.getAProp("aid"), msg.getAProp("acid"))
+
+  else if ac = "RLE" then
+    sprite(flashSP).chatKOTHLeaveCB(msg.getAProp("aid"), msg.getAProp("ik"))
+
+  else if ac = "NR" then
+    sprite(flashSP).chatKOTHNRaceCB(msg.getAProp("d"))
+
+  else if ac = "KRDY" then
+    sprite(flashSP).raceKOTHReadyOpponentCB()
+
+  else if ac = "KR" then
+    s = msg.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).raceKOTHReadyCB(s, msg.getAProp("t"), msg.getAProp("t2"))
+    else
+      sprite(flashSP).raceKOTHReadyCB(s)
+    end if
+
+  else if ac = "KOK" then
+    sprite(flashSP).raceKOTHOKCB(msg.getAProp("d"), msg.getAProp("t"))
+
+  else if ac = "SV" then
+    sprite(flashSP).chatCheerVoteCB(msg.getAProp("s"))
+
+  else if ac = "V" then
+    sprite(flashSP).chatCheerGetVoteCB(msg.getAProp("a"), msg.getAProp("d"), msg.getAProp("i"))
+
+  else if ac = "RWIN" then
+    sprite(flashSP).raceKOTHResultCB(msg.getAProp("d"))
+
+  else if ac = "KD" then
+    sprite(flashSP).raceKOTHFinishCB(msg.getAProp("d"))
+
+  else if ac = "IO" then
+    if _global.objRace.raceType = RIVAL or _global.objRace.raceType = TEAMRIVAL then
+      if _global.objRace.raceType = HT then
+        sprite(flashSP).raceKOTHIntOpponentCB(msg.getAProp("d"), msg.getAProp("v"), msg.getAProp("a"), msg.getAProp("t"))
+      else
+        sprite(flashSP).raceRIVIntOpponentCB(msg.getAProp("d"), msg.getAProp("v"), msg.getAProp("a"), msg.getAProp("t"))
+      end if
+    else
+      sprite(flashSP).raceKOTHIntOpponentCB(msg.getAProp("d"), msg.getAProp("v"), msg.getAProp("a"), msg.getAProp("t"))
+    end if
+
+  else if ac = "I" then
+    sprite(flashSP).raceSpectateCB(msg.getAProp("d"))
+
+  else if ac = "KRTO" then
+    sprite(flashSP).raceKOTHRTOpponentCB(msg.getAProp("rt"))
+
+  else if ac = "KRT" then
+    sprite(flashSP).raceKOTHRTCB(msg.getAProp("r"), msg.getAProp("rt"))
+
+  else if ac = "LRC" then
+    -- no-op body
+
+  else if ac = "KTOUT" then
+    sprite(flashSP).raceKOTHTimeoutCB(msg.getAProp("s"))
+
+  -- -----------------------------------------------------------------------
+  -- Quick Match (QM)
+  -- -----------------------------------------------------------------------
+
+  else if ac = "JQH" then
+    sprite(flashSP).chatQMHJoinCB(msg.getAProp("s"))
+
+  else if ac = "JQB" then
+    sprite(flashSP).chatQMBJoinCB(msg.getAProp("s"))
+
+  else if ac = "LQH" then
+    sprite(flashSP).chatQMHLeaveCB(msg.getAProp("s"))
+
+  else if ac = "LQB" then
+    sprite(flashSP).chatQMBLeaveCB(msg.getAProp("s"))
+
+  else if ac = "QMRH" then
+    sprite(flashSP).chatQMHRaceCB(msg.getAProp("d"))
+
+  else if ac = "QMRB" then
+    sprite(flashSP).chatQMBRaceCB(msg.getAProp("d"))
+
+  else if ac = "RRY" then
+    s = msg.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).raceQMHReadyCB(s, msg.getAProp("t"), msg.getAProp("t2"))
+    else
+      sprite(flashSP).raceQMHReadyCB(s)
+    end if
+
+  else if ac = "R" then
+    sprite(flashSP).raceQMHIntOpponentCB(msg.getAProp("d"), msg.getAProp("v"), msg.getAProp("a"), msg.getAProp("t"))
+
+  else if ac = "RRT" then
+    sprite(flashSP).raceQMHRTOpponentCB(msg.getAProp("rt"))
+
+  else if ac = "RDONE" then
+    sprite(flashSP).raceQMHFinishCB(msg.getAProp("d"))
+
+  else if ac = "QWIN" then
+    sprite(flashSP).raceQMHResultCB(msg.getAProp("d"))
+
+  else if ac = "TOUT" then
+    sprite(flashSP).raceQMHTimeoutCB(msg.getAProp("s"))
+
+  else if ac = "QMSM" then
+    sprite(flashSP).chatQMLeaveCB(msg.getAProp("s"))
+
+  else if ac = "QMRM" then
+    sprite(flashSP).chatQMReceiveCB(msg.getAProp("i"), msg.getAProp("n"), msg.getAProp("m"))
+
+  else if ac = "QMLR" then
+    sprite(flashSP).chatQMLeaveCB(msg.getAProp("s"))
+
+  else if ac = "QMUU" then
+    sprite(flashSP).chatQMLeaveOpponentCB(msg.getAProp("s"), msg.getAProp("i"), msg.getAProp("n"))
+
+  -- -----------------------------------------------------------------------
+  -- Rival Race
+  -- -----------------------------------------------------------------------
+
+  else if ac = "LR" then
+    sprite(flashSP).chatRIVListCB(msg.getAProp("d"))
+
+  else if ac = "RRQ" then
+    s = msg.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).chatRIVRequestCB(TRUE, msg.getAProp("r"))
+    else
+      sprite(flashSP).chatRIVRequestCB(s)
+    end if
+
+  else if ac = "RCLG" then
+    sprite(flashSP).chatRIVChallengeCB(msg.getAProp("d"))
+
+  else if ac = "RRS" then
+    sprite(flashSP).chatRIVResponseCB(msg.getAProp("s"), msg.getAProp("i"))
+
+  else if ac = "RDNY" then
+    sprite(flashSP).chatRIVDeniedCB(msg.getAProp("r"))
+
+  else if ac = "RN" then
+    sprite(flashSP).chatRIVJoinCB(msg.getAProp("d"))
+
+  else if ac = "RRA" then
+    sprite(flashSP).chatRIVNRaceCB(msg.getAProp("d"))
+
+  else if ac = "RIVTOUT" then
+    sprite(flashSP).raceRIVTimeoutCB(msg.getAProp("s"))
+
+  else if ac = "RL" then
+    sprite(flashSP).chatRIVLeaveCB(msg.getAProp("s"))
+
+  else if ac = "RLFT" then
+    sprite(flashSP).chatRIVLeftCB(msg.getAProp("d"))
+
+  else if ac = "RIVRDY" then
+    sprite(flashSP).raceRIVReadyOpponentCB()
+
+  else if ac = "RR" then
+    s = msg.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).raceRIVReadyCB(s, msg.getAProp("t"), msg.getAProp("t2"))
+    else
+      sprite(flashSP).raceRIVReadyCB(s)
+    end if
+
+  else if ac = "RO" then
+    sprite(flashSP).raceRIVOKCB(msg.getAProp("t"))
+
+  else if ac = "RW" then
+    sprite(flashSP).raceRIVResultCB(msg.getAProp("d"))
+
+  else if ac = "RD" then
+    sprite(flashSP).raceRIVFinishCB(msg.getAProp("d"))
+
+  else if ac = "RIVRTO" then
+    sprite(flashSP).raceRIVRTOpponentCB(msg.getAProp("rt"))
+
+  else if ac = "RIVRT" then
+    sprite(flashSP).raceRIVRTCB(msg.getAProp("r"), msg.getAProp("rt"), msg.getAProp("i"))
+
+  -- -----------------------------------------------------------------------
+  -- Human Tournament (HT)
+  -- -----------------------------------------------------------------------
+
+  else if ac = "JT" then
+    sprite(flashSP).htConnectCB(msg.getAProp("s"), msg.getAProp("d"))
+
+  else if ac = "HQOK" then
+    s = msg.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).htQualifyOKCB(s, msg.getAProp("d"), msg.getAProp("t"))
+    else
+      sprite(flashSP).htQualifyOKCB(s, msg.getAProp("d"))
+    end if
+
+  else if ac = "HQ32" then
+    sprite(flashSP).htGetTop32CB(msg.getAProp("d"))
+
+  else if ac = "HTQ32A" then
+    sprite(flashSP).htTop32AddCB(msg.getAProp("d"))
+
+  else if ac = "HTQ32R" then
+    sprite(flashSP).htTop32RemoveCB(msg.getAProp("i"))
+
+  else if ac = "HQR" then
+    sprite(flashSP).htQualifyReadyCB(msg.getAProp("s"))
+
+  else if ac = "HTQD" then
+    sprite(flashSP).htQualifyingResultCB(msg.getAProp("s"), msg.getAProp("d"))
+
+  else if ac = "HTQTO" then
+    sprite(flashSP).htQualifyingTimeoutCB()
+
+  else if ac = "HTEQ" then
+    sprite(flashSP).htEndQualifyingCB(msg.getAProp("d"))
+
+  else if ac = "HTA" then
+    sprite(flashSP).htStartRaceCB(msg.getAProp("d"))
+
+  else if ac = "HTAI" then
+    sprite(flashSP).htStartRaceCB(msg.getAProp("d"))
+    _global.objRace.init(HT)
+
+  else if ac = "HTTO" then
+    sprite(flashSP).htTimeoutCB(msg.getAProp("s"))
+
+  else if ac = "HTTR" then
+    sprite(flashSP).htTreeResultCB(msg.getAProp("d"))
+
+  else if ac = "HTR" then
+    s = msg.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).htReadyCB(s, msg.getAProp("t"), msg.getAProp("t2"))
+    else
+      sprite(flashSP).htReadyCB(s)
+    end if
+
+  else if ac = "HTRTO" then
+    sprite(flashSP).htRTOpponentCB(msg.getAProp("rt"))
+
+  else if ac = "HTRT" then
+    sprite(flashSP).htRTCB(msg.getAProp("r"), msg.getAProp("rt"))
+
+  else if ac = "HTD" then
+    sprite(flashSP).htFinishCB(msg.getAProp("d"))
+
+  else if ac = "HTW" then
+    sprite(flashSP).htResultCB(msg.getAProp("d"))
+
+  else if ac = "HTFT" then
+    sprite(flashSP).htGetTournamentTreeCB(msg.getAProp("d"))
+
+  else if ac = "HTS" then
+    sprite(flashSP).htSpectateCB(msg.getAProp("d"))
+
+  else if ac = "HTI" then
+    sprite(flashSP).htInfoCB(msg.getAProp("d"))
+
+  else if ac = "HTAP" then
+    sprite(flashSP).htAwardPrizeCB(msg.getAProp("d"))
+
+  -- -----------------------------------------------------------------------
+  -- Team Rivals
+  -- -----------------------------------------------------------------------
+
+  else if ac = "GTR" then
+    sprite(flashSP).teamRivalsGetRacersCB(msg.getAProp("d"))
+
+  else if ac = "TRGT" then
+    sprite(flashSP).teamRivalsGetTeamsCB(msg.getAProp("d"))
+
+  else if ac = "TRPRQ" then
+    sprite(flashSP).teamRivalsPreRequestCB(msg.getAProp("s"), msg.getAProp("d"))
+
+  else if ac = "TRRQ" then
+    sprite(flashSP).teamRivalsRequestCB(msg.getAProp("s"), msg.getAProp("d"))
+
+  else if ac = "TRCLG" then
+    sprite(flashSP).teamRivalsIncomingChallengeCB(msg.getAProp("d"))
+
+  else if ac = "TRCT" then
+    sprite(flashSP).teamRivalsCounterCB(msg.getAProp("s"), msg.getAProp("i"), msg.getAProp("m"))
+
+  else if ac = "TRRS" then
+    sprite(flashSP).teamRivalsResponseCB(msg.getAProp("s"), msg.getAProp("i"), msg.getAProp("m"))
+
+  else if ac = "TRDNY" then
+    sprite(flashSP).teamRivalsDenyCB(msg.getAProp("r"))
+
+  else if ac = "TRN" then
+    sprite(flashSP).teamRivalsNewQueueCB(msg.getAProp("d"))
+
+  else if ac = "TRO" then
+    s = msg.getAProp("s")
+    if s = TRUE then
+      _global.objRace.raceType = TEAMRIVAL
+      executeCall("getonecarengine", ("acid=" & msg.getAProp("acid")))
+    else
+      sprite(flashSP).teamRivalsWrongBracketCB()
+    end if
+
+  else if ac = "TROB" then
+    sprite(flashSP).teamRivalsOKCB(msg.getAProp("d"))
+
+  else if ac = "TRTO" then
+    sprite(flashSP).teamRivalsTimeoutCB()
+
+  else if ac = "TRS" then
+    sprite(flashSP).teamRivalsStartStagingCB(msg.getAProp("t"))
+
+  else if ac = "TRR" then
+    sprite(flashSP).teamRivalsStagedCB(msg.getAProp("s"), msg.getAProp("i"))
+
+  else if ac = "TRRA" then
+    sprite(flashSP).teamRivalsNewRaceCB(msg.getAProp("d"), msg.getAProp("t"))
+
+  else if ac = "TRYRA" then
+    sprite(flashSP).teamRivalsYourRaceCB(msg.getAProp("d"), msg.getAProp("t"))
+
+  else if ac = "TRA" then
+    sprite(flashSP).teamRivalsNRaceCB(msg.getAProp("d"))
+    _global.objRace.goodCounterRT = VOID
+    _global.objRace.badCounterRT = VOID
+
+  else if ac = "TRINP" then
+    sprite(flashSP).teamRivalsRaceInProgressCB(msg.getAProp("d"))
+
+  else if ac = "TRF" then
+    sprite(flashSP).teamRivalsFinishCB(msg.getAProp("d"))
+
+  -- -----------------------------------------------------------------------
+  -- Team Rivals Race (in-race callbacks)
+  -- -----------------------------------------------------------------------
+
+  else if ac = "I2" then
+    sprite(flashSP).raceTeamIntCB(msg.getAProp("d"), msg.getAProp("v"), msg.getAProp("a"), msg.getAProp("t"), msg.getAProp("r"))
+
+  else if ac = "RIVRT2" then
+    sprite(flashSP).raceTeamRTCB(msg.getAProp("r"), msg.getAProp("rt"))
+
+  else if ac = "RD2" then
+    sprite(flashSP).raceTeamFinishCB(msg.getAProp("d"))
+
+  else if ac = "RW2" then
+    sprite(flashSP).raceTeamResultCB(msg.getAProp("d"))
+
+  -- -----------------------------------------------------------------------
+  -- Election
+  -- -----------------------------------------------------------------------
+
+  else if ac = "JE" then
+    sprite(flashSP).JoinElectionCB(msg.getAProp("s"), msg.getAProp("d"))
+
+  else if ac = "EIL" then
+    sprite(flashSP).GetElectionInterviewListCB(msg.getAProp("s"), msg.getAProp("d"))
+
+  else if ac = "ESI" then
+    sprite(flashSP).ElectionStartInterviewCB(msg.getAProp("d"))
+
+  else if ac = "ENI" then
+    sprite(flashSP).ElectionNewIntervieweeCB(msg.getAProp("i"), msg.getAProp("s"))
+
+  else if ac = "EO" then
+    sprite(flashSP).ElectionOverCB()
+
+  end if
+
+end

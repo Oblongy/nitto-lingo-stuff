@@ -1,0 +1,135 @@
+-- Lscr-109 original-style Lingo reconstruction
+-- Source: Lscr-109.bin / Lscr-109.json, mechanical analysis
+-- MovieScript 10 - Connection Script
+
+-- D = String.fromCharCode(30)  (field delimiter for socket messages)
+
+on connectSocket
+  -- dispatch stub only
+end
+
+on sockConnTimeout
+  timeout(sockConnTO).new(50000, symbol(sockConnTimeout))
+  _global.gMultiuserInstance = new xtra("Multiuser")
+  timeout = _global.gMultiuserInstance.setNetMessageHandler(symbol(socketMessageHandler), script("Connection Script"))
+  timeout = _global.gMultiuserInstance.connectToNetServer(Rick, MySecret, _global.socketURL, 3724, CieServer, TRUE)
+  if timeout = VOID then
+    sprite(flashSP).showConnectionErrorCB("Connection Error", (("Connection could not be established. Please check your firewall. (Error: 004-" & timeout) & ")"))
+  end if
+end
+
+on socketMessageHandler connected
+  if connected = TRUE then
+    timeout(sockConnTO).forget()
+    timeout(sockConnTO).new(50000, symbol(sockConnTimeout))
+    timeout = _global.gMultiuserInstance.setNetMessageHandler(symbol(socketMessageHandler), script("Connection Script"))
+    timeout = _global.gMultiuserInstance.connectToNetServer(Rick, MySecret, _global.socketURL, 80, CieServer, TRUE)
+    if timeout = VOID then
+      sprite(flashSP).showConnectionErrorCB("Connection Error", (("Connection could not be established. Please check your firewall. (Error: 004-" & timeout) & ")"))
+    end if
+  else
+    timeout(sockConnTO).forget()
+    sprite(flashSP).showSocketConnectionErrorCB()
+  end if
+end
+
+on executeCall
+  msg = _global.gMultiuserInstance.getNetMessage()
+
+  if msg.errorCode = VOID then exit
+
+  if msg.content = undefined then
+    -- no content, fall through to subject check
+  else
+    _global.socketBuffer = _global.socketBuffer & msg.content
+    pos = _global.socketBuffer.indexOf(ld)
+    repeat while pos > -1
+      raw = _global.socketBuffer.substr(VOID, pos)
+      if _global.isEnc then
+        raw = decrypt(raw)
+      end if
+      -- parse raw text into property list
+      parsed = value(("propList(" & raw) & ")")
+      procSocket(parsed)
+      _global.socketBuffer = _global.socketBuffer.substr((pos + length(ld)), _global.socketBuffer.length)
+      pos = _global.socketBuffer.indexOf(ld)
+    end repeat
+  end if
+
+  if msg.subject = ConnectToNetServer then
+    _global.isConnected = 1
+    LOGIN()
+  else if msg.errorCode = -2147216214 then
+    sprite(flashSP).showDisconnectedErrorCB("Disconnected", "You have been disconnected from the game. Please restart the application to continue playing.")
+  else
+    sprite(flashSP).showConnectionErrorCB("Connection Error", (("Connection could not be established. (Error: 007-" & msg.errorCode) & ")"))
+  end if
+
+  _system.gc()
+end
+
+on ssm action params
+  -- Builds and queues a GET request to the game server.
+  -- action = action token string (e.g. "buycar", "login")
+  -- params = extra query string fields (D-delimited, pre-encoded)
+
+  -- Normalize buypartugg -> buypart
+  if action = "buypartugg" then
+    action = "buypart"
+    params = 1
+  end if
+
+  -- Base query string
+  req = ((((("action=" & action) & "&aid=") & _global.aid) & "&sk=") & _global.guid)
+
+  -- Facebook session fields
+  if action = "login" then
+    req = req & ("&fbt=" & _global.facebookToken)
+    req = req & ("&fbi=" & _global.facebookID)
+  end if
+  if action = "fbgetsession" then
+    req = req & ("&fbt=" & _global.facebookToken)
+  end if
+  if action = "agreetoterms" then
+    req = req & ("&fbt=" & _global.facebookToken)
+    req = req & ("&fbi=" & _global.facebookID)
+  end if
+
+  -- MD5 + PC info for sensitive actions
+  if (action = "login") or (action = "createaccount") or (action = "fbgetsession") then
+    md5xtra = new xtra("caluMD5")
+    req = req & ("&md5=" & md5xtra.getFileMD5((_player.applicationPath & _player.applicationName)))
+    req = req & ("&" & getPCInfo())
+  else if (action = "changehomemachine") or (action = "buycar") or (action = "buypart") or \
+          (action = "buyenginepart") or (action = "buyengine") or (action = "swapengine") or \
+          (action = "changeemail") or (action = "changepassword") or (action = "ebep") or \
+          (action = "sellcar") or (action = "sellcarpart") or (action = "sellenginepart") or \
+          (action = "sellengine") or (action = "buygears") or (action = "sellallspare") or \
+          (action = "activatepoints") or (action = "activatemember") or (action = "repairparts") or \
+          (action = "fbremovefacebook") or (action = "changepasswordreq") then
+    req = req & ("&" & getPCInfo())
+  else
+    req = req & ("&" & params)
+  end if
+
+  -- Encrypt if needed, then build full URL
+  if _global.isEnc then
+    url = (_global.gameURL & "?") & escape(encrypt(req))
+  else
+    url = (_global.gameURL & "?") & req
+  end if
+
+  -- Push [action, netTextHandle] onto the queue
+  _global.gNetID.push(Array(action, getNetText(url)))
+end
+
+on sendSocketMessage msg
+  -- Sends a message over the multiuser socket connection.
+  if _global.isConnected then
+    if _global.isEnc then
+      _global.gMultiuserInstance.sendNetMessage("System", "String", (encrypt(msg) & _global.ld))
+    else
+      _global.gMultiuserInstance.sendNetMessage("System", "String", (msg & _global.ld))
+    end if
+  end if
+end

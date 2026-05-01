@@ -20,7 +20,7 @@ on startMovie
   _global.aid = VOID -- 0x003C
   _global.gNetID = Array() -- 0x004A
   _global.fileNetID = Array() -- 0x0058
-  _global.lastAction = id_11 -- 0x0062
+  _global.lastAction = EMPTY -- 0x0062
   _global.mainURL = "http://game.nittolegends.com/" -- 0x006C
   _global.gameURL = (_global.mainURL & "gameCode1_00.aspx") -- 0x007D
   _global.avatarMainURL = _global.mainURL -- 0x008A
@@ -28,17 +28,17 @@ on startMovie
   _global.socketURL = "live.nittolegends.com" -- 0x009E
   _global.uggURL = "http://ugg.nittolegends.com/" -- 0x00A8
   _global.exeName = NittoLegendsBeta -- 0x00B2
-  _global.socketBuffer = id_11 -- 0x00BC
+  _global.socketBuffer = EMPTY -- 0x00BC
   _global.isEnc = 1 -- 0x00C4
   _global -- 0x00C7
   initFileHandler() -- 0x00CF
   _system.gc() -- 0x00DA
   _global.isIdle = 0 -- 0x00DF
   _global.isConnected = 0 -- 0x00E7
-  _global.facebookToken = id_11 -- 0x00F1
-  _global.facebookID = id_11 -- 0x00FB
-  _global.facebookSessionSecret = id_11 -- 0x0105
-  _global.facebookSessionKey = id_11 -- 0x010F
+  _global.facebookToken = EMPTY -- 0x00F1
+  _global.facebookID = EMPTY -- 0x00FB
+  _global.facebookSessionSecret = EMPTY -- 0x0105
+  _global.facebookSessionKey = EMPTY -- 0x010F
   _global -- 0x0112
 end
 
@@ -132,10 +132,10 @@ on __embedded_lscr107_block10
   -- source-kind: embedded block without handler metadata
   -- offset=4716 length=380 codeLen=40
   -- names: _global, facebookToken, facebookID, facebookSessionSecret, facebookSessionKey
-  _global.facebookToken = id_2 -- 0x001A
-  _global.facebookID = id_2 -- 0x0024
-  _global.facebookSessionSecret = id_2 -- 0x002E
-  _global.facebookSessionKey = id_2 -- 0x0038
+  _global.facebookToken = EMPTY -- 0x001A
+  _global.facebookID = EMPTY -- 0x0024
+  _global.facebookSessionSecret = EMPTY -- 0x002E
+  _global.facebookSessionKey = EMPTY -- 0x0038
 end
 
 -- pass41 aggressive evidence index

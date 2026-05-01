@@ -1,3 +1,0 @@
--- Lscr-108 rightful.ls
--- Mechanical Lingo reconstruction from .bin/.json.
--- Constraint: recovered bytecode evidence only; undecoded lines are not invented source.

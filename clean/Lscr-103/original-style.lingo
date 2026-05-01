@@ -1,0 +1,89 @@
+-- Lscr-103 original-style Lingo reconstruction
+-- Source: Lscr-103.bin / Lscr-103.json, mechanical analysis
+-- MovieScript 3 - Race Engine Script (gauge/gear/dyno interface)
+-- Constraint: every executable line comes from recovered bytecode evidence.
+
+on runEngineStart
+  -- no-op body (registration/prologue only)
+end
+
+on runEngineStop
+  _global.objRace.beginRace()
+end
+
+on runEngine
+  _global.objRace.endRace()
+end
+
+on runEngineGaugeInit gaugeParam
+  _global.objRace.run(gaugeParam)
+end
+
+on runEngineGearUp
+  sprite(flashSP).runEngineGaugeInitCB( \
+    _global.objRace.redLine, \
+    _global.objRace.nitrousTankSize, \
+    _global.objRace.nitrousRemaining, \
+    _global.objRace.boostType)
+end
+
+on runEngineGearDown
+  _global.objRace.gearUp()
+end
+
+on runEngineSetBrake
+  _global.objRace.gearDown()
+end
+
+on runEngineSetClutch brakeParam
+  _global.objRace.setBrake(brakeParam)
+end
+
+on runEngineSetNOS clutchParam
+  _global.objRace.setClutch(clutchParam)
+end
+
+on runEngineDyno nosParam
+  _global.objRace.isNos = nosParam
+end
+
+-- -----------------------------------------------------------------------
+-- Dyno run (embedded block)
+-- Builds per-RPM arrays of HP, airflow, airfuel, and boost data,
+-- then fires garageDynoRunCB with four comma-joined strings.
+-- -----------------------------------------------------------------------
+
+-- if boostParam >= VOID and boostParam <= _global.objRace.maxPsi then
+--   _global.objRace.boostSetting = boostParam
+--   _global.objRace.initBoost()
+-- end if
+-- if chipParam >= -5 then
+--   _global.objRace.chipSetting = chipParam
+-- end if
+-- _global.objRace.init(DYNO)
+-- hpArray    = Array()
+-- aflArray   = Array()
+-- afmArray   = Array()
+-- boostArray = Array()
+-- repeat with i = 0 to _global.objRace.tqArray.length - 1
+--   rpm = i * 100
+--   if rpm > _global.objRace.revLimiter then exit repeat
+--   _global.objRace.getTorque()
+--   _global.objRace.calculateExtraHpi()
+--   hp = Math.floor( \
+--     (_global.objRace.posTq * ( \
+--       _global.objRace.hpi + _global.objRace.boostCreatedPower + \
+--       _global.objRace.systemPower + _global.objRace.ECUtune + \
+--       _global.objRace.compressionPowerDelta) * 0.7512) / 100)
+--   hpArray.push(hp)
+--   aflArray.push(_global.objRace.airFlowLimit)
+--   afmArray.push(_global.objRace.airFuelMeter)
+--   if _global.objRace.overallAirFlowLimit < \
+--      ((_global.objRace.boostPsi / _global.objRace.maxPsi) * _global.objRace.turboFlow) then
+--     boostArray.push(VOID)
+--   else
+--     boostArray.push(TRUE)
+--   end if
+-- end repeat
+-- sprite(flashSP).garageDynoRunCB( \
+--   hpArray.join(","), aflArray.join(","), afmArray.join(","), boostArray.join(","))

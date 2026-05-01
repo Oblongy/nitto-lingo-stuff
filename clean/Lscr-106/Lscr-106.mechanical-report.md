@@ -33,3 +33,68 @@
 | 28 | fileClearADecal | named handler from metadata | 18980 | 92 | 13 | 0 | 9 |
 | 29 | loadExternalValues | named handler from metadata | 19584 | 87 | 6 | 0 | 8 |
 | 30 | __embedded_lscr106_block30 | embedded block without handler metadata | 20264 | 367 | 51 | 0 | 22 |
+
+<!-- BEGIN AUTO:RAW-EVIDENCE -->
+### Base artifacts
+- `Lscr-106/root-artifacts/Lscr-106.blocks.js`
+- `Lscr-106/root-artifacts/Lscr-106.blocks.lingo`
+- `Lscr-106/root-artifacts/Lscr-106.json`
+
+### Block-table pass files
+- `Lscr-106/root-artifacts/Lscr-106.pass-block0-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block10952-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block11724-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block1200-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block12108-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block13596-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block14292-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block14528-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block15132-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block15668-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block16584-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block17432-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block17788-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block18428-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block18980-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block19584-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block20264-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block2604-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block3304-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block460-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block4668-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block4924-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block5364-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block5940-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block6228-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block6924-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block7888-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block8124-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block8460-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block9440-table.md`
+- `Lscr-106/root-artifacts/Lscr-106.pass-block9860-table.md`
+
+### Pass reports
+- `Lscr-106/root-artifacts/Lscr-106.pass32-whole-file-inventory.md`
+<!-- END AUTO:RAW-EVIDENCE -->
+
+
+<!-- BEGIN AUTO:CORROBORATION -->
+### Rebuilt-faithful mirrors
+- `Lscr-106/root-artifacts/Lscr-106.rebuilt-faithful.js`
+
+### Reconstructed lingo / JS mirrors
+- `Lscr-106/root-artifacts/Lscr-106.reconstructed.lingo`
+<!-- END AUTO:CORROBORATION -->
+
+
+<!-- BEGIN AUTO:UNRESOLVED-ADDENDA -->
+All expected artifact families are present.
+<!-- END AUTO:UNRESOLVED-ADDENDA -->
+
+
+<!-- BEGIN AUTO:JS-SURFACE -->
+- **original-style.lingo**: `Lscr-106/original-style.lingo`
+- **original-style.js**: `Lscr-106/original-style.js`
+- **rightful.js**: absent
+- **sibling (14-file-handler.js)**: `Lscr-106/sibling-artifacts/14-file-handler.js`
+<!-- END AUTO:JS-SURFACE -->

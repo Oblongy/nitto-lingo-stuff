@@ -186,7 +186,7 @@ on RaceEngine_parseConfig
   -- 0x3F property-chain marker -- 0x003A
   xmlparser = xtra.makeList().n2 -- 0x003F..0x0042
   xtra = VOID -- 0x0044
-  xtra -- 0x0047
+  -- pass34 tightening: 0x0047 is the op_51 terminator after the xtra store, not a standalone executable xtra row.
   -- pass48 blocker: blocks.lingo/js normalize this receiver chain to xmlparser.initBoost.<field>, but annotated-disasm/pass-block5972-table/rebuilt-faithful-full.js still keep raw id 7 as !ATTRIBUTES; preserve the direct wrapper form until those surfaces converge.
   w = parseInt("!ATTRIBUTES"(r)) -- 0x0059
   hpi = parseFloat("!ATTRIBUTES"(v)) -- 0x006E
@@ -200,7 +200,8 @@ on RaceEngine_parseConfig
   stockBoost = parseInt("!ATTRIBUTES"(c)) -- 0x010F
   boostSetting = parseInt("!ATTRIBUTES"(e)) -- 0x0124
   boostType = "!ATTRIBUTES"(d) -- 0x0132
-  initBoost() -- 0x013E
+  -- pass35 tightening: 0x0136..0x013E is a compact call packet. blocks.lingo/js keep a receiver-bearing form here, but the raw window still does not prove a cleaner readable receiver/source line.
+  ?(unresolved_callhead_0x013E, initBoost) -- 0x013E
   grs = Array(parseFloat("!ATTRIBUTES"(f)), parseFloat("!ATTRIBUTES"(f)), parseFloat("!ATTRIBUTES"(g)), parseFloat("!ATTRIBUTES"(h)), parseFloat("!ATTRIBUTES"(i)), parseFloat("!ATTRIBUTES"(j)), parseFloat("!ATTRIBUTES"(k))) -- 0x01B7
   fgr = parseFloat("!ATTRIBUTES"(l)) -- 0x01CC
   NOS = parseInt("!ATTRIBUTES"(q)) -- 0x01E1
@@ -303,11 +304,10 @@ on RaceEngine_stageDistance
   if not (raceType = HT) then -- jump 60 -- 0x0050
   -- branch evidence (control-flow-evidence)
   if not (gearValue < c0) then -- jump 28 -- 0x005C
-  -- pass45 byte-window: block 7 0x0028..0x0075 raw=41 35 00 03 3D 00 04 12 44 00 21 41 35 00 03 3D 00 05 12 44 00 16 41 35 00 03 3D 00 06 12 44 00 0B 41 35 00 03 3D 00 07 12 07 00 3C 41 35 00 08 41 35 00 09 14 07 00 1C 3B 00 0A 39 41 35 00 0B 41 35 00 0C 22 41 35 00 0D 22 3A 00 03 51
-  -- pass45 evidence: 0x44 compact compare branches are promoted above; first STG argument is still not proven as a normal stack value.
-  -- pass45 blocker: rebuilt-faithful-full.js folds the KOTH/RIVAL/TEAMRIVAL chain further at 0x0075, but its leftmost carried stack value is still unresolved there.
-  -- TODO exact stack source (needs-stack-context)
-  STG(implicit_arg_0x0072, STG, ((s mod carV) mod carAccel)) -- 0x0075
+  -- pass42 byte-window: block 7 0x0028..0x0075 raw=41 35 00 03 3D 00 04 12 44 00 21 41 35 00 03 3D 00 05 12 44 00 16 41 35 00 03 3D 00 06 12 44 00 0B 41 35 00 03 3D 00 07 12 07 00 3C 41 35 00 08 41 35 00 09 14 07 00 1C 3B 00 0A 39 41 35 00 0B 41 35 00 0C 22 41 35 00 0D 22 3A 00 03 51
+  -- pass42 evidence: 0x44 compact compare branches are promoted above; blocks.lingo/blocks.js preserve a call packet here rather than a normal first STG argument.
+  -- pass43 tightening: preserve the fuller carried head from stack-faithful while still keeping the whole call-head packet unresolved.
+  ?(callhead_packet_0x0075, ((/*stack*/ or (raceType = KOTH)) > (raceType = RIVAL)), (raceType = TEAMRIVAL), STG, ((s mod carV) mod carAccel)) -- 0x0075
   -- branch evidence (control-flow-evidence)
   -- jump 23 -- 0x0076
   STG(s, carV, carAccel) -- 0x008C
@@ -323,6 +323,8 @@ on RaceEngine_stageDistance
   if not (raceType = RIVAL) then -- jump 22 marker 0x44 -- 0x00C4
   -- branch evidence (control-flow-evidence)
   if not (raceType = TEAMRIVAL) then -- jump 11 marker 0x44 -- 0x00CF
+  -- pass45 tightening: the second carried family proves an unresolved comparison head at 0x00D2 before the later clean HT/STG arm.
+  ?(stack_packet_0x00D2, (((/*stack*/ <> (rt mod c1)) or (raceType = KOTH)) > (raceType = RIVAL)), (raceType = TEAMRIVAL)) -- 0x00D2
   -- branch evidence (control-flow-evidence)
   if not (raceType = HT) then -- jump 23 -- 0x00DA
   STG(s, carV, carAccel) -- 0x00F1
@@ -334,10 +336,12 @@ on RaceEngine_stageDistance
   if not (raceType = RIVAL) then -- jump 22 marker 0x44 -- 0x0107
   -- branch evidence (control-flow-evidence)
   if not (raceType = TEAMRIVAL) then -- jump 11 marker 0x44 -- 0x0112
+  -- pass46 tightening: the third carried family mirrors the earlier stack-comparison shape at 0x0115 before the later clean HT/INT arm.
+  ?(stack_packet_0x0115, (((/*stack*/ <> (rt mod c1)) or (raceType = KOTH)) > (raceType = RIVAL)), (((raceType = TEAMRIVAL) or (raceType = KOTH)) > (raceType = RIVAL)), (raceType = TEAMRIVAL)) -- 0x0115
   -- branch evidence (control-flow-evidence)
   if not (raceType = HT) then -- jump 35 -- 0x011D
-  -- 0x83 call marker -- 0x013C
-  INT(s, carV, carAccel, _system, (milliseconds - timeAnchor)) -- 0x0140
+  -- pass47 pullback: the later INT family is still one op_04 packet carrying both prior unresolved comparison heads plus the INT payload; do not collapse it into a cleaner standalone INT(...) call.
+  ?(int_packet_0x013F, (((/*stack*/ <> (rt mod c1)) or (raceType = KOTH)) > (raceType = RIVAL)), (((raceType = TEAMRIVAL) or (raceType = KOTH)) > (raceType = RIVAL)), (raceType = TEAMRIVAL), INT, s, carV, carAccel, _system, (milliseconds - timeAnchor), 1.4848) -- 0x013F
 end
 
 on RaceEngine_runFrame
@@ -900,6 +904,7 @@ on RaceEngine_runFrame
   -- pass45 byte-window: block 8 0x1121..0x1138 raw=41 35 00 6F 3D 00 70 12 07 00 88 41 35 00 65 41 35 00 01 22 13 07 00 23
   -- pass45 evidence: visible rhs is rt mod c1; lhs source is outside the local stack window, so this guard is not promoted.
   -- pass65 tightening: 0x1135 lives inside block08 island 383 (0x112C..0x1139), which still records the lhs as /*stack*/. pass-block14012-table proves payload id 145 = KDONE, but that symbol does not appear until the separate 0x1159..0x115C island 385 stack tail.
+  -- pass33 ownership: the strict block08 family splits cleanly into guard island 383, adjacent INT stack tail island 384, and named KDONE tail island 385; no local ownership path ties KDONE back into the 0x1135 guard lhs.
   -- TODO exact stack source (needs-stack-context)
   if not (implicit_lhs_0x1135 <> (rt mod c1)) then -- jump 35 -- 0x1135
   -- 0x83 call marker -- 0x1154
@@ -911,9 +916,10 @@ on RaceEngine_runFrame
   -- branch evidence (control-flow-evidence)
   if not (raceType = QM) then -- jump 124 -- 0x11B8
   -- pass45 byte-window: block 8 0x11B1..0x11C8 raw=41 35 00 6F 3D 00 73 12 07 00 7C 41 35 00 65 41 35 00 01 22 13 07 00 17
-  -- pass45 evidence: visible rhs is rt mod c1; island 383 still records the lhs as /*stack*/, and island 385 carries KDONE only after the 0x115C branch target, so this guard is not promoted.
-  -- pass45 blocker: rebuilt-faithful-full.js carries KDONE into this guard, but block08-islands.js still records the lhs as /*stack*/ at 0x11C5.
+  -- pass45 evidence: visible rhs is rt mod c1; island 390 still records the lhs as /*stack*/, and rebuilt-faithful-full.js carries KDONE into this guard only on the broader helper surface.
+  -- pass45 blocker: strict block08 ownership does not prove KDONE or RDONE as the guard lhs at 0x11C5.
   -- pass65 tightening: 0x11C5 lives inside block08 island 390 (0x11BC..0x11C9), which still records the lhs as /*stack*/. pass-block14012-table proves payload id 145 = KDONE, and annotated-disasm loads op_3B arg=145 at 0x1159, but that load belongs to the earlier 0x1159..0x115C island 385 stack tail, not to island 390.
+  -- pass33 ownership: the later strict family splits into guard island 390, adjacent RINT expr island 391, and RDONE tail island 392; those nearby named islands still do not expose a local symbol owner for the 0x11C5 guard lhs.
   -- TODO exact stack source (needs-stack-context)
   if not (implicit_lhs_0x11C5 <> (rt mod c1)) then -- jump 23 -- 0x11C5
   RINT(s, carV, carAccel) -- 0x11DC
@@ -1338,8 +1344,8 @@ on RaceEngine_lookupTorque
     rpm = c10000 -- 0x0054
   end if
   posTq = tqArray[parseInt((rpm / c100))] -- 0x006E
-  -- 0x08 marker / raw tail stack still unresolved: [(posTq + c200), 0.8758]; helper layers suggest negTq, but strict block surfaces still do not expose the assignment target here -- 0x0080
-  0.8758 -- 0x0081
+  -- pass50 tightening: raw tail 0x0074..0x0081 splits into operand-build prefix 0x0074..0x007B [posTq, c200, op_1B] and terminal unresolved arithmetic suffix 0x007C..0x0081 [0.8758, op_08, final op_51]; no block-local store target is exposed.
+  ?(tail_packet_0x0074, posTq, c200, op_1B, 0.8758, op_08) -- 0x0074
 end
 
 on RaceEngine_initBrakeTune
@@ -1488,29 +1494,26 @@ on RaceEngine_createMd5Hash
           lightTO1.forget() -- 0x013C
         end if
         stagingLightPos1 = c0 -- 0x0142
-        VOID -- 0x0145
-        lightTO1 = timeout(lightTO1).new((((p mod btd) * c1000) + (c1000 / c2)), symbol(runLight)) -- 0x0170
-        VOID -- 0x0173
-        -- pass62 blocker: rebuilt-faithful-full.js is the only local surface that breaks this CT handoff into expr lightTO1 at 0x0145 and expr timeout at 0x0173. The stricter blocks.js/blocks.lingo surface never independently reaches those residue rows; it preserves only the row packet `null`, `airFlowLimit = c1`, `?`, `// goto @368`, `// [0x0170] op_18`, `// [0x0178] op_1c`, `c1`, `stockBoost = null.overallAirFlowLimit`, `?`. Annotated-disasm keeps the broader in-band handoff through op_04 at 0x016F, op_36 "lightTO1" at 0x0170, op_51 at 0x0173, and op_06 jump 123 at 0x0174. No narrower byte-backed split is promoted here.
+        -- pass38 tightening: split the CT handoff into the smallest strict packets instead of leaving one vague blocker note.
+        ?(lightTO1_packet_0x0170, (((p mod btd) * c1000) + (c1000 / c2)), symbol(runLight), op_04) -- 0x0170
       else if btd = c0 then -- evidence jump at 0x017F
-        startLightTimer(b, VOID) -- 0x018F
+        ?(startLightTimer_packet_0x018B, startLightTimer, b, op_3E) -- 0x018B
       else
         if lightTO2 <> VOID then -- evidence jump at 0x019B
           lightTO2.forget() -- 0x01AB
         end if
         stagingLightPos2 = c0 -- 0x01B1
-        VOID -- 0x01B4
-        lightTO2 = timeout(o).new(((btd * c1000) + (c1000 / c2)), symbol(runLight)) -- 0x01DE
-        lightTO2 -- 0x01E1
-        startLightTimer(p, VOID) -- 0x01EE
+        -- pass39 tightening: split the lightTO2 handoff into the smallest strict packets instead of keeping one generic fallback.
+        ?(lightTO2_packet_0x01DE, ((btd * c1000) + (c1000 / c2)), symbol(runLight), o, op_04) -- 0x01DE
+        ?(startLightTimer_packet_0x01EA, startLightTimer, p, op_3E) -- 0x01EA
       end if
     HTQ:
       HTQREADY(VOID, createMd5Hash(0)) -- 0x020E
     HT:
       HTREADY(VOID, createMd5Hash(0)) -- 0x022E
     otherwise:
-      -- pass51 byte-window: block 16 0x0219..0x022E is the final proved raceType ladder edge, and faithful/full falls directly to end after that HT arm.
-      -- no recovered default body; faithful/full block trace falls directly to end after the HT branch ladder
+      -- pass40 exhaustion: block 16 0x01F2..0x022E ends at the HT arm sink HTREADY(VOID, createMd5Hash(0)) -- 0x022E.
+      -- raw annotated-disasm, blocks.js, and rebuilt-faithful-full.js expose no separate default-arm packet after that final HT ladder edge.
   end case
 end
 
@@ -1785,28 +1788,27 @@ on RaceEngine_buildMd5Source
   if not (engineDamage < c0) then -- jump 14 -- 0x05C3
   EMPTY = (EMPTY + nogood) -- 0x05CE
   -- pass51 byte-window: block 19 0x05D5..0x063E is still the unresolved anti-lag/integrity cluster; branch table targets are 106, 17, 74, 17, 37, and 14.
-  -- branch 106 -- 0x05D5
-  -- branch evidence (control-flow-evidence)
-  if not (goodCounterRT = VOID) then -- jump 9 marker 0x44 -- 0x05DD
-  -- branch evidence (control-flow-evidence)
-  if not (goodCounterET = VOID) then -- jump 17 -- 0x05E6
-  EMPTY = (EMPTY + nogood) -- 0x05F1
-  (goodCounterRT = VOID) -- 0x05F4
-  -- branch evidence (control-flow-evidence)
-  -- jump 74 -- 0x05F5
-  -- branch evidence (control-flow-evidence)
-  if not (0.7745 > lagPercent) then -- jump 17 -- 0x060B
-  EMPTY = (EMPTY + nogood) -- 0x0616
-  (goodCounterRT + badCounterRT) -- compare lhs preserved by blocks.js before the 0x061A jump window; threshold/callee linkage still splits between raw 1982773 rows and the faithful/full 0.7745 view -- 0x0619
-  -- branch evidence (control-flow-evidence)
-  -- jump 37 -- 0x061A
-  -- branch evidence (control-flow-evidence)
-  if not (0.7745 > lagPercent) then -- jump 14 -- 0x0630
-  EMPTY = (EMPTY + nogood) -- 0x063B
-  (goodCounterET + badCounterET) -- compare lhs preserved by blocks.js before the final nogood branch tail; threshold/callee linkage still splits between raw 1982773 rows and the faithful/full 0.7745 view -- 0x063E
-  -- pass50 promoted tail: faithful.lingo and faithful-full.js converge on the final Xtra hash call here, while the preceding anti-lag branch cluster remains only partially structured.
-  -- pass62 blocker: raw blocks.js/blocks.lingo leave expr (goodCounterRT = VOID) at 0x05F4 and expr badCounterET at 0x064C as standalone residue rows. Annotated-disasm still keeps the broader gate/tail in-band: upstream gate anchor remains the branch-immediate 0x44 at 0x05DD, and the minimal non-removable gate core is op_51 at 0x05F4 plus op_06 jump 74 at 0x05F5. For the tail, the stricter blocks.js/blocks.lingo surface preserves only the row packet `, = caluMD5`, `?`, `id_0 = ,.getStringMD5()(id_0)`, `?`, `// [0x064f] op_05`, `id_0`; it never independently reaches 0x065A or 0x0663, which only appear in the broader annotated/faithful continuation.
-  guid = xtra("caluMD5").getStringMD5(EMPTY) -- 0x0649..0x0663
+  -- unresolved anti-lag cluster: broader faithful-only branch forms are not promoted here.
+  -- strict block-owned packet `0x05F6..0x061A` narrows only to:
+  --   ((goodCounterRT + badCounterRT) >= 1982773)
+  --   badCounterRT  [packet-only: duplicated operand loads at 0x05F9 and 0x0601]
+  --   id_0 = (? + nogood)
+  --   ?
+  ((goodCounterRT + badCounterRT) >= 1982773) -- 0x0619
+  id_0 = (? + nogood) -- 0x0616
+  -- strict block-owned packet `0x061B..0x063E` narrows only to:
+  --   ((goodCounterET + badCounterET) >= 1982773)
+  --   badCounterET  [packet-only: duplicated operand loads at 0x061E and 0x0626]
+  --   id_0 = (? + nogood)
+  --   ?
+  ((goodCounterET + badCounterET) >= 1982773) -- 0x063E
+  id_0 = (? + nogood) -- 0x063B
+  -- pass41 tightening: raw 0x064C and 0x065D are op_51 terminators only, so the old standalone `?` rows are pulled back.
+  -- strict tail packet now stays at the narrower carry floor: `, = caluMD5`, `id_0 = ,.getStringMD5()(id_0)`, and trailing `id_0`.
+  -- broader faithful/annotated continuation reaches 0x065A and 0x0663, but that expansion is not promoted into this deliverable.
+  , = caluMD5 -- 0x0649
+  id_0 = ,.getStringMD5()(id_0) -- 0x0650
+  id_0 -- 0x0663
 end
 
 on RaceEngine_randomCurve

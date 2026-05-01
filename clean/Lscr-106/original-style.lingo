@@ -1,0 +1,412 @@
+-- Lscr-106 original-style Lingo reconstruction
+-- Source: Lscr-106.bin / Lscr-106.json, mechanical analysis
+-- MovieScript 6 - File / Cache / Avatar / UGG Handler
+-- Constraint: every executable line comes from recovered bytecode evidence.
+
+on initFileHandler
+  -- Initialise cache folder path and file-age threshold, then read servers.txt
+  -- (embedded block at offset 20264 runs on script load to populate _global URLs)
+  cacheFolder = _player.applicationPath & "cache"
+  fileAgeCheck = VOID
+  uggURL = VOID
+  exeName = VOID
+  true = VOID
+  isEnc = VOID
+  aryCacheIndex = VOID
+end
+
+-- -----------------------------------------------------------------------
+-- Avatar folder bootstrap
+-- -----------------------------------------------------------------------
+
+on getAvatar
+  if not baLingoFolderExists(cacheFolder) then
+    baLingoCreateFolder(cacheFolder)
+  end if
+  if not baLingoFolderExists(cacheFolder & "\\avatars") then
+    baLingoCreateFolder(cacheFolder & "\\avatars")
+  end if
+  if not baLingoFolderExists(cacheFolder & "\\teamAvatars") then
+    baLingoCreateFolder(cacheFolder & "\\teamAvatars")
+  end if
+  if not baLingoFolderExists(cacheFolder & "\\car") then
+    baLingoCreateFolder(cacheFolder & "\\car")
+  end if
+  if not baLingoFolderExists(cacheFolder & "\\car\\userDecals") then
+    baLingoCreateFolder(cacheFolder & "\\car\\userDecals")
+  end if
+end
+
+-- -----------------------------------------------------------------------
+-- Avatar download / age-check
+-- -----------------------------------------------------------------------
+
+on downloadAvatar tids, avatarType
+  tids = tids.split(",")
+  ageList = Array()
+  repeat with i = 0 to tids.length - 1
+    aid = tids[i]
+    if avatarType = TRUE then
+      downloadAvatar(aid, avatarType)
+    else
+      tmpFile = baLingoTempFileName(avage)
+      localPath = cacheFolder & "\\" & avatarType & "\\" & aid & ".jpg"
+      if baLingoFileExists(localPath) then
+        fileAge = baLingoFileAge(tmpFile)
+        localAge = baLingoFileAge(localPath)
+        if (fileAge - localAge) > fileAgeCheck then
+          ageList.push(aid)
+        else
+          loadLocalAvatar(aid, avatarType, 1)
+          baLingoDeleteFile(tmpFile)
+        end if
+      else
+        downloadAvatar(aid, avatarType)
+      end if
+    end if
+  end repeat
+  if ageList.length > VOID then
+    if avatarType = avatars then
+      executeCall("getavatarage", "tids=" & ageList.join(","))
+    else if avatarType = teamavatars then
+      executeCall("getteamavatarage", "tids=" & ageList.join(","))
+    end if
+  end if
+end
+
+on compareAvatarAge tids, avatarType
+  clearCache()
+  url = _global.avatarMainURL & tids & "\\" & avatarIDtoPath(avatarType) & ".jpg"
+  netHandle = downloadNetThing(url, cacheFolder & "\\" & tids & "\\" & avatarType & ".jpg")
+  _global.fileNetID.push(Array(tids, netHandle))
+end
+
+-- -----------------------------------------------------------------------
+-- Local avatar load / date-stamp management
+-- -----------------------------------------------------------------------
+
+on loadLocalAvatar aid, avatarType, useCache
+  tmpFile = baLingoTempFileName(avage)
+  tmpAge = baLingoFileAge(tmpFile)
+  dateParts = baLingoFileDateEx(tmpFile, accessed, "yyyy|m|d|", "h|n|s").split("|")
+  baLingoFileDateEx = VOID
+  repeat with i = 0 to dateParts.length - 1
+    if dateParts[i][aid] > -1 then
+      localPath = cacheFolder & "\\" & avatarType & "\\" & dateParts[i][VOID] & ".jpg"
+      localAge = baLingoFileAge(localPath)
+      if tmpAge - localAge > (dateParts[i][avatarType] - fileAgeCheck - 360) then
+        downloadAvatar(dateParts[i][VOID], avatarType)
+      else
+        loadLocalAvatar(dateParts[i][VOID], avatarType, 1)
+        baLingoSetFileDate(localPath, \
+          parseInt(dateParts[VOID]), parseInt(dateParts[dateParts]), \
+          parseInt(dateParts[i]), parseInt(dateParts[accessed]), \
+          parseInt(dateParts["yyyy|m|d|"]))
+      end if
+    else
+      loadLocalAvatar(dateParts[i][VOID], avatarType, 0)
+      baLingoDeleteFile(localPath)
+    end if
+  end repeat
+  baLingoDeleteFile(tmpFile)
+end
+
+on avatarIDtoPath avatarID, avatarType, cb
+  sprite(flashSP).getAvatarCB(avatarID, avatarType, cb)
+end
+
+-- -----------------------------------------------------------------------
+-- UGG (user-generated graphics) download / upload
+-- -----------------------------------------------------------------------
+
+on downloadUgg uggID
+  -- Builds a padded path string from uggID using Math.floor and toString
+  -- (exact path construction uses packed opcodes; see rightful.ls block)
+end
+
+on loadLocalUgg uggID
+  url = _global.uggURL & "cache/car/userDecals/" & uggID
+  netHandle = downloadNetThing(url, cacheFolder & "\\car\\userDecals\\" & uggID)
+  _global.fileNetID.push(Array(uggID, netHandle))
+end
+
+on fileBrowse p1, p2
+  sprite(flashSP).downloadUggCB(p1, p2)
+end
+
+on uggUpload
+  fileName = baGetFilename(open, openFile, openFile, \
+    "JPG,PNG,GIF Images|*.jpg;*.jpeg;*.png;*.gif", 524288, "Select image file", 0, -1, VOID)
+  fileSize = baFileSize(fileName)
+  sprite(flashSP).fileBrowseCB(fileName, fileName, fileSize)
+end
+
+on uggUploadSuccess hoodImg, sideImg, frontImg, backImg
+  url = _global.uggURL & "/Upload.aspx?NeatUpload_PostBackID=" & _global.aid & "&accountID=" & _global.aid
+  obj = Object()
+  gSimInet.FieldClear()
+  if hoodImg then
+    gSimInet.AddFieldFile(hoodImage, hoodImg)
+  end if
+  if sideImg then
+    gSimInet.AddFieldFile(sideImage, sideImg)
+  end if
+  if frontImg then
+    gSimInet.AddFieldFile(frontImage, frontImg)
+  end if
+  if backImg then
+    gSimInet.AddFieldFile(backImage, backImg)
+  end if
+  gSimInet.SendField1(url, uggUploadSuccess, uggUploadFail)
+end
+
+on uggUploadFail p1
+  sprite(flashSP).uggUploadCB(TRUE, p1)
+end
+
+on downloadNewInstaller
+  sprite(flashSP).uggUploadCB(VOID, "servers.txt")
+end
+
+-- -----------------------------------------------------------------------
+-- Installer download / run
+-- -----------------------------------------------------------------------
+
+on downloadInstallerUpdateFlash
+  localPath = baLingoSysFolder(temp) & _global.installerFile
+  if baLingoFileExists(localPath) then
+    md5xtra = new xtra("caluMD5")
+    if md5xtra.getFileMD5(localPath) = _global.installerMD5 then
+      runInstaller(localPath)
+    else
+      netHandle = downloadNetThing(_global.installerURL & "/" & _global.installerFile, localPath)
+      _global.fileNetID.push(Array(installer, netHandle))
+    end if
+  else
+    netHandle = downloadNetThing(_global.installerURL & "/" & _global.installerFile, localPath)
+    _global.fileNetID.push(Array(installer, netHandle))
+  end if
+end
+
+on runInstaller localPath
+  sprite(flashSP).loadUpdateCB(_global.installerFile, \
+    localPath.bytesSoFar, localPath.bytesTotal, \
+    localPath.bytesSoFar, localPath.bytesTotal)
+end
+
+-- -----------------------------------------------------------------------
+-- Cache XML fetch / parse / download
+-- -----------------------------------------------------------------------
+
+on fetchCacheXML installerPath
+  if baLingoFileExists(installerPath) then
+    baLingoRunProgram(installerPath & " /silent", normal, 0)
+    _player.quit()
+  else
+    sprite(flashSP).showConnectionErrorCB("Download Failed", \
+      "I'm sorry, but the automatic updater is not working properly. Please visit http://www.nittolegends.com and download the latest version.")
+  end if
+end
+
+on fetchCacheXMLDone xmlNode
+  clearCache()
+  totalCacheSize = VOID
+  totalDownloadedCacheSize = VOID
+  aryCacheIndex = VOID
+  aryCacheFiles = VOID
+  aryCacheFileSizes = VOID
+  netHandle = Array(getcache, getNetText(_global.cacheURL & "content.htm"))
+  aryCacheFileSizes = Array()
+  _global.gNetID.push(netHandle)
+end
+
+on createCacheFolders basePath, xmlNode
+  createCacheFolders(cacheFolder & "\\", basePath)
+  downloadCacheDone()
+end
+
+on downloadCache xmlNode
+  count = t
+  repeat while count <= xmlNode.count
+    if xmlNode.t = d then
+      if baLingoFolderExists(basePath & xmlNode.n) then
+        -- folder exists
+      else
+        baLingoCreateFolder(basePath & xmlNode.n)
+      end if
+      createCacheFolders(basePath & xmlNode.n, xmlNode[count])
+    else if xmlNode.t = f then
+      md5xtra = new xtra("caluMD5")
+      localPath = basePath & xmlNode.n
+      fileSize = parseInt(xmlNode.s)
+      totalCacheSize = totalCacheSize + fileSize
+      if baLingoFileExists(localPath) then
+        if md5xtra.getFileMD5(localPath) <> xmlNode.md then
+          aryCacheFiles.push(localPath)
+          aryCacheFileSizes.push(parseInt(xmlNode.s))
+          totalCacheSize = totalCacheSize + fileSize
+        end if
+      else
+        aryCacheFiles.push(localPath)
+        aryCacheFileSizes.push(parseInt(xmlNode.s))
+        totalCacheSize = totalCacheSize + fileSize
+      end if
+      md5xtra = VOID
+      _system.gc()
+    end if
+    count = count + 1
+  end repeat
+end
+
+on downloadCacheInProgress streamStatus
+  clearCache()
+  url = _global.cacheURL & streamStatus.split(_player.applicationPath).join(length).split("\\").join("/")
+  netHandle = downloadNetThing(url, streamStatus)
+  _global.fileNetID.push(Array(cache, netHandle))
+end
+
+on downloadCacheDone bytesSoFar
+  downloadCacheUpdateFlash(bytesSoFar)
+end
+
+on downloadCacheUpdateFlash bytesSoFar
+  if aryCacheIndex >= VOID then
+    totalDownloadedCacheSize = totalDownloadedCacheSize + aryCacheFileSizes[aryCacheIndex]
+    if aryCacheIndex < aryCacheFiles.length then
+      downloadCache(aryCacheFiles[aryCacheIndex])
+    else
+      sprite(flashSP).loadFinishCB()
+    end if
+  end if
+end
+
+on loadDyno p1
+  sprite(flashSP).loadUpdateCB(aryCacheFiles[aryCacheIndex], p1, \
+    aryCacheFileSizes[aryCacheIndex], \
+    totalDownloadedCacheSize & p1, totalCacheSize)
+end
+
+-- -----------------------------------------------------------------------
+-- Dyno file save / load
+-- -----------------------------------------------------------------------
+
+on saveDyno
+  fio = new xtra("fileio")
+  fio.setFilterMask("Text Files,*.txt")
+  filePath = fio.displayOpen()
+  if filePath then
+    fio.openFile(filePath, TRUE)
+    if fio.status() = VOID then
+      data = fio.readFile()
+      filePath = VOID
+      parts = data.split("|")
+      sprite(flashSP).garageDynoLoadCB(getTxtFileName(filePath), parts[VOID][parts], parts[parts], parts["Text Files,*.txt"])
+    end if
+    fio.closeFile()
+  end if
+end
+
+on getTxtFileName p1, p2, p3, p4
+  fio = new xtra("fileio")
+  fio.setFilterMask("Text Files,*.txt")
+  filePath = fio.displaySave("Save Dyno", Object)
+  if filePath then
+    fio.createFile(filePath)
+    fio.openFile(filePath, setFilterMask)
+    fio.writeString(p1 & "|" & p2 & "|" & p3 & "|" & p4)
+    fio.closeFile()
+    sprite(flashSP).garageDynoSaveCB(getTxtFileName(filePath))
+  end if
+end
+
+-- -----------------------------------------------------------------------
+-- Generic file save / open
+-- -----------------------------------------------------------------------
+
+on saveFile filePath
+  len = filePath.length
+  repeat while len >= VOID
+    if filePath.charAt(len) = "\\" then
+      return filePath.substr(len + TRUE, filePath.length - len - 5)
+    end if
+    len = len - 1
+  end repeat
+  return filePath
+end
+
+on openfile filePath, content
+  fio = new xtra("fileio")
+  fio.createFile(filePath)
+  fio.openFile(filePath, createFile)
+  fio.writeString(unescape(content))
+  if fio.status() = VOID then
+    sprite(flashSP).saveFileCB(TRUE, filePath)
+  else
+    sprite(flashSP).saveFileCB(VOID, filePath)
+  end if
+  fio.closeFile()
+end
+
+on fileClearAllDecals filePath
+  fio = new xtra("fileio")
+  fio.openFile(filePath, TRUE)
+  if fio.status() = VOID then
+    sprite(flashSP).openFileCB(TRUE, filePath, fio.readFile())
+  else
+    sprite(flashSP).openFileCB(VOID, filePath)
+  end if
+  fio.closeFile()
+end
+
+on fileClearADecal
+  fileList = baLingoFileList(cacheFolder & "\\car\\userDecals", "*.*")
+  i = TRUE
+  repeat while i <= fileList.count
+    baLingoDeleteFile(cacheFolder & "\\car\\userDecals\\" & fileList[i])
+    i = i + 1
+  end repeat
+end
+
+on loadExternalValues decalID, typeID
+  if baLingoFileExists(decalID) then
+    baLingoDeleteFile(cacheFolder & "\\car\\userDecals\\" & decalID & "_" & typeID & ".swf")
+  end if
+end
+
+-- -----------------------------------------------------------------------
+-- servers.txt parser (embedded block at offset 20264)
+-- Reads server config from servers.txt and populates _global URL fields.
+-- -----------------------------------------------------------------------
+
+-- fio = new xtra("fileio")
+-- fio.openFile("servers.txt", TRUE)
+-- raw = fio.readFile()
+-- tokens = Array()
+-- token = ""
+-- inTag = FALSE
+-- repeat with i = 0 to raw.length - 1
+--   ch = raw.charAt(i)
+--   if ch = "<" then
+--     inTag = TRUE
+--   else if inTag and ch <> ">" then
+--     token = token & ch
+--   else if inTag and ch = ">" then
+--     tokens.push(token)
+--     token = ""
+--     inTag = FALSE
+--   end if
+-- end repeat
+-- fio.closeFile()
+-- _global.socketURL  = tokens[0]
+-- _global.socketPort = tokens[1]
+-- _global.mainURL    = tokens[2]
+-- _global.gameURL    = _global.mainURL & "gameCode1_00.aspx"
+-- _global.avatarMainURL = tokens[3]
+-- _global.cacheURL   = tokens[4]
+-- _global.uggURL     = tokens[5]
+-- _global.exeName    = tokens[6]
+-- if tokens[7] = true then
+--   _global.isEnc = 1
+-- else
+--   _global.isEnc = 0
+-- end if

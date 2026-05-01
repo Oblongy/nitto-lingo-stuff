@@ -32,3 +32,38 @@ Evidence summary:
 Unresolved:
 - No unresolved handlers remain in the recovered ProjectorRays source used for `rightful.ls`.
 - No additional handlers, names, or callback aliases were inferred beyond the evidence above.
+
+
+<!-- BEGIN AUTO:RAW-EVIDENCE -->
+### Base artifacts
+- `Lscr-101/evidence/lscr101-work/Lnam-100.json`
+- `Lscr-101/evidence/lscr101-work/Lscr-101.json`
+- `Lscr-101/evidence/lscr101-work/tools/decompile-summary.json`
+- `Lscr-101/evidence/root-shared/Lnam-100.json`
+
+### Pass reports
+- `Lscr-101/root-artifacts/Lscr-101.pass1-whole-file-inventory.md`
+<!-- END AUTO:RAW-EVIDENCE -->
+
+
+<!-- BEGIN AUTO:CORROBORATION -->
+
+<!-- END AUTO:CORROBORATION -->
+
+
+<!-- BEGIN AUTO:UNRESOLVED-ADDENDA -->
+**Absent artifact families (unresolved regions remain open):**
+- no `.blocks.lingo` or `.blocks.js` artifact found
+- no corroboration mirror artifacts found
+
+**Missing inputs logged by runner:**
+- sibling slot '17-lingo-xtra-alt.js' not found under Lscr-101/sibling-artifacts
+<!-- END AUTO:UNRESOLVED-ADDENDA -->
+
+
+<!-- BEGIN AUTO:JS-SURFACE -->
+- **original-style.lingo**: `Lscr-101/original-style.lingo`
+- **original-style.js**: `Lscr-101/original-style.js`
+- **rightful.js**: absent
+- **sibling (17-lingo-xtra-alt.js)**: absent
+<!-- END AUTO:JS-SURFACE -->

@@ -78,3 +78,120 @@
 | 73 | CheckNittoProcesses | named handler from metadata | 26196 | 40 | 4 | 0 | 5 |
 | 74 | CheckNittoProcessesCB | named handler from metadata | 26544 | 43 | 5 | 0 | 8 |
 | 75 | __embedded_lscr104_block75 | embedded block without handler metadata | 27184 | 145 | 13 | 0 | 14 |
+
+<!-- BEGIN AUTO:RAW-EVIDENCE -->
+### Base artifacts
+- `Lscr-104/root-artifacts/Lscr-104.blocks.js`
+- `Lscr-104/root-artifacts/Lscr-104.blocks.lingo`
+- `Lscr-104/root-artifacts/Lscr-104.json`
+- `Lscr-104/root-artifacts/Lscr-104.late-helper-region-map.json`
+
+### Block-table pass files
+- `Lscr-104/root-artifacts/Lscr-104.pass-block0-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block10040-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block1044-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block11288-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block11668-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block12148-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block12604-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block12996-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block1316-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block13260-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block13488-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block13864-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block14144-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block14292-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block14600-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block14888-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block15520-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block1580-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block16968-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block17216-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block17460-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block17620-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block17780-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block17932-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block18088-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block18276-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block1848-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block18820-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block20076-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block20448-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block20992-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block2120-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block22244-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block22592-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block22752-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block22932-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block23416-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block23864-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block24168-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block2432-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block24448-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block24728-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block25000-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block25180-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block25500-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block25976-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block26196-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block26544-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block27184-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block2720-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block3004-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block3264-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block3440-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block3648-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block384-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block4060-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block4576-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block4944-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block5120-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block5300-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block5604-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block5904-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block6240-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block6528-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block6796-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block7036-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block716-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block7208-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block7492-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block7776-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block8056-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block8208-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block8392-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block8904-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block9080-table.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass-block9496-table.md`
+
+### Pass reports
+- `Lscr-104/root-artifacts/Lscr-104.pass77-whole-file-inventory.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass78-executable-payload-region-map.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass79-block25976-split.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass79-block26196-split.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass80-block26544-split.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass80-block27184-split.md`
+- `Lscr-104/root-artifacts/Lscr-104.pass81-late-helper-cross-block-spill.md`
+<!-- END AUTO:RAW-EVIDENCE -->
+
+
+<!-- BEGIN AUTO:CORROBORATION -->
+### Rebuilt-faithful mirrors
+- `Lscr-104/root-artifacts/Lscr-104.rebuilt-faithful.js`
+
+### Reconstructed lingo / JS mirrors
+- `Lscr-104/root-artifacts/Lscr-104.reconstructed.lingo`
+<!-- END AUTO:CORROBORATION -->
+
+
+<!-- BEGIN AUTO:UNRESOLVED-ADDENDA -->
+All expected artifact families are present.
+<!-- END AUTO:UNRESOLVED-ADDENDA -->
+
+
+<!-- BEGIN AUTO:JS-SURFACE -->
+- **original-style.lingo**: `Lscr-104/original-style.lingo`
+- **original-style.js**: `Lscr-104/original-style.js`
+- **rightful.js**: absent
+- **sibling (12-socket-client-to-server.js)**: `Lscr-104/sibling-artifacts/12-socket-client-to-server.js`
+<!-- END AUTO:JS-SURFACE -->

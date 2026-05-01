@@ -57,8 +57,8 @@ on RaceEngine_constantsTable
   rpmGearConversion = 0.85 -- 0x0034
   gConvSlipA = 6.28 -- 0x003C
   gConvSlipB = 0.02 -- 0x0044
-  brakeDecleration = literal_12 -- 0x004C
-  revLimiterDeceleration = literal_14 -- 0x0054
+  brakeDecleration = -40 -- 0x004C
+  revLimiterDeceleration = -30 -- 0x0054
   idleRPM = 750 -- 0x005C
   tqFlyFactor = 5252 -- 0x0064
   partBreakPoint = 0.2 -- 0x006C
@@ -80,7 +80,7 @@ on RaceEngine_constantsTable
   c5_5 = 5.5 -- 0x00EA
   c2 = DAfp -- 0x00F2
   c5 = 32.1768 -- 0x00FA
-  c50 = 0.016 -- 0x0102
+  c50 = 5.0 -- 0x0102
   c8 = gConvSlipA -- 0x010A
   c0_005 = 0.005 -- 0x0112
   c0_016 = 0.016 -- 0x011A
@@ -94,11 +94,11 @@ on RaceEngine_constantsTable
   c0_18 = 0.18 -- 0x015A
   c1320 = 1320 -- 0x0162
   c760 = 760 -- 0x016A
-  c7 = 0.85 -- 0x0172
+  c7 = 0.7 -- 0x0172
   c7_5 = 7.5 -- 0x017A
   c1_8 = 1.8 -- 0x0182
   c1_15 = 1.15 -- 0x018A
-  c80 = 0.1 -- 0x0192
+  c80 = 8.0 -- 0x0192
   c0_95 = 0.95 -- 0x019A
   c0_05 = 0.05 -- 0x01A2
   c0_2 = 0.2 -- 0x01AA
@@ -1830,34 +1830,31 @@ on RaceEngine_buildMd5Source
   EMPTY = (EMPTY + (c2_5 + ",")) -- 0x059B
   EMPTY = (EMPTY + (c1 + ",")) -- 0x05AB
   EMPTY = (EMPTY + guid) -- 0x05B7
-  -- branch evidence (control-flow-evidence)
-  if not (engineDamage < c0) then -- jump 14 -- 0x05C3
-  EMPTY = (EMPTY + nogood) -- 0x05CE
-  -- branch 106 -- 0x05D5
-  -- branch evidence (control-flow-evidence)
-  if not (goodCounterRT = VOID) then -- jump 9 marker 0x44 -- 0x05DD
-  -- branch evidence (control-flow-evidence)
-  if not (goodCounterET = VOID) then -- jump 17 -- 0x05E6
-  EMPTY = (EMPTY + nogood) -- 0x05F1
-  param_EMPTY -- 0x05F4
-  -- branch evidence (control-flow-evidence)
-  -- jump 74 -- 0x05F5
-  -- branch evidence (control-flow-evidence)
-  if not (0.7745 > lagPercent) then -- jump 17 -- 0x060B
-  EMPTY = (EMPTY + nogood) -- 0x0616
-  (goodCounterRT + badCounterRT) -- 0x0619
-  -- branch evidence (control-flow-evidence)
-  -- jump 37 -- 0x061A
-  -- branch evidence (control-flow-evidence)
-  if not (0.7745 > lagPercent) then -- jump 14 -- 0x0630
-  EMPTY = (EMPTY + nogood) -- 0x063B
-  (goodCounterET + badCounterET) -- 0x063E
-  "," = (EMPTY ^ caluMD5) -- 0x0649
-  xtra -- 0x064C
-  EMPTY = getStringMD5(EMPTY) -- 0x065A
-  "," -- 0x065D
-  0 -- 0x065F
-  EMPTY -- 0x0663
+  ? -- 0x05BA
+  -- packet-only engineDamage/c0 op_14 family: raw order engineDamage -> c0 -> branch-consumer target/imm=14; strict surface order ? -> op_14 marker -> null.c0 -> null.engineDamage -> // goto @1473 -- 0x05BB
+  id_0 = (? + nogood) -- 0x05CE
+  ? -- 0x05D1
+  param_id_0 -- 0x05D2
+  -- jump 106 -- 0x05D5
+  goodCounterRT -- 0x05DC
+  if false then -- else goto @1494 -- 0x05DD
+  goodCounterET -- 0x05E5
+  if false then -- else goto @1511 -- 0x05E6
+  id_0 = (? + nogood) -- 0x05F1
+  ? -- 0x05F4
+  -- goto @1507 -- 0x05F5
+  -- packet A compare core remains packet-only: duplicated badCounterRT load -> goodCounterRT load -> duplicated badCounterRT load -> terminal combine -- 0x05F8
+  -- packet A rhs ladder remains packet-local: op_83 arg=7745 -> lagPercent -> branch-consumer target/imm=17 -> goto @1548 -- 0x0605
+  id_0 = (? + nogood) -- 0x0616
+  ? -- 0x0619
+  -- goto @1544 -- 0x061A
+  -- packet B compare core remains packet-only: duplicated badCounterET load -> goodCounterET load -> duplicated badCounterET load -> terminal combine -- 0x061D
+  -- packet B rhs ladder remains packet-local: op_83 arg=7745 -> lagPercent -> branch-consumer target/imm=14 -> goto @1582 -- 0x062A
+  id_0 = (? + nogood) -- 0x063B
+  ? -- 0x063E
+  , = caluMD5 -- 0x0649
+  id_0 = ,.getStringMD5()(id_0) -- 0x0650
+  id_0 -- 0x0663
 end
 
 on RaceEngine_randomCurve

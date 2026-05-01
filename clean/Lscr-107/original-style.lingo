@@ -1,0 +1,95 @@
+-- Lscr-107 original-style Lingo reconstruction
+-- Source: Lscr-107.bin / Lscr-107.json, mechanical analysis
+-- MovieScript 7 - Main/Startup Script
+-- Constraint: every executable line comes from recovered bytecode evidence.
+
+on prepareMovie
+  -- no-op body
+end
+
+on startMovie
+  lingoXtraNoDebug()
+  lingoXtraInit()
+  _global.ld = String.fromCharCode(30)
+  _global.aid = VOID
+  _global.gNetID = Array()
+  _global.fileNetID = Array()
+  _global.lastAction = EMPTY
+  _global.mainURL = "http://game.nittolegends.com/"
+  _global.gameURL = _global.mainURL & "gameCode1_00.aspx"
+  _global.avatarMainURL = _global.mainURL
+  _global.cacheURL = "http://download.nittolegends.com/"
+  _global.socketURL = "live.nittolegends.com"
+  _global.uggURL = "http://ugg.nittolegends.com/"
+  _global.exeName = NittoLegendsBeta
+  _global.socketBuffer = EMPTY
+  _global.isEnc = 1
+  initFileHandler()
+  _system.gc()
+  _global.isIdle = 0
+  _global.isConnected = 0
+  _global.facebookToken = EMPTY
+  _global.facebookID = EMPTY
+  _global.facebookSessionSecret = EMPTY
+  _global.facebookSessionKey = EMPTY
+end
+
+on stopMovie
+  resizeFlashSprite()
+  _global.objRace = new(script("RaceEngine"))
+end
+
+on resizeWindow
+  if _global.gMultiuserInstance then
+    ssm(LO)
+    errCode = VOID
+    _global.gMultiuserInstance.BreakConnection(Rick)
+  end if
+end
+
+on zoomWindow
+  resizeFlashSprite()
+end
+
+on resizeFlashSprite
+  resizeFlashSprite()
+end
+
+on setInactive
+  -- Resize flash sprite to fill stage
+  sprite(flashSP).rect = rect(0, 0, \
+    Math.round(_movie.stage.rect.right - _movie.stage.rect.left), \
+    Math.round(_movie.stage.rect.bottom - _movie.stage.rect.top))
+end
+
+on sendHeartbeat
+  if _global.isConnected then
+    _global.isIdle = 1
+    if _global.gMultiuserInstance then
+      ssm(LO)
+      errCode = VOID
+      _global.gMultiuserInstance.BreakConnection(Rick)
+    end if
+    sprite(flashSP).noActivityCB()
+    _global.isConnected = 0
+  end if
+end
+
+on openURL url
+  if _global.isIdle then
+    ssm(H)
+  end if
+end
+
+on clearFB url
+  gotoNetPage(unescape(url), _blank)
+end
+
+-- -----------------------------------------------------------------------
+-- Facebook session clear (embedded block)
+-- -----------------------------------------------------------------------
+
+-- _global.facebookToken = EMPTY
+-- _global.facebookID = EMPTY
+-- _global.facebookSessionSecret = EMPTY
+-- _global.facebookSessionKey = EMPTY

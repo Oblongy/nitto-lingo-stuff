@@ -1,0 +1,890 @@
+-- Lscr-93 original-style Lingo reconstruction
+-- Source: Lscr-93.bin / Lscr-93.json, 31-pass mechanical analysis
+-- Constraint: every executable line comes from recovered bytecode evidence.
+-- Variable names: action = _global.gNetID[_global][VOID]
+--                 response = checkedForOneClient (propList parsed from net text)
+
+on exitFrame
+  _global.gNetID
+  _global.checkedForOneClient
+  _global.checkProcessResult
+end
+
+on procResponse
+  -- Bootstrap: process-check before the main net queue loop
+  if _global.checkedForOneClient = VOID then
+    checkedForOneClient = TRUE
+    _global
+    if netError(_global.checkProcessResult) = OK then
+      trace(netTextResult(_global.checkProcessResult))
+      CheckNittoProcessesCB(netTextResult(_global.checkProcessResult))
+    else
+      CheckNittoProcessesCB("1")
+    end if
+    _global = VOID
+    netDone(_global.checkProcessResult)
+  end if
+
+  if not (_global < _global.gNetID.length) then exit
+
+  _system.gc()
+
+  if not (netDone(_global.gNetID[_global])(netError[_global.gNetID[_global]]) = OK) then
+    -- net error handling
+    netDone = netTextResult(_global.gNetID[_global])
+    if isEnc then
+      netDone = decrypt(netDone)
+    end if
+    -- error routing
+    sprite(flashSP).showConnectionErrorCB("Protocol Error", (("Connection protocol could not be established. Action:" & _global.gNetID[_global][VOID]) & " (Error: 010)"))
+    if netDone = "\"s\",-100" then
+      sprite(flashSP).showConnectionErrorCB("Session Timed Out", ("I'm sorry, but your session has timed out, please restart the application. Last action: " & _global.lastAction))
+    end if
+    exit
+  end if
+
+  netDone = netTextResult(_global.gNetID[_global])
+  response = value(("propList(" & netDone) & ")")
+
+  action = _global.gNetID[_global][VOID]
+
+  -- -----------------------------------------------------------------------
+  -- Bootstrap / Cache / Login
+  -- -----------------------------------------------------------------------
+
+  if action = "getcache" then
+    xmlParser = new xtra("xmlparser")
+    xmlParser.parseString(response.getAProp("d"))
+    fetchCacheXMLDone(xmlParser.makeList().n2)
+    xmlParser = VOID
+
+  else if action = "fbgetsession" or action = "login" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      if response.getAProp("ftc") = TRUE then
+        openURL((("http://www.facebook.com/connect/prompt_permissions.php?api_key=" & _global.facebookAPIKey) & "&v=1.0&next=http://www.facebook.com/connect/login_success.html?xxRESULTTOKENxx&display=popup&ext_perm=publish_stream&enable_profile_selector=0"))
+      end if
+      _global.aid = response.getAProp("aid")
+      _global.guid = response.getAProp("guid")
+      _global.cp = encrypt(response.getAProp("cp"))
+      _global.cw = encrypt(response.getAProp("cw"))
+      _global.cwc = encrypt(response.getAProp("cwc"))
+      connectSocket()
+      sprite(flashSP).loginCB(response.getAProp("s"), response.getAProp("d"), response.getAProp("at"), response.getAProp("am"))
+    else if s = -2 or s = -11 or s = -12 then
+      if s = -99 then
+        sprite(flashSP).loginCB(response.getAProp("s"), response.getAProp("d"))
+      else if s = -5 then
+        sprite(flashSP).loginCB(response.getAProp("s"), response.getAProp("d"))
+        _global.installerURL = response.getAProp("url")
+        _global.installerFile = response.getAProp("fn")
+        _global.installerMD5 = response.getAProp("md5")
+      else if s = -14 then
+        _global.facebookID = response.getAProp("f")
+        sprite(flashSP).fbGetSessionCB(response.getAProp("s"))
+      else if s = -15 then
+        sprite(flashSP).fbGetSessionCB(response.getAProp("s"))
+      else
+        sprite(flashSP).loginCB(response.getAProp("s"))
+      end if
+    end if
+
+  else if action = "changehomemachine" then
+    -- no-op body
+
+  -- -----------------------------------------------------------------------
+  -- Account / Profile
+  -- -----------------------------------------------------------------------
+
+  else if action = "getinfo" then
+    if response.getAProp("s") = TRUE then
+      sprite(flashSP).getInfoCB(response.getAProp("d"))
+    end if
+
+  else if action = "getuser" then
+    sprite(flashSP).getUserCB(response.getAProp("d"))
+
+  else if action = "getusers" then
+    sprite(flashSP).getUsersCB(response.getAProp("d"))
+
+  else if action = "updatebg" then
+    sprite(flashSP).updateBgColorCB(response.getAProp("s"))
+
+  else if action = "updatedefaultcar" then
+    sprite(flashSP).updateDefaultCarCB(response.getAProp("s"))
+
+  else if action = "racersearch" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).racerSearchCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).racerSearchCB(s)
+    end if
+
+  else if action = "racersearchnopage" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).racerSearchNoPageCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).racerSearchNoPageCB(s)
+    end if
+
+  else if action = "changeemail" then
+    sprite(flashSP).changeEmailCB(response.getAProp("s"))
+
+  else if action = "changepassword" then
+    sprite(flashSP).changePasswordCB(response.getAProp("s"))
+
+  else if action = "forgotpw" then
+    sprite(flashSP).forgotPasswordCB(response.getAProp("s"))
+
+  else if action = "getstartershowroom" then
+    sprite(flashSP).getStarterShowroomCB(response.getAProp("d"))
+
+  else if action = "createaccount" then
+    sprite(flashSP).createAccountCB(response.getAProp("s"))
+
+  else if action = "verifyaccount" then
+    sprite(flashSP).verifyAccountCB(response.getAProp("s"))
+
+  else if action = "resendactivation" then
+    sprite(flashSP).resendActivationCB(response.getAProp("s"))
+
+  else if action = "agreetoterms" then
+    sprite(flashSP).agreeToTermsCB(response.getAProp("s"))
+
+  else if action = "activatepoints" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).activatePurchaseCB(s, response.getAProp("m"), response.getAProp("p"), response.getAProp("ma"), response.getAProp("va"), response.getAProp("d"))
+    else
+      sprite(flashSP).activatePurchaseCB(s)
+    end if
+
+  else if action = "activatemember" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).activatePurchaseCB(s, response.getAProp("m"))
+    else
+      sprite(flashSP).activatePurchaseCB(s)
+    end if
+
+  else if action = "getcode" then
+    sprite(flashSP).getCodeCB(response.getAProp("s"), response.getAProp("gid"))
+
+  else if action = "getbuddies" then
+    sprite(flashSP).getUserBuddiesCB(response.getAProp("d"))
+
+  else if action = "getavatarage" then
+    compareAvatarAge(response.getAProp("tids"), avatars)
+
+  else if action = "getteamavatarage" then
+    compareAvatarAge(response.getAProp("tids"), teamAvatars)
+
+  else if action = "uploadrequest" then
+    sprite(flashSP).avatarUploadRequestCB(response.getAProp("s"))
+
+  else if action = "getlocations" then
+    sprite(flashSP).getLocationsCB(response.getAProp("d"))
+
+  else if action = "movelocation" then
+    sprite(flashSP).moveLocationCB(response.getAProp("s"), response.getAProp("m"))
+
+  -- -----------------------------------------------------------------------
+  -- Mail / Remarks
+  -- -----------------------------------------------------------------------
+
+  else if action = "gettotalnewmail" then
+    sprite(flashSP).getEmailTotalNewCB(TRUE, response.getAProp("im"))
+
+  else if action = "getemaillist" then
+    sprite(flashSP).getEmailListCB(response.getAProp("d"))
+
+  else if action = "getemail" then
+    sprite(flashSP).getEmailCB(response.getAProp("d"))
+
+  else if action = "deleteemail" then
+    sprite(flashSP).deleteEmailCB(response.getAProp("s"), response.getAProp("eid"))
+
+  else if action = "sendemail" then
+    sprite(flashSP).sendEmailCB(response.getAProp("d"))
+
+  else if action = "markemailread" then
+    -- no-op body
+
+  else if action = "addremark" then
+    sprite(flashSP).addRemarkCB(response.getAProp("s"))
+
+  else if action = "deleteremark" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).deleteRemarkCB(TRUE, response.getAProp("i"))
+    else
+      sprite(flashSP).deleteRemarkCB(s)
+    end if
+
+  else if action = "getremarks" then
+    sprite(flashSP).getRemarksCB(response.getAProp("d"))
+
+  else if action = "getuserremarks" then
+    sprite(flashSP).getUserRemarksCB(response.getAProp("d"))
+
+  else if action = "setnondeletes" then
+    sprite(flashSP).setRemarkNonDeletesCB(response.getAProp("s"))
+
+  else if action = "setdeletes" then
+    sprite(flashSP).setRemarkDeletesCB(response.getAProp("s"))
+
+  -- -----------------------------------------------------------------------
+  -- Car / Shop / Garage
+  -- -----------------------------------------------------------------------
+
+  else if action = "getcarcategories" then
+    sprite(flashSP).getCarCategoriesCB(response.getAProp("d"))
+
+  else if action = "viewshowroom" then
+    sprite(flashSP).viewShowroomCB(response.getAProp("d"))
+
+  else if action = "getallcars" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getCarsCB(TRUE, response.getAProp("d"))
+    else
+      sprite(flashSP).getCarsCB(s)
+    end if
+
+  else if action = "getonecar" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getOneCarCB(TRUE, response.getAProp("d"))
+    else
+      sprite(flashSP).getOneCarCB(s)
+    end if
+
+  else if action = "getallotherusercars" then
+    sprite(flashSP).getOtherUserCarsCB(response.getAProp("s"), response.getAProp("d"))
+
+  else if action = "buycar" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).buyCarCB(s, response.getAProp("b"), response.getAProp("d"))
+    else
+      sprite(flashSP).buyCarCB(s)
+    end if
+
+  else if action = "sellcar" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).sellCarCB(TRUE, response.getAProp("b"))
+    else
+      sprite(flashSP).sellCarCB(s)
+    end if
+
+  else if action = "getcarprice" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getCarPriceCB(TRUE, response.getAProp("p"))
+    else
+      sprite(flashSP).getCarPriceCB(s)
+    end if
+
+  else if action = "getallimcars" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getAllImCarsCB(TRUE, response.getAProp("d"))
+    else
+      sprite(flashSP).getAllImCarsCB(s)
+    end if
+
+  else if action = "getoutofimpound" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getCarOutOfImpoundCB(TRUE, response.getAProp("b"))
+    else
+      sprite(flashSP).getCarOutOfImpoundCB(s)
+    end if
+
+  else if action = "buydyno" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      _global.objRace.startRace(response.getAProp("d"), response.getAProp("t"))
+      _global.objRace.init(DYNO)
+      xmlParser = new xtra("xmlparser")
+      xmlParser.parseString(response.getAProp("d"))
+      n2 = xmlParser.makeList().n2
+      xmlParser = VOID
+      sprite(flashSP).garageDynoBuyCB( \
+        s, response.getAProp("b"), n2.!ATTRIBUTES.e, n2.!ATTRIBUTES.u, \
+        n2.!ATTRIBUTES.ad, n2.!ATTRIBUTES.sl, n2.!ATTRIBUTES.n \
+      )
+    else
+      sprite(flashSP).garageDynoBuyCB(s)
+    end if
+
+  else if action = "changeboost" then
+    sprite(flashSP).garageSetBoostCB(response.getAProp("s"))
+
+  else if action = "changeairfuel" then
+    sprite(flashSP).garageSetAFRatioCB(response.getAProp("s"))
+
+  else if action = "getallcats" then
+    sprite(flashSP).getPartCategoriesCB(response.getAProp("d"))
+
+  else if action = "getwheelstirescats" then
+    sprite(flashSP).getWheelsTiresPartCategoriesCB(response.getAProp("d"))
+
+  else if action = "getallparts" then
+    sprite(flashSP).getPartsCB(response.getAProp("d"), response.getAProp("d1"))
+
+  else if action = "getallwheelstires" then
+    sprite(flashSP).getWheelsTiresCB(response.getAProp("d"), response.getAProp("d1"))
+
+  else if action = "buypart" then
+    sprite(flashSP).buyPartCB(c, response.getAProp("d1"), response.getAProp("d"))
+
+  else if action = "buyenginepart" then
+    sprite(flashSP).buyPartCB(e, response.getAProp("d1"), response.getAProp("d"))
+
+  else if action = "buyengine" then
+    sprite(flashSP).buyPartCB(m, response.getAProp("d1"), response.getAProp("d"))
+
+  else if action = "buypartugg" then
+    sprite(flashSP).uggBuyCycleCB(response.getAProp("d1"), response.getAProp("d"))
+
+  else if action = "installpart" then
+    sprite(flashSP).installPartCB(c, response.getAProp("d"))
+
+  else if action = "installenginepart" then
+    sprite(flashSP).installPartCB(e, response.getAProp("d"))
+
+  else if action = "swapengine" then
+    sprite(flashSP).installPartCB(m, response.getAProp("d"))
+
+  else if action = "uninstallpart" then
+    sprite(flashSP).uninstallPartCB(c, response.getAProp("d"))
+
+  else if action = "uninstallenginepart" then
+    sprite(flashSP).uninstallPartCB(e, response.getAProp("d"))
+
+  else if action = "sellcarpart" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).sellPartCB(c, s, response.getAProp("b"))
+    else
+      sprite(flashSP).sellPartCB(c, s)
+    end if
+
+  else if action = "sellenginepart" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).sellPartCB(e, TRUE, response.getAProp("b"))
+    else
+      sprite(flashSP).sellPartCB(e, s)
+    end if
+
+  else if action = "sellengine" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).sellPartCB(m, TRUE, response.getAProp("b"))
+    else
+      sprite(flashSP).sellPartCB(m, s)
+    end if
+
+  else if action = "getcarpartsbin" then
+    sprite(flashSP).getCarPartsBinCB(response.getAProp("d"))
+
+  else if action = "getpartsbin" then
+    sprite(flashSP).getPartsBinCB(response.getAProp("d"))
+
+  else if action = "getpartgroup" then
+    sprite(flashSP).getPartGroupCB(response.getAProp("d"))
+
+  else if action = "getcarperformanceincreases" then
+    sprite(flashSP).getCarPerformanceIncreasesCB(response.getAProp("d"))
+
+  else if action = "egue" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).engineListCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).engineListCB(s)
+    end if
+
+  else if action = "egep" then
+    sprite(flashSP).engineGetAllPartsCB(response.getAProp("d"), response.getAProp("d1"))
+
+  else if action = "ebep" then
+    sprite(flashSP).engineBuyPartCB(response.getAProp("d1"))
+
+  else if action = "esst" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).engineSwapStartCB(TRUE, response.getAProp("d"))
+    else
+      sprite(flashSP).engineSwapStartCB(s)
+    end if
+
+  else if action = "esfi" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).engineSwapFinishCB(TRUE, response.getAProp("d"))
+    else
+      sprite(flashSP).engineSwapFinishCB(s)
+    end if
+
+  -- -----------------------------------------------------------------------
+  -- Paint / Plates / Vanity
+  -- -----------------------------------------------------------------------
+
+  else if action = "getpaintcats" then
+    sprite(flashSP).getPaintCategoriesCB(response.getAProp("d"))
+
+  else if action = "getpaints" then
+    sprite(flashSP).getPaintsCB(response.getAProp("d"))
+
+  else if action = "buypaint" then
+    s = response.getAProp("s")
+    if s > VOID then
+      sprite(flashSP).buyPaintCB(s, response.getAProp("b"))
+    else
+      sprite(flashSP).buyPaintCB(s)
+    end if
+
+  else if action = "getlicenseplates" then
+    sprite(flashSP).getLicensePlatesCB(response.getAProp("d"))
+
+  else if action = "buyplate" then
+    s = response.getAProp("s")
+    if s > VOID then
+      sprite(flashSP).buyPlateCB(s, response.getAProp("b"), response.getAProp("i"))
+    else
+      sprite(flashSP).buyPlateCB(s)
+    end if
+
+  else if action = "buyvanity" then
+    s = response.getAProp("s")
+    if s > VOID then
+      sprite(flashSP).buyVanityCB(s, response.getAProp("b"))
+    else
+      sprite(flashSP).buyVanityCB(s)
+    end if
+
+  -- -----------------------------------------------------------------------
+  -- System Parts / Repair / Gears / Spare
+  -- -----------------------------------------------------------------------
+
+  else if action = "getsystemparts" then
+    s = response.getAProp("s")
+    if s > VOID then
+      sprite(flashSP).getSystemPartsCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).getSystemPartsCB(s)
+    end if
+
+  else if action = "systemswap" then
+    sprite(flashSP).systemSwapCB(response.getAProp("s"), response.getAProp("d"))
+
+  else if action = "getrepairparts" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getRepairPartsCB(TRUE, response.getAProp("d"))
+    else
+      sprite(flashSP).getRepairPartsCB(s)
+    end if
+
+  else if action = "repairparts" then
+    sprite(flashSP).repairPartsCB(response.getAProp("s"))
+
+  else if action = "getgearinfo" then
+    s = response.getAProp("s")
+    if s > VOID then
+      sprite(flashSP).getGearInfoCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).getGearInfoCB(s)
+    end if
+
+  else if action = "buygears" then
+    s = response.getAProp("s")
+    if s > VOID then
+      sprite(flashSP).buyGearsCB(s, response.getAProp("b"))
+    else
+      sprite(flashSP).buyGearsCB(s)
+    end if
+
+  else if action = "getspareprice" then
+    sprite(flashSP).getSparePriceCB(response.getAProp("s"), response.getAProp("p"))
+
+  else if action = "sellallspare" then
+    sprite(flashSP).sellAllSpareCB(response.getAProp("s"), response.getAProp("b"))
+
+  else if action = "getdescription" then
+    if response.getAProp("s") = TRUE then
+      sprite(flashSP).getPartDescriptionCB(response.getAProp("d"))
+    end if
+
+
+  -- -----------------------------------------------------------------------
+  -- Team
+  -- -----------------------------------------------------------------------
+
+  else if action = "teaminfo" then
+    sprite(flashSP).teamInfoCB(response.getAProp("d"))
+
+  else if action = "teamtrans" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).teamTransCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).teamTransCB(s)
+    end if
+
+  else if action = "teamsearch" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).teamSearchCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).teamSearchCB(s)
+    end if
+
+  else if action = "updateleadercomments" then
+    sprite(flashSP).teamUpdateLeaderCommentsCB(response.getAProp("s"))
+
+  else if action = "updateteamreq" then
+    sprite(flashSP).teamUpdateTeamReqCB(response.getAProp("s"))
+
+  else if action = "getteaminfo" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).teamGetInfoCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).teamGetInfoCB(s)
+    end if
+
+  else if action = "getallteamapps" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).teamGetAllAppsCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).teamGetAllAppsCB(s)
+    end if
+
+  else if action = "getallmyapps" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).teamGetMyAppsCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).teamGetMyAppsCB(s)
+    end if
+
+  else if action = "deleteapp" then
+    sprite(flashSP).teamDeleteAppCB(response.getAProp("s"))
+
+  else if action = "updateteamapp" then
+    sprite(flashSP).teamUpdateAppCB(response.getAProp("s"))
+
+  else if action = "addteamapp" then
+    sprite(flashSP).teamAddAppCB(response.getAProp("s"))
+
+  else if action = "setteamcolor" then
+    sprite(flashSP).teamUpdateBgColorCB(response.getAProp("s"))
+
+  -- -----------------------------------------------------------------------
+  -- Race / Computer Tournament
+  -- -----------------------------------------------------------------------
+
+  else if action = "getonecarengine" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      trace("director getOneCarEngineCB")
+      sprite(flashSP).getOneCarEngineCB(response.getAProp("d"))
+      if _global.objRace then
+        _global.objRace.startRace(response.getAProp("d"), response.getAProp("t"))
+        _global.objRace.init(_global.objRace.raceType)
+      end if
+    end if
+
+  else if action = "gettworacerscars" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).raceGetTwoRacersCarsCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).raceGetTwoRacersCarsCB(s, EMPTY)
+    end if
+
+  else if action = "getracerscars" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getRacersCarsCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).getRacersCarsCB(s, EMPTY)
+    end if
+
+  else if action = "ctgr" then
+    if response.getAProp("s") = TRUE then
+      sprite(flashSP).ctGetRacersCB(response.getAProp("d"))
+    end if
+
+  else if action = "ctjt" then
+    sprite(flashSP).ctJoinCB(response.getAProp("s"))
+
+  else if action = "ctct" then
+    sprite(flashSP).ctCreateCB(response.getAProp("s"))
+    if response.getAProp("s") = TRUE then
+      sprite(flashSP).getOneCarEngineCB(response.getAProp("d"))
+      _global.objRace.startRace(response.getAProp("d"), response.getAProp("t"))
+    end if
+    _global.objRace.initComputerRace(CTQ, VOID)
+
+  else if action = "ctrt" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).ctRequestCB(TRUE, response.getAProp("d"), response.getAProp("b"))
+      _global.objRace.initComputerRace(CT, response.getAProp("b"))
+    else
+      sprite(flashSP).ctRequestCB(s)
+    end if
+
+  else if action = "ctst" then
+    _global.guid = response.getAProp("sk")
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).ctSaveCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).ctSaveCB(s)
+    end if
+
+  else if action = "practice" then
+    if response.getAProp("s") = TRUE then
+      _global.objRace.startRace(response.getAProp("d"), response.getAProp("t"))
+    end if
+    _global.objRace.init(P)
+    sprite(flashSP).getOneCarEngineCB(response.getAProp("d"))
+    sprite(flashSP).practiceCreateCB(response.getAProp("s"))
+
+  else if action = "gethumantournaments" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).htGetTournamentsCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).htGetTournamentsCB(s)
+    end if
+
+  else if action = "joinhumantournament" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getOneCarEngineCB(response.getAProp("d"))
+      sprite(flashSP).htJoinTournamentCB(s, response.getAProp("b"), EMPTY)
+      _global.objRace.raceType = HTQ
+      _global.objRace.startRace(response.getAProp("d"), response.getAProp("t"))
+    else
+      sprite(flashSP).htJoinTournamentCB(s, EMPTY, response.getAProp("d"))
+    end if
+
+  -- -----------------------------------------------------------------------
+  -- Classified / Trade / Social
+  -- -----------------------------------------------------------------------
+
+  else if action = "putcaronclassified" then
+    sprite(flashSP).putCarOnClassifiedCB(response.getAProp("s"), response.getAProp("d"))
+
+  else if action = "listclassified" then
+    sprite(flashSP).listClassifiedCB(response.getAProp("d"))
+
+  else if action = "getclassifieddetail" then
+    sprite(flashSP).getClassifiedDetailCB(response.getAProp("s"), response.getAProp("d"))
+
+  else if action = "buyfromclassified" then
+    sprite(flashSP).buyFromClassifiedCB(response.getAProp("s"), response.getAProp("d"))
+
+  else if action = "classifiedhistory" then
+    sprite(flashSP).sellerClassifiedHistoryCB(response.getAProp("d"))
+
+  else if action = "cancelclassified" then
+    sprite(flashSP).cancelClassifiedCB(response.getAProp("s"), response.getAProp("d"))
+
+  else if action = "requesttrade" then
+    sprite(flashSP).requestTradeCB(response.getAProp("s"), response.getAProp("d"))
+
+  else if action = "respondtrade" then
+    sprite(flashSP).respondTradeCB(response.getAProp("s"), response.getAProp("d"))
+
+  else if action = "canceltrade" then
+    sprite(flashSP).cancelTradeCB(response.getAProp("s"), response.getAProp("d"))
+
+  else if action = "getoutgoingtradehistory" then
+    sprite(flashSP).outgoingTradeHistoryCB(response.getAProp("d"))
+
+  else if action = "getpendingtrades" then
+    sprite(flashSP).pendingTradesCB(response.getAProp("d"))
+
+  else if action = "getwinsandlosses" then
+    sprite(flashSP).getWinsAndLossesCB(response.getAProp("d"))
+
+  else if action = "earnincentive" then
+    sprite(flashSP).earnIncentiveCB(response.getAProp("s"), response.getAProp("b"))
+
+  else if action = "logintwitter" then
+    sprite(flashSP).loginTwitterCB(response.getAProp("s"), response.getAProp("u"))
+
+  else if action = "setbadgevisible" then
+    sprite(flashSP).setBadgeVisibleCB(response.getAProp("s"))
+
+  else if action = "getblackcardprogress" then
+    sprite(flashSP).getBlackCardProgressCB(response.getAProp("d"))
+
+  -- -----------------------------------------------------------------------
+  -- Election / Support / News
+  -- -----------------------------------------------------------------------
+
+  else if action = "getelectionphase" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getElectionPhaseCB(TRUE, response.getAProp("p"), response.getAProp("t"), response.getAProp("i"))
+    else
+      sprite(flashSP).getElectionPhaseCB(s, VOID, VOID, response.getAProp("i"))
+    end if
+
+  else if action = "getelectionschedule" then
+    sprite(flashSP).getElectionScheduleCB(response.getAProp("d"))
+
+  else if action = "getnominatecount" then
+    sprite(flashSP).getNominateCountCB(response.getAProp("c"))
+
+  else if action = "nominate" then
+    sprite(flashSP).nominateCB(response.getAProp("s"), response.getAProp("e"))
+
+  else if action = "getelectionresult" then
+    sprite(flashSP).getElectionResultCB(response.getAProp("d"))
+
+  else if action = "electionvote" then
+    sprite(flashSP).electionVoteCB(response.getAProp("s"), response.getAProp("e"))
+
+  else if action = "activateaccount" then
+    sprite(flashSP).activateAccountCB(response.getAProp("s"), response.getAProp("e"))
+
+  else if action = "getsupport" then
+    sprite(flashSP).getSupportCB(response.getAProp("s"), response.getAProp("m"), response.getAProp("i"), response.getAProp("t"))
+
+  else if action = "getmisconductcount" then
+    sprite(flashSP).getMisconductCountCB(response.getAProp("oid"), response.getAProp("n"), response.getAProp("t"))
+
+  -- -----------------------------------------------------------------------
+  -- Facebook
+  -- -----------------------------------------------------------------------
+
+  else if action = "fbgettoken" then
+    _global.facebookToken = response.getAProp("t")
+    _global.facebookAPIKey = response.getAProp("a")
+    openURL((((("https://login.facebook.com/login.php?api_key=" & _global.facebookAPIKey) & "&auth_token=") & _global.facebookToken) & "&v=1.0&popup&req_perms=offline_access"))
+    sprite(flashSP).fbGetTokenCB(response.getAProp("s"))
+
+  else if action = "fbremovefacebook" then
+    sprite(flashSP).fbRemoveFacebookCB(response.getAProp("s"))
+
+  else if action = "fbgetinviteurl" then
+    d = response.getAProp("d")
+    trace("here!")
+    trace("info list!")
+    trace(d)
+    openURL("http://www.facebook.com/multi_friend_selector.php/?api_key=75142a34f8f8698fb895c3156093f9c8&content=This network is the best place on Facebook for viewing", _blank)
+
+  -- -----------------------------------------------------------------------
+  -- Test Drive
+  -- -----------------------------------------------------------------------
+
+  else if action = "checktestdrive" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).checkTestDriveCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).checkTestDriveCB(s)
+    end if
+
+  else if action = "accepttestdrive" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).acceptTestDriveCB(s, response.getAProp("h"), response.getAProp("m"), response.getAProp("p"), response.getAProp("d"))
+    else
+      sprite(flashSP).acceptTestDriveCB(s)
+    end if
+
+  else if action = "buytestdrivecar" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).buyTestDriveCarCB(s, response.getAProp("b"))
+    else
+      sprite(flashSP).buyTestDriveCarCB(s)
+    end if
+
+  else if action = "removetestdrivecar" then
+    sprite(flashSP).removeTestDriveCarCB(response.getAProp("s"))
+
+  else if action = "rejecttestdrive" then
+    sprite(flashSP).rejectTestDriveCB(response.getAProp("s"))
+
+  else if action = "changeshiftlightrpm" then
+    sprite(flashSP).changeShiftLightRpmCB(response.getAProp("s"))
+
+  -- -----------------------------------------------------------------------
+  -- Special Events / News / Spotlight
+  -- -----------------------------------------------------------------------
+
+  else if action = "joinspecialevent" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).joinSpecialEventCB(s, response.getAProp("b"), response.getAProp("d"))
+    else
+      sprite(flashSP).joinSpecialEventCB(s)
+    end if
+
+  else if action = "getnews" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getNewsCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).getNewsCB(s)
+    end if
+
+  else if action = "getspotlightracers" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getSpotlightRacersCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).getSpotlightRacersCB(s)
+    end if
+
+  else if action = "claimpendinguclprofit" then
+    sprite(flashSP).claimPendingUCLProfitCB(response.getAProp("s"), response.getAProp("b"))
+
+  -- -----------------------------------------------------------------------
+  -- Late queue tail: installed engine parts / avatars / cache / installer
+  -- -----------------------------------------------------------------------
+
+  else if action = "getinstalledenginepartbyaccountcar" then
+    s = response.getAProp("s")
+    if s = TRUE then
+      sprite(flashSP).getInstalledEnginePartsCB(s, response.getAProp("d"))
+    else
+      sprite(flashSP).getInstalledEnginePartsCB(s)
+    end if
+
+  else if action = "gettotalnewmail" or action = "getemaillist" or action = "getavatarage" or action = "getteamavatarage" then
+    sprite(flashSP).genericWebCB(_global.gNetID[_global][VOID], response.getAProp("s"), response.getAProp("d"))
+
+  else if action = "avatars" or action = "teamavatars" then
+    loadLocalAvatar(_global.fileNetID[_global], _global.fileNetID[_global][VOID], 1)
+
+  else if action = "ugg" then
+    loadLocalUgg(_global.fileNetID[_global], 1)
+
+  else if action = "cache" then
+    downloadCacheInProgress(getStreamStatus(_global.fileNetID[_global][netDone]))
+
+  else if action = "installer" then
+    runInstaller(_global.fileNetID[_global])
+
+  end if
+
+  _global.gNetID.splice(_global, TRUE)
+
+end
