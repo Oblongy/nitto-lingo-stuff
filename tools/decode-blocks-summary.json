@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-04-29T20:31:24.278Z",
+  "results": [
+    {
+      "chunkBase": "Lscr-93",
+      "blocks": 2,
+      "stmts": 1245,
+      "status": "ok"
+    },
+    {
+      "chunkBase": "Lscr-102",
+      "blocks": 21,
+      "stmts": 2855,
+      "status": "ok"
+    },
+    {
+      "chunkBase": "Lscr-103",
+      "blocks": 11,
+      "stmts": 98,
+      "status": "ok"
+    },
+    {
+      "chunkBase": "Lscr-104",
+      "blocks": 76,
+      "stmts": 256,
+      "status": "ok"
+    },
+    {
+      "chunkBase": "Lscr-105",
+      "blocks": 2,
+      "stmts": 865,
+      "status": "ok"
+    },
+    {
+      "chunkBase": "Lscr-106",
+      "blocks": 31,
+      "stmts": 570,
+      "status": "ok"
+    },
+    {
+      "chunkBase": "Lscr-107",
+      "blocks": 11,
+      "stmts": 122,
+      "status": "ok"
+    },
+    {
+      "chunkBase": "Lscr-109",
+      "blocks": 6,
+      "stmts": 258,
+      "status": "ok"
+    }
+  ]
+}

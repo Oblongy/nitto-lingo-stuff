@@ -1,0 +1,44 @@
+-- Lscr-7 decompiled Lingo
+-- scriptNumber: 7
+-- castID: 65551
+-- handlersCount: 10
+
+on prepareMovie
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on startMovie
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on stopMovie
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on resizeWindow
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on zoomWindow
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on resizeFlashSprite
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on setInactive
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on sendHeartbeat
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on openURL
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on clearFB
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end

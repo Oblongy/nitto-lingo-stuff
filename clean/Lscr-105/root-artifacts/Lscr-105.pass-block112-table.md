@@ -1,0 +1,416 @@
+## Lscr-105 Block 112
+
+Sources used:
+- `C:\Users\Dilldo\Nitto\Lingo Stuff\Lscr-105.bin`
+- `C:\Users\Dilldo\Nitto\Lingo Stuff\Lscr-105.json`
+- `C:\Users\Dilldo\Nitto\Lingo Stuff\js_rewrite\13-socket-server-to-client.js` (corroborating sibling artifact only)
+
+Scope:
+- This pass documents embedded block `112`.
+- No opcode semantics are inferred by this pass.
+
+Raw header evidence:
+- JSON block offset `112`, length `21124`.
+- File offset `280`.
+- Pre-marker prefix length `4`.
+
+Pre-marker bytes:
+```text
+61 00 00 00
+```
+- Marker-relative offset inside block slice `4`.
+
+Marker bytes:
+```text
+03 00 ad de a5 1d 00 00 00 00 00 00 96 00 00 00
+```
+
+First instruction-region bytes:
+```text
+00 00 39 3d 00 01 3a 00 01 47 1d 95 00 9a 00 d0 02 6d 00 d1 03 88 00 d2 03 a5 00 d3 03 c7 00 d4 03 e9 00 d5 04 0b 00 d6 04 2d 00 d7 04 4f 00 d8 04 98 00 d9 04 c7 00 da 05 03 00 db 05 25 00 dc
+```
+
+Recovered `kind = 4` UTF-16LE string records:
+- payload offset `7608`: id `0`, kind `4`, len `8`, `getAProp`
+- payload offset `7636`: id `1`, kind `4`, len `2`, `ac`
+- payload offset `7652`: id `2`, kind `4`, len `7`, `timeout`
+- payload offset `7680`: id `3`, kind `4`, len `10`, `sockConnTO`
+- payload offset `7712`: id `4`, kind `4`, len `6`, `forget`
+- payload offset `7736`: id `5`, kind `4`, len `1`, `s`
+- payload offset `7752`: id `6`, kind `4`, len `6`, `sprite`
+- payload offset `7776`: id `7`, kind `4`, len `7`, `flashSP`
+- payload offset `7804`: id `8`, kind `4`, len `8`, `loginCBS`
+- payload offset `7832`: id `9`, kind `4`, len `2`, `ni`
+- payload offset `7848`: id `10`, kind `4`, len `2`, `ns`
+- payload offset `7864`: id `11`, kind `4`, len `3`, `tid`
+- payload offset `7884`: id `12`, kind `4`, len `3`, `trp`
+- payload offset `7904`: id `13`, kind `4`, len `4`, `trbp`
+- payload offset `7924`: id `14`, kind `4`, len `7`, `_global`
+- payload offset `7952`: id `15`, kind `4`, len `7`, `objRace`
+- payload offset `7980`: id `16`, kind `4`, len `12`, `sendInterval`
+- payload offset `8016`: id `17`, kind `4`, len `12`, `secondBuffer`
+- payload offset `8052`: id `18`, kind `4`, len `11`, `heartBeatTO`
+- payload offset `8100`: id `20`, kind `4`, len `6`, `symbol`
+- payload offset `8124`: id `21`, kind `4`, len `13`, `sendHeartbeat`
+- payload offset `8164`: id `22`, kind `4`, len `12`, `lagThreshold`
+- payload offset `8200`: id `23`, kind `4`, len `10`, `parseFloat`
+- payload offset `8232`: id `24`, kind `4`, len `3`, `lft`
+- payload offset `8252`: id `25`, kind `4`, len `11`, `isConnected`
+- payload offset `8288`: id `26`, kind `4`, len `12`, `noActivityCB`
+- payload offset `8324`: id `27`, kind `4`, len `15`, `showBroadcastCB`
+- payload offset `8368`: id `28`, kind `4`, len `1`, `m`
+- payload offset `8384`: id `29`, kind `4`, len `10`, `addMoneyCB`
+- payload offset `8416`: id `30`, kind `4`, len `1`, `c`
+- payload offset `8432`: id `31`, kind `4`, len `15`, `updateCarListCB`
+- payload offset `8476`: id `32`, kind `4`, len `1`, `d`
+- payload offset `8492`: id `33`, kind `4`, len `15`, `updateBalanceCB`
+- payload offset `8536`: id `34`, kind `4`, len `14`, `updatePointsCB`
+- payload offset `8576`: id `35`, kind `4`, len `13`, `getNimMessage`
+- payload offset `8616`: id `36`, kind `4`, len `1`, `i`
+- payload offset `8632`: id `37`, kind `4`, len `1`, `n`
+- payload offset `8648`: id `38`, kind `4`, len `1`, `r`
+- payload offset `8664`: id `39`, kind `4`, len `9`, `sendNimCB`
+- payload offset `8696`: id `40`, kind `4`, len `13`, `updateNimUser`
+- payload offset `8736`: id `41`, kind `4`, len `2`, `ul`
+- payload offset `8752`: id `42`, kind `4`, len `10`, `addNimUser`
+- payload offset `8784`: id `43`, kind `4`, len `16`, `addSingleNimUser`
+- payload offset `8828`: id `44`, kind `4`, len `2`, `us`
+- payload offset `8844`: id `45`, kind `4`, len `16`, `inquiryNimUserCB`
+- payload offset `8888`: id `46`, kind `4`, len `18`, `inquiryNimAnswerCB`
+- payload offset `8936`: id `47`, kind `4`, len `19`, `receiveNimInquiryCB`
+- payload offset `8988`: id `48`, kind `4`, len `14`, `allowNimUserCB`
+- payload offset `9028`: id `49`, kind `4`, len `15`, `deleteNimUserCB`
+- payload offset `9072`: id `50`, kind `4`, len `15`, `removeNimUserCB`
+- payload offset `9116`: id `51`, kind `4`, len `14`, `blockNimUserCB`
+- payload offset `9156`: id `52`, kind `4`, len `16`, `unblockNimUserCB`
+- payload offset `9200`: id `53`, kind `4`, len `23`, `deleteNimInquiredUserCB`
+- payload offset `9260`: id `54`, kind `4`, len `23`, `deleteNimInquireeUserCB`
+- payload offset `9320`: id `55`, kind `4`, len `24`, `getNimIncomingRequestsCB`
+- payload offset `9380`: id `56`, kind `4`, len `24`, `getNimOutgoingRequestsCB`
+- payload offset `9440`: id `57`, kind `4`, len `14`, `chatListRoomCB`
+- payload offset `9480`: id `58`, kind `4`, len `15`, `chatListRoom2CB`
+- payload offset `9524`: id `59`, kind `4`, len `16`, `chatCreateRoomCB`
+- payload offset `9568`: id `60`, kind `4`, len `10`, `chatJoinCB`
+- payload offset `9600`: id `61`, kind `4`, len `15`, `chatListUsersCB`
+- payload offset `9644`: id `62`, kind `4`, len `16`, `chatUpdateUserCB`
+- payload offset `9688`: id `63`, kind `4`, len `9`, `chatGetCB`
+- payload offset `9720`: id `64`, kind `4`, len `1`, `u`
+- payload offset `9736`: id `65`, kind `4`, len `10`, `chatKickCB`
+- payload offset `9768`: id `66`, kind `4`, len `10`, `teamKickCB`
+- payload offset `9800`: id `67`, kind `4`, len `16`, `teamChangeRoleCB`
+- payload offset `9844`: id `68`, kind `4`, len `24`, `teamUpdateDealerMaxBetCB`
+- payload offset `9904`: id `69`, kind `4`, len `13`, `teamDepositCB`
+- payload offset `9944`: id `70`, kind `4`, len `16`, `teamWithdrawalCB`
+- payload offset `9988`: id `71`, kind `4`, len `10`, `teamQuitCB`
+- payload offset `10020`: id `72`, kind `4`, len `12`, `teamAcceptCB`
+- payload offset `10056`: id `73`, kind `4`, len `14`, `teamDisperseCB`
+- payload offset `10096`: id `74`, kind `4`, len `10`, `teamRoleCB`
+- payload offset `10128`: id `75`, kind `4`, len `12`, `teamCreateCB`
+- payload offset `10164`: id `76`, kind `4`, len `2`, `id`
+- payload offset `10180`: id `77`, kind `4`, len `14`, `teamStepDownCB`
+- payload offset `10220`: id `78`, kind `4`, len `15`, `startLightTimer`
+- payload offset `10264`: id `79`, kind `4`, len `1`, `1`
+- payload offset `10280`: id `80`, kind `4`, len `2`, `td`
+- payload offset `10296`: id `81`, kind `4`, len `1`, `2`
+- payload offset `10312`: id `82`, kind `4`, len `2`, `1T`
+- payload offset `10328`: id `83`, kind `4`, len `2`, `2T`
+- payload offset `10344`: id `84`, kind `4`, len `2`, `sT`
+- payload offset `10360`: id `85`, kind `4`, len `1`, `b`
+- payload offset `10376`: id `86`, kind `4`, len `4`, `guid`
+- payload offset `10396`: id `87`, kind `4`, len `1`, `p`
+- payload offset `10412`: id `88`, kind `4`, len `1`, `o`
+- payload offset `10428`: id `89`, kind `4`, len `26`, `raceEngineRaceInProgressCB`
+- payload offset `10492`: id `90`, kind `4`, len `14`, `chatKOTHJoinCB`
+- payload offset `10532`: id `91`, kind `4`, len `15`, `chatKOTHUsersCB`
+- payload offset `10576`: id `92`, kind `4`, len `18`, `chatKOTHNewRacerCB`
+- payload offset `10624`: id `93`, kind `4`, len `3`, `aid`
+- payload offset `10644`: id `94`, kind `4`, len `4`, `acid`
+- payload offset `10664`: id `95`, kind `4`, len `15`, `chatKOTHLeaveCB`
+- payload offset `10708`: id `96`, kind `4`, len `2`, `ik`
+- payload offset `10724`: id `97`, kind `4`, len `15`, `chatKOTHNRaceCB`
+- payload offset `10768`: id `98`, kind `4`, len `23`, `raceKOTHReadyOpponentCB`
+- payload offset `10828`: id `99`, kind `4`, len `15`, `raceKOTHReadyCB`
+- payload offset `10872`: id `100`, kind `4`, len `1`, `t`
+- payload offset `10888`: id `101`, kind `4`, len `2`, `t2`
+- payload offset `10904`: id `102`, kind `4`, len `12`, `raceKOTHOKCB`
+- payload offset `10940`: id `103`, kind `4`, len `15`, `chatCheerVoteCB`
+- payload offset `10984`: id `104`, kind `4`, len `18`, `chatCheerGetVoteCB`
+- payload offset `11032`: id `105`, kind `4`, len `1`, `a`
+- payload offset `11048`: id `106`, kind `4`, len `16`, `raceKOTHResultCB`
+- payload offset `11092`: id `107`, kind `4`, len `16`, `raceKOTHFinishCB`
+- payload offset `11136`: id `108`, kind `4`, len `8`, `raceType`
+- payload offset `11164`: id `109`, kind `4`, len `5`, `RIVAL`
+- payload offset `11188`: id `110`, kind `4`, len `9`, `TEAMRIVAL`
+- payload offset `11220`: id `111`, kind `4`, len `2`, `HT`
+- payload offset `11236`: id `112`, kind `4`, len `20`, `raceRIVIntOpponentCB`
+- payload offset `11288`: id `113`, kind `4`, len `1`, `v`
+- payload offset `11304`: id `114`, kind `4`, len `21`, `raceKOTHIntOpponentCB`
+- payload offset `11360`: id `115`, kind `4`, len `14`, `raceSpectateCB`
+- payload offset `11400`: id `116`, kind `4`, len `20`, `raceKOTHRTOpponentCB`
+- payload offset `11452`: id `117`, kind `4`, len `2`, `rt`
+- payload offset `11468`: id `118`, kind `4`, len `12`, `raceKOTHRTCB`
+- payload offset `11504`: id `119`, kind `4`, len `17`, `raceKOTHTimeoutCB`
+- payload offset `11552`: id `120`, kind `4`, len `13`, `chatQMHJoinCB`
+- payload offset `11592`: id `121`, kind `4`, len `13`, `chatQMBJoinCB`
+- payload offset `11632`: id `122`, kind `4`, len `14`, `chatQMHLeaveCB`
+- payload offset `11672`: id `123`, kind `4`, len `14`, `chatQMBLeaveCB`
+- payload offset `11712`: id `124`, kind `4`, len `13`, `chatQMHRaceCB`
+- payload offset `11752`: id `125`, kind `4`, len `13`, `chatQMBRaceCB`
+- payload offset `11792`: id `126`, kind `4`, len `14`, `raceQMHReadyCB`
+- payload offset `11832`: id `127`, kind `4`, len `20`, `raceQMHIntOpponentCB`
+- payload offset `11884`: id `128`, kind `4`, len `19`, `raceQMHRTOpponentCB`
+- payload offset `11936`: id `129`, kind `4`, len `15`, `raceQMHFinishCB`
+- payload offset `11980`: id `130`, kind `4`, len `15`, `raceQMHResultCB`
+- payload offset `12024`: id `131`, kind `4`, len `16`, `raceQMHTimeoutCB`
+- payload offset `12068`: id `132`, kind `4`, len `13`, `chatQMLeaveCB`
+- payload offset `12108`: id `133`, kind `4`, len `15`, `chatQMReceiveCB`
+- payload offset `12152`: id `134`, kind `4`, len `21`, `chatQMLeaveOpponentCB`
+- payload offset `12208`: id `135`, kind `4`, len `13`, `chatRIVListCB`
+- payload offset `12248`: id `136`, kind `4`, len `16`, `chatRIVRequestCB`
+- payload offset `12292`: id `137`, kind `4`, len `18`, `chatRIVChallengeCB`
+- payload offset `12340`: id `138`, kind `4`, len `17`, `chatRIVResponseCB`
+- payload offset `12388`: id `139`, kind `4`, len `15`, `chatRIVDeniedCB`
+- payload offset `12432`: id `140`, kind `4`, len `13`, `chatRIVJoinCB`
+- payload offset `12472`: id `141`, kind `4`, len `14`, `chatRIVNRaceCB`
+- payload offset `12512`: id `142`, kind `4`, len `16`, `raceRIVTimeoutCB`
+- payload offset `12556`: id `143`, kind `4`, len `14`, `chatRIVLeaveCB`
+- payload offset `12596`: id `144`, kind `4`, len `13`, `chatRIVLeftCB`
+- payload offset `12636`: id `145`, kind `4`, len `22`, `raceRIVReadyOpponentCB`
+- payload offset `12692`: id `146`, kind `4`, len `14`, `raceRIVReadyCB`
+- payload offset `12732`: id `147`, kind `4`, len `11`, `raceRIVOKCB`
+- payload offset `12768`: id `148`, kind `4`, len `15`, `raceRIVResultCB`
+- payload offset `12812`: id `149`, kind `4`, len `15`, `raceRIVFinishCB`
+- payload offset `12856`: id `150`, kind `4`, len `19`, `raceRIVRTOpponentCB`
+- payload offset `12908`: id `151`, kind `4`, len `11`, `raceRIVRTCB`
+- payload offset `12944`: id `152`, kind `4`, len `11`, `htConnectCB`
+- payload offset `12980`: id `153`, kind `4`, len `13`, `htQualifyOKCB`
+- payload offset `13032`: id `155`, kind `4`, len `12`, `htGetTop32CB`
+- payload offset `13068`: id `156`, kind `4`, len `12`, `htTop32AddCB`
+- payload offset `13104`: id `157`, kind `4`, len `15`, `htTop32RemoveCB`
+- payload offset `13148`: id `158`, kind `4`, len `16`, `htQualifyReadyCB`
+- payload offset `13192`: id `159`, kind `4`, len `20`, `htQualifyingResultCB`
+- payload offset `13244`: id `160`, kind `4`, len `21`, `htQualifyingTimeoutCB`
+- payload offset `13300`: id `161`, kind `4`, len `17`, `htEndQualifyingCB`
+- payload offset `13348`: id `162`, kind `4`, len `13`, `htStartRaceCB`
+- payload offset `13388`: id `163`, kind `4`, len `4`, `init`
+- payload offset `13408`: id `164`, kind `4`, len `11`, `htTimeoutCB`
+- payload offset `13444`: id `165`, kind `4`, len `14`, `htTreeResultCB`
+- payload offset `13484`: id `166`, kind `4`, len `9`, `htReadyCB`
+- payload offset `13516`: id `167`, kind `4`, len `14`, `htRTOpponentCB`
+- payload offset `13556`: id `168`, kind `4`, len `6`, `htRTCB`
+- payload offset `13580`: id `169`, kind `4`, len `10`, `htFinishCB`
+- payload offset `13612`: id `170`, kind `4`, len `10`, `htResultCB`
+- payload offset `13644`: id `171`, kind `4`, len `21`, `htGetTournamentTreeCB`
+- payload offset `13700`: id `172`, kind `4`, len `12`, `htSpectateCB`
+- payload offset `13736`: id `173`, kind `4`, len `8`, `htInfoCB`
+- payload offset `13764`: id `174`, kind `4`, len `14`, `htAwardPrizeCB`
+- payload offset `13804`: id `175`, kind `4`, len `21`, `teamRivalsGetRacersCB`
+- payload offset `13860`: id `176`, kind `4`, len `20`, `teamRivalsGetTeamsCB`
+- payload offset `13912`: id `177`, kind `4`, len `22`, `teamRivalsPreRequestCB`
+- payload offset `13968`: id `178`, kind `4`, len `19`, `teamRivalsRequestCB`
+- payload offset `14020`: id `179`, kind `4`, len `29`, `teamRivalsIncomingChallengeCB`
+- payload offset `14092`: id `180`, kind `4`, len `19`, `teamRivalsCounterCB`
+- payload offset `14144`: id `181`, kind `4`, len `20`, `teamRivalsResponseCB`
+- payload offset `14196`: id `182`, kind `4`, len `16`, `teamRivalsDenyCB`
+- payload offset `14240`: id `183`, kind `4`, len `20`, `teamRivalsNewQueueCB`
+- payload offset `14292`: id `184`, kind `4`, len `11`, `executeCall`
+- payload offset `14328`: id `185`, kind `4`, len `15`, `getonecarengine`
+- payload offset `14372`: id `186`, kind `4`, len `5`, `acid=`
+- payload offset `14396`: id `187`, kind `4`, len `24`, `teamRivalsWrongBracketCB`
+- payload offset `14456`: id `188`, kind `4`, len `14`, `teamRivalsOKCB`
+- payload offset `14496`: id `189`, kind `4`, len `19`, `teamRivalsTimeoutCB`
+- payload offset `14548`: id `190`, kind `4`, len `24`, `teamRivalsStartStagingCB`
+- payload offset `14608`: id `191`, kind `4`, len `18`, `teamRivalsStagedCB`
+- payload offset `14656`: id `192`, kind `4`, len `19`, `teamRivalsNewRaceCB`
+- payload offset `14708`: id `193`, kind `4`, len `20`, `teamRivalsYourRaceCB`
+- payload offset `14760`: id `194`, kind `4`, len `17`, `teamRivalsNRaceCB`
+- payload offset `14808`: id `195`, kind `4`, len `13`, `goodCounterRT`
+- payload offset `14848`: id `196`, kind `4`, len `12`, `badCounterRT`
+- payload offset `14884`: id `197`, kind `4`, len `26`, `teamRivalsRaceInProgressCB`
+- payload offset `14948`: id `198`, kind `4`, len `18`, `teamRivalsFinishCB`
+- payload offset `14996`: id `199`, kind `4`, len `13`, `raceTeamIntCB`
+- payload offset `15036`: id `200`, kind `4`, len `12`, `raceTeamRTCB`
+- payload offset `15072`: id `201`, kind `4`, len `16`, `raceTeamFinishCB`
+- payload offset `15116`: id `202`, kind `4`, len `16`, `raceTeamResultCB`
+- payload offset `15160`: id `203`, kind `4`, len `14`, `JoinElectionCB`
+- payload offset `15200`: id `204`, kind `4`, len `26`, `GetElectionInterviewListCB`
+- payload offset `15264`: id `205`, kind `4`, len `24`, `ElectionStartInterviewCB`
+- payload offset `15324`: id `206`, kind `4`, len `24`, `ElectionNewIntervieweeCB`
+- payload offset `15384`: id `207`, kind `4`, len `14`, `ElectionOverCB`
+- payload offset `15424`: id `208`, kind `4`, len `1`, `L`
+- payload offset `15440`: id `209`, kind `4`, len `4`, `LOUT`
+- payload offset `15460`: id `210`, kind `4`, len `1`, `B`
+- payload offset `15476`: id `211`, kind `4`, len `6`, `NMONEY`
+- payload offset `15500`: id `212`, kind `4`, len `3`, `UCL`
+- payload offset `15520`: id `213`, kind `4`, len `2`, `UB`
+- payload offset `15536`: id `214`, kind `4`, len `2`, `UP`
+- payload offset `15552`: id `215`, kind `4`, len `2`, `GN`
+- payload offset `15568`: id `216`, kind `4`, len `3`, `SNE`
+- payload offset `15588`: id `217`, kind `4`, len `3`, `UNU`
+- payload offset `15608`: id `218`, kind `4`, len `3`, `GNL`
+- payload offset `15628`: id `219`, kind `4`, len `3`, `AUR`
+- payload offset `15648`: id `220`, kind `4`, len `2`, `IU`
+- payload offset `15664`: id `221`, kind `4`, len `2`, `IA`
+- payload offset `15680`: id `222`, kind `4`, len `3`, `RIU`
+- payload offset `15700`: id `223`, kind `4`, len `2`, `AU`
+- payload offset `15716`: id `224`, kind `4`, len `2`, `DU`
+- payload offset `15732`: id `225`, kind `4`, len `2`, `RU`
+- payload offset `15748`: id `226`, kind `4`, len `2`, `BU`
+- payload offset `15764`: id `227`, kind `4`, len `2`, `UU`
+- payload offset `15780`: id `228`, kind `4`, len `3`, `DIU`
+- payload offset `15800`: id `229`, kind `4`, len `4`, `DREQ`
+- payload offset `15820`: id `230`, kind `4`, len `3`, `GIR`
+- payload offset `15840`: id `231`, kind `4`, len `3`, `GOR`
+- payload offset `15860`: id `232`, kind `4`, len `4`, `LRCR`
+- payload offset `15880`: id `233`, kind `4`, len `5`, `LRCR2`
+- payload offset `15904`: id `234`, kind `4`, len `3`, `CRC`
+- payload offset `15924`: id `235`, kind `4`, len `2`, `JR`
+- payload offset `15940`: id `236`, kind `4`, len `4`, `LRCU`
+- payload offset `15960`: id `237`, kind `4`, len `3`, `UCU`
+- payload offset `15980`: id `238`, kind `4`, len `2`, `GC`
+- payload offset `15996`: id `239`, kind `4`, len `3`, `KRC`
+- payload offset `16016`: id `240`, kind `4`, len `4`, `TKCK`
+- payload offset `16036`: id `241`, kind `4`, len `3`, `TCR`
+- payload offset `16056`: id `242`, kind `4`, len `3`, `TUB`
+- payload offset `16076`: id `243`, kind `4`, len `4`, `TDEP`
+- payload offset `16096`: id `244`, kind `4`, len `4`, `TWDL`
+- payload offset `16116`: id `245`, kind `4`, len `2`, `TQ`
+- payload offset `16132`: id `246`, kind `4`, len `5`, `TACPT`
+- payload offset `16156`: id `247`, kind `4`, len `4`, `TDSP`
+- payload offset `16176`: id `248`, kind `4`, len `3`, `TNR`
+- payload offset `16196`: id `249`, kind `4`, len `4`, `TCRT`
+- payload offset `16216`: id `250`, kind `4`, len `4`, `TLSD`
+- payload offset `16236`: id `251`, kind `4`, len `2`, `R1`
+- payload offset `16252`: id `252`, kind `4`, len `2`, `R2`
+- payload offset `16268`: id `253`, kind `4`, len `2`, `R4`
+- payload offset `16284`: id `254`, kind `4`, len `3`, `R1T`
+- payload offset `16304`: id `255`, kind `4`, len `3`, `R2T`
+- payload offset `16324`: id `256`, kind `4`, len `3`, `R4T`
+- payload offset `16344`: id `257`, kind `4`, len `2`, `R3`
+- payload offset `16360`: id `258`, kind `4`, len `2`, `UR`
+- payload offset `16376`: id `259`, kind `4`, len `2`, `OR`
+- payload offset `16392`: id `260`, kind `4`, len `4`, `RINP`
+- payload offset `16412`: id `261`, kind `4`, len `2`, `JK`
+- payload offset `16428`: id `262`, kind `4`, len `2`, `KU`
+- payload offset `16444`: id `263`, kind `4`, len `3`, `NKR`
+- payload offset `16464`: id `264`, kind `4`, len `3`, `RLE`
+- payload offset `16484`: id `265`, kind `4`, len `2`, `NR`
+- payload offset `16500`: id `266`, kind `4`, len `4`, `KRDY`
+- payload offset `16520`: id `267`, kind `4`, len `2`, `KR`
+- payload offset `16536`: id `268`, kind `4`, len `3`, `KOK`
+- payload offset `16556`: id `269`, kind `4`, len `2`, `SV`
+- payload offset `16572`: id `270`, kind `4`, len `1`, `V`
+- payload offset `16588`: id `271`, kind `4`, len `4`, `RWIN`
+- payload offset `16608`: id `272`, kind `4`, len `2`, `KD`
+- payload offset `16624`: id `273`, kind `4`, len `2`, `IO`
+- payload offset `16640`: id `274`, kind `4`, len `1`, `I`
+- payload offset `16656`: id `275`, kind `4`, len `4`, `KRTO`
+- payload offset `16676`: id `276`, kind `4`, len `3`, `KRT`
+- payload offset `16696`: id `277`, kind `4`, len `3`, `LRC`
+- payload offset `16716`: id `278`, kind `4`, len `5`, `KTOUT`
+- payload offset `16740`: id `279`, kind `4`, len `3`, `JQH`
+- payload offset `16760`: id `280`, kind `4`, len `3`, `JQB`
+- payload offset `16780`: id `281`, kind `4`, len `3`, `LQH`
+- payload offset `16800`: id `282`, kind `4`, len `3`, `LQB`
+- payload offset `16820`: id `283`, kind `4`, len `4`, `QMRH`
+- payload offset `16840`: id `284`, kind `4`, len `4`, `QMRB`
+- payload offset `16860`: id `285`, kind `4`, len `3`, `RRY`
+- payload offset `16880`: id `286`, kind `4`, len `1`, `R`
+- payload offset `16896`: id `287`, kind `4`, len `3`, `RRT`
+- payload offset `16916`: id `288`, kind `4`, len `5`, `RDONE`
+- payload offset `16940`: id `289`, kind `4`, len `4`, `QWIN`
+- payload offset `16960`: id `290`, kind `4`, len `4`, `TOUT`
+- payload offset `16980`: id `291`, kind `4`, len `4`, `QMSM`
+- payload offset `17000`: id `292`, kind `4`, len `4`, `QMRM`
+- payload offset `17020`: id `293`, kind `4`, len `4`, `QMLR`
+- payload offset `17040`: id `294`, kind `4`, len `4`, `QMUU`
+- payload offset `17060`: id `295`, kind `4`, len `2`, `LR`
+- payload offset `17076`: id `296`, kind `4`, len `3`, `RRQ`
+- payload offset `17096`: id `297`, kind `4`, len `4`, `RCLG`
+- payload offset `17116`: id `298`, kind `4`, len `3`, `RRS`
+- payload offset `17136`: id `299`, kind `4`, len `4`, `RDNY`
+- payload offset `17156`: id `300`, kind `4`, len `2`, `RN`
+- payload offset `17172`: id `301`, kind `4`, len `3`, `RRA`
+- payload offset `17192`: id `302`, kind `4`, len `7`, `RIVTOUT`
+- payload offset `17220`: id `303`, kind `4`, len `2`, `RL`
+- payload offset `17236`: id `304`, kind `4`, len `4`, `RLFT`
+- payload offset `17256`: id `305`, kind `4`, len `6`, `RIVRDY`
+- payload offset `17280`: id `306`, kind `4`, len `2`, `RR`
+- payload offset `17296`: id `307`, kind `4`, len `2`, `RO`
+- payload offset `17312`: id `308`, kind `4`, len `2`, `RW`
+- payload offset `17328`: id `309`, kind `4`, len `2`, `RD`
+- payload offset `17344`: id `310`, kind `4`, len `6`, `RIVRTO`
+- payload offset `17368`: id `311`, kind `4`, len `5`, `RIVRT`
+- payload offset `17392`: id `312`, kind `4`, len `2`, `JT`
+- payload offset `17408`: id `313`, kind `4`, len `4`, `HQOK`
+- payload offset `17428`: id `314`, kind `4`, len `4`, `HQ32`
+- payload offset `17448`: id `315`, kind `4`, len `6`, `HTQ32A`
+- payload offset `17472`: id `316`, kind `4`, len `6`, `HTQ32R`
+- payload offset `17496`: id `317`, kind `4`, len `3`, `HQR`
+- payload offset `17516`: id `318`, kind `4`, len `4`, `HTQD`
+- payload offset `17536`: id `319`, kind `4`, len `5`, `HTQTO`
+- payload offset `17560`: id `320`, kind `4`, len `4`, `HTEQ`
+- payload offset `17580`: id `321`, kind `4`, len `3`, `HTA`
+- payload offset `17600`: id `322`, kind `4`, len `4`, `HTAI`
+- payload offset `17620`: id `323`, kind `4`, len `4`, `HTTO`
+- payload offset `17640`: id `324`, kind `4`, len `4`, `HTTR`
+- payload offset `17660`: id `325`, kind `4`, len `3`, `HTR`
+- payload offset `17680`: id `326`, kind `4`, len `5`, `HTRTO`
+- payload offset `17704`: id `327`, kind `4`, len `4`, `HTRT`
+- payload offset `17724`: id `328`, kind `4`, len `3`, `HTD`
+- payload offset `17744`: id `329`, kind `4`, len `3`, `HTW`
+- payload offset `17764`: id `330`, kind `4`, len `4`, `HTFT`
+- payload offset `17784`: id `331`, kind `4`, len `3`, `HTS`
+- payload offset `17804`: id `332`, kind `4`, len `3`, `HTI`
+- payload offset `17824`: id `333`, kind `4`, len `4`, `HTAP`
+- payload offset `17844`: id `334`, kind `4`, len `3`, `GTR`
+- payload offset `17864`: id `335`, kind `4`, len `4`, `TRGT`
+- payload offset `17884`: id `336`, kind `4`, len `5`, `TRPRQ`
+- payload offset `17908`: id `337`, kind `4`, len `4`, `TRRQ`
+- payload offset `17928`: id `338`, kind `4`, len `5`, `TRCLG`
+- payload offset `17952`: id `339`, kind `4`, len `4`, `TRCT`
+- payload offset `17972`: id `340`, kind `4`, len `4`, `TRRS`
+- payload offset `17992`: id `341`, kind `4`, len `5`, `TRDNY`
+- payload offset `18016`: id `342`, kind `4`, len `3`, `TRN`
+- payload offset `18036`: id `343`, kind `4`, len `3`, `TRO`
+- payload offset `18056`: id `344`, kind `4`, len `4`, `TROB`
+- payload offset `18076`: id `345`, kind `4`, len `4`, `TRTO`
+- payload offset `18096`: id `346`, kind `4`, len `3`, `TRS`
+- payload offset `18116`: id `347`, kind `4`, len `3`, `TRR`
+- payload offset `18136`: id `348`, kind `4`, len `4`, `TRRA`
+- payload offset `18156`: id `349`, kind `4`, len `5`, `TRYRA`
+- payload offset `18180`: id `350`, kind `4`, len `3`, `TRA`
+- payload offset `18200`: id `351`, kind `4`, len `5`, `TRINP`
+- payload offset `18224`: id `352`, kind `4`, len `3`, `TRF`
+- payload offset `18244`: id `353`, kind `4`, len `2`, `I2`
+- payload offset `18260`: id `354`, kind `4`, len `6`, `RIVRT2`
+- payload offset `18284`: id `355`, kind `4`, len `3`, `RD2`
+- payload offset `18304`: id `356`, kind `4`, len `3`, `RW2`
+- payload offset `18324`: id `357`, kind `4`, len `2`, `JE`
+- payload offset `18340`: id `358`, kind `4`, len `3`, `EIL`
+- payload offset `18360`: id `359`, kind `4`, len `3`, `ESI`
+- payload offset `18380`: id `360`, kind `4`, len `3`, `ENI`
+- payload offset `18400`: id `361`, kind `4`, len `2`, `EO`
+
+Recovered loose UTF-16LE message fragments:
+- `getNimIncomingRequestsCB8`
+- `getNimOutgoingRequestsCB9`
+- `teamUpdateDealerMaxBetCBE`
+- `raceEngineRaceInProgressCBZ`
+- `teamRivalsIncomingChallengeCB`
+- `teamRivalsWrongBracketCB`
+- `teamRivalsStartStagingCB`
+- `teamRivalsRaceInProgressCB`
+- `GetElectionInterviewListCB`
+- `ElectionStartInterviewCB`
+- `ElectionNewIntervieweeCB`
+
+Corroborating sibling artifact:
+- file: `C:\Users\Dilldo\Nitto\Lingo Stuff\js_rewrite\13-socket-server-to-client.js`
+- exported handlers: `procSocket`
+- This section is corroboration only and does not replace byte-backed evidence.
+
+Unresolved:
+- Opcode meanings remain unresolved in this pass.
+- Any bytes not represented above remain byte-backed but uninterpreted.
+

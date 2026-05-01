@@ -1,0 +1,2963 @@
+-- Lscr-102 embedded block decompile
+-- scriptNumber: 2
+-- 21 blocks
+
+on RaceEngine
+  -- block offset=0 length=344 codeLen=251
+  -- names: 0=Function, 1=RaceEngine
+  // prologue: Function
+  id_3 = RaceEngine.id_2.Function(id_4)
+  id_5 = RaceEngine.id_2.Function(id_6)
+  id_7 = RaceEngine.id_2.Function(id_8)
+  id_9 = RaceEngine.id_2.Function(id_10)
+  id_11 = RaceEngine.id_2.Function(id_12)
+  id_13 = RaceEngine.id_2.Function(id_14)
+  id_15 = RaceEngine.id_2.Function(id_16)
+  id_17 = RaceEngine.id_2.Function(id_18)
+  id_19 = RaceEngine.id_2.Function(id_20)
+  id_21 = RaceEngine.id_2.Function(id_22)
+  id_23 = RaceEngine.id_2.Function(id_24)
+  id_25 = RaceEngine.id_2.Function(id_26)
+  id_27 = RaceEngine.id_2.Function(id_28)
+  id_29 = RaceEngine.id_2.Function(id_30)
+  id_31 = RaceEngine.id_2.Function(id_32)
+  id_33 = RaceEngine.id_2.Function(id_34)
+  id_35 = RaceEngine.id_2.Function(id_36)
+  id_37 = RaceEngine.id_2.Function(id_38)
+  id_39 = RaceEngine.id_2.Function(id_40)
+end
+
+on block_1
+  -- block offset=344 length=2688 codeLen=456
+  -- names: 0=sendInterval, 1=RaceEngine, 2=prototype, 4=g, 6=rpmGearConversion, 8=gConvSlipA, 10=gConvSlipB, 11=brakeDecleration, 13=revLimiterDeceleration, 15=idleRPM, 16=tqFlyFactor, 17=partBreakPoint, 19=vToMph, 21=c0_5, 23=c0, 24=c100, 25=c1000, 26=c10000, 27=c0_0075, 29=c13, 30=c0_4, 32=c0_7, 34=c1_7, 36=c1_25, 38=c9, 39=c299, 40=c300, 41=c5_5, 43=c2, 44=c5, 45=c50, 46=c8, 47=c0_005, 49=c0_016, 51=c3, 52=c0_09, 54=c0_6, 56=c10, 57=c0_015, 59=c0_02, 61=c200, 62=c0_18, 64=c1320, 65=c760, 66=c7, 67=c7_5, 69=c1_8, 71=c1_15, 73=c80, 74=c0_95, 76=c0_05, 78=c0_2, 79=c0_1, 81=c0_65, 83=c4, 84=c0_07, 86=c2_5, 88=c1, 3=init
+  null
+  sendInterval = false
+  ?
+  null
+  RaceEngine = false
+  ?
+  null
+  prototype = c_3
+  ?
+  null
+  g = c_5
+  ?
+  null
+  rpmGearConversion = c_7
+  ?
+  null
+  gConvSlipA = c_9
+  ?
+  null
+  gConvSlipB = 60
+  ?
+  null
+  brakeDecleration = c_12
+  ?
+  null
+  revLimiterDeceleration = c_14
+  ?
+  null
+  idleRPM = 750
+  ?
+  null
+  tqFlyFactor = 5252
+  ?
+  null
+  partBreakPoint = c_18
+  ?
+  null
+  vToMph = c_20
+  ?
+  null
+  c0_5 = c_22
+  ?
+  null
+  c0 = false
+  ?
+  null
+  c100 = 100
+  ?
+  null
+  c1000 = 1000
+  ?
+  null
+  c10000 = 10000
+  ?
+  null
+  c0_0075 = c_28
+  ?
+  null
+  c13 = 13
+  ?
+  null
+  c0_4 = c_31
+  ?
+  null
+  c0_7 = c_33
+  ?
+  null
+  c1_7 = c_35
+  ?
+  null
+  c1_25 = c_37
+  ?
+  null
+  c9 = 9
+  ?
+  null
+  c299 = 299
+  ?
+  null
+  c300 = 300
+  ?
+  null
+  c5_5 = c_42
+  ?
+  null
+  c2 = 2
+  ?
+  null
+  c5 = 5
+  ?
+  null
+  c50 = 50
+  ?
+  null
+  c8 = 8
+  ?
+  null
+  c0_005 = c_48
+  ?
+  null
+  c0_016 = c_50
+  ?
+  null
+  c3 = 3
+  ?
+  null
+  c0_09 = c_53
+  ?
+  null
+  c0_6 = c_55
+  ?
+  null
+  c10 = 10
+  ?
+  null
+  c0_015 = c_58
+  ?
+  null
+  c0_02 = c_60
+  ?
+  null
+  c200 = 200
+  ?
+  null
+  c0_18 = c_63
+  ?
+  null
+  c1320 = 1320
+  ?
+  null
+  c760 = 760
+  ?
+  null
+  c7 = 7
+  ?
+  null
+  c7_5 = c_68
+  ?
+  null
+  c1_8 = c_70
+  ?
+  null
+  c1_15 = c_72
+  ?
+  null
+  c80 = 80
+  ?
+  null
+  c0_95 = c_75
+  ?
+  null
+  c0_05 = c_77
+  ?
+  null
+  c0_2 = c_18
+  ?
+  null
+  c0_1 = c_80
+  ?
+  null
+  c0_65 = c_82
+  ?
+  null
+  c4 = c_31
+  ?
+  null
+  c0_07 = c_85
+  ?
+  null
+  c2_5 = c_87
+  ?
+  c1 = !null
+  ?
+end
+
+on block_2
+  -- block offset=3032 length=2940 codeLen=496
+  -- names: 0=goodCounterRT, 1=badCounterRT, 2=goodCounterET, 3=badCounterET, 4=avgFps, 5=startRace, 6=guid, 8=raceType, 9=timeAnchor, 10=c0, 11=staging, 12=stagingLightPos1, 13=stagingLightPos2, 14=greenDelay, 15=preStaged, 16=staged, 17=brake, 18=isMidMd5sent, 19=isNos, 20=pb, 21=turboFlow, 22=c0_0075, 23=stockRedLine, 24=avgDurability, 25=pistonDurability, 26=rodDurability, 27=valveDurability, 28=headGasketDurability, 29=engineBlockDurability, 30=c5, 31=hp, 32=s, 33=c13, 34=carV, 35=carAccel, 36=speedoV, 37=engineV, 38=mph, 39=engineDamage, 40=isEngineLightOn, 41=gearValue, 42=gr, 43=grs, 44=theTime, 46=theActualTime, 47=timeFromLastFrame, 48=timeGreen, 49=timeStartLine, 50=stagingTimeLimit, 51=lightDelayTO, 52=object, 53=forget, 54=lightTO1, 55=lightTO2, 56=runInterval, 57=rt, 58=undefined, 59=et, 60=ts, 61=bt, 62=slip, 63=rpm, 64=idleRPM, 65=N, 66=w, 67=c0_4, 68=getTorque
+  null
+  goodCounterRT = false
+  ?
+  null
+  badCounterRT = false
+  ?
+  null
+  goodCounterET = false
+  ?
+  null
+  badCounterET = false
+  ?
+  null
+  avgFps = false
+  ?
+  null
+  startRace = false
+  ?
+  guid = id_7
+  ?
+  null
+  raceType = param_goodCounterRT
+  ?
+  null
+  timeAnchor = null.c0
+  ?
+  null
+  staging = 1
+  ?
+  null
+  stagingLightPos1 = null.c0
+  ?
+  null
+  stagingLightPos2 = null.c0
+  ?
+  null
+  greenDelay = false
+  ?
+  null
+  preStaged = 0
+  ?
+  null
+  staged = 0
+  ?
+  null
+  brake = 0
+  ?
+  null
+  isMidMd5sent = 0
+  ?
+  null
+  isNos = null.c0
+  ?
+  null
+  pb = ((null.turboFlow * null.c0_0075) * null.stockRedLine)
+  ?
+  avgDurability = (null / (((((null.pistonDurability + null.rodDurability) + null.valveDurability) + null.headGasketDurability) + null.engineBlockDurability) / 4273408))
+  ?
+  null
+  hp = null.c0
+  ?
+  s = (null % null.c13)
+  ?
+  null
+  carV = null.c0
+  ?
+  null
+  carAccel = null.c0
+  ?
+  null
+  speedoV = null.c0
+  ?
+  null
+  engineV = null.c0
+  ?
+  null
+  mph = null.c0
+  ?
+  null
+  engineDamage = null.c0
+  ?
+  null
+  isEngineLightOn = 0
+  ?
+  null
+  gearValue = null.c0
+  ?
+  null.grs
+  null
+  gr = !false
+  ?
+  null
+  theTime = c_45
+  ?
+  null
+  theActualTime = c_45
+  ?
+  null
+  timeFromLastFrame = false
+  ?
+  null
+  timeGreen = null.c0
+  ?
+  null
+  timeStartLine = null.c0
+  ?
+  null
+  stagingTimeLimit = 20
+  ?
+  if ((null.lightDelayTO == 2571520)) { /* else goto @353 */ }
+  null.lightDelayTO.forget()()
+  if ((null.lightTO1 == 2571520)) { /* else goto @378 */ }
+  null.lightTO1.forget()()
+  if ((null.lightTO2 == 2571520)) { /* else goto @403 */ }
+  null.lightTO2.forget()()
+  if ((null.runInterval == 2571520)) { /* else goto @428 */ }
+  null.runInterval.forget()()
+  null
+  rt = undefined
+  ?
+  null
+  et = undefined
+  ?
+  null
+  ts = undefined
+  ?
+  null
+  bt = null.c0
+  ?
+  null
+  slip = 0
+  ?
+  null
+  rpm = null.idleRPM
+  ?
+  null
+  N = (null.w * null.c0_4)
+  ?
+  null.getTorque()()
+end
+
+on block_3
+  -- block offset=5972 length=4992 codeLen=1268
+  -- names: 0=xtra, 1=xmlparser, 2=parseString, 3=makeList, 4=n2, 5=w, 6=parseInt, 7=initBoost, 8=r, 9=hpi, 10=parseFloat, 11=v, 12=stockRedLine, 13=a, 14=redLine, 15=n, 16=revLimiter, 17=o, 18=s, 19=detuneHp, 20=b, 21=UsInit, 22=p, 23=UkInit, 24=c0_7, 25=stockBoost, 26=c, 27=boostSetting, 28=e, 29=boostType, 30=d, 31=initBoost, 32=grs, 33=Array, 34=f, 35=g, 36=h, 37=i, 38=j, 39=k, 40=fgr, 41=l, 42=NOS, 43=q, 44=nitrousRemaining, 45=m, 46=nitrousTankSize, 47=t, 48=setClutch, 50=tqArray, 51=maxPsi, 52=u, 53=airhpi, 54=turboFlow, 55=x, 56=fuelFlowLimit, 57=y, 58=overallAirFlowLimit, 59=z, 60=cylinderNumber, 61=aa, 62=valveNumber, 63=ab, 64=pistonCompressionLevel, 65=ac, 66=chipSetting, 67=ad, 68=pistonDurability, 69=ae, 70=rodDurability, 71=af, 72=valveDurability, 73=ag, 74=headGasketDurability, 75=ah, 76=engineBlockDurability, 77=ai, 78=oilDurability, 79=ao, 80=radiatorDurability, 81=at, 82=oilFilterDurability, 83=au, 84=coolantDurability, 85=aw, 86=pistonDamage, 87=aj, 88=c100, 89=partBreakPoint, 90=rodDamage, 91=ak, 92=valveDamage, 93=al, 94=headGasketDamage, 95=am, 96=engineBlockDamage, 97=an, 98=oilDamage, 99=ap, 100=oilFilterDamage, 101=av, 102=coolantDamage, 103=ax, 104=raceGas, 105=aq, 106=tireStick, 107=ar, 108=launchControl, 109=as, 110=beforePistonDamage, 111=thePD, 112=theBPD, 113=init, 114=raceType
+  xtra = xmlparser
+  ?
+  xtra.parseString()(param_xtra)
+  xmlparser = !!xtra.makeList()().n2
+  ?
+  xtra = false
+  ?
+  null
+  w = parseInt()(xmlparser.initBoost.r)
+  ?
+  null
+  hpi = parseFloat()(xmlparser.initBoost.v)
+  ?
+  null
+  stockRedLine = parseInt()(xmlparser.initBoost.a)
+  ?
+  null
+  redLine = parseInt()(xmlparser.initBoost.n)
+  ?
+  null
+  revLimiter = parseInt()(xmlparser.initBoost.o)
+  ?
+  null
+  r = parseFloat()(xmlparser.initBoost.s)
+  ?
+  null
+  detuneHp = parseFloat()(xmlparser.initBoost.b)
+  ?
+  null
+  UsInit = parseFloat()(xmlparser.initBoost.p)
+  ?
+  null
+  UkInit = (null.c0_7 * null.UsInit)
+  ?
+  null
+  stockBoost = parseInt()(xmlparser.initBoost.c)
+  ?
+  null
+  boostSetting = parseInt()(xmlparser.initBoost.e)
+  ?
+  null
+  boostType = xmlparser.initBoost.d
+  ?
+  null.initBoost()()
+  null
+  grs = Array()(parseFloat()(xmlparser.initBoost.f), parseFloat()(xmlparser.initBoost.f), parseFloat()(xmlparser.initBoost.g), parseFloat()(xmlparser.initBoost.h), parseFloat()(xmlparser.initBoost.i), parseFloat()(xmlparser.initBoost.j), parseFloat()(xmlparser.initBoost.k))
+  ?
+  null
+  fgr = parseFloat()(xmlparser.initBoost.l)
+  ?
+  null
+  NOS = parseInt()(xmlparser.initBoost.q)
+  ?
+  null
+  nitrousRemaining = parseFloat()(xmlparser.initBoost.m)
+  ?
+  null
+  nitrousTankSize = parseFloat()(xmlparser.initBoost.t)
+  ?
+  (null.nitrousRemaining >= null.nitrousTankSize)
+  // goto @531
+  null
+  nitrousRemaining = null.nitrousTankSize
+  ?
+  null.setClutch()(c_49)
+  null
+  tqArray = Array()()
+  ?
+  null
+  tqArray = param_xmlparser
+  ?
+  null
+  maxPsi = parseFloat()(xmlparser.initBoost.u)
+  ?
+  null
+  airhpi = parseFloat()(xmlparser.initBoost.w)
+  ?
+  null
+  turboFlow = parseFloat()(xmlparser.initBoost.x)
+  ?
+  null
+  fuelFlowLimit = parseFloat()(xmlparser.initBoost.y)
+  ?
+  null
+  overallAirFlowLimit = parseFloat()(xmlparser.initBoost.z)
+  ?
+  null
+  cylinderNumber = parseInt()(xmlparser.initBoost.aa)
+  ?
+  null
+  valveNumber = parseInt()(xmlparser.initBoost.ab)
+  ?
+  null
+  pistonCompressionLevel = parseFloat()(xmlparser.initBoost.ac)
+  ?
+  null
+  chipSetting = parseFloat()(xmlparser.initBoost.ad)
+  ?
+  null
+  pistonDurability = parseFloat()(xmlparser.initBoost.ae)
+  ?
+  null
+  rodDurability = parseFloat()(xmlparser.initBoost.af)
+  ?
+  null
+  valveDurability = parseFloat()(xmlparser.initBoost.ag)
+  ?
+  null
+  headGasketDurability = parseFloat()(xmlparser.initBoost.ah)
+  ?
+  null
+  engineBlockDurability = parseFloat()(xmlparser.initBoost.ai)
+  ?
+  null
+  oilDurability = parseFloat()(xmlparser.initBoost.ao)
+  ?
+  null
+  radiatorDurability = parseFloat()(xmlparser.initBoost.at)
+  ?
+  null
+  oilFilterDurability = parseFloat()(xmlparser.initBoost.au)
+  ?
+  null
+  coolantDurability = parseFloat()(xmlparser.initBoost.aw)
+  ?
+  null
+  pistonDamage = (((parseFloat()(xmlparser.initBoost.aj) / null.c100) * null.partBreakPoint) * null.cylinderNumber)
+  ?
+  null
+  rodDamage = (((parseFloat()(xmlparser.initBoost.ak) / null.c100) * null.partBreakPoint) * null.cylinderNumber)
+  ?
+  null
+  valveDamage = (((parseFloat()(xmlparser.initBoost.al) / null.c100) * null.partBreakPoint) * null.valveNumber)
+  ?
+  null
+  headGasketDamage = ((parseFloat()(xmlparser.initBoost.am) / null.c100) * null.partBreakPoint)
+  ?
+  null
+  engineBlockDamage = ((parseFloat()(xmlparser.initBoost.an) / null.c100) * null.partBreakPoint)
+  ?
+  null
+  oilDamage = parseFloat()(xmlparser.initBoost.ap)
+  ?
+  null
+  oilFilterDamage = parseFloat()(xmlparser.initBoost.av)
+  ?
+  null
+  coolantDamage = parseFloat()(xmlparser.initBoost.ax)
+  ?
+  null
+  raceGas = parseFloat()(xmlparser.initBoost.aq)
+  ?
+  null
+  tireStick = parseFloat()(xmlparser.initBoost.ar)
+  ?
+  null
+  launchControl = parseInt()(xmlparser.initBoost.as)
+  ?
+  null
+  beforePistonDamage = null.pistonDamage
+  ?
+  null
+  thePD = false
+  ?
+  null
+  theBPD = false
+  ?
+  null.init()(null.raceType)
+end
+
+on block_4
+  -- block offset=10964 length=404 codeLen=60
+  -- names: 0=boostType, 1=T, 2=boostLag, 3=c0_7, 4=boostSetting, 5=boostRange, 6=c1_7, 7=c0, 9=beginRace
+  if (T) { /* else goto @45 */ }
+  null
+  boostLag = (null.c0_7 * null.boostSetting)
+  ?
+  null
+  boostRange = (null.c1_7 * null.boostSetting)
+  ?
+  // goto @41
+  // [0x0029] op_15
+  null
+  boostLag = null.c0
+  ?
+  null
+  boostRange = null.boostSetting
+  ?
+end
+
+on block_5
+  -- block offset=11368 length=392 codeLen=59
+  -- names: 0=runInterval, 1=object, 2=forget, 3=timeout, 4=sendInterval, 5=symbol, 6=sendPos, 11=endRace
+  null.runInterval
+  if (2571520) { /* else goto @28 */ }
+  null.runInterval.forget()()
+  // [0x0036] op_04
+  (1000 / null.sendInterval)(sendPos)
+  runInterval
+  null
+  runInterval = null
+  ?
+end
+
+on block_6
+  -- block offset=11760 length=232 codeLen=25
+  -- names: 0=runInterval, 1=object, 2=forget, 13=sendPos
+  null.runInterval
+  if (2571520) { /* else goto @28 */ }
+  null.runInterval.forget()()
+end
+
+on block_7
+  -- block offset=11992 length=2020 codeLen=301
+  -- names: 0=staging, 1=rt, 2=c1, 3=raceType, 4=KOTH, 5=RIVAL, 6=TEAMRIVAL, 7=HT, 8=gearValue, 9=c0, 10=STG, 11=s, 12=carV, 13=carAccel, 14=c1320, 15=run, 16=INT, 17=_system, 18=milliseconds
+  null.staging
+  // goto @127
+  (? < (null.rt % null.c1))
+  // goto @124
+  if (KOTH) { /* else goto @64 */ }
+  if (RIVAL) { /* else goto @64 */ }
+  if (TEAMRIVAL) { /* else goto @64 */ }
+  if (HT) { /* else goto @124 */ }
+  // [0x0048] op_14
+  null.c0
+  null.gearValue
+  // goto @104
+  ?(?, STG(), ((null.s % null.carV) % null.carAccel))
+  // goto @100
+  // [0x0064] op_17
+  STG()(null.s, null.carV, null.carAccel)
+  // goto @123
+  // [0x007b] op_b4
+  // [0x0091] op_14
+  null.c1320
+  null.s
+  (? > (? && (? < (null.rt % null.c1))))
+  // goto @304
+  null.run
+  if (false) { /* else goto @228 */ }
+  if (KOTH) { /* else goto @202 */ }
+  if (RIVAL) { /* else goto @202 */ }
+  if (TEAMRIVAL) { /* else goto @202 */ }
+  if (HT) { /* else goto @225 */ }
+  STG()(null.s, null.carV, null.carAccel)
+  // goto @224
+  // [0x00e0] op_4f
+  if (KOTH) { /* else goto @269 */ }
+  if (RIVAL) { /* else goto @269 */ }
+  if (TEAMRIVAL) { /* else goto @269 */ }
+  if (HT) { /* else goto @304 */ }
+  // [0x0127] op_1c
+  null.run
+  _system.milliseconds
+  null.carAccel
+  null.carV
+  null.s
+  INT()
+  3801092
+end
+
+on block_8
+  -- block offset=14012 length=17968 codeLen=7823
+  -- names: 0=c0, 1=c1, 2=timeFromLastFrame, 3=theTime, 4=_system, 5=milliseconds, 6=c1000, 7=theActualTime, 8=c0_2, 9=avgFps, 10=fpsCount, 11=calculateExtraHpi, 12=carV, 13=c0_5, 14=carAccel, 15=gearValue, 16=hpi, 17=calculateExtraHpi, 18=systemPower, 19=ECUtune, 20=compressionPowerDelta, 21=engineDamage, 22=isNos, 23=nitrousRemaining, 24=NOS, 25=rpm, 26=stockRedLine, 27=c1_25, 28=hp, 29=c10000, 30=c2, 31=sprite, 32=flashSP, 33=runEngineNOSCB, 34=nitrousTankSize, 35=c100, 36=revLimiter, 37=c200, 38=tqFlyFactor, 39=gr, 40=fgr, 41=rpmGearConversion, 42=r, 43=negTq, 44=c9, 45=c299, 46=c300, 47=c5_5, 48=w, 49=g, 50=revLimiterDeceleration, 51=brake, 52=brakeDecleration, 53=speedoV, 54=engineV, 55=c5, 56=gConvSlipA, 57=c50, 58=getTorque, 59=mph, 60=vToMph, 61=slip, 62=launchControl, 63=posTq, 64=raceGas, 65=c0_02, 66=detuneHp, 67=c8, 68=c0_005, 69=c0_016, 70=DAfp, 71=UsInit, 72=tireStick, 73=c0_05, 74=UkInit, 75=c3, 76=c0_09, 77=c0_6, 78=N, 79=runEngineTractionLightCB, 80=c10, 81=tireScrub, 82=c0_015, 83=clutchFeather, 84=c0_18, 85=redLine, 87=s, 88=Math, 89=floor, 90=staging, 91=c13, 92=preStaged, 93=staged, 94=lightDelayTO, 95=timeout, 96=symbol, 97=stagedAndReady, 98=object, 99=forget, 100=runEngineStageLightCB, 101=rt, 102=undefined, 103=lagThreshold, 104=badCounterRT, 105=goodCounterRT, 106=timeStartLine, 107=timeGreen, 108=runEngineSetLightOnCB, 109=p, 110=red, 111=raceType, 112=KOTH, 113=KRT, 115=QM, 116=RRT, 117=RIVAL, 118=TEAMRIVAL, 119=RIVRT, 120=HTQ, 121=HTQRT, 122=HT, 123=HTRT, 124=lagTimeAddition, 125=guid, 126=runEngineSetMyRTCB, 127=badCounterET, 128=goodCounterET, 129=c1320, 130=et, 131=ts, 132=pistonDamage, 133=partBreakPoint, 134=cylinderNumber, 135=rodDamage, 136=valveDamage, 137=valveNumber, 138=headGasketDamage, 139=engineBlockDamage, 140=oilDamage, 141=oilFilterDamage, 142=coolantDamage, 143=INT, 144=timeAnchor, 145=KDONE, 146=createMd5Hash, 147=RINT, 148=RDONE, 149=beforePistonDamage, 150=thePD, 151=theBPD, 152=RIVDONE, 153=CT, 154=ctFinishCB, 155=executeCall, 156=ctst, 157=et=, 158=&rt=, 159=&ts=, 160=&pd=, 161=&vd=, 162=&rd=, 163=&hd=, 164=&bd=, 165=&od=, 166=&fd=, 167=&cd=, 168=&nr=, 169=&rg=, 170=&m=, 171=&gr=, 172=&br=, 173=&ge=, 174=&be=, 175=&ce=, 176=isCheatEngineRunning, 177=&f=, 178=&cp=, 179=CheckProcesses, 180=decrypt, 181=_global, 182=cp, 183=&cw=, 184=CheckWindows, 185=cw, 186=&cwc=, 187=CheckWindowsClass, 188=cwc, 189=CTQ, 190=P, 191=practiceFinishCB, 192=HTQD, 193=HTD, 194=c760, 195=isMidMd5sent, 196=M, 197=boostPsi, 198=stockBoost, 199=dangerLevel, 200=pistonCompressionLevel, 201=c7, 202=engineDamageRisk, 203=c1_8, 204=c1_15, 205=c80, 206=avgDurability, 207=oilDurability, 208=beforeDangerLevel, 209=radiatorDurability, 210=oilFilterDurability, 211=coolantDurability, 212=pistonDurability, 213=c0_95, 214=pistonBroken, 215=rodDurability, 216=rodBroken, 217=valveDurability, 218=valveBroken, 219=engineBlockDurability, 220=engineBlockBroken, 221=headGasketDurability, 222=headGasketBroken, 223=c0_4, 224=c0_1, 225=c0_65, 226=isEngineLightOn, 227=runEngineDamageLightCB, 228=runEngineCB
+  // [0x0007] op_14
+  null.c0
+  param_c0
+  // goto @25
+  // [0x000f] op_55
+  null.c0
+  // goto @21
+  (param_c0 >= null.c1)
+  (? >= ?)
+  // goto @44
+  // [0x0025] op_55
+  null.c1
+  (null.timeFromLastFrame >= null.c0)
+  // goto @133
+  // [0x0040] op_1c
+  4273408
+  null.timeFromLastFrame
+  _system.milliseconds
+  null
+  // goto @101
+  theTime = ?
+  ?
+  null
+  theActualTime = null.theTime
+  ?
+  (null.theTime >= null.c0_2)
+  // goto @108
+  null
+  theTime = null.c0_2
+  ?
+  avgFps = (null / (((null.avgFps * null.fpsCount) + null.theActualTime) + 4270592))
+  ?
+  null
+  timeFromLastFrame = _system.milliseconds
+  ?
+  null.calculateExtraHpi()()
+  (null.theTime * null.theTime)
+  (null.c0_5 * null.carAccel)
+  (null.carV * null.theTime)
+  1907543
+  null.gearValue
+  if (null.c0) { /* else goto @402 */ }
+  // [0x00e0] op_1c
+  ((((null.hpi + null.calculateExtraHpi) + null.systemPower) + null.ECUtune) + null.compressionPowerDelta)
+  c1 = null.engineDamage
+  ?
+  if (!null.isNos) { /* else goto @250 */ }
+  (null.nitrousRemaining >= null.c0)
+  // goto @373
+  timeFromLastFrame = (((null.NOS * null.rpm) / null.stockRedLine) / null.c1_25)
+  ?
+  (timeFromLastFrame >= null.NOS)
+  // goto @295
+  timeFromLastFrame = null.NOS
+  ?
+  // [0x0135] op_1c
+  (null.hp * c1)
+  (? > null).hp
+  1783296
+  // [0x014a] op_1c
+  (? > null).nitrousRemaining
+  nitrousRemaining = ((null.NOS / null.c10000) * null.c2)
+  ?
+  ?(flashSP).runEngineNOSCB()(((null.nitrousRemaining / null.nitrousTankSize) * null.c100))
+  // goto @369
+  // [0x0171] op_15
+  hp = ((? > null).hp + (null.hp * c1))
+  ?
+  hp = ((? > null).hp * param_c0)
+  ?
+  (null.rpm >= (null.revLimiter + null.c200))
+  // goto @435
+  hp = ((? > null).hp / null.c2)
+  ?
+  theTime = ((null.hp * null.tqFlyFactor) / null.rpm)
+  ?
+  _system = (((theTime * null.gr) * null.fgr) * null.rpmGearConversion)
+  ?
+  milliseconds = (_system / null.r)
+  ?
+  c1000 = (null.negTq * null.c9)
+  ?
+  1922816
+  (null.stockRedLine + null.c1000)
+  param_c0
+  // goto @21317
+  // [0x020e] op_1c
+  // [0x0213] op_55
+  // [0x021b] op_14
+  theActualTime
+  null.rpm
+  1443584
+  null.c299
+  theActualTime
+  ?.rpm
+  // goto @603
+  // [0x0225] op_1c
+  milliseconds
+  c0_2 = c1000
+  ?
+  (c0_2 >= null.c0)
+  // goto @600
+  // [0x0246] op_1c
+  theActualTime
+  null.rpm
+  c0_2
+  c1000
+  c1000 = (null.c300 + (1868573 / null.c300))
+  ?
+  // goto @599
+  // [0x0257] op_11
+  c1000 = ((? % null.negTq) * null.c5_5)
+  ?
+  // [0x026d] op_14
+  param_c0
+  (? || (c1000 && null.c0))
+  if (null.c0) { /* else goto @647 */ }
+  c1000 = null.c0
+  ?
+  // [0x028a] op_1c
+  milliseconds
+  avgFps = c1000
+  ?
+  avgFps
+  ((null.w / null.g) + 1988352)
+  (null.rpm >= null.revLimiter)
+  // goto @696
+  fpsCount = null.revLimiterDeceleration
+  ?
+  null.brake
+  // goto @715
+  null
+  carAccel = null.brakeDecleration
+  ?
+  // goto @711
+  // [0x02c7] op_0d
+  carAccel = (null % null.c2)
+  ?
+  carV = ((? > null).carV + (null.carAccel * null.theTime))
+  ?
+  // [0x02ed] op_15
+  null.c0
+  null.carV
+  // goto @774
+  null
+  carAccel = null.c0
+  ?
+  null
+  carV = null.c0
+  ?
+  null
+  speedoV = null.carV
+  ?
+  engineV = ((? > null).engineV + (fpsCount * null.theTime))
+  ?
+  // [0x0326] op_14
+  null.c5
+  null.engineV
+  // goto @825
+  null
+  engineV = null.c5
+  ?
+  // goto @821
+  // [0x0335] op_18
+  (null.engineV >= null.c100)
+  // goto @846
+  null
+  engineV = null.c100
+  ?
+  // [0x0373] op_19
+  (null.fgr * null.rpmGearConversion)
+  (((null.gConvSlipA * null.r) * 1999681.gr) * null.c50)
+  null.engineV
+  null
+  1914368
+  null.getTorque()()
+  null
+  mph = (null.carV * null.vToMph)
+  ?
+  // goto @916
+  // [0x038e] op_47
+  // [0x0395] op_09
+  (? && null.slip)
+  if (!null.launchControl) { /* else goto @938 */ }
+  // [0x03a3] op_55
+  null.c0
+  null
+  hp = ((null.posTq * null.rpm) / null.tqFlyFactor)
+  ?
+  // [0x03d6] op_1c
+  ((((null.hpi + null.calculateExtraHpi) + null.systemPower) + null.ECUtune) + null.compressionPowerDelta)
+  c1 = null.engineDamage
+  ?
+  (null.raceGas >= false)
+  // goto @1088
+  calculateExtraHpi = (((null.c5 * null.theActualTime) * null.hp) / null.c1000)
+  ?
+  (calculateExtraHpi >= null.raceGas)
+  // goto @1063
+  c1 = (c1 + ((null.c0_02 * null.raceGas) / calculateExtraHpi))
+  ?
+  null
+  raceGas = false
+  ?
+  // goto @1059
+  // [0x0423] op_1c
+  c1 = (c1 + null.c0_02)
+  ?
+  // [0x0438] op_1c
+  (? > null).raceGas
+  raceGas = calculateExtraHpi
+  ?
+  if (!null.isNos) { /* else goto @1106 */ }
+  (null.nitrousRemaining >= null.c0)
+  // goto @1233
+  timeFromLastFrame = (((null.NOS * null.rpm) / null.stockRedLine) / null.c1_25)
+  ?
+  (timeFromLastFrame >= null.NOS)
+  // goto @1151
+  timeFromLastFrame = null.NOS
+  ?
+  hp = ((? > null).hp + ((null.hp * c1) + 5636098))
+  ?
+  // [0x04a6] op_1c
+  (? > null).nitrousRemaining
+  nitrousRemaining = ((null.NOS / null.c10000) * null.c2)
+  ?
+  ?(flashSP).runEngineNOSCB()(((null.nitrousRemaining / null.nitrousTankSize) * null.c100))
+  // goto @1229
+  // [0x04cd] op_15
+  hp = ((? > null).hp + (null.hp * c1))
+  ?
+  // [0x04f0] op_1c
+  param_c0
+  (? > null).hp
+  hp = (null.c100 * (null.detuneHp / 1917237))
+  ?
+  theTime = ((null.hp * null.tqFlyFactor) / null.rpm)
+  ?
+  _system = (((theTime * null.gr) * null.fgr) * null.rpmGearConversion)
+  ?
+  milliseconds = (_system / null.r)
+  ?
+  carV = (param_c0 * null.c8)
+  ?
+  c0_5 = null.c0
+  ?
+  // [0x054c] op_14
+  null.c1
+  carV
+  // goto @1382
+  // [0x0557] op_1c
+  // [0x055c] op_2b
+  c0_5 = (null.c1 * (carV % 4273408))
+  ?
+  carAccel = ((null.w * null.c0_005) * null.carAccel)
+  ?
+  gearValue = ((null.c0_016 * null.w) + c0_5)
+  ?
+  // [0x058d] op_14
+  null.c0
+  gearValue
+  // goto @1436
+  gearValue = null.c0
+  ?
+  // [0x05aa] op_0e
+  null.DAfp
+  hpi = ((null.carV * null.carV) + 1922560)
+  ?
+  // [0x05b7] op_14
+  null.c0
+  hpi
+  // goto @1478
+  hpi = null.c0
+  ?
+  // [0x05d1] op_09
+  (gearValue + hpi)
+  milliseconds
+  1857280
+  calculateExtraHpi = (null.carV * null.vToMph)
+  ?
+  systemPower = null.UsInit
+  ?
+  (null.tireStick >= false)
+  // goto @1541
+  systemPower = (systemPower + (null.UsInit * null.c0_05))
+  ?
+  ECUtune = null.UkInit
+  ?
+  (calculateExtraHpi >= null.c0)
+  // goto @1630
+  compressionPowerDelta = (calculateExtraHpi / null.c100)
+  ?
+  (compressionPowerDelta >= null.c1)
+  // goto @1591
+  compressionPowerDelta = null.c1
+  ?
+  compressionPowerDelta = (compressionPowerDelta * null.c3)
+  ?
+  systemPower = (systemPower + compressionPowerDelta)
+  ?
+  // [0x0656] op_1c
+  ECUtune
+  ECUtune = (compressionPowerDelta * null.c0_09)
+  ?
+  // [0x0662] op_14
+  null.c0_6
+  ECUtune
+  // goto @1649
+  ECUtune = null.c0_6
+  ?
+  null.slip
+  // goto @1755
+  // [0x069b] op_0e
+  (null.w / null.g)
+  (ECUtune * null.N)
+  null
+  ((ECUtune * null.N) / 1443584)
+  avgFps
+  1979904
+  // goto @1695
+  // [0x069f] op_38
+  // [0x06b1] op_0e
+  (null.w / null.g)
+  avgFps
+  null
+  1979904
+  null
+  speedoV = null.carV
+  ?
+  null
+  slip = 0
+  ?
+  ?(flashSP).runEngineTractionLightCB()(0)
+  // goto @1751
+  // [0x06d7] op_6c
+  (systemPower * null.N)
+  avgFps
+  if (1459456) { /* else goto @1771 */ }
+  // [0x0710] op_0e
+  (null.w / null.g)
+  (systemPower * null.N)
+  null
+  !4273408.id_5127
+  ((? > ?) + null.c2)
+  1979904
+  null
+  slip = 1
+  ?
+  ?(flashSP).runEngineTractionLightCB()(1)
+  // goto @1837
+  // [0x073f] op_0e
+  (null.w / null.g)
+  avgFps
+  null
+  (? >= ?)
+  1979904
+  // [0x0751] op_15
+  (null.w / null.g)
+  avgFps
+  1988352
+  // [0x075b] op_14
+  // [0x0767] op_14
+  null.c0
+  null.carAccel
+  (? > (null.carV && null.c3))
+  // goto @1922
+  null
+  carAccel = null.c0
+  ?
+  engineDamage = null.c0
+  ?
+  // goto @1918
+  // [0x077e] op_18
+  // [0x0787] op_14
+  null.c0
+  null.carV
+  // goto @1943
+  null
+  carV = null.c0
+  ?
+  (null.rpm >= null.revLimiter)
+  // goto @1972
+  null
+  carAccel = null.revLimiterDeceleration
+  ?
+  engineDamage = null.revLimiterDeceleration
+  ?
+  null.brake
+  // goto @2034
+  null
+  carAccel = null.brakeDecleration
+  ?
+  engineDamage = null.brakeDecleration
+  ?
+  // [0x07d1] op_14
+  null.c2
+  null.carV
+  // goto @2034
+  null
+  carAccel = null.c0
+  ?
+  engineDamage = null.c0
+  ?
+  null
+  carV = null.c0
+  ?
+  carV = ((? > null).carV + (null.carAccel * null.theTime))
+  ?
+  speedoV = ((? > null).speedoV + (engineDamage * null.theTime))
+  ?
+  // [0x0821] op_14
+  null.speedoV
+  (null.carV + null.c10)
+  // goto @2097
+  null
+  tireScrub = 1
+  ?
+  // goto @2093
+  // [0x082d] op_09
+  null
+  tireScrub = 0
+  ?
+  // [0x0841] op_14
+  null.speedoV
+  (null.carV + null.c0_015)
+  // goto @2351
+  // [0x084d] op_1c
+  null.speedoV
+  isNos = null.carV
+  ?
+  // [0x0859] op_14
+  null.c0_02
+  isNos
+  // goto @2152
+  isNos = null.c0
+  ?
+  null.slip
+  // goto @2249
+  avgFps
+  nitrousRemaining = ((ECUtune * null.N) / 1868609.c200)
+  ?
+  // [0x088a] op_14
+  null.c0
+  nitrousRemaining
+  // goto @2204
+  nitrousRemaining = null.c0
+  ?
+  // goto @2200
+  (nitrousRemaining >= null.c1)
+  (? >= ?)
+  // goto @2223
+  nitrousRemaining = null.c1
+  ?
+  // [0x08b8] op_1c
+  // [0x08be] op_1c
+  null.c1
+  (? > null).speedoV
+  speedoV = (nitrousRemaining * 5636118)
+  ?
+  // goto @2245
+  // [0x08c5] op_66
+  NOS = (null.clutchFeather + null.c0_18)
+  ?
+  // [0x08df] op_1c
+  (? > null).speedoV
+  speedoV = (NOS * isNos)
+  ?
+  // [0x08ee] op_1f
+  null.mph
+  (? && (param_c0 >= null.c0))
+  if (false) { /* else goto @2318 */ }
+  // [0x090a] op_14
+  (null.c8 / null.c10)
+  (null.rpm / null.redLine)
+  // goto @2348
+  // [0x0922] op_1c
+  !(null.speedoV / null.c2)
+  null
+  ((null.rpm / null.redLine) > 1914368)
+  // goto @2347
+  null
+  (? > ?)
+  speedoV = null.carV
+  ?
+  // [0x095d] op_19
+  (null.fgr * null.rpmGearConversion)
+  (((null.gConvSlipA * null.r) * 1999681.gr) * null.c50)
+  null.speedoV
+  null
+  1914368
+  null.getTorque()()
+  null.slip
+  // goto @2456
+  null
+  mph = (null.speedoV * null.vToMph)
+  ?
+  // [0x0985] op_14
+  null.c0_02
+  null.mph
+  // goto @2453
+  null
+  mph = null.c0_02
+  ?
+  // goto @2452
+  // [0x0994] op_11
+  null
+  mph = (null.carV * null.vToMph)
+  ?
+  // [0x09aa] op_14
+  null.c0_02
+  c0
+  // goto @2518
+  null.gearValue
+  if (c_86) { /* else goto @2496 */ }
+  null.brake
+  // goto @2510
+  c0 = null.c0
+  ?
+  // goto @2506
+  (? || ?)
+  c0 = null.c0_02
+  ?
+  null.gearValue
+  if (c_86) { /* else goto @2545 */ }
+  // [0x09e6] op_1c
+  (? > null).s
+  s = c0
+  ?
+  // goto @2541
+  // [0x09ed] op_10
+  s = ((? > null).s + c0)
+  ?
+  null
+  s = (Math.floor()((null.s * null.c1000)) / null.c1000)
+  ?
+  null.staging
+  // goto @2903
+  // [0x0a28] op_14
+  (null.s % null.c13)
+  // goto @2647
+  s = (null % null.c13)
+  ?
+  null
+  mph = null.c0
+  ?
+  null
+  carAccel = null.c0
+  ?
+  null
+  carV = null.c0
+  ?
+  // goto @2644
+  (null.s >= null.c5)
+  // goto @2698
+  null
+  s = null.c5
+  ?
+  null
+  mph = null.c0
+  ?
+  null
+  carAccel = null.c0
+  ?
+  null
+  carV = null.c0
+  ?
+  // goto @2694
+  // [0x0a86] op_cd
+  rpm = 0
+  ?
+  stockRedLine = 0
+  ?
+  // [0x0aa6] op_14
+  null.c0
+  null.s
+  (? > (? && (? >= (null.s % null.c3))))
+  // goto @2738
+  rpm = 1
+  ?
+  // [0x0ac4] op_14
+  null.c1
+  null.s
+  (? > (? && (? >= (null.s % null.c2))))
+  // goto @2768
+  stockRedLine = 1
+  ?
+  (null.staged < stockRedLine)
+  (? || (? || (null.preStaged < rpm)))
+  // goto @2900
+  null
+  preStaged = rpm
+  ?
+  null
+  staged = stockRedLine
+  ?
+  (? && stockRedLine)
+  // goto @2896
+  // [0x0afb] op_19
+  // goto @2850
+  // [0x0b17] op_04
+  5000(stagedAndReady)
+  lightDelayTO
+  null
+  lightDelayTO = null
+  ?
+  // goto @2846
+  // [0x0b1e] op_1c
+  // [0x0b27] op_62
+  null.lightDelayTO
+  if (2571520) { /* else goto @2875 */ }
+  null.lightDelayTO.forget()()
+  ?(!?(flashSP).runEngineStageLightCB(), stockRedLine, rpm)
+  // goto @2911
+  // [0x0b53] op_a7
+  null.rt
+  if (undefined) { /* else goto @2966 */ }
+  (null.theActualTime >= null.lagThreshold)
+  // goto @2943
+  badCounterRT = ((? > null).badCounterRT + null.theActualTime)
+  ?
+  // goto @2939
+  // [0x0b7b] op_11
+  goodCounterRT = ((? > null).goodCounterRT + null.theActualTime)
+  ?
+  // [0x0b92] op_17
+  null.c0
+  null.s
+  // goto @3731
+  c1_25 = null.c0
+  ?
+  null
+  timeStartLine = _system.milliseconds
+  ?
+  null.timeGreen
+  if (null.c0) { /* else goto @3195 */ }
+  rt = (null % null.c1)
+  ?
+  ?(?, red)
+  if (KOTH) { /* else goto @3064 */ }
+  ?(?, id_114)
+  // goto @3060
+  // [0x0bf8] op_6f
+  if (QM) { /* else goto @3094 */ }
+  ?(?, id_114)
+  // goto @3090
+  // [0x0c12] op_65
+  if (RIVAL) { /* else goto @3113 */ }
+  if (TEAMRIVAL) { /* else goto @3135 */ }
+  ?(?, id_114)
+  // goto @3131
+  // [0x0c3f] op_6f
+  if (HTQ) { /* else goto @3165 */ }
+  ?(?, id_114)
+  // goto @3161
+  (? / ?)
+  if (HT) { /* else goto @3192 */ }
+  ?(?, id_114)
+  // goto @3192
+  // [0x0c77] op_ec
+  hp = _system.milliseconds
+  ?
+  // [0x0c8a] op_1c
+  4273408
+  null.timeGreen
+  hp
+  null
+  // goto @3247
+  rt = ?
+  ?
+  // [0x0c9d] op_14
+  null.c0_5
+  null.rt
+  // goto @3431
+  rt = (null % null.c1)
+  ?
+  if (KOTH) { /* else goto @3276 */ }
+  ?(?, id_114)
+  // goto @3272
+  // [0x0ccc] op_6f
+  if (QM) { /* else goto @3306 */ }
+  ?(?, id_114)
+  // goto @3302
+  // [0x0ce6] op_65
+  if (RIVAL) { /* else goto @3325 */ }
+  if (TEAMRIVAL) { /* else goto @3347 */ }
+  ?(?, id_114)
+  // goto @3343
+  // [0x0d13] op_6f
+  if (HTQ) { /* else goto @3377 */ }
+  ?(?, id_114)
+  // goto @3373
+  (? / ?)
+  if (HT) { /* else goto @3404 */ }
+  ?(?, id_114)
+  ?(?, red)
+  // goto @3428
+  (null.badCounterRT >= false)
+  // goto @3456
+  c1_25 = null.lagTimeAddition()(null.badCounterRT)
+  ?
+  if (KOTH) { /* else goto @3500 */ }
+  // [0x0d93] op_1c
+  4273408
+  null.timeGreen
+  hp
+  KRT()
+  // goto @3512
+  ?((? + c1_25), null.guid)
+  // goto @3496
+  // [0x0da8] op_bb
+  if (QM) { /* else goto @3544 */ }
+  // [0x0dbf] op_1c
+  4273408
+  null.timeGreen
+  hp
+  RRT()
+  // goto @3556
+  ?((? + c1_25), null.guid)
+  // goto @3540
+  // [0x0dd4] op_8f
+  if (RIVAL) { /* else goto @3563 */ }
+  if (TEAMRIVAL) { /* else goto @3599 */ }
+  // [0x0df6] op_1c
+  4273408
+  null.timeGreen
+  hp
+  RIVRT()
+  // goto @3611
+  ?((? + c1_25), null.guid)
+  // goto @3595
+  // [0x0e0f] op_6f
+  if (HTQ) { /* else goto @3643 */ }
+  // [0x0e22] op_1c
+  4273408
+  null.timeGreen
+  hp
+  HTQRT()
+  // goto @3655
+  ?((? + c1_25), null.guid)
+  // goto @3639
+  // [0x0e37] op_2c
+  if (HT) { /* else goto @3684 */ }
+  // [0x0e4e] op_1c
+  4273408
+  null.timeGreen
+  hp
+  HTRT()
+  // goto @3699
+  ?((? + c1_25), null.guid)
+  4273408
+  (null.rt + c1_25)
+  Math.floor()
+  ?(flashSP).runEngineSetMyRTCB()
+  // goto @3745
+  ?((?(?) / null.c1000))
+  // goto @3730
+  // [0x0e92] op_2e
+  (null.theActualTime >= null.lagThreshold)
+  // goto @3763
+  badCounterET = ((? > null).badCounterET + null.theActualTime)
+  ?
+  // goto @3759
+  // [0x0eaf] op_11
+  goodCounterET = ((? > null).goodCounterET + null.theActualTime)
+  ?
+  // [0x0ec6] op_17
+  null.c1320
+  null.s
+  // goto @5490
+  null.et
+  if (undefined) { /* else goto @3951 */ }
+  hp = _system.milliseconds
+  ?
+  // [0x0ee7] op_1c
+  4273408
+  null.timeStartLine
+  hp
+  null
+  // goto @3852
+  et = ?
+  ?
+  null
+  ts = (Math.floor()((null.mph * null.c100)) / null.c100)
+  ?
+  c10000 = (Math.floor()((((null.pistonDamage / null.partBreakPoint) / null.cylinderNumber) * null.c10000)) / null.c100)
+  ?
+  c2 = (Math.floor()((((null.rodDamage / null.partBreakPoint) / null.cylinderNumber) * null.c10000)) / null.c100)
+  ?
+  sprite = (Math.floor()((((null.valveDamage / null.partBreakPoint) / null.valveNumber) * null.c10000)) / null.c100)
+  ?
+  flashSP = (Math.floor()(((null.headGasketDamage / null.partBreakPoint) * null.c10000)) / null.c100)
+  ?
+  runEngineNOSCB = (Math.floor()(((null.engineBlockDamage / null.partBreakPoint) * null.c10000)) / null.c100)
+  ?
+  nitrousTankSize = (Math.floor()((null.oilDamage * null.c10000)) / null.c100)
+  ?
+  c100 = (Math.floor()((null.oilFilterDamage * null.c10000)) / null.c100)
+  ?
+  revLimiter = (Math.floor()((null.coolantDamage * null.c10000)) / null.c100)
+  ?
+  c200 = (Math.floor()((null.nitrousRemaining * null.c100)) / null.c100)
+  ?
+  tqFlyFactor = (Math.floor()((null.raceGas * null.c100)) / null.c100)
+  ?
+  (c10000 >= null.c100)
+  // goto @4197
+  c10000 = null.c100
+  ?
+  (c2 >= null.c100)
+  // goto @4216
+  c2 = null.c100
+  ?
+  (sprite >= null.c100)
+  // goto @4235
+  sprite = null.c100
+  ?
+  (flashSP >= null.c100)
+  // goto @4254
+  flashSP = null.c100
+  ?
+  (runEngineNOSCB >= null.c100)
+  // goto @4273
+  runEngineNOSCB = null.c100
+  ?
+  (nitrousTankSize >= null.c100)
+  // goto @4292
+  nitrousTankSize = null.c100
+  ?
+  (c100 >= null.c100)
+  // goto @4311
+  c100 = null.c100
+  ?
+  (revLimiter >= null.c100)
+  // goto @4330
+  revLimiter = null.c100
+  ?
+  (c200 >= null.c100)
+  // goto @4349
+  c200 = null.c100
+  ?
+  (tqFlyFactor >= null.c100)
+  // goto @4368
+  tqFlyFactor = null.c100
+  ?
+  if (KOTH) { /* else goto @4512 */ }
+  (? < (null.rt % null.c1))
+  // goto @4424
+  // [0x113f] op_1c
+  null.timeAnchor
+  _system.milliseconds
+  null.carAccel
+  null.carV
+  null.s
+  INT()
+  3801092
+  // [0x1150] op_1c
+  4273408
+  null.timeStartLine
+  hp
+  KDONE()
+  // goto @4469
+  ?(?, null.ts, c10000, sprite, c2, flashSP, runEngineNOSCB, nitrousTankSize, c100, revLimiter, c200, tqFlyFactor, null.createMd5Hash()(1), null.goodCounterRT, null.badCounterRT, null.goodCounterET, null.badCounterET, null.avgFps)
+  // goto @4511
+  // [0x119c] op_d2
+  if (QM) { /* else goto @4644 */ }
+  (? < (null.rt % null.c1))
+  // goto @4556
+  RINT()(null.s, null.carV, null.carAccel)
+  // [0x11d4] op_1c
+  4273408
+  null.timeStartLine
+  hp
+  RDONE()
+  // goto @4601
+  ?(?, null.ts, c10000, sprite, c2, flashSP, runEngineNOSCB, nitrousTankSize, c100, revLimiter, c200, tqFlyFactor, null.createMd5Hash()(1), null.goodCounterRT, null.badCounterRT, null.goodCounterET, null.badCounterET, null.avgFps)
+  // goto @4643
+  // [0x1220] op_4e
+  if (RIVAL) { /* else goto @4663 */ }
+  if (TEAMRIVAL) { /* else goto @4853 */ }
+  (? < (null.rt % null.c1))
+  // goto @4711
+  // [0x125e] op_1c
+  null.timeAnchor
+  _system.milliseconds
+  null.carAccel
+  null.carV
+  null.s
+  INT()
+  3801092
+  gr = (Math.floor()((((null.beforePistonDamage / null.partBreakPoint) / null.cylinderNumber) * null.c10000)) / null.c100)
+  ?
+  null
+  thePD = c10000
+  ?
+  null
+  theBPD = gr
+  ?
+  // [0x12a5] op_1c
+  4273408
+  null.timeStartLine
+  hp
+  RIVDONE()
+  // goto @4810
+  ?(?, null.ts, c10000, sprite, c2, flashSP, runEngineNOSCB, nitrousTankSize, c100, revLimiter, c200, tqFlyFactor, null.createMd5Hash()(1), null.goodCounterRT, null.badCounterRT, null.goodCounterET, null.badCounterET, null.avgFps)
+  // goto @4851
+  // prologue: id_16693
+  // [0x12f5] op_6f
+  if (CT) { /* else goto @4911 */ }
+  ?(flashSP).ctFinishCB()(null.et, null.ts)
+  // [0x1328] op_1c
+  4273408
+  null.timeStartLine
+  hp
+  et=
+  // goto @4941
+  // [0x1333] op_9e
+  ?(?, ((? + &cwc=) + CheckWindowsClass()(decrypt()(_global.cwc))))
+  // goto @5164
+  1
+  if (CTQ) { /* else goto @5207 */ }
+  ?(flashSP).ctFinishCB()(null.et, null.ts)
+  // goto @5204
+  (? + ?)
+  if (P) { /* else goto @5247 */ }
+  ?(flashSP).practiceFinishCB()(null.et, null.ts)
+  // goto @5243
+  // [0x147b] op_f3
+  if (HTQ) { /* else goto @5346 */ }
+  // [0x1492] op_1c
+  4273408
+  null.timeStartLine
+  hp
+  HTQD()
+  // goto @5303
+  ?(?, null.ts, c10000, sprite, c2, flashSP, runEngineNOSCB, nitrousTankSize, c100, revLimiter, c200, tqFlyFactor, null.createMd5Hash()(1), null.goodCounterRT, null.badCounterRT, null.goodCounterET, null.badCounterET, null.avgFps)
+  // goto @5342
+  // [0x14de] op_90
+  if (HT) { /* else goto @5487 */ }
+  (? < (null.rt % null.c1))
+  // goto @5402
+  // [0x1511] op_1c
+  null.timeAnchor
+  _system.milliseconds
+  null.carAccel
+  null.carV
+  null.s
+  INT()
+  3801092
+  // [0x1522] op_1c
+  4273408
+  null.timeStartLine
+  hp
+  HTD()
+  // goto @5447
+  ?(?, null.ts, c10000, sprite, c2, flashSP, runEngineNOSCB, nitrousTankSize, c100, revLimiter, c200, tqFlyFactor, null.createMd5Hash()(1), null.goodCounterRT, null.badCounterRT, null.goodCounterET, null.badCounterET, null.avgFps)
+  // goto @5488
+  // [0x156e] op_8c
+  // [0x1577] op_17
+  // [0x157a] op_08
+  // [0x157f] op_20
+  null.isMidMd5sent
+  (null.s && null.c760)
+  // goto @6139
+  null
+  isMidMd5sent = 1
+  ?
+  if (KOTH) { /* else goto @5579 */ }
+  if (QM) { /* else goto @5579 */ }
+  if (RIVAL) { /* else goto @5579 */ }
+  if (TEAMRIVAL) { /* else goto @5579 */ }
+  if (HTQ) { /* else goto @5579 */ }
+  if (HT) { /* else goto @5627 */ }
+  c10000 = (Math.floor()((((null.pistonDamage / null.partBreakPoint) / null.cylinderNumber) * null.c10000)) / null.c100)
+  ?
+  c2 = (Math.floor()((((null.rodDamage / null.partBreakPoint) / null.cylinderNumber) * null.c10000)) / null.c100)
+  ?
+  sprite = (Math.floor()((((null.valveDamage / null.partBreakPoint) / null.valveNumber) * null.c10000)) / null.c100)
+  ?
+  flashSP = (Math.floor()(((null.headGasketDamage / null.partBreakPoint) * null.c10000)) / null.c100)
+  ?
+  runEngineNOSCB = (Math.floor()(((null.engineBlockDamage / null.partBreakPoint) * null.c10000)) / null.c100)
+  ?
+  nitrousTankSize = (Math.floor()((null.oilDamage * null.c10000)) / null.c100)
+  ?
+  c100 = (Math.floor()((null.oilFilterDamage * null.c10000)) / null.c100)
+  ?
+  revLimiter = (Math.floor()((null.coolantDamage * null.c10000)) / null.c100)
+  ?
+  c200 = (Math.floor()((null.nitrousRemaining * null.c100)) / null.c100)
+  ?
+  tqFlyFactor = (Math.floor()((null.raceGas * null.c100)) / null.c100)
+  ?
+  (c10000 >= null.c100)
+  // goto @5921
+  c10000 = null.c100
+  ?
+  (c2 >= null.c100)
+  // goto @5940
+  c2 = null.c100
+  ?
+  (sprite >= null.c100)
+  // goto @5959
+  sprite = null.c100
+  ?
+  (flashSP >= null.c100)
+  // goto @5978
+  flashSP = null.c100
+  ?
+  (runEngineNOSCB >= null.c100)
+  // goto @5997
+  runEngineNOSCB = null.c100
+  ?
+  (nitrousTankSize >= null.c100)
+  // goto @6016
+  nitrousTankSize = null.c100
+  ?
+  (c100 >= null.c100)
+  // goto @6035
+  c100 = null.c100
+  ?
+  (revLimiter >= null.c100)
+  // goto @6054
+  revLimiter = null.c100
+  ?
+  (c200 >= null.c100)
+  // goto @6073
+  c200 = null.c100
+  ?
+  (tqFlyFactor >= null.c100)
+  // goto @6092
+  tqFlyFactor = null.c100
+  ?
+  M()(c10000, sprite, c2, flashSP, runEngineNOSCB, nitrousTankSize, c100, revLimiter, c200, tqFlyFactor, null.createMd5Hash()(1))
+  // [0x1800] op_1c
+  null.boostPsi
+  fgr = null.stockBoost
+  ?
+  // [0x1809] op_14
+  false
+  fgr
+  // goto @6165
+  fgr = false
+  ?
+  dangerLevel = ((? > null).dangerLevel + (fgr + (null.pistonCompressionLevel * null.c7)))
+  ?
+  // [0x1831] op_14
+  null.c0
+  null.pistonCompressionLevel
+  // goto @6222
+  engineDamageRisk = ((? > null).engineDamageRisk + (null.pistonCompressionLevel * null.c1_8))
+  ?
+  // goto @6218
+  engineDamageRisk = (((? + ?) > null).engineDamageRisk + ((null.boostPsi * null.pistonCompressionLevel) * null.c0_5))
+  ?
+  // [0x186b] op_14
+  null.c0
+  null.engineDamageRisk
+  // goto @6264
+  null
+  engineDamageRisk = false
+  ?
+  (null.rpm >= (null.stockRedLine * null.c1_15))
+  // goto @6309
+  dangerLevel = ((? > null).dangerLevel * null.c2)
+  ?
+  engineDamageRisk = ((? > null).engineDamageRisk * null.c80)
+  ?
+  // [0x18ae] op_1c
+  (timeFromLastFrame / null.c1_8)
+  rpmGearConversion = null.avgDurability
+  ?
+  (rpmGearConversion >= null.c0)
+  // goto @6350
+  dangerLevel = ((? > null).dangerLevel + rpmGearConversion)
+  ?
+  (null.oilDurability >= null.c0)
+  // goto @6452
+  // [0x18e4] op_1c
+  (? > null).oilDamage
+  oilDamage = (null.c100 + ((null.oilDurability / 4273408) / ((null.rpm / null.stockRedLine) * 1917237)))
+  ?
+  // [0x1908] op_17
+  null.c100
+  null.oilDamage
+  // goto @6427
+  null
+  oilDamage = null.c100
+  ?
+  // goto @6423
+  // [0x1917] op_1c
+  // [0x1925] op_1c
+  (? > null).dangerLevel
+  dangerLevel = (null.c100 * (null.oilDurability / 4273408))
+  ?
+  null
+  beforeDangerLevel = null.dangerLevel
+  ?
+  (null.radiatorDurability >= null.c0)
+  // goto @6498
+  // [0x1953] op_1c
+  (? > null).dangerLevel
+  dangerLevel = (null.c100 * (null.radiatorDurability / 4273408))
+  ?
+  (null.oilFilterDurability >= null.c0)
+  // goto @6600
+  // [0x1978] op_1c
+  (? > null).oilFilterDamage
+  oilFilterDamage = (null.c100 + ((null.oilFilterDurability / 4273408) / ((null.rpm / null.stockRedLine) * 1917237)))
+  ?
+  // [0x199c] op_17
+  null.c100
+  null.oilFilterDamage
+  // goto @6575
+  null
+  oilFilterDamage = null.c100
+  ?
+  // goto @6571
+  // [0x19ab] op_1c
+  // [0x19b9] op_1c
+  (? > null).dangerLevel
+  dangerLevel = (null.c100 * (null.oilFilterDurability / 4273408))
+  ?
+  (null.coolantDurability >= null.c0)
+  // goto @6702
+  // [0x19de] op_1c
+  (? > null).coolantDamage
+  coolantDamage = (null.c100 + ((null.coolantDurability / 4273408) / ((null.rpm / null.stockRedLine) * 1917237)))
+  ?
+  // [0x1a02] op_17
+  null.c100
+  null.coolantDamage
+  // goto @6677
+  null
+  coolantDamage = null.c100
+  ?
+  // goto @6673
+  // [0x1a11] op_1c
+  // [0x1a1f] op_1c
+  (? > null).dangerLevel
+  dangerLevel = (null.c100 * (null.coolantDurability / 4273408))
+  ?
+  r
+  negTq
+  // [0x1a3b] op_14
+  null.dangerLevel
+  null.pistonDurability
+  // goto @6738
+  r = (null.dangerLevel * null.c0_95)
+  ?
+  // goto @6734
+  // [0x1a4e] op_10
+  r = (null.pistonDurability * null.c0_95)
+  ?
+  // [0x1a63] op_1c
+  negTq = (null.dangerLevel / (r * 4273408))
+  ?
+  c9
+  // [0x1a7a] op_14
+  null.beforeDangerLevel
+  null.pistonDurability
+  // goto @6801
+  c9 = (null.beforeDangerLevel * null.c0_95)
+  ?
+  // goto @6797
+  // [0x1a8d] op_10
+  c9 = (null.pistonDurability * null.c0_95)
+  ?
+  // [0x1aa2] op_1c
+  c299 = (null.beforeDangerLevel / (c9 * 4273408))
+  ?
+  // [0x1ab4] op_14
+  null.c0
+  c299
+  // goto @6851
+  c299 = null.c0
+  ?
+  // [0x1ac7] op_14
+  null.c0
+  negTq
+  // goto @6870
+  negTq = null.c0
+  ?
+  pistonDamage = ((? > null).pistonDamage + (((null.engineDamageRisk / null.c100) * negTq) + (negTq * null.c0_05)))
+  ?
+  beforePistonDamage = ((? > null).beforePistonDamage + (((null.engineDamageRisk / null.c100) * c299) + (c299 * null.c0_05)))
+  ?
+  null
+  pistonBroken = Math.floor()((null.pistonDamage / null.partBreakPoint))
+  ?
+  (null.pistonBroken >= null.cylinderNumber)
+  // goto @6979
+  null
+  pistonBroken = null.cylinderNumber
+  ?
+  // [0x1b48] op_14
+  null.dangerLevel
+  null.rodDurability
+  // goto @7007
+  r = (null.dangerLevel * null.c0_95)
+  ?
+  // goto @7003
+  // [0x1b5b] op_10
+  r = (null.rodDurability * null.c0_95)
+  ?
+  // [0x1b70] op_1c
+  negTq = (null.dangerLevel / (r * 4273408))
+  ?
+  // [0x1b82] op_14
+  null.c0
+  negTq
+  // goto @7057
+  negTq = null.c0
+  ?
+  rodDamage = ((? > null).rodDamage + (((null.engineDamageRisk / null.c100) * negTq) + (negTq * null.c0_05)))
+  ?
+  null
+  rodBroken = Math.floor()((null.rodDamage / null.partBreakPoint))
+  ?
+  (null.rodBroken >= null.cylinderNumber)
+  // goto @7134
+  null
+  rodBroken = null.cylinderNumber
+  ?
+  // [0x1be3] op_14
+  null.dangerLevel
+  null.valveDurability
+  // goto @7162
+  r = (null.dangerLevel * null.c0_95)
+  ?
+  // goto @7158
+  // [0x1bf6] op_10
+  r = (null.valveDurability * null.c0_95)
+  ?
+  // [0x1c0b] op_1c
+  negTq = (null.dangerLevel / (r * 4273408))
+  ?
+  // [0x1c1d] op_14
+  null.c0
+  negTq
+  // goto @7212
+  negTq = null.c0
+  ?
+  valveDamage = ((? > null).valveDamage + (((null.engineDamageRisk / null.c100) * negTq) + (negTq * null.c0_05)))
+  ?
+  null
+  valveBroken = Math.floor()((null.valveDamage / null.partBreakPoint))
+  ?
+  (null.valveBroken >= null.valveNumber)
+  // goto @7289
+  null
+  valveBroken = null.valveNumber
+  ?
+  // [0x1c7e] op_14
+  null.dangerLevel
+  null.engineBlockDurability
+  // goto @7317
+  r = (null.dangerLevel * null.c0_95)
+  ?
+  // goto @7313
+  // [0x1c91] op_10
+  r = (null.engineBlockDurability * null.c0_95)
+  ?
+  // [0x1ca6] op_1c
+  negTq = (null.dangerLevel / (r * 4273408))
+  ?
+  // [0x1cb8] op_14
+  null.c0
+  negTq
+  // goto @7367
+  negTq = null.c0
+  ?
+  engineBlockDamage = ((? > null).engineBlockDamage + (((null.engineDamageRisk / null.c100) * negTq) + (negTq * null.c0_05)))
+  ?
+  null
+  engineBlockBroken = Math.floor()((null.engineBlockDamage / null.partBreakPoint))
+  ?
+  (null.engineBlockBroken >= null.c1)
+  // goto @7444
+  null
+  engineBlockBroken = null.c1
+  ?
+  // [0x1d19] op_14
+  null.dangerLevel
+  null.headGasketDurability
+  // goto @7472
+  r = (null.dangerLevel * null.c0_95)
+  ?
+  // goto @7468
+  // [0x1d2c] op_10
+  r = (null.headGasketDurability * null.c0_95)
+  ?
+  // [0x1d41] op_1c
+  negTq = (null.dangerLevel / (r * 4273408))
+  ?
+  // [0x1d53] op_14
+  null.c0
+  negTq
+  // goto @7522
+  negTq = null.c0
+  ?
+  headGasketDamage = ((? > null).headGasketDamage + (((null.engineDamageRisk / null.c100) * negTq) + (negTq * null.c0_05)))
+  ?
+  null
+  headGasketBroken = Math.floor()((null.headGasketDamage / null.partBreakPoint))
+  ?
+  (null.headGasketBroken >= null.c1)
+  // goto @7599
+  null
+  headGasketBroken = null.c1
+  ?
+  null
+  engineDamage = ((((((null.pistonBroken / null.cylinderNumber) * null.c0_4) + ((null.valveBroken / null.valveNumber) * null.c0_2)) + ((null.rodBroken / null.cylinderNumber) * null.c0_1)) + (null.headGasketBroken * null.c0_1)) + (null.engineBlockBroken * null.c0_4))
+  ?
+  (null.engineDamage >= null.c0_65)
+  // goto @7689
+  null
+  engineDamage = null.c0_65
+  ?
+  // [0x1e0a] op_20
+  (null.engineDamage >= null.c0)
+  (? > (? && null.isEngineLightOn))
+  // goto @7733
+  null
+  isEngineLightOn = 1
+  ?
+  ?(flashSP).runEngineDamageLightCB()()
+  (null.timeAnchor >= false)
+  // goto @7791
+  // [0x1e63] op_1c
+  null.timeAnchor
+  _system.milliseconds
+  null.boostPsi
+  null.s
+  null.mph
+  null.rpm
+  ?(flashSP).runEngineCB()
+  3801093
+  // goto @7787
+  // [0x1e6b] op_26
+  ?(flashSP).runEngineCB()(null.rpm, null.mph, null.s, null.boostPsi, false)
+end
+
+on block_9
+  -- block offset=31980 length=2264 codeLen=710
+  -- names: 0=rpm, 1=pb, 2=c1, 3=stockBoost, 4=c0, 5=c1_7, 6=c0_7, 7=boostSetting, 8=c7_5, 9=c100, 10=boostRange, 11=boostLag, 12=boostPsi, 13=compressionPowerDelta, 14=pistonCompressionLevel, 15=c4, 16=c5, 17=c2, 18=maxPsi, 19=getTorque, 20=overallAirFlowLimit, 21=airFlowLimit, 22=chipSetting, 23=fuelFlowLimit, 24=dangerLevel, 25=airFuelMeter, 26=airFuelDelta, 27=Math, 28=abs, 29=engineDamageRisk, 30=c0_09, 31=c0_07, 32=c2_5, 33=c10, 34=c0_1, 35=ECUtune, 36=systemPower, 37=airhpi, 38=boostCreatedPower
+  rpm = (null.rpm / null.pb)
+  ?
+  (rpm >= null.c1)
+  // goto @35
+  rpm = null.c1
+  ?
+  pb
+  (null.stockBoost >= null.c0)
+  // goto @93
+  // [0x003c] op_1c
+  4273408
+  null.c0_7
+  (rpm * null.c1_7)
+  // goto @16761
+  // [0x0045] op_03
+  // [0x0046] op_1c
+  // [0x004c] op_08
+  pb = ((? * 1917237) / null.c100)
+  ?
+  // goto @89
+  // [0x0059] op_1f
+  // [0x0066] op_1c
+  // [0x006b] op_08
+  (rpm * null.boostRange)
+  pb = ((null.boostLag * 4273408) / null.c100)
+  ?
+  // [0x007a] op_14
+  false
+  pb
+  // goto @134
+  pb = false
+  ?
+  // [0x0090] op_1c
+  (rpm * null.boostRange)
+  null
+  boostPsi = null.boostLag
+  ?
+  // [0x009d] op_14
+  null.c0
+  null.boostPsi
+  // goto @173
+  null
+  boostPsi = null.c0
+  ?
+  null
+  compressionPowerDelta = null.c0
+  ?
+  // [0x00bb] op_14
+  null.c0
+  null.pistonCompressionLevel
+  // goto @252
+  (((null * (null.pistonCompressionLevel % null.c4)) > 4273408) * null.c5)
+  compressionPowerDelta = (1868578 / null.c100)
+  ?
+  (null.compressionPowerDelta >= null.c0)
+  // goto @249
+  null
+  compressionPowerDelta = null.c0
+  ?
+  // goto @248
+  // [0x00f8] op_28
+  (null.pistonCompressionLevel >= null.c0)
+  // goto @289
+  // [0x0113] op_1c
+  // [0x0118] op_09
+  (null.pistonCompressionLevel * null.c2)
+  null
+  compressionPowerDelta = (null.boostPsi / 4273408)
+  ?
+  c1 = null.c0
+  ?
+  (null.maxPsi >= null.c0)
+  // goto @330
+  c1 = ((null.boostPsi / null.maxPsi) * null.getTorque)
+  ?
+  // goto @326
+  (? || ?)
+  c1 = null.getTorque
+  ?
+  (null.overallAirFlowLimit >= c1)
+  // goto @372
+  // [0x0161] op_1c
+  null.overallAirFlowLimit
+  stockBoost = c1
+  ?
+  null
+  airFlowLimit = c1
+  ?
+  // goto @368
+  // [0x0170] op_18
+  // [0x0178] op_1c
+  c1
+  stockBoost = null.overallAirFlowLimit
+  ?
+  null
+  airFlowLimit = null.overallAirFlowLimit
+  ?
+  c0 = (null.airFlowLimit + null.chipSetting)
+  ?
+  (c0 >= null.fuelFlowLimit)
+  // goto @425
+  c0 = null.fuelFlowLimit
+  ?
+  null
+  dangerLevel = null.airFlowLimit
+  ?
+  // [0x01b7] op_1c
+  c0
+  null
+  airFuelMeter = null.airFlowLimit
+  ?
+  null
+  airFuelDelta = Math.abs()(null.airFuelMeter)
+  ?
+  // [0x01d7] op_14
+  null.c1
+  null.airFuelDelta
+  // goto @487
+  null
+  airFuelDelta = null.c1
+  ?
+  c1_7
+  (null.airFlowLimit >= c0)
+  // goto @590
+  (null.airFuelDelta >= null.c5)
+  // goto @536
+  null
+  engineDamageRisk = ((null.dangerLevel * null.airFuelDelta) * null.c0_09)
+  ?
+  // goto @532
+  null
+  (? >= ?)
+  engineDamageRisk = ((null.dangerLevel * null.airFuelDelta) * null.c0_07)
+  ?
+  c1_7 = (null.airFuelDelta * null.c2_5)
+  ?
+  (c1_7 >= null.c10)
+  // goto @587
+  c1_7 = null.c10
+  ?
+  // goto @586
+  id_16705 = ?
+  engineDamageRisk = ((?.dangerLevel / null.airFuelDelta) / null.c100)
+  ?
+  c1_7 = (null.c1 / null.airFuelDelta)
+  ?
+  // [0x0272] op_14
+  null.c0_1
+  c1_7
+  // goto @641
+  c1_7 = null.c0
+  ?
+  c0_7 = (stockBoost / null.c2)
+  ?
+  // [0x0291] op_1c
+  null.airFlowLimit
+  boostSetting = c0_7
+  ?
+  null
+  ECUtune = (c1_7 / null.c100)
+  ?
+  // [0x02b0] op_1c
+  null.airhpi
+  null
+  systemPower = (c0_7 / null.c100)
+  ?
+  null
+  boostCreatedPower = ((pb * boostSetting) / null.c100)
+  ?
+end
+
+on block_10
+  -- block offset=34244 length=584 codeLen=110
+  -- names: 0=rpm, 1=undefined, 2=idleRPM, 3=c10000, 4=posTq, 5=tqArray, 6=parseInt, 7=c100, 8=negTq, 9=c200, 21=initComputerRace
+  null.rpm
+  if (undefined) { /* else goto @26 */ }
+  null
+  rpm = null.idleRPM
+  ?
+  // goto @22
+  // [0x0016] op_30
+  // [0x001f] op_14
+  null.idleRPM
+  null.rpm
+  // goto @50
+  null
+  rpm = null.idleRPM
+  ?
+  // goto @46
+  // [0x002e] op_18
+  (null.rpm >= null.c10000)
+  // goto @71
+  null
+  rpm = null.c10000
+  ?
+  null.tqArray
+  null
+  posTq = !parseInt()((null.rpm / null.c100))
+  ?
+  // [0x006c] op_08
+  (null.posTq + null.c200)
+  null
+  2242048
+end
+
+on block_11
+  -- block offset=34828 length=196 codeLen=20
+  -- names: 0=init, 1=btd, 23=gearUp
+  null.init()(param_init)
+  null
+  btd = param_btd
+  ?
+end
+
+on block_12
+  -- block offset=35024 length=824 codeLen=198
+  -- names: 0=gearValue, 1=grs, 2=c0, 3=gr, 4=mph, 5=carAccel, 6=carV, 7=slip, 8=sprite, 9=flashSP, 10=runEngineTractionLightCB, 11=engineV, 12=speedoV, 13=hp, 14=runEngineGearUpdateCB, 25=gearDown
+  gearValue
+  // [0x000b] op_14
+  6
+  null.gearValue
+  // goto @33
+  gearValue = !(null.grs + !null.gearValue)
+  ?
+  (gearValue >= null.c0)
+  // goto @201
+  // [0x002a] op_30
+  null
+  gr = gearValue
+  ?
+  null.gearValue
+  if (null.c0) { /* else goto @161 */ }
+  null
+  mph = null.c0
+  ?
+  null
+  carAccel = null.c0
+  ?
+  null
+  carV = null.c0
+  ?
+  null.slip
+  // goto @140
+  null
+  slip = 0
+  ?
+  ?(flashSP).runEngineTractionLightCB()(0)
+  null
+  engineV = null.speedoV
+  ?
+  // goto @136
+  null
+  (? > ?)
+  engineV = null.carV
+  ?
+  null
+  hp = null.c0
+  ?
+  // goto @157
+  // [0x009d] op_15
+  if (!null.gearValue) { /* else goto @179 */ }
+  null
+  speedoV = null.engineV
+  ?
+  ?(flashSP).runEngineGearUpdateCB()(null.gearValue)
+end
+
+on block_13
+  -- block offset=35848 length=916 codeLen=219
+  -- names: 0=gearValue, 2=staging, 3=c0, 4=gr, 5=grs, 6=mph, 7=carAccel, 8=carV, 9=speedoV, 10=engineV, 11=slip, 12=sprite, 13=flashSP, 14=runEngineTractionLightCB, 15=hp, 16=runEngineGearUpdateCB, 27=setBrake
+  (? && (null.gearValue >= c_1))
+  // goto @16706
+  // [0x001e] op_08
+  // [0x0023] op_20
+  null.staging
+  (4456469 && (null.gearValue >= null.c0))
+  (458934 != null)
+  null.gearValue
+  if (c_1) { /* else goto @109 */ }
+  null.grs
+  null
+  gr = !false
+  ?
+  null
+  mph = null.c0
+  ?
+  null
+  carAccel = null.c0
+  ?
+  null
+  carV = null.c0
+  ?
+  null
+  speedoV = null.engineV
+  ?
+  // goto @105
+  // [0x0069] op_5e
+  null.gearValue
+  if (null.c0) { /* else goto @186 */ }
+  null.slip
+  // goto @165
+  null
+  slip = 0
+  ?
+  ?(flashSP).runEngineTractionLightCB()(0)
+  null
+  engineV = null.speedoV
+  ?
+  // goto @161
+  null
+  (? > ?)
+  engineV = null.carV
+  ?
+  null
+  hp = null.c0
+  ?
+  // goto @182
+  // [0x00b6] op_11
+  null.grs
+  null
+  gr = !null.gearValue
+  ?
+  ?(flashSP).runEngineGearUpdateCB()(null.gearValue)
+end
+
+on block_14
+  -- block offset=36764 length=200 codeLen=23
+  -- names: 0=brake, 29=setClutch
+  if (!param_brake) { /* else goto @20 */ }
+  null
+  brake = 1
+  ?
+  // goto @16
+  // [0x0010] op_09
+  null
+  brake = 0
+  ?
+end
+
+on block_15
+  -- block offset=36964 length=288 codeLen=54
+  -- names: 0=c0_05, 1=clutchFeather, 2=c0_2, 31=stagedAndReady
+  // [0x0007] op_14
+  null.c0_05
+  param_c0_05
+  // goto @26
+  null
+  clutchFeather = null.c0_05
+  ?
+  // goto @22
+  (param_c0_05 >= null.c0_2)
+  (? % ?)
+  // goto @49
+  null
+  clutchFeather = null.c0_2
+  ?
+  // goto @45
+  null
+  (? || ?)
+  clutchFeather = param_c0_05
+  ?
+end
+
+on block_16
+  -- block offset=37252 length=2068 codeLen=539
+  -- names: 0=timeAnchor, 1=c0, 2=goodCounterRT, 3=badCounterRT, 4=goodCounterET, 5=badCounterET, 6=lightDelayTO, 7=object, 8=forget, 9=staging, 10=gearValue, 12=gearUp, 13=raceType, 14=KOTH, 15=KREADY, 16=createMd5Hash, 17=QM, 18=RREADY, 19=RIVAL, 20=TEAMRIVAL, 21=RIVREADY, 22=CTQ, 23=P, 24=startLightTimer, 25=p, 26=CT, 27=btd, 28=o, 29=lightTO1, 30=stagingLightPos1, 31=timeout, 32=c1000, 33=startLightTimer, 34=symbol, 35=runLight, 36=b, 37=lightTO2, 38=stagingLightPos2, 39=HTQ, 40=HTQREADY, 41=HT, 42=HTREADY
+  null
+  timeAnchor = null.c0
+  ?
+  null
+  goodCounterRT = false
+  ?
+  null
+  badCounterRT = false
+  ?
+  null
+  goodCounterET = false
+  ?
+  null
+  badCounterET = false
+  ?
+  2571520
+  null.lightDelayTO
+  // goto @4659
+  // [0x002d] op_0f
+  null.lightDelayTO.forget()()
+  null.staging
+  // goto @542
+  null
+  staging = 0
+  ?
+  null.gearValue
+  if (c_11) { /* else goto @94 */ }
+  null.gearUp()()
+  if (KOTH) { /* else goto @126 */ }
+  KREADY()(false, null.createMd5Hash()(0))
+  // goto @123
+  // [0x007a] op_a3
+  if (QM) { /* else goto @158 */ }
+  RREADY()(false, null.createMd5Hash()(0))
+  // goto @155
+  // [0x009e] op_0d
+  if (RIVAL) { /* else goto @177 */ }
+  if (TEAMRIVAL) { /* else goto @201 */ }
+  RIVREADY()(false, null.createMd5Hash()(0))
+  // goto @198
+  // [0x00c9] op_0d
+  if (CTQ) { /* else goto @220 */ }
+  if (P) { /* else goto @239 */ }
+  ?(p, false)
+  // goto @236
+  // [0x00eb] op_32
+  if (CT) { /* else goto @481 */ }
+  // [0x00ff] op_14
+  null.c0
+  null.btd
+  // goto @358
+  ?(o, false)
+  2571520
+  null.lightTO1
+  // goto @4898
+  // [0x011c] op_0f
+  null.lightTO1.forget()()
+  null
+  stagingLightPos1 = null.c0
+  ?
+  // [0x015b] op_04
+  (((p % null.btd) * null.c1000) + (null.c1000 / null.startLightTimer))(runLight)
+  null
+  lightTO1 = null
+  ?
+  // goto @354
+  // [0x0162] op_7b
+  null.btd
+  if (null.c0) { /* else goto @386 */ }
+  ?(b, false)
+  // goto @382
+  // [0x017e] op_5f
+  2571520
+  null.lightTO2
+  // goto @5009
+  // [0x018b] op_0f
+  null.lightTO2.forget()()
+  null
+  stagingLightPos2 = null.c0
+  ?
+  // [0x01c9] op_04
+  ((null.btd * null.c1000) + (null.c1000 / null.startLightTimer))(runLight)
+  o
+  null
+  lightTO2 = null
+  ?
+  ?(p, false)
+  // goto @477
+  // [0x01dd] op_40
+  if (HTQ) { /* else goto @513 */ }
+  HTQREADY()(false, null.createMd5Hash()(0))
+  // goto @509
+  // [0x01fd] op_20
+  if (HT) { /* else goto @542 */ }
+  HTREADY()(false, null.createMd5Hash()(0))
+end
+
+on block_17
+  -- block offset=39320 length=1796 codeLen=681
+  -- names: 0=greenDelay, 1=parseInt, 2=sprite, 3=flashSP, 4=setSpectateDelayCB, 5=timeAnchor, 6=c0, 7=_system, 8=milliseconds, 9=lightTO1, 10=object, 11=forget, 12=stagingLightPos1, 13=timeout, 14=symbol, 15=runLight, 16=secondBuffer, 17=lightTO2, 18=stagingLightPos2, 19=p, 20=b, 21=1, 22=1T, 23=s, 24=sT, 25=o, 26=2, 27=2T, 35=runLight
+  null
+  greenDelay = parseInt()(param_parseInt)
+  ?
+  ?(flashSP).setSpectateDelayCB()(param_parseInt)
+  // [0x0027] op_47
+  param_greenDelay
+  // [0x0029] op_82
+  // [0x002b] op_09
+  // [0x002f] op_29
+  // [0x0031] op_14
+  // [0x0033] op_29
+  // [0x0035] op_15
+  // [0x0037] op_82
+  // [0x003b] op_cd
+  // [0x003d] op_17
+  // [0x003f] op_0f
+  // [0x0041] op_18
+  // [0x0043] op_5a
+  // [0x0045] op_19
+  // [0x0047] op_9c
+  // [0x004b] op_f5
+  (? + (? - (? >= (? < ?))))
+  // [0x004f] op_40
+  null.timeAnchor
+  if (null.c0) { /* else goto @106 */ }
+  null
+  timeAnchor = _system.milliseconds
+  ?
+  if ((null.lightTO1 + 2571520)) { /* else goto @131 */ }
+  null.lightTO1.forget()()
+  null
+  stagingLightPos1 = null.c0
+  ?
+  // [0x00a1] op_04
+  500(runLight)
+  param_greenDelay
+  timeout()
+  null
+  lightTO1 = null
+  ?
+  // goto @170
+  // [0x00a8] op_03
+  if ((null.lightTO1 + 2571520)) { /* else goto @197 */ }
+  null.lightTO1.forget()()
+  null
+  stagingLightPos1 = null.c0
+  ?
+  // [0x00ec] op_04
+  (1500 + (null.secondBuffer * 1000))(runLight)
+  param_greenDelay
+  timeout()
+  null
+  lightTO1 = null
+  ?
+  // goto @244
+  // [0x00f3] op_b8
+  if ((null.lightTO1 + 2571520)) { /* else goto @272 */ }
+  null.lightTO1.forget()()
+  null
+  stagingLightPos1 = null.c0
+  ?
+  // [0x012e] op_04
+  500(runLight)
+  param_greenDelay
+  timeout()
+  null
+  lightTO1 = null
+  ?
+  // goto @310
+  // [0x0135] op_76
+  if ((null.lightTO1 + 2571520)) { /* else goto @338 */ }
+  null.lightTO1.forget()()
+  null
+  stagingLightPos1 = null.c0
+  ?
+  // [0x0179] op_04
+  (1500 + (null.secondBuffer * 1000))(runLight)
+  param_greenDelay
+  timeout()
+  null
+  lightTO1 = null
+  ?
+  // goto @385
+  // [0x0180] op_2b
+  if ((null.lightTO1 + 2571520)) { /* else goto @413 */ }
+  null.lightTO1.forget()()
+  null
+  stagingLightPos1 = null.c0
+  ?
+  // [0x01bb] op_04
+  500(runLight)
+  param_greenDelay
+  timeout()
+  null
+  lightTO1 = null
+  ?
+  // goto @450
+  // [0x01c2] op_e9
+  null.timeAnchor
+  if (null.c0) { /* else goto @477 */ }
+  null
+  timeAnchor = _system.milliseconds
+  ?
+  if ((null.lightTO2 + 2571520)) { /* else goto @502 */ }
+  null.lightTO2.forget()()
+  null
+  stagingLightPos2 = null.c0
+  ?
+  // [0x0214] op_04
+  500(runLight)
+  param_greenDelay
+  timeout()
+  null
+  lightTO2 = null
+  ?
+  // goto @539
+  // [0x021b] op_90
+  if ((null.lightTO2 + 2571520)) { /* else goto @568 */ }
+  null.lightTO2.forget()()
+  null
+  stagingLightPos2 = null.c0
+  ?
+  // [0x025f] op_04
+  (1500 + (null.secondBuffer * 1000))(runLight)
+  param_greenDelay
+  timeout()
+  null
+  lightTO2 = null
+  ?
+  // goto @614
+  (? && ?)
+  if ((null.lightTO2 + 2571520)) { /* else goto @643 */ }
+  null.lightTO2.forget()()
+  null
+  stagingLightPos2 = null.c0
+  ?
+  // [0x02a1] op_04
+  500(runLight)
+  param_greenDelay
+  timeout()
+  null
+  lightTO2 = null
+  ?
+  // goto @680
+  // [0x02a8] op_03
+end
+
+on block_18
+  -- block offset=41116 length=2148 codeLen=708
+  -- names: 0=period, 1=name, 2=stagingLightPos1, 3=c0, 4=sprite, 5=flashSP, 6=runEngineSetLightOnCB, 7=amber1, 8=greenDelay, 9=amber2, 10=amber3, 11=forget, 12=timeGreen, 13=_system, 14=milliseconds, 15=lightTO2, 16=timeout, 17=symbol, 18=runLight, 19=p, 20=1, 21=b, 22=s, 23=green, 24=raceStartTimeCB, 25=lightTO1, 26=object, 27=stagingLightPos2, 28=raceType, 29=CT, 30=ctStartAnimateComputerCB, 31=1T, 32=sT, 33=o, 34=2, 35=2T, 37=createMd5Hash
+  param_period
+  period = 500
+  ?
+  // [0x0010] op_47
+  param_period.name
+  // [0x0012] op_b4
+  // [0x0014] op_09
+  // [0x0018] op_29
+  // [0x001a] op_14
+  // [0x001c] op_29
+  // [0x001e] op_15
+  // [0x0020] op_29
+  // [0x0024] op_29
+  // [0x0026] op_1f
+  // [0x0028] op_29
+  // [0x002a] op_20
+  // [0x002c] op_29
+  // [0x002e] op_21
+  // [0x0030] op_cf
+  // [0x0034] op_cf
+  // [0x0038] op_cf
+  // [0x003d] op_20
+  null.stagingLightPos1
+  (? % (? >= (? < ?)))
+  // goto @77
+  null
+  stagingLightPos1 = null.c0
+  ?
+  // [0x004b] op_30
+  null
+  ?
+  // [0x0053] op_46
+  // [0x0055] op_89
+  // [0x0059] op_04
+  // [0x005b] op_0f
+  // [0x005d] op_b6
+  // [0x005f] op_d4
+  ?((? + null.stagingLightPos1)(flashSP).runEngineSetLightOnCB(), amber1)
+  (null.greenDelay >= false)
+  // goto @265
+  // [0x0087] op_30
+  null
+  ?
+  // [0x008c] op_30
+  null
+  ?
+  ?(?(flashSP).runEngineSetLightOnCB(), amber2)
+  ?(?(flashSP).runEngineSetLightOnCB(), amber3)
+  param_period.forget()()
+  // [0x00e0] op_1c
+  (_system.milliseconds + null.greenDelay)
+  null
+  timeGreen = 500
+  ?
+  // [0x0101] op_04
+  null.greenDelay(runLight)
+  param_period.name
+  timeout()
+  null
+  lightTO2 = null
+  ?
+  // goto @264
+  // [0x0108] op_d6
+  ?(?(flashSP).runEngineSetLightOnCB(), amber2)
+  // goto @294
+  // [0x0126] op_b8
+  ?(?(flashSP).runEngineSetLightOnCB(), amber3)
+  // [0x0148] op_47
+  // [0x014c] op_04
+  // [0x0150] op_15
+  // [0x0152] op_14
+  // [0x0154] op_15
+  // [0x0156] op_15
+  // [0x0158] op_15
+  // [0x015c] op_15
+  null
+  (? >= (? < param_period.name))
+  timeGreen = _system.milliseconds
+  ?
+  // goto @362
+  // [0x016a] op_03
+  // goto @365
+  // [0x016d] op_71
+  ?(?(flashSP).runEngineSetLightOnCB(), green)
+  if (p) { /* else goto @419 */ }
+  if (b) { /* else goto @440 */ }
+  ?(flashSP).raceStartTimeCB()()
+  param_period.forget()()
+  if ((null.lightTO1 - 2571520)) { /* else goto @476 */ }
+  null.lightTO1.forget()()
+  // goto @475
+  // [0x01db] op_03
+  // goto @478
+  // [0x01de] op_e8
+  // [0x01e3] op_20
+  null.stagingLightPos2
+  // goto @499
+  null
+  stagingLightPos2 = null.c0
+  ?
+  // [0x01f1] op_30
+  (? + null)
+  // [0x01f9] op_46
+  // [0x01fb] op_c8
+  // [0x01ff] op_04
+  // [0x0201] op_0f
+  // [0x0203] op_2d
+  // [0x0205] op_4b
+  // [0x0207] op_69
+  ?(null.stagingLightPos2(flashSP).runEngineSetLightOnCB(), amber1)
+  // goto @549
+  // [0x0225] op_9e
+  ?(?(flashSP).runEngineSetLightOnCB(), amber2)
+  // goto @579
+  // [0x0246] op_04
+  ?(?(flashSP).runEngineSetLightOnCB(), amber3)
+  // goto @609
+  // [0x0261] op_62
+  ?(?(flashSP).runEngineSetLightOnCB(), green)
+  if (CT) { /* else goto @669 */ }
+  ?(flashSP).ctStartAnimateComputerCB()()
+  param_period.forget()()
+  if ((null.lightTO2 - 2571520)) { /* else goto @705 */ }
+  null.lightTO2.forget()()
+  // goto @704
+  // [0x02c0] op_03
+  // goto @707
+  // [0x02c3] op_03
+end
+
+on block_19
+  -- block offset=43264 length=4968 codeLen=1616
+  -- names: 1=stockRedLine, 2=,, 3=detuneHp, 4=stockBoost, 5=boostType, 6=boostSetting, 7=grs, 8=fgr, 9=redLine, 10=revLimiter, 11=UsInit, 12=NOS, 13=w, 14=r, 15=nitrousTankSize, 16=maxPsi, 17=hpi, 18=airhpi, 19=turboFlow, 20=fuelFlowLimit, 21=overallAirFlowLimit, 22=cylinderNumber, 23=valveNumber, 24=pistonCompressionLevel, 25=chipSetting, 26=pistonDurability, 27=rodDurability, 28=valveDurability, 29=headGasketDurability, 30=engineBlockDurability, 31=oilDurability, 32=tqArray, 33=join, 34=DAfp, 35=g, 36=rpmGearConversion, 37=gConvSlipA, 38=gConvSlipB, 39=lagTimeAddition, 40=revLimiterDeceleration, 41=idleRPM, 42=tqFlyFactor, 43=partBreakPoint, 44=vToMph, 45=c0_5, 46=c0, 47=c100, 48=c1000, 49=c10000, 50=c0_0075, 51=c13, 52=c0_4, 53=c0_7, 54=c1_7, 55=c1_25, 56=c9, 57=c299, 58=c300, 59=c5_5, 60=c2, 61=c5, 62=c50, 63=c8, 64=c0_005, 65=c0_016, 66=c3, 67=c0_09, 68=c0_6, 69=c10, 70=c0_015, 71=c0_02, 72=c200, 73=c0_18, 74=c1320, 75=c760, 76=c7, 77=c7_5, 78=c1_8, 79=c1_15, 80=c80, 81=c0_95, 82=c0_05, 83=c0_2, 84=c0_1, 85=c0_65, 86=c4, 87=c0_07, 88=c2_5, 89=c1, 90=guid, 91=engineDamage, 92=nogood, 93=goodCounterRT, 94=goodCounterET, 95=badCounterRT, 96=lagPercent, 97=badCounterET, 98=xtra, 99=caluMD5, 100=getStringMD5
+  id_0 = id_0
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  stockRedLine = !?
+  ?
+  // [0x0062] op_15
+  6
+  stockRedLine
+  // goto @132
+  id_0 = (id_0 + (null.grs + ,))
+  ?
+  // [0x007a] op_64
+  ?
+  // goto @383
+  // [0x0080] op_de
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (? + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (? + (id_0 + ,))
+  ?
+  id_0 = (id_0 + null.guid)
+  ?
+  // [0x05af] op_14
+  null.c0
+  null.engineDamage
+  // goto @1473
+  id_0 = (? + nogood)
+  ?
+  param_id_0
+  // goto @1582
+  null.goodCounterRT
+  if (false) { /* else goto @1494 */ }
+  null.goodCounterET
+  if (false) { /* else goto @1511 */ }
+  id_0 = (? + nogood)
+  ?
+  // goto @1507
+  // [0x05e3] op_4a
+  // [0x05f6] op_60
+  ((null.goodCounterRT + null.badCounterRT) >= 1982773)
+  null.badCounterRT
+  // goto @1548
+  id_0 = (? + nogood)
+  ?
+  // goto @1544
+  // [0x0608] op_25
+  // [0x061b] op_60
+  ((null.goodCounterET + null.badCounterET) >= 1982773)
+  null.badCounterET
+  // goto @1582
+  id_0 = (? + nogood)
+  ?
+  , = caluMD5
+  ?
+  id_0 = ,.getStringMD5()(id_0)
+  ?
+  // [0x064f] op_05
+  id_0
+end
+
+on block_20
+  -- block offset=48232 length=584 codeLen=118
+  -- names: 0=Math, 1=log, 2=c1, 3=random, 4=c5, 5=c0_6, 6=c2, 7=c0, 8=round, 9=c1000
+  4273408
+  (param_Math + null.c1)
+  Math.log()
+  (? + (Math.random()() / null.c5))
+  Math = (1915392 * param_Math)
+  ?
+  (Math >= null.c0_6)
+  // goto @78
+  Math = (Math / null.c2)
+  ?
+  // goto @329
+  // [0x004a] op_e9
+  // [0x0052] op_14
+  null.c0
+  Math
+  // goto @97
+  Math = null.c0
+  ?
+  // [0x0075] op_05
+  (Math.round()((Math * null.c1000)) / null.c1000)
+end

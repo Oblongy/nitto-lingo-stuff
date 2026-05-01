@@ -1,0 +1,93 @@
+# Lscr Suite Recovery State Matrix
+
+## Sources
+- `tmp\lscr101-work\Lscr-101.json`
+- `Lscr-102.json`
+- `Lscr-103.json`
+- `Lscr-104.json`
+- `Lscr-105.json`
+- `Lscr-106.json`
+- `Lscr-107.json`
+- `Lscr-108.json`
+- `Lscr-109.json`
+- `Lscr-93.json`
+- `reconstructed (1)\Lscr-102\rightful.ls`
+- `reconstructed (1)\Lscr-103\rightful.ls`
+- `reconstructed (1)\Lscr-104\rightful.ls`
+- `reconstructed (1)\Lscr-105\rightful.ls`
+- `reconstructed (1)\Lscr-106\rightful.ls`
+- `reconstructed (1)\Lscr-107\rightful.ls`
+- `reconstructed (1)\Lscr-108\rightful.ls`
+- `reconstructed (1)\Lscr-109\rightful.ls`
+- `reconstructed (1)\Lscr-93\rightful.ls`
+
+## Per-script matrix
+- `Lscr-101`
+  - blank handler names: `15`
+  - nonblank handler names: `0`
+  - null dispatch pairs: `15`
+  - non-null compiled lengths: `0`
+  - `rightful.ls`: absent
+- `Lscr-102`
+  - blank handler names: `0`
+  - nonblank handler names: `1`
+  - null dispatch pairs: `0`
+  - non-null compiled lengths: `1`
+  - `rightful.ls`: present
+- `Lscr-103`
+  - blank handler names: `0`
+  - nonblank handler names: `10`
+  - null dispatch pairs: `0`
+  - non-null compiled lengths: `10`
+  - `rightful.ls`: present
+- `Lscr-104`
+  - blank handler names: `0`
+  - nonblank handler names: `75`
+  - null dispatch pairs: `0`
+  - non-null compiled lengths: `75`
+  - `rightful.ls`: present
+- `Lscr-105`
+  - blank handler names: `0`
+  - nonblank handler names: `1`
+  - null dispatch pairs: `0`
+  - non-null compiled lengths: `1`
+  - `rightful.ls`: present
+- `Lscr-106`
+  - blank handler names: `0`
+  - nonblank handler names: `30`
+  - null dispatch pairs: `0`
+  - non-null compiled lengths: `30`
+  - `rightful.ls`: present
+- `Lscr-107`
+  - blank handler names: `0`
+  - nonblank handler names: `10`
+  - null dispatch pairs: `0`
+  - non-null compiled lengths: `10`
+  - `rightful.ls`: present
+- `Lscr-108`
+  - blank handler names: `0`
+  - nonblank handler names: `15`
+  - null dispatch pairs: `15`
+  - non-null compiled lengths: `15`
+  - `rightful.ls`: present
+- `Lscr-109`
+  - blank handler names: `0`
+  - nonblank handler names: `5`
+  - null dispatch pairs: `0`
+  - non-null compiled lengths: `5`
+  - `rightful.ls`: present
+- `Lscr-93`
+  - blank handler names: `0`
+  - nonblank handler names: `1`
+  - null dispatch pairs: `0`
+  - non-null compiled lengths: `1`
+  - `rightful.ls`: present
+
+## Tightest suite read
+- `Lscr-101` is the only script with no surviving names, no dispatch surface, no compiled-length surface, and no `rightful.ls`.
+- `Lscr-108` is the only script with surviving names and compiled lengths but a fully null dispatch surface.
+- Every other active script currently has the full simple recovery set:
+  - nonblank names
+  - non-null dispatch surface
+  - non-null compiled lengths
+  - present `rightful.ls`

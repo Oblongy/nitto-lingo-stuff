@@ -1,0 +1,1407 @@
+[
+  {
+    "blockIndex": 0,
+    "blockOffset": 0,
+    "blockLength": 344,
+    "codeLength": 251,
+    "tableEnd": "0x012C",
+    "tableParsed": false,
+    "tableCount": 41,
+    "rawTailBytes": 44,
+    "declaredPayloadBytes": 1,
+    "payloadBytes": 1,
+    "trailerBytes": 39,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "00",
+    "trailerPreview": "00 00 00 0A 00 00 00 52 00 61 00 63 00 65 00 45 00 6E 00 67 00 69 00 6E 00 65 00 00 00 00 00 00 00 00 00 00 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x00",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 1,
+    "blockOffset": 344,
+    "blockLength": 2688,
+    "codeLength": 456,
+    "tableEnd": "0x0280",
+    "tableParsed": false,
+    "tableCount": 89,
+    "rawTailBytes": 2048,
+    "declaredPayloadBytes": 6357093,
+    "payloadBytes": 0,
+    "trailerBytes": 2048,
+    "plausibleLengthPrefix": false,
+    "payloadPreview": "",
+    "trailerPreview": "65 00 61 00 72 00 43 00 6F 00 6E 00 76 00 65 00 72 00 73 00 69 00 6F 00 6E 00 00 00 07 00 00 00 02 00 00 00 33 33 33 33 33 33 EB 3F 08 00 00 00 04 00 00 00 0A 00 00 00 67 00 43 00 6F 00 6E 00 76 00 53 00 6C 00 69 00 70 00 41 00 09 00 00 00 02 00 00 00 1F 85 EB 51 B8 1E 19 40 0A 00 00 00",
+    "opcodeCounts": []
+  },
+  {
+    "blockIndex": 2,
+    "blockOffset": 3032,
+    "blockLength": 2940,
+    "codeLength": 496,
+    "tableEnd": "0x076C",
+    "tableParsed": false,
+    "tableCount": 69,
+    "rawTailBytes": 1040,
+    "declaredPayloadBytes": 13,
+    "payloadBytes": 13,
+    "trailerBytes": 1023,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "74 00 68 00 65 00 41 00 63 00 74 00 75",
+    "trailerPreview": "00 61 00 6C 00 54 00 69 00 6D 00 65 00 00 00 2F 00 00 00 04 00 00 00 11 00 00 00 74 00 69 00 6D 00 65 00 46 00 72 00 6F 00 6D 00 4C 00 61 00 73 00 74 00 46 00 72 00 61 00 6D 00 65 00 00 00 30 00 00 00 04 00 00 00 09 00 00 00 74 00 69 00 6D 00 65 00 47 00 72 00 65 00 65 00 6E 00 00 00 31",
+    "opcodeCounts": [
+      {
+        "byte": "0x00",
+        "count": 6
+      },
+      {
+        "byte": "0x74",
+        "count": 2
+      },
+      {
+        "byte": "0x41",
+        "count": 1
+      },
+      {
+        "byte": "0x63",
+        "count": 1
+      },
+      {
+        "byte": "0x65",
+        "count": 1
+      },
+      {
+        "byte": "0x68",
+        "count": 1
+      },
+      {
+        "byte": "0x75",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 3,
+    "blockOffset": 5972,
+    "blockLength": 4992,
+    "codeLength": 1268,
+    "tableEnd": "0x098C",
+    "tableParsed": false,
+    "tableCount": 115,
+    "rawTailBytes": 2548,
+    "declaredPayloadBytes": 7,
+    "payloadBytes": 7,
+    "trailerBytes": 2537,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "74 00 71 00 41 00 72",
+    "trailerPreview": "00 72 00 61 00 79 00 00 00 33 00 00 00 04 00 00 00 06 00 00 00 6D 00 61 00 78 00 50 00 73 00 69 00 34 00 00 00 04 00 00 00 01 00 00 00 75 00 00 00 35 00 00 00 04 00 00 00 06 00 00 00 61 00 69 00 72 00 68 00 70 00 69 00 36 00 00 00 04 00 00 00 09 00 00 00 74 00 75 00 72 00 62 00 6F 00 46",
+    "opcodeCounts": [
+      {
+        "byte": "0x00",
+        "count": 3
+      },
+      {
+        "byte": "0x41",
+        "count": 1
+      },
+      {
+        "byte": "0x71",
+        "count": 1
+      },
+      {
+        "byte": "0x72",
+        "count": 1
+      },
+      {
+        "byte": "0x74",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 4,
+    "blockOffset": 10964,
+    "blockLength": 404,
+    "codeLength": 60,
+    "tableEnd": "0x011C",
+    "tableParsed": true,
+    "tableCount": 8,
+    "rawTailBytes": 120,
+    "declaredPayloadBytes": 31,
+    "payloadBytes": 31,
+    "trailerBytes": 85,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 61 01 17 1F B3 62 01 64 01 64 0A B4 62 01 64 01 64 0A B7 B0 62 01 63 05 B4 62 01 63 05 00",
+    "trailerPreview": "00 01 00 00 00 CE 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 09 00 00 00 04 00 00 00 09 00 00 00 62 00 65 00 67 00 69 00 6E 00 52 00 61 00 63 00 65 00 00 00 0A 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 7
+      },
+      {
+        "byte": "0x62",
+        "count": 4
+      },
+      {
+        "byte": "0x64",
+        "count": 4
+      },
+      {
+        "byte": "0x05",
+        "count": 2
+      },
+      {
+        "byte": "0x0A",
+        "count": 2
+      },
+      {
+        "byte": "0x63",
+        "count": 2
+      },
+      {
+        "byte": "0xB0",
+        "count": 2
+      },
+      {
+        "byte": "0xB4",
+        "count": 2
+      },
+      {
+        "byte": "0x00",
+        "count": 1
+      },
+      {
+        "byte": "0x17",
+        "count": 1
+      },
+      {
+        "byte": "0x1F",
+        "count": 1
+      },
+      {
+        "byte": "0x61",
+        "count": 1
+      },
+      {
+        "byte": "0xB3",
+        "count": 1
+      },
+      {
+        "byte": "0xB7",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 5,
+    "blockOffset": 11368,
+    "blockLength": 392,
+    "codeLength": 59,
+    "tableEnd": "0x011C",
+    "tableParsed": true,
+    "tableCount": 7,
+    "rawTailBytes": 108,
+    "declaredPayloadBytes": 23,
+    "payloadBytes": 23,
+    "trailerBytes": 81,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 61 01 C9 08 64 01 63 04 64 08 B4 CC 60 01 CB 60 07 64 1A 63 1E 00",
+    "trailerPreview": "00 01 00 00 00 D8 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00 0B 00 00 00 04 00 00 00 07 00 00 00 65 00 6E 00 64 00 52 00 61 00 63 00 65 00 00 00 0C 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 3
+      },
+      {
+        "byte": "0x64",
+        "count": 3
+      },
+      {
+        "byte": "0x08",
+        "count": 2
+      },
+      {
+        "byte": "0x60",
+        "count": 2
+      },
+      {
+        "byte": "0x63",
+        "count": 2
+      },
+      {
+        "byte": "0x00",
+        "count": 1
+      },
+      {
+        "byte": "0x04",
+        "count": 1
+      },
+      {
+        "byte": "0x07",
+        "count": 1
+      },
+      {
+        "byte": "0x1A",
+        "count": 1
+      },
+      {
+        "byte": "0x1E",
+        "count": 1
+      },
+      {
+        "byte": "0x61",
+        "count": 1
+      },
+      {
+        "byte": "0xB0",
+        "count": 1
+      },
+      {
+        "byte": "0xB4",
+        "count": 1
+      },
+      {
+        "byte": "0xC9",
+        "count": 1
+      },
+      {
+        "byte": "0xCB",
+        "count": 1
+      },
+      {
+        "byte": "0xCC",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 6,
+    "blockOffset": 11760,
+    "blockLength": 232,
+    "codeLength": 25,
+    "tableEnd": "0x0088",
+    "tableParsed": true,
+    "tableCount": 3,
+    "rawTailBytes": 96,
+    "declaredPayloadBytes": 12,
+    "payloadBytes": 12,
+    "trailerBytes": 80,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 61 01 C9 08 64 01 63 04 64 08 00",
+    "trailerPreview": "01 00 00 00 DD 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 0D 00 00 00 04 00 00 00 07 00 00 00 73 00 65 00 6E 00 64 00 50 00 6F 00 73 00 00 00 0E 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 2
+      },
+      {
+        "byte": "0x08",
+        "count": 2
+      },
+      {
+        "byte": "0x64",
+        "count": 2
+      },
+      {
+        "byte": "0x00",
+        "count": 1
+      },
+      {
+        "byte": "0x04",
+        "count": 1
+      },
+      {
+        "byte": "0x61",
+        "count": 1
+      },
+      {
+        "byte": "0x63",
+        "count": 1
+      },
+      {
+        "byte": "0xB0",
+        "count": 1
+      },
+      {
+        "byte": "0xC9",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 7,
+    "blockOffset": 11992,
+    "blockLength": 2020,
+    "codeLength": 301,
+    "tableEnd": "0x030C",
+    "tableParsed": true,
+    "tableCount": 19,
+    "rawTailBytes": 1240,
+    "declaredPayloadBytes": 124,
+    "payloadBytes": 124,
+    "trailerBytes": 1112,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 61 01 13 75 B3 61 01 64 01 0D B3 61 01 CB 60 01 CB 60 01 CB 60 01 0F B3 61 01 64 01 14 19 B3 65 01 64 01 65 01 64 12 B7 B0 65 01 64 01 64 01 63 10 BF 80 00 F2 B0 61 01 64 01 C9 60 01 64 01 0C B3 61 01 15 43 B3 B0 61 01 CB 60 01 CB 60 01 CB 60 01 0F B3 65 01 64 01 64 01 63 10 BF 80 00",
+    "trailerPreview": "01 00 00 00 E1 00 00 00 07 00 00 00 00 00 00 00 00 00 00 00 0F 00 00 00 04 00 00 00 03 00 00 00 72 00 75 00 6E 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 2E 00 00 00 08 00 00 00 01 00 00 00 01 00 00 00 0F 00 00 00 74 68 72 6F 74 74 6C 65",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 35
+      },
+      {
+        "byte": "0x64",
+        "count": 13
+      },
+      {
+        "byte": "0x60",
+        "count": 10
+      },
+      {
+        "byte": "0xCB",
+        "count": 9
+      },
+      {
+        "byte": "0x61",
+        "count": 8
+      },
+      {
+        "byte": "0xB3",
+        "count": 8
+      },
+      {
+        "byte": "0x65",
+        "count": 6
+      },
+      {
+        "byte": "0xB0",
+        "count": 5
+      },
+      {
+        "byte": "0x00",
+        "count": 3
+      },
+      {
+        "byte": "0x0F",
+        "count": 3
+      },
+      {
+        "byte": "0x10",
+        "count": 2
+      },
+      {
+        "byte": "0x63",
+        "count": 2
+      },
+      {
+        "byte": "0x80",
+        "count": 2
+      },
+      {
+        "byte": "0xBF",
+        "count": 2
+      },
+      {
+        "byte": "0x03",
+        "count": 1
+      },
+      {
+        "byte": "0x0C",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 8,
+    "blockOffset": 14012,
+    "blockLength": 17968,
+    "codeLength": 7823,
+    "tableEnd": "0x3858",
+    "tableParsed": true,
+    "tableCount": 229,
+    "rawTailBytes": 3544,
+    "declaredPayloadBytes": 3233,
+    "payloadBytes": 3233,
+    "trailerBytes": 307,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 64 01 14 0B B3 61 01 CA B0 64 01 0C B3 61 01 BF 80 01 0F 61 01 64 01 0C B3 64 03 64 01 66 01 64 12 B4 B0 62 01 63 05 B4 61 01 64 01 0C B3 62 01 63 05 B4 B0 62 01 64 01 65 01 66 01 64 15 B4 B0 64 03 63 07 B4 B0 61 01 64 05 B4 B0 B0 61 01 64 01 65 01 64 01 65 01 64 01 37 B4 B0 61 01 64",
+    "trailerPreview": "00 00 00 01 00 00 00 07 01 00 00 14 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 04 00 00 00 11 00 00 00 63 00 61 00 6C 00 63 00 75 00 6C 00 61 00 74 00 65 00 45 00 78 00 74 00 72 00 61 00 48 00 70 00 69 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 820
+      },
+      {
+        "byte": "0x64",
+        "count": 407
+      },
+      {
+        "byte": "0x61",
+        "count": 196
+      },
+      {
+        "byte": "0xB4",
+        "count": 160
+      },
+      {
+        "byte": "0xB0",
+        "count": 157
+      },
+      {
+        "byte": "0x65",
+        "count": 150
+      },
+      {
+        "byte": "0xB3",
+        "count": 104
+      },
+      {
+        "byte": "0x63",
+        "count": 103
+      },
+      {
+        "byte": "0xB7",
+        "count": 89
+      },
+      {
+        "byte": "0x60",
+        "count": 83
+      },
+      {
+        "byte": "0x0C",
+        "count": 81
+      },
+      {
+        "byte": "0x66",
+        "count": 68
+      },
+      {
+        "byte": "0x03",
+        "count": 47
+      },
+      {
+        "byte": "0x62",
+        "count": 47
+      },
+      {
+        "byte": "0x34",
+        "count": 45
+      },
+      {
+        "byte": "0x14",
+        "count": 41
+      }
+    ]
+  },
+  {
+    "blockIndex": 9,
+    "blockOffset": 31980,
+    "blockLength": 2264,
+    "codeLength": 710,
+    "tableEnd": "0x0740",
+    "tableParsed": true,
+    "tableCount": 39,
+    "rawTailBytes": 408,
+    "declaredPayloadBytes": 319,
+    "payloadBytes": 319,
+    "trailerBytes": 85,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 B0 61 01 64 01 34 B4 64 01 0C 64 01 B7 30 B4 61 01 64 01 14 2A B3 64 01 65 01 66 01 64 01 67 01 65 01 CB B0 B0 64 01 65 01 66 01 65 01 C8 B0 B0 0D C8 B0 65 01 65 01 64 0E B4 61 01 64 01 0C 65 01 63 05 B4 B0 B0 62 01 63 05 B4 61 01 64 01 14 3A B3 62 01 64 01 67 01 64 01 C9 60 01 64 1E",
+    "trailerPreview": "00 01 00 00 00 69 03 00 00 04 00 00 00 00 00 00 00 00 00 00 00 13 00 00 00 04 00 00 00 09 00 00 00 67 00 65 00 74 00 54 00 6F 00 72 00 71 00 75 00 65 00 00 00 14 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 85
+      },
+      {
+        "byte": "0x64",
+        "count": 43
+      },
+      {
+        "byte": "0xB0",
+        "count": 29
+      },
+      {
+        "byte": "0xB4",
+        "count": 22
+      },
+      {
+        "byte": "0x61",
+        "count": 19
+      },
+      {
+        "byte": "0x65",
+        "count": 18
+      },
+      {
+        "byte": "0x62",
+        "count": 9
+      },
+      {
+        "byte": "0x0C",
+        "count": 8
+      },
+      {
+        "byte": "0x63",
+        "count": 8
+      },
+      {
+        "byte": "0xB3",
+        "count": 7
+      },
+      {
+        "byte": "0xB7",
+        "count": 7
+      },
+      {
+        "byte": "0x05",
+        "count": 6
+      },
+      {
+        "byte": "0x0F",
+        "count": 4
+      },
+      {
+        "byte": "0x14",
+        "count": 4
+      },
+      {
+        "byte": "0x34",
+        "count": 4
+      },
+      {
+        "byte": "0xC8",
+        "count": 4
+      }
+    ]
+  },
+  {
+    "blockIndex": 10,
+    "blockOffset": 34244,
+    "blockLength": 584,
+    "codeLength": 110,
+    "tableEnd": "0x0180",
+    "tableParsed": true,
+    "tableCount": 10,
+    "rawTailBytes": 200,
+    "declaredPayloadBytes": 56,
+    "payloadBytes": 56,
+    "trailerBytes": 140,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 61 01 17 0C B3 62 01 63 05 B7 61 01 64 01 14 0C B3 62 01 63 05 B7 61 01 64 01 0C B3 62 01 63 05 B4 B0 62 01 C8 60 01 64 01 64 0D 63 14 61 16 B4 62 01 64 01 66 0C 00",
+    "trailerPreview": "01 00 00 00 B3 03 00 00 06 00 00 00 00 00 00 00 00 00 00 00 15 00 00 00 04 00 00 00 10 00 00 00 69 00 6E 00 69 00 74 00 43 00 6F 00 6D 00 70 00 75 00 74 00 65 00 72 00 52 00 61 00 63 00 65 00 16 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 13
+      },
+      {
+        "byte": "0x62",
+        "count": 5
+      },
+      {
+        "byte": "0x64",
+        "count": 5
+      },
+      {
+        "byte": "0x0C",
+        "count": 4
+      },
+      {
+        "byte": "0x61",
+        "count": 4
+      },
+      {
+        "byte": "0x63",
+        "count": 4
+      },
+      {
+        "byte": "0x05",
+        "count": 3
+      },
+      {
+        "byte": "0xB3",
+        "count": 3
+      },
+      {
+        "byte": "0x14",
+        "count": 2
+      },
+      {
+        "byte": "0xB0",
+        "count": 2
+      },
+      {
+        "byte": "0xB4",
+        "count": 2
+      },
+      {
+        "byte": "0xB7",
+        "count": 2
+      },
+      {
+        "byte": "0x00",
+        "count": 1
+      },
+      {
+        "byte": "0x0D",
+        "count": 1
+      },
+      {
+        "byte": "0x16",
+        "count": 1
+      },
+      {
+        "byte": "0x17",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 11,
+    "blockOffset": 34828,
+    "blockLength": 196,
+    "codeLength": 20,
+    "tableEnd": "0x0054",
+    "tableParsed": true,
+    "tableCount": 2,
+    "rawTailBytes": 112,
+    "declaredPayloadBytes": 9,
+    "payloadBytes": 9,
+    "trailerBytes": 99,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 61 01 67 08 B4 64 04 00",
+    "trailerPreview": "00 00 00 01 00 00 00 C1 03 00 00 03 00 00 00 00 00 00 00 00 00 00 00 17 00 00 00 04 00 00 00 06 00 00 00 67 00 65 00 61 00 72 00 55 00 70 00 18 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 08 00 00 00 02 00 00 00 01 00 00 00 07 00 00 00 6E",
+    "opcodeCounts": [
+      {
+        "byte": "0x00",
+        "count": 1
+      },
+      {
+        "byte": "0x01",
+        "count": 1
+      },
+      {
+        "byte": "0x04",
+        "count": 1
+      },
+      {
+        "byte": "0x08",
+        "count": 1
+      },
+      {
+        "byte": "0x61",
+        "count": 1
+      },
+      {
+        "byte": "0x64",
+        "count": 1
+      },
+      {
+        "byte": "0x67",
+        "count": 1
+      },
+      {
+        "byte": "0xB0",
+        "count": 1
+      },
+      {
+        "byte": "0xB4",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 12,
+    "blockOffset": 35024,
+    "blockLength": 824,
+    "codeLength": 198,
+    "tableEnd": "0x027C",
+    "tableParsed": true,
+    "tableCount": 15,
+    "rawTailBytes": 188,
+    "declaredPayloadBytes": 101,
+    "payloadBytes": 101,
+    "trailerBytes": 83,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 30 B4 61 01 0F B3 61 01 64 01 65 0A B5 B0 64 01 0C B3 61 01 B4 64 04 B4 B0 61 01 64 01 14 5C B3 62 01 63 05 B4 62 01 63 05 B4 62 01 63 05 B4 61 01 13 25 B3 62 02 B4 67 07 63 0A 65 0F B4 62 01 63 05 B7 B0 62 01 63 05 B4 B0 62 01 63 05 B7 B0 61 01 0D B3 62 01 63 05 B4 B0 B0 67 07 63 0A",
+    "trailerPreview": "00 00 00 01 00 00 00 C7 03 00 00 03 00 00 00 00 00 00 00 00 00 00 00 19 00 00 00 04 00 00 00 08 00 00 00 67 00 65 00 61 00 72 00 44 00 6F 00 77 00 6E 00 1A 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 17
+      },
+      {
+        "byte": "0x63",
+        "count": 10
+      },
+      {
+        "byte": "0xB4",
+        "count": 10
+      },
+      {
+        "byte": "0x62",
+        "count": 8
+      },
+      {
+        "byte": "0xB0",
+        "count": 8
+      },
+      {
+        "byte": "0x05",
+        "count": 7
+      },
+      {
+        "byte": "0x61",
+        "count": 6
+      },
+      {
+        "byte": "0xB3",
+        "count": 5
+      },
+      {
+        "byte": "0x64",
+        "count": 4
+      },
+      {
+        "byte": "0x0A",
+        "count": 3
+      },
+      {
+        "byte": "0x65",
+        "count": 3
+      },
+      {
+        "byte": "0x07",
+        "count": 2
+      },
+      {
+        "byte": "0x0F",
+        "count": 2
+      },
+      {
+        "byte": "0x67",
+        "count": 2
+      },
+      {
+        "byte": "0xB7",
+        "count": 2
+      },
+      {
+        "byte": "0x00",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 13,
+    "blockOffset": 35848,
+    "blockLength": 916,
+    "codeLength": 219,
+    "tableEnd": "0x02B8",
+    "tableParsed": true,
+    "tableCount": 17,
+    "rawTailBytes": 220,
+    "declaredPayloadBytes": 113,
+    "payloadBytes": 113,
+    "trailerBytes": 103,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 61 01 CB 60 01 C8 60 01 64 01 C8 60 01 0D B3 61 01 B4 B0 61 01 17 32 B3 62 01 64 05 61 07 B4 62 01 63 05 B4 62 01 63 05 B4 62 01 63 05 B4 62 01 63 05 B7 B0 61 01 64 01 14 41 B3 61 01 13 25 B3 62 02 B4 67 07 63 0A 65 0F B4 62 01 63 05 B7 B0 62 01 63 05 B4 B0 62 01 63 05 B7 B0 62 01 64",
+    "trailerPreview": "00 00 00 01 00 00 00 E5 03 00 00 03 00 00 00 00 00 00 00 00 00 00 00 1B 00 00 00 04 00 00 00 08 00 00 00 73 00 65 00 74 00 42 00 72 00 61 00 6B 00 65 00 1C 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 08 00 00 00 01 00 00 00 01 00 00 00 05",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 21
+      },
+      {
+        "byte": "0x63",
+        "count": 11
+      },
+      {
+        "byte": "0x62",
+        "count": 10
+      },
+      {
+        "byte": "0xB4",
+        "count": 9
+      },
+      {
+        "byte": "0x05",
+        "count": 8
+      },
+      {
+        "byte": "0xB0",
+        "count": 8
+      },
+      {
+        "byte": "0x61",
+        "count": 7
+      },
+      {
+        "byte": "0x64",
+        "count": 4
+      },
+      {
+        "byte": "0xB3",
+        "count": 4
+      },
+      {
+        "byte": "0x07",
+        "count": 3
+      },
+      {
+        "byte": "0x0A",
+        "count": 3
+      },
+      {
+        "byte": "0x60",
+        "count": 3
+      },
+      {
+        "byte": "0xB7",
+        "count": 3
+      },
+      {
+        "byte": "0x65",
+        "count": 2
+      },
+      {
+        "byte": "0x67",
+        "count": 2
+      },
+      {
+        "byte": "0xC8",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "blockIndex": 14,
+    "blockOffset": 36764,
+    "blockLength": 200,
+    "codeLength": 23,
+    "tableEnd": "0x0048",
+    "tableParsed": true,
+    "tableCount": 1,
+    "rawTailBytes": 128,
+    "declaredPayloadBytes": 11,
+    "payloadBytes": 11,
+    "trailerBytes": 113,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 15 09 B3 62 02 B7 B0 62 02 00",
+    "trailerPreview": "00 01 00 00 00 01 04 00 00 02 00 00 00 00 00 00 00 00 00 00 00 1D 00 00 00 04 00 00 00 09 00 00 00 73 00 65 00 74 00 43 00 6C 00 75 00 74 00 63 00 68 00 00 00 1E 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 08 00 00 00 01 00 00 00 01 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x02",
+        "count": 2
+      },
+      {
+        "byte": "0x62",
+        "count": 2
+      },
+      {
+        "byte": "0xB0",
+        "count": 2
+      },
+      {
+        "byte": "0x00",
+        "count": 1
+      },
+      {
+        "byte": "0x09",
+        "count": 1
+      },
+      {
+        "byte": "0x15",
+        "count": 1
+      },
+      {
+        "byte": "0xB3",
+        "count": 1
+      },
+      {
+        "byte": "0xB7",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 15,
+    "blockOffset": 36964,
+    "blockLength": 288,
+    "codeLength": 54,
+    "tableEnd": "0x00A4",
+    "tableParsed": true,
+    "tableCount": 3,
+    "rawTailBytes": 124,
+    "declaredPayloadBytes": 25,
+    "payloadBytes": 25,
+    "trailerBytes": 95,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 64 01 14 0C B3 62 01 63 05 B7 64 01 14 0C B3 62 01 63 05 B7 B0 64 04 00",
+    "trailerPreview": "00 00 00 01 00 00 00 09 04 00 00 02 00 00 00 00 00 00 00 00 00 00 00 1F 00 00 00 04 00 00 00 0E 00 00 00 73 00 74 00 61 00 67 00 65 00 64 00 41 00 6E 00 64 00 52 00 65 00 61 00 64 00 79 00 20 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 4
+      },
+      {
+        "byte": "0x64",
+        "count": 3
+      },
+      {
+        "byte": "0x05",
+        "count": 2
+      },
+      {
+        "byte": "0x0C",
+        "count": 2
+      },
+      {
+        "byte": "0x14",
+        "count": 2
+      },
+      {
+        "byte": "0x62",
+        "count": 2
+      },
+      {
+        "byte": "0x63",
+        "count": 2
+      },
+      {
+        "byte": "0xB0",
+        "count": 2
+      },
+      {
+        "byte": "0xB3",
+        "count": 2
+      },
+      {
+        "byte": "0xB7",
+        "count": 2
+      },
+      {
+        "byte": "0x00",
+        "count": 1
+      },
+      {
+        "byte": "0x04",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "blockIndex": 16,
+    "blockOffset": 37252,
+    "blockLength": 2068,
+    "codeLength": 539,
+    "tableEnd": "0x06A4",
+    "tableParsed": true,
+    "tableCount": 43,
+    "rawTailBytes": 368,
+    "declaredPayloadBytes": 229,
+    "payloadBytes": 229,
+    "trailerBytes": 135,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 62 01 63 05 B4 62 02 B4 62 02 B4 62 02 B4 62 02 B4 61 01 C9 08 64 01 63 04 64 08 B4 61 01 0B B3 62 02 B4 B0 61 01 0F 64 01 64 05 B4 61 01 17 15 B3 66 01 65 06 63 0E B7 61 01 17 15 B3 66 01 65 06 63 0E B7 61 01 CB 60 01 17 15 B3 66 01 65 06 63 0E B7 61 01 CB 60 01 17 10 B3 61 01 C8 60",
+    "trailerPreview": "00 00 00 01 00 00 00 14 04 00 00 08 00 00 00 00 00 00 00 00 00 00 00 21 00 00 00 04 00 00 00 0F 00 00 00 73 00 74 00 61 00 72 00 74 00 4C 00 69 00 67 00 68 00 74 00 54 00 69 00 6D 00 65 00 72 00 00 00 22 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 42
+      },
+      {
+        "byte": "0x61",
+        "count": 18
+      },
+      {
+        "byte": "0x64",
+        "count": 15
+      },
+      {
+        "byte": "0xB4",
+        "count": 14
+      },
+      {
+        "byte": "0x63",
+        "count": 13
+      },
+      {
+        "byte": "0x60",
+        "count": 11
+      },
+      {
+        "byte": "0xB3",
+        "count": 10
+      },
+      {
+        "byte": "0x62",
+        "count": 8
+      },
+      {
+        "byte": "0x65",
+        "count": 8
+      },
+      {
+        "byte": "0xB7",
+        "count": 8
+      },
+      {
+        "byte": "0x08",
+        "count": 6
+      },
+      {
+        "byte": "0x17",
+        "count": 6
+      },
+      {
+        "byte": "0x02",
+        "count": 5
+      },
+      {
+        "byte": "0x06",
+        "count": 5
+      },
+      {
+        "byte": "0x0E",
+        "count": 5
+      },
+      {
+        "byte": "0x66",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "blockIndex": 17,
+    "blockOffset": 39320,
+    "blockLength": 1796,
+    "codeLength": 681,
+    "tableEnd": "0x0598",
+    "tableParsed": true,
+    "tableCount": 28,
+    "rawTailBytes": 364,
+    "declaredPayloadBytes": 262,
+    "payloadBytes": 262,
+    "trailerBytes": 98,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 C8 60 07 63 0B B4 67 07 63 0A 67 11 B4 93 80 02 82 00 E9 B0 B0 61 01 64 01 0C B3 64 03 63 07 B4 B0 61 01 C9 08 64 01 63 04 64 08 B4 62 01 63 05 B4 D2 60 07 64 15 63 19 B4 B3 B0 61 01 C9 08 64 01 63 04 64 08 B4 62 01 63 05 B4 CC 60 01 CF 60 07 64 1E 63 22 B4 B3 B0 61 01 C9 08 64 01 63",
+    "trailerPreview": "00 00 01 00 00 00 3E 04 00 00 08 00 00 00 00 00 00 00 00 00 00 00 23 00 00 00 04 00 00 00 08 00 00 00 72 00 75 00 6E 00 4C 00 69 00 67 00 68 00 74 00 24 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 08 00 00 00 01 00 00 00 01 00 00 00 04 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 31
+      },
+      {
+        "byte": "0x63",
+        "count": 28
+      },
+      {
+        "byte": "0x64",
+        "count": 28
+      },
+      {
+        "byte": "0xB4",
+        "count": 28
+      },
+      {
+        "byte": "0x08",
+        "count": 16
+      },
+      {
+        "byte": "0x07",
+        "count": 12
+      },
+      {
+        "byte": "0x60",
+        "count": 12
+      },
+      {
+        "byte": "0xB0",
+        "count": 12
+      },
+      {
+        "byte": "0x61",
+        "count": 10
+      },
+      {
+        "byte": "0xB3",
+        "count": 9
+      },
+      {
+        "byte": "0x04",
+        "count": 8
+      },
+      {
+        "byte": "0x05",
+        "count": 8
+      },
+      {
+        "byte": "0x62",
+        "count": 8
+      },
+      {
+        "byte": "0xC9",
+        "count": 8
+      },
+      {
+        "byte": "0x15",
+        "count": 5
+      },
+      {
+        "byte": "0x19",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "blockIndex": 18,
+    "blockOffset": 41116,
+    "blockLength": 2148,
+    "codeLength": 708,
+    "tableEnd": "0x0698",
+    "tableParsed": true,
+    "tableCount": 36,
+    "rawTailBytes": 460,
+    "declaredPayloadBytes": 284,
+    "payloadBytes": 284,
+    "trailerBytes": 172,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 66 06 B4 63 03 93 80 02 B4 00 E9 B0 B0 61 01 0C 65 01 63 05 B4 61 01 B4 61 01 93 80 01 89 00 CF B0 B0 B0 67 07 63 0A 67 03 66 17 B4 61 01 0D B3 B0 61 01 B4 61 01 B4 67 07 63 0A 67 03 66 17 B4 67 07 63 0A 67 03 66 17 B4 63 03 64 07 B4 64 03 64 01 C8 60 10 B4 C8 60 03 64 01 CA 60 07 64",
+    "trailerPreview": "01 00 00 00 73 04 00 00 08 00 00 00 00 00 00 00 00 00 00 00 25 00 00 00 04 00 00 00 0D 00 00 00 63 00 72 00 65 00 61 00 74 00 65 00 4D 00 64 00 35 00 48 00 61 00 73 00 68 00 00 00 26 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 03 00 00 00 08 00 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0xB0",
+        "count": 30
+      },
+      {
+        "byte": "0xB4",
+        "count": 28
+      },
+      {
+        "byte": "0x63",
+        "count": 24
+      },
+      {
+        "byte": "0x67",
+        "count": 21
+      },
+      {
+        "byte": "0x03",
+        "count": 20
+      },
+      {
+        "byte": "0x01",
+        "count": 19
+      },
+      {
+        "byte": "0x07",
+        "count": 17
+      },
+      {
+        "byte": "0x64",
+        "count": 14
+      },
+      {
+        "byte": "0x0A",
+        "count": 12
+      },
+      {
+        "byte": "0x61",
+        "count": 12
+      },
+      {
+        "byte": "0xB3",
+        "count": 12
+      },
+      {
+        "byte": "0x66",
+        "count": 11
+      },
+      {
+        "byte": "0x17",
+        "count": 10
+      },
+      {
+        "byte": "0x00",
+        "count": 6
+      },
+      {
+        "byte": "0x60",
+        "count": 5
+      },
+      {
+        "byte": "0x08",
+        "count": 4
+      }
+    ]
+  },
+  {
+    "blockIndex": 19,
+    "blockOffset": 43264,
+    "blockLength": 4968,
+    "codeLength": 1616,
+    "tableEnd": "0x1128",
+    "tableParsed": true,
+    "tableCount": 101,
+    "rawTailBytes": 576,
+    "declaredPayloadBytes": 443,
+    "payloadBytes": 443,
+    "trailerBytes": 129,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 33 B4 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01 47 B5 31 23 07 1E 22 CB B0 64 01 66 07 45 BD 80 04 C3 BC 80 04 C4 B3 B0 64 01 47 B5 B0 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01 47 B5 64 01",
+    "trailerPreview": "00 01 00 00 00 BC 04 00 00 04 00 00 00 00 00 00 00 00 00 00 00 27 00 00 00 04 00 00 00 0F 00 00 00 6C 00 61 00 67 00 54 00 69 00 6D 00 65 00 41 00 64 00 64 00 69 00 74 00 69 00 6F 00 6E 00 00 00 28 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 01 00 00",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 100
+      },
+      {
+        "byte": "0x64",
+        "count": 93
+      },
+      {
+        "byte": "0xB5",
+        "count": 88
+      },
+      {
+        "byte": "0x47",
+        "count": 86
+      },
+      {
+        "byte": "0xB0",
+        "count": 10
+      },
+      {
+        "byte": "0xB3",
+        "count": 6
+      },
+      {
+        "byte": "0x67",
+        "count": 5
+      },
+      {
+        "byte": "0x46",
+        "count": 4
+      },
+      {
+        "byte": "0x61",
+        "count": 4
+      },
+      {
+        "byte": "0x04",
+        "count": 3
+      },
+      {
+        "byte": "0x07",
+        "count": 3
+      },
+      {
+        "byte": "0x80",
+        "count": 3
+      },
+      {
+        "byte": "0x0B",
+        "count": 2
+      },
+      {
+        "byte": "0x0C",
+        "count": 2
+      },
+      {
+        "byte": "0x0E",
+        "count": 2
+      },
+      {
+        "byte": "0x33",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "blockIndex": 20,
+    "blockOffset": 48232,
+    "blockLength": 584,
+    "codeLength": 118,
+    "tableEnd": "0x0154",
+    "tableParsed": true,
+    "tableCount": 10,
+    "rawTailBytes": 244,
+    "declaredPayloadBytes": 45,
+    "payloadBytes": 45,
+    "trailerBytes": 195,
+    "plausibleLengthPrefix": true,
+    "payloadPreview": "B0 63 03 C8 60 01 66 01 66 03 64 07 64 01 67 26 37 B4 64 01 1C 0F B3 64 01 43 C8 B0 B0 64 01 0C 64 01 B7 63 03 C8 60 01 64 0F 64 01 00",
+    "trailerPreview": "00 00 00 01 00 00 00 2F 05 00 00 06 00 00 00 00 00 00 00 00 00 00 00 97 00 00 00 98 00 B9 42 63 03 66 09 BC 78 63 03 66 09 BC 80 00 CE 63 03 66 09 BC 80 00 D8 63 03 66 09 BC 80 00 DD 63 03 66 09 BC 80 00 E1 63 03 66 09 BC 80 01 07 63 03 66 09 BC 80 03 69 63 03 66 09 BC 80 03 B3 63 03 66",
+    "opcodeCounts": [
+      {
+        "byte": "0x01",
+        "count": 9
+      },
+      {
+        "byte": "0x64",
+        "count": 8
+      },
+      {
+        "byte": "0x03",
+        "count": 3
+      },
+      {
+        "byte": "0xB0",
+        "count": 3
+      },
+      {
+        "byte": "0xC8",
+        "count": 3
+      },
+      {
+        "byte": "0x0F",
+        "count": 2
+      },
+      {
+        "byte": "0x60",
+        "count": 2
+      },
+      {
+        "byte": "0x63",
+        "count": 2
+      },
+      {
+        "byte": "0x66",
+        "count": 2
+      },
+      {
+        "byte": "0x00",
+        "count": 1
+      },
+      {
+        "byte": "0x07",
+        "count": 1
+      },
+      {
+        "byte": "0x0C",
+        "count": 1
+      },
+      {
+        "byte": "0x1C",
+        "count": 1
+      },
+      {
+        "byte": "0x26",
+        "count": 1
+      },
+      {
+        "byte": "0x37",
+        "count": 1
+      },
+      {
+        "byte": "0x43",
+        "count": 1
+      }
+    ]
+  }
+]

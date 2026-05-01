@@ -1,0 +1,24 @@
+-- Lscr-9 decompiled Lingo
+-- scriptNumber: 9
+-- castID: 65546
+-- handlersCount: 5
+
+on connectSocket
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on sockConnTimeout
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on socketMessageHandler
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on executeCall
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on ssm
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end

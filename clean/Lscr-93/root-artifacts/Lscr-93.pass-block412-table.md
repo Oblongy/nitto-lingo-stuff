@@ -1,0 +1,493 @@
+## Lscr-93 Block 412
+
+Sources used:
+- `C:\Users\Dilldo\Nitto\Lingo Stuff\Lscr-93.bin`
+- `C:\Users\Dilldo\Nitto\Lingo Stuff\Lscr-93.json`
+- `C:\Users\Dilldo\Nitto\Lingo Stuff\js_rewrite\01-frame1script.js` (corroborating sibling artifact only)
+
+Scope:
+- This pass documents embedded block `412`.
+- No opcode semantics are inferred by this pass.
+
+Raw header evidence:
+- JSON block offset `412`, length `33588`.
+- File offset `580`.
+- Pre-marker prefix length `4`.
+
+Pre-marker bytes:
+```text
+4c 00 00 00
+```
+- Marker-relative offset inside block slice `4`.
+
+Marker bytes:
+```text
+03 00 ad de ce 2e 00 00 00 00 00 00 96 00 00 00
+```
+
+First instruction-region bytes:
+```text
+00 01 3e 12 07 00 67 3b 00 02 39 3b 00 00 35 00 03 3a 00 01 07 00 57 3b 00 00 3f 36 00 01 51 3b 00 04 39 3b 00 00 35 00 03 3a 00 01 3d 00 05 12 07 00 30 3b 00 06 39 3b 00 07 39 3b 00 00 35 00
+```
+
+Recovered `kind = 4` UTF-16LE string records:
+- payload offset `12000`: id `0`, kind `4`, len `7`, `_global`
+- payload offset `12028`: id `1`, kind `4`, len `19`, `checkedForOneClient`
+- payload offset `12080`: id `2`, kind `4`, len `7`, `netDone`
+- payload offset `12108`: id `3`, kind `4`, len `18`, `checkProcessResult`
+- payload offset `12156`: id `4`, kind `4`, len `8`, `netError`
+- payload offset `12184`: id `5`, kind `4`, len `2`, `OK`
+- payload offset `12200`: id `6`, kind `4`, len `5`, `trace`
+- payload offset `12224`: id `7`, kind `4`, len `13`, `netTextResult`
+- payload offset `12264`: id `8`, kind `4`, len `21`, `CheckNittoProcessesCB`
+- payload offset `12320`: id `9`, kind `4`, len `1`, `1`
+- payload offset `12336`: id `10`, kind `4`, len `6`, `gNetID`
+- payload offset `12360`: id `11`, kind `4`, len `6`, `length`
+- payload offset `12384`: id `12`, kind `4`, len `7`, `_system`
+- payload offset `12412`: id `13`, kind `4`, len `2`, `gc`
+- payload offset `12428`: id `14`, kind `4`, len `4`, `eval`
+- payload offset `12448`: id `15`, kind `4`, len `9`, `propList(`
+- payload offset `12480`: id `16`, kind `4`, len `1`, `)`
+- payload offset `12496`: id `17`, kind `4`, len `6`, `Object`
+- payload offset `12520`: id `18`, kind `4`, len `2`, `ex`
+- payload offset `12536`: id `19`, kind `4`, len `5`, `isEnc`
+- payload offset `12560`: id `20`, kind `4`, len `7`, `decrypt`
+- payload offset `12588`: id `21`, kind `4`, len `5`, `exEnc`
+- payload offset `12612`: id `22`, kind `4`, len `6`, `sprite`
+- payload offset `12636`: id `23`, kind `4`, len `7`, `flashSP`
+- payload offset `12664`: id `24`, kind `4`, len `21`, `showConnectionErrorCB`
+- payload offset `12720`: id `25`, kind `4`, len `14`, `Protocol Error`
+- payload offset `12760`: id `26`, kind `4`, len `53`, `Connection protocol could not be established. Action:`
+- payload offset `12880`: id `27`, kind `4`, len `13`, ` (Error: 010)`
+- payload offset `12920`: id `28`, kind `4`, len `3`, `ex2`
+- payload offset `12940`: id `29`, kind `4`, len `13`, ` (Error: 001)`
+- payload offset `12980`: id `30`, kind `4`, len `13`, ` (Error: 002)`
+- payload offset `13020`: id `31`, kind `4`, len `8`, `"s",-100`
+- payload offset `13048`: id `32`, kind `4`, len `17`, `Session Timed Out`
+- payload offset `13284`: id `34`, kind `4`, len `10`, `lastAction`
+- payload offset `13316`: id `35`, kind `4`, len `4`, `xtra`
+- payload offset `13336`: id `36`, kind `4`, len `9`, `xmlparser`
+- payload offset `13368`: id `37`, kind `4`, len `11`, `parseString`
+- payload offset `13404`: id `38`, kind `4`, len `8`, `getAProp`
+- payload offset `13432`: id `39`, kind `4`, len `1`, `d`
+- payload offset `13448`: id `40`, kind `4`, len `17`, `fetchCacheXMLDone`
+- payload offset `13496`: id `41`, kind `4`, len `8`, `makeList`
+- payload offset `13524`: id `42`, kind `4`, len `2`, `n2`
+- payload offset `13540`: id `43`, kind `4`, len `1`, `s`
+- payload offset `13556`: id `44`, kind `4`, len `3`, `ftc`
+- payload offset `13576`: id `45`, kind `4`, len `7`, `openURL`
+- payload offset `13604`: id `46`, kind `4`, len `63`, `http://www.facebook.com/connect/prompt_permissions.php?api_key=`
+- payload offset `13744`: id `47`, kind `4`, len `14`, `facebookAPIKey`
+- payload offset `14080`: id `49`, kind `4`, len `3`, `aid`
+- payload offset `14100`: id `50`, kind `4`, len `4`, `guid`
+- payload offset `14120`: id `51`, kind `4`, len `2`, `cp`
+- payload offset `14136`: id `52`, kind `4`, len `7`, `encrypt`
+- payload offset `14164`: id `53`, kind `4`, len `2`, `cw`
+- payload offset `14180`: id `54`, kind `4`, len `3`, `cwc`
+- payload offset `14200`: id `55`, kind `4`, len `13`, `connectSocket`
+- payload offset `14240`: id `56`, kind `4`, len `7`, `loginCB`
+- payload offset `14268`: id `57`, kind `4`, len `2`, `at`
+- payload offset `14284`: id `58`, kind `4`, len `2`, `am`
+- payload offset `14360`: id `64`, kind `4`, len `12`, `installerURL`
+- payload offset `14396`: id `65`, kind `4`, len `3`, `url`
+- payload offset `14416`: id `66`, kind `4`, len `13`, `installerFile`
+- payload offset `14456`: id `67`, kind `4`, len `2`, `fn`
+- payload offset `14472`: id `68`, kind `4`, len `12`, `installerMD5`
+- payload offset `14508`: id `69`, kind `4`, len `3`, `md5`
+- payload offset `14540`: id `71`, kind `4`, len `10`, `facebookID`
+- payload offset `14572`: id `72`, kind `4`, len `1`, `f`
+- payload offset `14588`: id `73`, kind `4`, len `14`, `fbGetSessionCB`
+- payload offset `14640`: id `75`, kind `4`, len `9`, `getInfoCB`
+- payload offset `14672`: id `76`, kind `4`, len `9`, `getUserCB`
+- payload offset `14704`: id `77`, kind `4`, len `10`, `getUsersCB`
+- payload offset `14736`: id `78`, kind `4`, len `15`, `updateBgColorCB`
+- payload offset `14780`: id `79`, kind `4`, len `18`, `updateDefaultCarCB`
+- payload offset `14828`: id `80`, kind `4`, len `13`, `racerSearchCB`
+- payload offset `14868`: id `81`, kind `4`, len `19`, `racerSearchNoPageCB`
+- payload offset `14920`: id `82`, kind `4`, len `13`, `changeEmailCB`
+- payload offset `14960`: id `83`, kind `4`, len `16`, `changePasswordCB`
+- payload offset `15004`: id `84`, kind `4`, len `16`, `forgotPasswordCB`
+- payload offset `15048`: id `85`, kind `4`, len `20`, `getStarterShowroomCB`
+- payload offset `15100`: id `86`, kind `4`, len `15`, `createAccountCB`
+- payload offset `15144`: id `87`, kind `4`, len `15`, `verifyAccountCB`
+- payload offset `15188`: id `88`, kind `4`, len `18`, `resendActivationCB`
+- payload offset `15236`: id `89`, kind `4`, len `14`, `agreeToTermsCB`
+- payload offset `15276`: id `90`, kind `4`, len `18`, `activatePurchaseCB`
+- payload offset `15324`: id `91`, kind `4`, len `1`, `m`
+- payload offset `15340`: id `92`, kind `4`, len `1`, `p`
+- payload offset `15356`: id `93`, kind `4`, len `2`, `ma`
+- payload offset `15372`: id `94`, kind `4`, len `2`, `va`
+- payload offset `15388`: id `95`, kind `4`, len `9`, `getCodeCB`
+- payload offset `15420`: id `96`, kind `4`, len `3`, `gid`
+- payload offset `15440`: id `97`, kind `4`, len `16`, `getUserBuddiesCB`
+- payload offset `15484`: id `98`, kind `4`, len `16`, `compareAvatarAge`
+- payload offset `15528`: id `99`, kind `4`, len `4`, `tids`
+- payload offset `15548`: id `100`, kind `4`, len `7`, `avatars`
+- payload offset `15576`: id `101`, kind `4`, len `11`, `teamAvatars`
+- payload offset `15612`: id `102`, kind `4`, len `21`, `avatarUploadRequestCB`
+- payload offset `15668`: id `103`, kind `4`, len `14`, `getLocationsCB`
+- payload offset `15708`: id `104`, kind `4`, len `14`, `moveLocationCB`
+- payload offset `15748`: id `105`, kind `4`, len `18`, `getEmailTotalNewCB`
+- payload offset `15796`: id `106`, kind `4`, len `2`, `im`
+- payload offset `15812`: id `107`, kind `4`, len `14`, `getEmailListCB`
+- payload offset `15852`: id `108`, kind `4`, len `10`, `getEmailCB`
+- payload offset `15884`: id `109`, kind `4`, len `13`, `deleteEmailCB`
+- payload offset `15924`: id `110`, kind `4`, len `3`, `eid`
+- payload offset `15944`: id `111`, kind `4`, len `11`, `sendEmailCB`
+- payload offset `15980`: id `112`, kind `4`, len `11`, `addRemarkCB`
+- payload offset `16016`: id `113`, kind `4`, len `14`, `deleteRemarkCB`
+- payload offset `16056`: id `114`, kind `4`, len `1`, `i`
+- payload offset `16072`: id `115`, kind `4`, len `12`, `getRemarksCB`
+- payload offset `16108`: id `116`, kind `4`, len `16`, `getUserRemarksCB`
+- payload offset `16152`: id `117`, kind `4`, len `21`, `setRemarkNonDeletesCB`
+- payload offset `16208`: id `118`, kind `4`, len `18`, `setRemarkDeletesCB`
+- payload offset `16256`: id `119`, kind `4`, len `18`, `getCarCategoriesCB`
+- payload offset `16304`: id `120`, kind `4`, len `14`, `viewShowroomCB`
+- payload offset `16344`: id `121`, kind `4`, len `9`, `getCarsCB`
+- payload offset `16376`: id `122`, kind `4`, len `11`, `getOneCarCB`
+- payload offset `16412`: id `123`, kind `4`, len `18`, `getOtherUserCarsCB`
+- payload offset `16460`: id `124`, kind `4`, len `8`, `buyCarCB`
+- payload offset `16488`: id `125`, kind `4`, len `1`, `b`
+- payload offset `16504`: id `126`, kind `4`, len `9`, `sellCarCB`
+- payload offset `16536`: id `127`, kind `4`, len `13`, `getCarPriceCB`
+- payload offset `16576`: id `128`, kind `4`, len `14`, `getAllImCarsCB`
+- payload offset `16616`: id `129`, kind `4`, len `20`, `getCarOutOfImpoundCB`
+- payload offset `16668`: id `130`, kind `4`, len `7`, `objRace`
+- payload offset `16696`: id `131`, kind `4`, len `9`, `startRace`
+- payload offset `16728`: id `132`, kind `4`, len `1`, `t`
+- payload offset `16744`: id `133`, kind `4`, len `4`, `init`
+- payload offset `16764`: id `134`, kind `4`, len `4`, `DYNO`
+- payload offset `16784`: id `135`, kind `4`, len `15`, `garageDynoBuyCB`
+- payload offset `16828`: id `136`, kind `4`, len `11`, `!ATTRIBUTES`
+- payload offset `16864`: id `137`, kind `4`, len `1`, `e`
+- payload offset `16880`: id `138`, kind `4`, len `1`, `u`
+- payload offset `16896`: id `139`, kind `4`, len `2`, `ad`
+- payload offset `16912`: id `140`, kind `4`, len `2`, `sl`
+- payload offset `16928`: id `141`, kind `4`, len `1`, `n`
+- payload offset `16944`: id `142`, kind `4`, len `16`, `garageSetBoostCB`
+- payload offset `16988`: id `143`, kind `4`, len `18`, `garageSetAFRatioCB`
+- payload offset `17036`: id `144`, kind `4`, len `19`, `getPartCategoriesCB`
+- payload offset `17088`: id `145`, kind `4`, len `30`, `getWheelsTiresPartCategoriesCB`
+- payload offset `17160`: id `146`, kind `4`, len `10`, `getPartsCB`
+- payload offset `17192`: id `147`, kind `4`, len `2`, `d1`
+- payload offset `17208`: id `148`, kind `4`, len `16`, `getWheelsTiresCB`
+- payload offset `17252`: id `149`, kind `4`, len `9`, `buyPartCB`
+- payload offset `17284`: id `150`, kind `4`, len `1`, `c`
+- payload offset `17300`: id `151`, kind `4`, len `13`, `uggBuyCycleCB`
+- payload offset `17340`: id `152`, kind `4`, len `13`, `installPartCB`
+- payload offset `17380`: id `153`, kind `4`, len `15`, `uninstallPartCB`
+- payload offset `17424`: id `154`, kind `4`, len `10`, `sellPartCB`
+- payload offset `17456`: id `155`, kind `4`, len `16`, `getCarPartsBinCB`
+- payload offset `17500`: id `156`, kind `4`, len `13`, `getPartsBinCB`
+- payload offset `17540`: id `157`, kind `4`, len `14`, `getPartGroupCB`
+- payload offset `17580`: id `158`, kind `4`, len `28`, `getCarPerformanceIncreasesCB`
+- payload offset `17648`: id `159`, kind `4`, len `12`, `engineListCB`
+- payload offset `17684`: id `160`, kind `4`, len `19`, `engineGetAllPartsCB`
+- payload offset `17736`: id `161`, kind `4`, len `15`, `engineBuyPartCB`
+- payload offset `17780`: id `162`, kind `4`, len `17`, `engineSwapStartCB`
+- payload offset `17828`: id `163`, kind `4`, len `18`, `engineSwapFinishCB`
+- payload offset `17876`: id `164`, kind `4`, len `20`, `getPaintCategoriesCB`
+- payload offset `17928`: id `165`, kind `4`, len `11`, `getPaintsCB`
+- payload offset `17964`: id `166`, kind `4`, len `10`, `buyPaintCB`
+- payload offset `17996`: id `167`, kind `4`, len `18`, `getLicensePlatesCB`
+- payload offset `18044`: id `168`, kind `4`, len `10`, `buyPlateCB`
+- payload offset `18076`: id `169`, kind `4`, len `11`, `buyVanityCB`
+- payload offset `18112`: id `170`, kind `4`, len `16`, `getSystemPartsCB`
+- payload offset `18156`: id `171`, kind `4`, len `12`, `systemSwapCB`
+- payload offset `18192`: id `172`, kind `4`, len `16`, `getRepairPartsCB`
+- payload offset `18236`: id `173`, kind `4`, len `13`, `repairPartsCB`
+- payload offset `18276`: id `174`, kind `4`, len `13`, `getGearInfoCB`
+- payload offset `18316`: id `175`, kind `4`, len `10`, `buyGearsCB`
+- payload offset `18348`: id `176`, kind `4`, len `15`, `getSparePriceCB`
+- payload offset `18392`: id `177`, kind `4`, len `14`, `sellAllSpareCB`
+- payload offset `18432`: id `178`, kind `4`, len `20`, `getPartDescriptionCB`
+- payload offset `18484`: id `179`, kind `4`, len `10`, `teamInfoCB`
+- payload offset `18516`: id `180`, kind `4`, len `11`, `teamTransCB`
+- payload offset `18552`: id `181`, kind `4`, len `12`, `teamSearchCB`
+- payload offset `18588`: id `182`, kind `4`, len `26`, `teamUpdateLeaderCommentsCB`
+- payload offset `18652`: id `183`, kind `4`, len `19`, `teamUpdateTeamReqCB`
+- payload offset `18704`: id `184`, kind `4`, len `13`, `teamGetInfoCB`
+- payload offset `18744`: id `185`, kind `4`, len `16`, `teamGetAllAppsCB`
+- payload offset `18788`: id `186`, kind `4`, len `15`, `teamGetMyAppsCB`
+- payload offset `18832`: id `187`, kind `4`, len `15`, `teamDeleteAppCB`
+- payload offset `18876`: id `188`, kind `4`, len `15`, `teamUpdateAppCB`
+- payload offset `18920`: id `189`, kind `4`, len `12`, `teamAddAppCB`
+- payload offset `18956`: id `190`, kind `4`, len `19`, `teamUpdateBgColorCB`
+- payload offset `19008`: id `191`, kind `4`, len `26`, `director getOneCarEngineCB`
+- payload offset `19072`: id `192`, kind `4`, len `17`, `getOneCarEngineCB`
+- payload offset `19120`: id `193`, kind `4`, len `8`, `raceType`
+- payload offset `19148`: id `194`, kind `4`, len `22`, `raceGetTwoRacersCarsCB`
+- payload offset `19216`: id `196`, kind `4`, len `15`, `getRacersCarsCB`
+- payload offset `19260`: id `197`, kind `4`, len `13`, `ctGetRacersCB`
+- payload offset `19300`: id `198`, kind `4`, len `8`, `ctJoinCB`
+- payload offset `19328`: id `199`, kind `4`, len `10`, `ctCreateCB`
+- payload offset `19360`: id `200`, kind `4`, len `16`, `initComputerRace`
+- payload offset `19404`: id `201`, kind `4`, len `3`, `CTQ`
+- payload offset `19424`: id `202`, kind `4`, len `11`, `ctRequestCB`
+- payload offset `19460`: id `203`, kind `4`, len `2`, `CT`
+- payload offset `19476`: id `204`, kind `4`, len `2`, `sk`
+- payload offset `19492`: id `205`, kind `4`, len `8`, `ctSaveCB`
+- payload offset `19520`: id `206`, kind `4`, len `1`, `P`
+- payload offset `19536`: id `207`, kind `4`, len `16`, `practiceCreateCB`
+- payload offset `19580`: id `208`, kind `4`, len `18`, `htGetTournamentsCB`
+- payload offset `19628`: id `209`, kind `4`, len `18`, `htJoinTournamentCB`
+- payload offset `19676`: id `210`, kind `4`, len `3`, `HTQ`
+- payload offset `19696`: id `211`, kind `4`, len `20`, `putCarOnClassifiedCB`
+- payload offset `19748`: id `212`, kind `4`, len `16`, `listClassifiedCB`
+- payload offset `19792`: id `213`, kind `4`, len `21`, `getClassifiedDetailCB`
+- payload offset `19848`: id `214`, kind `4`, len `19`, `buyFromClassifiedCB`
+- payload offset `19900`: id `215`, kind `4`, len `25`, `sellerClassifiedHistoryCB`
+- payload offset `19964`: id `216`, kind `4`, len `18`, `cancelClassifiedCB`
+- payload offset `20012`: id `217`, kind `4`, len `14`, `requestTradeCB`
+- payload offset `20052`: id `218`, kind `4`, len `14`, `respondTradeCB`
+- payload offset `20092`: id `219`, kind `4`, len `13`, `cancelTradeCB`
+- payload offset `20132`: id `220`, kind `4`, len `22`, `outgoingTradeHistoryCB`
+- payload offset `20188`: id `221`, kind `4`, len `15`, `pendingTradesCB`
+- payload offset `20232`: id `222`, kind `4`, len `18`, `getWinsAndLossesCB`
+- payload offset `20280`: id `223`, kind `4`, len `15`, `earnIncentiveCB`
+- payload offset `20324`: id `224`, kind `4`, len `14`, `loginTwitterCB`
+- payload offset `20364`: id `225`, kind `4`, len `17`, `setBadgeVisibleCB`
+- payload offset `20412`: id `226`, kind `4`, len `22`, `getBlackCardProgressCB`
+- payload offset `20468`: id `227`, kind `4`, len `18`, `getElectionPhaseCB`
+- payload offset `20516`: id `228`, kind `4`, len `21`, `getElectionScheduleCB`
+- payload offset `20572`: id `229`, kind `4`, len `18`, `getNominateCountCB`
+- payload offset `20620`: id `230`, kind `4`, len `10`, `nominateCB`
+- payload offset `20652`: id `231`, kind `4`, len `19`, `getElectionResultCB`
+- payload offset `20704`: id `232`, kind `4`, len `14`, `electionVoteCB`
+- payload offset `20744`: id `233`, kind `4`, len `17`, `activateAccountCB`
+- payload offset `20792`: id `234`, kind `4`, len `12`, `getSupportCB`
+- payload offset `20828`: id `235`, kind `4`, len `20`, `getMisconductCountCB`
+- payload offset `20880`: id `236`, kind `4`, len `3`, `oid`
+- payload offset `20900`: id `237`, kind `4`, len `13`, `facebookToken`
+- payload offset `20940`: id `238`, kind `4`, len `1`, `a`
+- payload offset `20956`: id `239`, kind `4`, len `45`, `https://login.facebook.com/login.php?api_key=`
+- payload offset `21060`: id `240`, kind `4`, len `12`, `&auth_token=`
+- payload offset `21096`: id `241`, kind `4`, len `37`, `&v=1.0&popup&req_perms=offline_access`
+- payload offset `21184`: id `242`, kind `4`, len `12`, `fbGetTokenCB`
+- payload offset `21220`: id `243`, kind `4`, len `18`, `fbRemoveFacebookCB`
+- payload offset `21268`: id `244`, kind `4`, len `5`, `here!`
+- payload offset `21292`: id `245`, kind `4`, len `10`, `info list!`
+- payload offset `21644`: id `247`, kind `4`, len `6`, `_blank`
+- payload offset `21668`: id `248`, kind `4`, len `16`, `checkTestDriveCB`
+- payload offset `21712`: id `249`, kind `4`, len `17`, `acceptTestDriveCB`
+- payload offset `21760`: id `250`, kind `4`, len `1`, `h`
+- payload offset `21776`: id `251`, kind `4`, len `17`, `buyTestDriveCarCB`
+- payload offset `21824`: id `252`, kind `4`, len `20`, `removeTestDriveCarCB`
+- payload offset `21876`: id `253`, kind `4`, len `17`, `rejectTestDriveCB`
+- payload offset `21924`: id `254`, kind `4`, len `24`, `garageSetShiftLightRPMCB`
+- payload offset `21984`: id `255`, kind `4`, len `18`, `joinSpecialEventCB`
+- payload offset `22032`: id `256`, kind `4`, len `15`, `getLatestNewsCB`
+- payload offset `22076`: id `257`, kind `4`, len `6`, `escape`
+- payload offset `22100`: id `258`, kind `4`, len `19`, `getRacerSpotlightCB`
+- payload offset `22152`: id `259`, kind `4`, len `23`, `claimPendingUCLProfitCB`
+- payload offset `22212`: id `260`, kind `4`, len `25`, `getInstalledEnginePartsCB`
+- payload offset `22276`: id `261`, kind `4`, len `12`, `genericWebCB`
+- payload offset `22312`: id `262`, kind `4`, len `8`, `getcache`
+- payload offset `22340`: id `263`, kind `4`, len `12`, `fbgetsession`
+- payload offset `22376`: id `264`, kind `4`, len `5`, `login`
+- payload offset `22400`: id `265`, kind `4`, len `17`, `changehomemachine`
+- payload offset `22448`: id `266`, kind `4`, len `7`, `getinfo`
+- payload offset `22476`: id `267`, kind `4`, len `7`, `getuser`
+- payload offset `22504`: id `268`, kind `4`, len `8`, `getusers`
+- payload offset `22532`: id `269`, kind `4`, len `8`, `updatebg`
+- payload offset `22560`: id `270`, kind `4`, len `16`, `updatedefaultcar`
+- payload offset `22604`: id `271`, kind `4`, len `11`, `racersearch`
+- payload offset `22640`: id `272`, kind `4`, len `17`, `racersearchnopage`
+- payload offset `22688`: id `273`, kind `4`, len `11`, `changeemail`
+- payload offset `22724`: id `274`, kind `4`, len `14`, `changepassword`
+- payload offset `22764`: id `275`, kind `4`, len `8`, `forgotpw`
+- payload offset `22792`: id `276`, kind `4`, len `18`, `getstartershowroom`
+- payload offset `22840`: id `277`, kind `4`, len `13`, `createaccount`
+- payload offset `22880`: id `278`, kind `4`, len `13`, `verifyaccount`
+- payload offset `22920`: id `279`, kind `4`, len `16`, `resendactivation`
+- payload offset `22964`: id `280`, kind `4`, len `12`, `agreetoterms`
+- payload offset `23000`: id `281`, kind `4`, len `14`, `activatepoints`
+- payload offset `23040`: id `282`, kind `4`, len `14`, `activatemember`
+- payload offset `23080`: id `283`, kind `4`, len `7`, `getcode`
+- payload offset `23108`: id `284`, kind `4`, len `10`, `getbuddies`
+- payload offset `23140`: id `285`, kind `4`, len `12`, `getavatarage`
+- payload offset `23176`: id `286`, kind `4`, len `16`, `getteamavatarage`
+- payload offset `23220`: id `287`, kind `4`, len `13`, `uploadrequest`
+- payload offset `23260`: id `288`, kind `4`, len `12`, `getlocations`
+- payload offset `23296`: id `289`, kind `4`, len `12`, `movelocation`
+- payload offset `23332`: id `290`, kind `4`, len `15`, `gettotalnewmail`
+- payload offset `23376`: id `291`, kind `4`, len `12`, `getemaillist`
+- payload offset `23412`: id `292`, kind `4`, len `8`, `getemail`
+- payload offset `23440`: id `293`, kind `4`, len `11`, `deleteemail`
+- payload offset `23476`: id `294`, kind `4`, len `9`, `sendemail`
+- payload offset `23508`: id `295`, kind `4`, len `13`, `markemailread`
+- payload offset `23548`: id `296`, kind `4`, len `9`, `addremark`
+- payload offset `23580`: id `297`, kind `4`, len `12`, `deleteremark`
+- payload offset `23616`: id `298`, kind `4`, len `10`, `getremarks`
+- payload offset `23648`: id `299`, kind `4`, len `14`, `getuserremarks`
+- payload offset `23688`: id `300`, kind `4`, len `13`, `setnondeletes`
+- payload offset `23728`: id `301`, kind `4`, len `10`, `setdeletes`
+- payload offset `23760`: id `302`, kind `4`, len `16`, `getcarcategories`
+- payload offset `23804`: id `303`, kind `4`, len `12`, `viewshowroom`
+- payload offset `23840`: id `304`, kind `4`, len `10`, `getallcars`
+- payload offset `23872`: id `305`, kind `4`, len `9`, `getonecar`
+- payload offset `23904`: id `306`, kind `4`, len `19`, `getallotherusercars`
+- payload offset `23956`: id `307`, kind `4`, len `6`, `buycar`
+- payload offset `23980`: id `308`, kind `4`, len `7`, `sellcar`
+- payload offset `24008`: id `309`, kind `4`, len `11`, `getcarprice`
+- payload offset `24044`: id `310`, kind `4`, len `12`, `getallimcars`
+- payload offset `24080`: id `311`, kind `4`, len `15`, `getoutofimpound`
+- payload offset `24124`: id `312`, kind `4`, len `7`, `buydyno`
+- payload offset `24152`: id `313`, kind `4`, len `11`, `changeboost`
+- payload offset `24188`: id `314`, kind `4`, len `13`, `changeairfuel`
+- payload offset `24228`: id `315`, kind `4`, len `10`, `getallcats`
+- payload offset `24260`: id `316`, kind `4`, len `18`, `getwheelstirescats`
+- payload offset `24308`: id `317`, kind `4`, len `11`, `getallparts`
+- payload offset `24344`: id `318`, kind `4`, len `17`, `getallwheelstires`
+- payload offset `24392`: id `319`, kind `4`, len `7`, `buypart`
+- payload offset `24420`: id `320`, kind `4`, len `13`, `buyenginepart`
+- payload offset `24460`: id `321`, kind `4`, len `9`, `buyengine`
+- payload offset `24492`: id `322`, kind `4`, len `10`, `buypartugg`
+- payload offset `24524`: id `323`, kind `4`, len `11`, `installpart`
+- payload offset `24560`: id `324`, kind `4`, len `17`, `installenginepart`
+- payload offset `24608`: id `325`, kind `4`, len `10`, `swapengine`
+- payload offset `24640`: id `326`, kind `4`, len `13`, `uninstallpart`
+- payload offset `24680`: id `327`, kind `4`, len `19`, `uninstallenginepart`
+- payload offset `24732`: id `328`, kind `4`, len `11`, `sellcarpart`
+- payload offset `24768`: id `329`, kind `4`, len `14`, `sellenginepart`
+- payload offset `24808`: id `330`, kind `4`, len `10`, `sellengine`
+- payload offset `24840`: id `331`, kind `4`, len `14`, `getcarpartsbin`
+- payload offset `24880`: id `332`, kind `4`, len `11`, `getpartsbin`
+- payload offset `24916`: id `333`, kind `4`, len `12`, `getpartgroup`
+- payload offset `24952`: id `334`, kind `4`, len `26`, `getcarperformanceincreases`
+- payload offset `25016`: id `335`, kind `4`, len `4`, `egue`
+- payload offset `25036`: id `336`, kind `4`, len `4`, `egep`
+- payload offset `25056`: id `337`, kind `4`, len `4`, `ebep`
+- payload offset `25076`: id `338`, kind `4`, len `4`, `esst`
+- payload offset `25096`: id `339`, kind `4`, len `4`, `esfi`
+- payload offset `25116`: id `340`, kind `4`, len `12`, `getpaintcats`
+- payload offset `25152`: id `341`, kind `4`, len `9`, `getpaints`
+- payload offset `25184`: id `342`, kind `4`, len `8`, `buypaint`
+- payload offset `25212`: id `343`, kind `4`, len `16`, `getlicenseplates`
+- payload offset `25256`: id `344`, kind `4`, len `8`, `buyplate`
+- payload offset `25284`: id `345`, kind `4`, len `9`, `buyvanity`
+- payload offset `25316`: id `346`, kind `4`, len `14`, `getsystemparts`
+- payload offset `25356`: id `347`, kind `4`, len `10`, `systemswap`
+- payload offset `25388`: id `348`, kind `4`, len `14`, `getrepairparts`
+- payload offset `25428`: id `349`, kind `4`, len `11`, `repairparts`
+- payload offset `25464`: id `350`, kind `4`, len `11`, `getgearinfo`
+- payload offset `25500`: id `351`, kind `4`, len `8`, `buygears`
+- payload offset `25528`: id `352`, kind `4`, len `13`, `getspareprice`
+- payload offset `25568`: id `353`, kind `4`, len `12`, `sellallspare`
+- payload offset `25604`: id `354`, kind `4`, len `14`, `getdescription`
+- payload offset `25644`: id `355`, kind `4`, len `8`, `teaminfo`
+- payload offset `25672`: id `356`, kind `4`, len `9`, `teamtrans`
+- payload offset `25704`: id `357`, kind `4`, len `10`, `teamsearch`
+- payload offset `25736`: id `358`, kind `4`, len `20`, `updateleadercomments`
+- payload offset `25788`: id `359`, kind `4`, len `13`, `updateteamreq`
+- payload offset `25828`: id `360`, kind `4`, len `11`, `getteaminfo`
+- payload offset `25864`: id `361`, kind `4`, len `14`, `getallteamapps`
+- payload offset `25904`: id `362`, kind `4`, len `12`, `getallmyapps`
+- payload offset `25940`: id `363`, kind `4`, len `9`, `deleteapp`
+- payload offset `25972`: id `364`, kind `4`, len `13`, `updateteamapp`
+- payload offset `26012`: id `365`, kind `4`, len `10`, `addteamapp`
+- payload offset `26044`: id `366`, kind `4`, len `12`, `setteamcolor`
+- payload offset `26080`: id `367`, kind `4`, len `15`, `getonecarengine`
+- payload offset `26124`: id `368`, kind `4`, len `16`, `gettworacerscars`
+- payload offset `26168`: id `369`, kind `4`, len `13`, `getracerscars`
+- payload offset `26208`: id `370`, kind `4`, len `4`, `ctgr`
+- payload offset `26228`: id `371`, kind `4`, len `4`, `ctjt`
+- payload offset `26248`: id `372`, kind `4`, len `4`, `ctct`
+- payload offset `26268`: id `373`, kind `4`, len `4`, `ctrt`
+- payload offset `26288`: id `374`, kind `4`, len `4`, `ctst`
+- payload offset `26308`: id `375`, kind `4`, len `8`, `practice`
+- payload offset `26336`: id `376`, kind `4`, len `19`, `gethumantournaments`
+- payload offset `26388`: id `377`, kind `4`, len `19`, `joinhumantournament`
+- payload offset `26440`: id `378`, kind `4`, len `18`, `putcaronclassified`
+- payload offset `26488`: id `379`, kind `4`, len `14`, `listclassified`
+- payload offset `26528`: id `380`, kind `4`, len `19`, `getclassifieddetail`
+- payload offset `26580`: id `381`, kind `4`, len `17`, `buyfromclassified`
+- payload offset `26628`: id `382`, kind `4`, len `17`, `classifiedhistory`
+- payload offset `26676`: id `383`, kind `4`, len `16`, `cancelclassified`
+- payload offset `26720`: id `384`, kind `4`, len `12`, `requesttrade`
+- payload offset `26756`: id `385`, kind `4`, len `12`, `respondtrade`
+- payload offset `26792`: id `386`, kind `4`, len `11`, `canceltrade`
+- payload offset `26828`: id `387`, kind `4`, len `23`, `getoutgoingtradehistory`
+- payload offset `26888`: id `388`, kind `4`, len `16`, `getpendingtrades`
+- payload offset `26932`: id `389`, kind `4`, len `16`, `getwinsandlosses`
+- payload offset `26976`: id `390`, kind `4`, len `13`, `earnincentive`
+- payload offset `27016`: id `391`, kind `4`, len `12`, `logintwitter`
+- payload offset `27052`: id `392`, kind `4`, len `15`, `setbadgevisible`
+- payload offset `27096`: id `393`, kind `4`, len `20`, `getblackcardprogress`
+- payload offset `27148`: id `394`, kind `4`, len `16`, `getelectionphase`
+- payload offset `27192`: id `395`, kind `4`, len `19`, `getelectionschedule`
+- payload offset `27244`: id `396`, kind `4`, len `16`, `getnominatecount`
+- payload offset `27288`: id `397`, kind `4`, len `8`, `nominate`
+- payload offset `27316`: id `398`, kind `4`, len `17`, `getelectionresult`
+- payload offset `27364`: id `399`, kind `4`, len `12`, `electionvote`
+- payload offset `27400`: id `400`, kind `4`, len `15`, `activateaccount`
+- payload offset `27444`: id `401`, kind `4`, len `10`, `getsupport`
+- payload offset `27476`: id `402`, kind `4`, len `18`, `getmisconductcount`
+- payload offset `27524`: id `403`, kind `4`, len `10`, `fbgettoken`
+- payload offset `27556`: id `404`, kind `4`, len `16`, `fbremovefacebook`
+- payload offset `27600`: id `405`, kind `4`, len `14`, `fbgetinviteurl`
+- payload offset `27640`: id `406`, kind `4`, len `14`, `checktestdrive`
+- payload offset `27680`: id `407`, kind `4`, len `15`, `accepttestdrive`
+- payload offset `27724`: id `408`, kind `4`, len `15`, `buytestdrivecar`
+- payload offset `27768`: id `409`, kind `4`, len `18`, `removetestdrivecar`
+- payload offset `27816`: id `410`, kind `4`, len `15`, `rejecttestdrive`
+- payload offset `27860`: id `411`, kind `4`, len `19`, `changeshiftlightrpm`
+- payload offset `27912`: id `412`, kind `4`, len `16`, `joinspecialevent`
+- payload offset `27956`: id `413`, kind `4`, len `7`, `getnews`
+- payload offset `27984`: id `414`, kind `4`, len `18`, `getspotlightracers`
+- payload offset `28032`: id `415`, kind `4`, len `21`, `claimpendinguclprofit`
+- payload offset `28088`: id `416`, kind `4`, len `34`, `getinstalledenginepartbyaccountcar`
+- payload offset `28168`: id `417`, kind `4`, len `16`, `Connection Error`
+- payload offset `28212`: id `418`, kind `4`, len `44`, `Connection could not be established. Action:`
+- payload offset `28312`: id `419`, kind `4`, len `13`, ` (Error: 003-`
+- payload offset `28352`: id `420`, kind `4`, len `6`, `splice`
+- payload offset `28376`: id `421`, kind `4`, len `9`, `fileNetID`
+- payload offset `28408`: id `422`, kind `4`, len `5`, `cache`
+- payload offset `28432`: id `423`, kind `4`, len `23`, `downloadCacheInProgress`
+- payload offset `28492`: id `424`, kind `4`, len `15`, `getStreamStatus`
+- payload offset `28536`: id `425`, kind `4`, len `9`, `installer`
+- payload offset `28568`: id `426`, kind `4`, len `28`, `downloadInstallerUpdateFlash`
+- payload offset `28636`: id `427`, kind `4`, len `15`, `loadLocalAvatar`
+- payload offset `28680`: id `428`, kind `4`, len `12`, `loadLocalUgg`
+- payload offset `28716`: id `429`, kind `4`, len `17`, `downloadCacheDone`
+- payload offset `28764`: id `430`, kind `4`, len `12`, `runInstaller`
+- payload offset `28800`: id `431`, kind `4`, len `11`, `teamavatars`
+- payload offset `28836`: id `432`, kind `4`, len `3`, `ugg`
+- payload offset `28856`: id `433`, kind `4`, len `7`, `hitTest`
+- payload offset `28884`: id `434`, kind `4`, len `6`, `_mouse`
+- payload offset `28908`: id `435`, kind `4`, len `8`, `mouseLoc`
+- payload offset `28936`: id `436`, kind `4`, len `7`, `#button`
+- payload offset `28964`: id `437`, kind `4`, len `6`, `cursor`
+- payload offset `28988`: id `438`, kind `4`, len `9`, `#editText`
+- payload offset `29032`: id `440`, kind `4`, len `6`, `_movie`
+- payload offset `29056`: id `441`, kind `4`, len `2`, `go`
+
+Recovered loose UTF-16LE message fragments:
+- `Connection protocol could not be established. Action:`
+- `I'm sorry, but your session has timed out, please restart the application. Last action: "`
+- `http://www.facebook.com/connect/prompt_permissions.php?api_key=`
+- `&v=1.0&next=http://www.facebook.com/connect/login_success.html?xxRESULTTOKENxx&display=popup&ext_perm=publish_stream&enable_profile_selector=01`
+- `getWheelsTiresPartCategoriesCB`
+- `getCarPerformanceIncreasesCB`
+- `teamUpdateLeaderCommentsCB`
+- `director getOneCarEngineCB`
+- `sellerClassifiedHistoryCB`
+- `https://login.facebook.com/login.php?api_key=`
+- `&v=1.0&popup&req_perms=offline_access`
+- `http://www.facebook.com/multi_friend_selector.php/?api_key=75142a34f8f8698fb895c3156093f9c8&content=This network is the best place on Facebook for viewing`
+- `garageSetShiftLightRPMCB`
+- `getInstalledEnginePartsCB`
+- `getcarperformanceincreases`
+- `getinstalledenginepartbyaccountcar`
+- `Connection could not be established. Action:`
+- `downloadInstallerUpdateFlash`
+
+Corroborating sibling artifact:
+- file: `C:\Users\Dilldo\Nitto\Lingo Stuff\js_rewrite\01-frame1script.js`
+- exported handlers: `exitFrame`
+- This section is corroboration only and does not replace byte-backed evidence.
+
+Unresolved:
+- Opcode meanings remain unresolved in this pass.
+- Any bytes not represented above remain byte-backed but uninterpreted.
+

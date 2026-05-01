@@ -1,0 +1,8 @@
+-- Lscr-1 decompiled Lingo
+-- scriptNumber: 1
+-- castID: 65537
+-- handlersCount: 1
+
+on exitFrame
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end

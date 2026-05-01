@@ -1,0 +1,4605 @@
+{
+  "totalLength": 48988,
+  "totalLength2": 48988,
+  "headerLength": 92,
+  "scriptNumber": 2,
+  "unk20": 1,
+  "parentNumber": -1,
+  "scriptFlags": 49154,
+  "unk42": 0,
+  "castID": 65538,
+  "factoryNameID": -1,
+  "handlerVectorsCount": 0,
+  "handlerVectorsOffset": 48988,
+  "handlerVectorsSize": 0,
+  "propertiesCount": 0,
+  "propertiesOffset": 92,
+  "globalsCount": 0,
+  "globalsOffset": 92,
+  "handlersCount": 1,
+  "handlersOffset": 92,
+  "literalsCount": 3,
+  "literalsOffset": 144,
+  "literalsDataCount": 48820,
+  "literalsDataOffset": 168,
+  "propertyNameIDs": [],
+  "globalNameIDs": [],
+  "handlers": [
+    {
+      "nameID": 1,
+      "name": "RaceEngine",
+      "dispatchSlot": 2,
+      "dispatchBlockIndex": 0,
+      "dispatchBlockOffset": 0,
+      "dispatchBlockLength": 344,
+      "dispatchBlockHeaderWord0": 251,
+      "dispatchBlockHeaderWord1": 3,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 138,
+      "argumentCount": 0,
+      "argumentOffset": 144,
+      "localsCount": 0,
+      "localsOffset": 144,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 0,
+      "lineCount": 0,
+      "lineOffset": 144,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 2
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    }
+  ],
+  "literals": [
+    {
+      "type": 11,
+      "offset": 0,
+      "dataLength": 48816,
+      "value": null,
+      "referenceSummary": [
+        {
+          "value": "torqueArray",
+          "firstOffset": 5916,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "throttlePercent",
+          "firstOffset": 12984,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "availableNitrousPower",
+          "firstOffset": 13052,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "rpmZone",
+          "firstOffset": 13172,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "extraPower",
+          "firstOffset": 13192,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "engineAccel",
+          "firstOffset": 13248,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "raceGasUsed",
+          "firstOffset": 13272,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "engineResistanceTPercent",
+          "firstOffset": 13296,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "engineResistance",
+          "firstOffset": 13332,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "carInertia",
+          "firstOffset": 13360,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "speedoAccel",
+          "firstOffset": 13508,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "speedTween",
+          "firstOffset": 13552,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "clutchocity",
+          "firstOffset": 13576,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "adjustedBoost",
+          "firstOffset": 13860,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "Function",
+          "firstOffset": 288,
+          "occurrences": 1,
+          "firstBlockOffset": 0,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "QA>6",
+          "firstOffset": 365,
+          "occurrences": 9,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "QAX'",
+          "firstOffset": 489,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": " QA<",
+          "firstOffset": 528,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "\"QA<",
+          "firstOffset": 536,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "$QAX",
+          "firstOffset": 544,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "&QAX",
+          "firstOffset": 552,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "'QAX",
+          "firstOffset": 560,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "(QA<",
+          "firstOffset": 568,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ")QAX",
+          "firstOffset": 576,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "+QAX",
+          "firstOffset": 584,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ",QAX",
+          "firstOffset": 592,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "-QAX",
+          "firstOffset": 600,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ".QA<",
+          "firstOffset": 608,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "/QA<",
+          "firstOffset": 616,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "1QAX",
+          "firstOffset": 624,
+          "occurrences": 2,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "3QA<",
+          "firstOffset": 632,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "4QA<",
+          "firstOffset": 640,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "6QAX",
+          "firstOffset": 648,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "8QA<",
+          "firstOffset": 656,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "9QA<",
+          "firstOffset": 664,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ";QAX",
+          "firstOffset": 672,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "=QA<",
+          "firstOffset": 680,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ">QAX",
+          "firstOffset": 688,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "@QAX",
+          "firstOffset": 696,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "AQAX",
+          "firstOffset": 704,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "BQA<",
+          "firstOffset": 712,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "CQA<",
+          "firstOffset": 720,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "EQA<",
+          "firstOffset": 728,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "GQAX",
+          "firstOffset": 736,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "IQA<",
+          "firstOffset": 744,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "JQA<",
+          "firstOffset": 752,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "LQA<",
+          "firstOffset": 760,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "NQA<",
+          "firstOffset": 768,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "OQA<",
+          "firstOffset": 776,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "QQA<",
+          "firstOffset": 784,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "SQA<",
+          "firstOffset": 792,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "TQA<",
+          "firstOffset": 800,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "VQA?6",
+          "firstOffset": 808,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "333333",
+          "firstOffset": 1016,
+          "occurrences": 3,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "ffffff",
+          "firstOffset": 1636,
+          "occurrences": 3,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "zt?1",
+          "firstOffset": 1917,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "raceType",
+          "firstOffset": 3024,
+          "occurrences": 1,
+          "firstBlockOffset": 344,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "QAA5",
+          "firstOffset": 3099,
+          "occurrences": 19,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "QAC6",
+          "firstOffset": 3108,
+          "occurrences": 2,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "QAB6",
+          "firstOffset": 3138,
+          "occurrences": 4,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": " QAA5",
+          "firstOffset": 3243,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "\"QAA5",
+          "firstOffset": 3252,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "#QAA5",
+          "firstOffset": 3261,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "$QAA5",
+          "firstOffset": 3270,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "%QAA5",
+          "firstOffset": 3279,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "&QAA5",
+          "firstOffset": 3288,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "'QAB6",
+          "firstOffset": 3297,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "(QAA5",
+          "firstOffset": 3303,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ")QAA5",
+          "firstOffset": 3312,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "+>76",
+          "firstOffset": 3318,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "*QA<",
+          "firstOffset": 3323,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ",QA<",
+          "firstOffset": 3331,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ".QA>6",
+          "firstOffset": 3339,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "/QAA5",
+          "firstOffset": 3345,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "0QAA5",
+          "firstOffset": 3354,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "2QA5",
+          "firstOffset": 3371,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "9QA;",
+          "firstOffset": 3479,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ";QA;",
+          "firstOffset": 3487,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "<QAA5",
+          "firstOffset": 3495,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "=QAB6",
+          "firstOffset": 3504,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ">QAA5",
+          "firstOffset": 3510,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "?QAA5",
+          "firstOffset": 3519,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "AQA5",
+          "firstOffset": 3533,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "carXML",
+          "firstOffset": 5896,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "gParserObject",
+          "firstOffset": 5940,
+          "occurrences": 1,
+          "firstBlockOffset": 3032,
+          "raceEngineHint": 0
+        },
+        {
+          "value": " QA;",
+          "firstOffset": 6409,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "(QA;",
+          "firstOffset": 6430,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "*QA;",
+          "firstOffset": 6451,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ",QA;",
+          "firstOffset": 6472,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ".QA5",
+          "firstOffset": 6493,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ",QA5",
+          "firstOffset": 6514,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "2QAT",
+          "firstOffset": 6538,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "2QA;",
+          "firstOffset": 6546,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "3QA;",
+          "firstOffset": 6567,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "5QA;",
+          "firstOffset": 6588,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "6QA;",
+          "firstOffset": 6609,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "8QA;",
+          "firstOffset": 6630,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ":QA;",
+          "firstOffset": 6651,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "<QA;",
+          "firstOffset": 6672,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ">QA;",
+          "firstOffset": 6693,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "@QA;",
+          "firstOffset": 6714,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "BQA;",
+          "firstOffset": 6735,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "DQA;",
+          "firstOffset": 6756,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "FQA;",
+          "firstOffset": 6777,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "HQA;",
+          "firstOffset": 6798,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "JQA;",
+          "firstOffset": 6819,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "LQA;",
+          "firstOffset": 6840,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "NQA;",
+          "firstOffset": 6861,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "PQA;",
+          "firstOffset": 6882,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "RQA;",
+          "firstOffset": 6903,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "TQA;",
+          "firstOffset": 6924,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "VQA;",
+          "firstOffset": 6960,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "ZQA;",
+          "firstOffset": 6996,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "\\QA;",
+          "firstOffset": 7032,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "^QA;",
+          "firstOffset": 7063,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "`QA;",
+          "firstOffset": 7094,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "bQA;",
+          "firstOffset": 7115,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "dQA;",
+          "firstOffset": 7136,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "fQA;",
+          "firstOffset": 7157,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "hQA;",
+          "firstOffset": 7178,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "jQA;",
+          "firstOffset": 7199,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "lQAA5",
+          "firstOffset": 7220,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "nQA>6",
+          "firstOffset": 7229,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "oQA>6",
+          "firstOffset": 7235,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "pQA5",
+          "firstOffset": 7241,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "q9A5",
+          "firstOffset": 7246,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "ctcx",
+          "firstOffset": 10458,
+          "occurrences": 1,
+          "firstBlockOffset": 5972,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "\"AA5",
+          "firstOffset": 10990,
+          "occurrences": 1,
+          "firstBlockOffset": 10964,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "sDelta",
+          "firstOffset": 13012,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "totalHPI",
+          "firstOffset": 13032,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tqFlywheel",
+          "firstOffset": 13088,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tQwheel",
+          "firstOffset": 13112,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "wheelThrust",
+          "firstOffset": 13132,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "wheelThrustApplied",
+          "firstOffset": 13216,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "drivetrainFnd",
+          "firstOffset": 13384,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "carFnd",
+          "firstOffset": 13412,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "mphGrip",
+          "firstOffset": 13432,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "gripIncrease",
+          "firstOffset": 13484,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "vDiff",
+          "firstOffset": 13532,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "preStaged",
+          "firstOffset": 13600,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "staged",
+          "firstOffset": 13624,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "rtRandom",
+          "firstOffset": 13644,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "msNow",
+          "firstOffset": 13664,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "nitrousDangerLevel",
+          "firstOffset": 13888,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tmpFlow",
+          "firstOffset": 13920,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tmpDangerLevel",
+          "firstOffset": 13940,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "newTmpFlow",
+          "firstOffset": 13968,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "newTmpDangerLevel",
+          "firstOffset": 13992,
+          "occurrences": 1,
+          "firstBlockOffset": 11992,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "!9A5",
+          "firstOffset": 14375,
+          "occurrences": 2,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "+\"A5",
+          "firstOffset": 14631,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "6QA5",
+          "firstOffset": 14824,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "6QAA5",
+          "firstOffset": 14869,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "@QA5",
+          "firstOffset": 15111,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "5QAB6",
+          "firstOffset": 15750,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "O9B:",
+          "firstOffset": 15770,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "O9C:",
+          "firstOffset": 15856,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ":AA5",
+          "firstOffset": 16003,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "5QA5",
+          "firstOffset": 16094,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "QQA5",
+          "firstOffset": 16126,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "5QAA5",
+          "firstOffset": 16383,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ")AA5",
+          "firstOffset": 16442,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": ";QA5",
+          "firstOffset": 16455,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "WQA;",
+          "firstOffset": 16581,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "Y9A5",
+          "firstOffset": 16589,
+          "occurrences": 1,
+          "firstBlockOffset": 14012,
+          "raceEngineHint": 0
+        }
+      ],
+      "raceEngineHints": [
+        {
+          "value": "torqueArray",
+          "firstOffset": 5916,
+          "occurrences": 1,
+          "firstBlockOffset": 3032
+        },
+        {
+          "value": "throttlePercent",
+          "firstOffset": 12984,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "availableNitrousPower",
+          "firstOffset": 13052,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "rpmZone",
+          "firstOffset": 13172,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "extraPower",
+          "firstOffset": 13192,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "engineAccel",
+          "firstOffset": 13248,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "raceGasUsed",
+          "firstOffset": 13272,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "engineResistanceTPercent",
+          "firstOffset": 13296,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "engineResistance",
+          "firstOffset": 13332,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "carInertia",
+          "firstOffset": 13360,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "speedoAccel",
+          "firstOffset": 13508,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "speedTween",
+          "firstOffset": 13552,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "clutchocity",
+          "firstOffset": 13576,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        },
+        {
+          "value": "adjustedBoost",
+          "firstOffset": 13860,
+          "occurrences": 1,
+          "firstBlockOffset": 11992
+        }
+      ],
+      "asciiStrings": [
+        "Function",
+        "QA>6",
+        "QA>6",
+        "QAX'",
+        " QA<",
+        "\"QA<",
+        "$QAX",
+        "&QAX",
+        "'QAX",
+        "(QA<",
+        ")QAX",
+        "+QAX",
+        ",QAX",
+        "-QAX",
+        ".QA<",
+        "/QA<",
+        "1QAX",
+        "3QA<",
+        "4QA<",
+        "6QAX",
+        "8QA<",
+        "9QA<",
+        ";QAX",
+        "=QA<",
+        ">QAX",
+        "@QAX",
+        "AQAX",
+        "BQA<",
+        "CQA<",
+        "EQA<",
+        "GQAX",
+        "IQA<",
+        "JQA<",
+        "LQA<",
+        "NQA<",
+        "OQA<",
+        "QQA<",
+        "SQA<",
+        "TQA<",
+        "VQA?6",
+        "333333",
+        "ffffff",
+        "333333",
+        "zt?1",
+        "333333",
+        "ffffff",
+        "ffffff",
+        "raceType",
+        "QA>6",
+        "QA>6",
+        "QA>6",
+        "QA>6",
+        "QA>6",
+        "QAA5",
+        "QAC6",
+        "QAA5",
+        "QAA5",
+        "QA>6",
+        "QAB6",
+        "QAB6",
+        "QAB6",
+        "QAB6",
+        "QAA5",
+        "QAA5",
+        "QAA5",
+        "QAA5",
+        "QAA5",
+        " QAA5",
+        "\"QAA5",
+        "#QAA5",
+        "$QAA5",
+        "%QAA5",
+        "&QAA5",
+        "'QAB6",
+        "(QAA5",
+        ")QAA5",
+        "+>76",
+        "*QA<",
+        ",QA<",
+        ".QA>6",
+        "/QAA5",
+        "0QAA5",
+        "1QAX",
+        "2QA5",
+        "9QA;",
+        ";QA;",
+        "<QAA5",
+        "=QAB6",
+        ">QAA5",
+        "?QAA5",
+        "AQA5",
+        "carXML",
+        "torqueArray",
+        "gParserObject",
+        "QAA5",
+        " QA;",
+        "(QA;",
+        "*QA;",
+        ",QA;",
+        ".QA5",
+        ",QA5",
+        "2QAT",
+        "2QA;",
+        "3QA;",
+        "5QA;",
+        "6QA;",
+        "8QA;",
+        ":QA;",
+        "<QA;",
+        ">QA;",
+        "@QA;",
+        "BQA;",
+        "DQA;",
+        "FQA;",
+        "HQA;",
+        "JQA;",
+        "LQA;",
+        "NQA;",
+        "PQA;",
+        "RQA;",
+        "TQA;",
+        "VQA;",
+        "ZQA;",
+        "\\QA;",
+        "^QA;",
+        "`QA;",
+        "bQA;",
+        "dQA;",
+        "fQA;",
+        "hQA;",
+        "jQA;",
+        "lQAA5",
+        "nQA>6",
+        "oQA>6",
+        "pQA5",
+        "q9A5",
+        "ctcx",
+        "\"AA5",
+        "QAA5",
+        "QAA5",
+        "throttlePercent",
+        "sDelta",
+        "totalHPI",
+        "availableNitrousPower",
+        "tqFlywheel",
+        "tQwheel",
+        "wheelThrust",
+        "rpmZone",
+        "extraPower",
+        "wheelThrustApplied",
+        "engineAccel",
+        "raceGasUsed",
+        "engineResistanceTPercent",
+        "engineResistance",
+        "carInertia",
+        "drivetrainFnd",
+        "carFnd",
+        "mphGrip",
+        "gripIncrease",
+        "speedoAccel",
+        "vDiff",
+        "speedTween",
+        "clutchocity",
+        "preStaged",
+        "staged",
+        "rtRandom",
+        "msNow",
+        "adjustedBoost",
+        "nitrousDangerLevel",
+        "tmpFlow",
+        "tmpDangerLevel",
+        "newTmpFlow",
+        "newTmpDangerLevel",
+        "QAA5",
+        "QAA5",
+        "!9A5",
+        "+\"A5",
+        "QAA5",
+        "QAA5",
+        "6QA5",
+        "6QAA5",
+        "QAA5",
+        "QAA5",
+        "QA>6",
+        "@QA5",
+        "!9A5",
+        "QAA5",
+        "5QAB6",
+        "O9B:",
+        "QAC6",
+        "O9C:",
+        ":AA5",
+        "QAA5",
+        "5QA5",
+        "QQA5",
+        "5QAA5",
+        ")AA5",
+        ";QA5",
+        "WQA;",
+        "Y9A5"
+      ],
+      "asciiStringRefs": [
+        {
+          "offset": 288,
+          "value": "Function",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 365,
+          "value": "QA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 467,
+          "value": "QA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 489,
+          "value": "QAX'",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 528,
+          "value": " QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 536,
+          "value": "\"QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 544,
+          "value": "$QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 552,
+          "value": "&QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 560,
+          "value": "'QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 568,
+          "value": "(QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 576,
+          "value": ")QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 584,
+          "value": "+QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 592,
+          "value": ",QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 600,
+          "value": "-QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 608,
+          "value": ".QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 616,
+          "value": "/QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 624,
+          "value": "1QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 632,
+          "value": "3QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 640,
+          "value": "4QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 648,
+          "value": "6QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 656,
+          "value": "8QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 664,
+          "value": "9QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 672,
+          "value": ";QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 680,
+          "value": "=QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 688,
+          "value": ">QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 696,
+          "value": "@QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 704,
+          "value": "AQAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 712,
+          "value": "BQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 720,
+          "value": "CQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 728,
+          "value": "EQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 736,
+          "value": "GQAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 744,
+          "value": "IQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 752,
+          "value": "JQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 760,
+          "value": "LQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 768,
+          "value": "NQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 776,
+          "value": "OQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 784,
+          "value": "QQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 792,
+          "value": "SQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 800,
+          "value": "TQA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 808,
+          "value": "VQA?6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1016,
+          "value": "333333",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1636,
+          "value": "ffffff",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1672,
+          "value": "333333",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1917,
+          "value": "zt?1",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2044,
+          "value": "333333",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2376,
+          "value": "ffffff",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2436,
+          "value": "ffffff",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3024,
+          "value": "raceType",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3053,
+          "value": "QA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3059,
+          "value": "QA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3065,
+          "value": "QA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3071,
+          "value": "QA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3077,
+          "value": "QA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3099,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3108,
+          "value": "QAC6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3114,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3123,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3132,
+          "value": "QA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3138,
+          "value": "QAB6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3144,
+          "value": "QAB6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3150,
+          "value": "QAB6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3156,
+          "value": "QAB6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3162,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3171,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3190,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3225,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3234,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3243,
+          "value": " QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3252,
+          "value": "\"QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3261,
+          "value": "#QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3270,
+          "value": "$QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3279,
+          "value": "%QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3288,
+          "value": "&QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3297,
+          "value": "'QAB6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3303,
+          "value": "(QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3312,
+          "value": ")QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3318,
+          "value": "+>76",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3323,
+          "value": "*QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3331,
+          "value": ",QA<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3339,
+          "value": ".QA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3345,
+          "value": "/QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3354,
+          "value": "0QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3363,
+          "value": "1QAX",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3371,
+          "value": "2QA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3479,
+          "value": "9QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3487,
+          "value": ";QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3495,
+          "value": "<QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3504,
+          "value": "=QAB6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3510,
+          "value": ">QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3519,
+          "value": "?QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3533,
+          "value": "AQA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5896,
+          "value": "carXML",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5916,
+          "value": "torqueArray",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 5940,
+          "value": "gParserObject",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6207,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6409,
+          "value": " QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6430,
+          "value": "(QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6451,
+          "value": "*QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6472,
+          "value": ",QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6493,
+          "value": ".QA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6514,
+          "value": ",QA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6538,
+          "value": "2QAT",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6546,
+          "value": "2QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6567,
+          "value": "3QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6588,
+          "value": "5QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6609,
+          "value": "6QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6630,
+          "value": "8QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6651,
+          "value": ":QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6672,
+          "value": "<QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6693,
+          "value": ">QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6714,
+          "value": "@QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6735,
+          "value": "BQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6756,
+          "value": "DQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6777,
+          "value": "FQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6798,
+          "value": "HQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6819,
+          "value": "JQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6840,
+          "value": "LQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6861,
+          "value": "NQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6882,
+          "value": "PQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6903,
+          "value": "RQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6924,
+          "value": "TQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6960,
+          "value": "VQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6996,
+          "value": "ZQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7032,
+          "value": "\\QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7063,
+          "value": "^QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7094,
+          "value": "`QA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7115,
+          "value": "bQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7136,
+          "value": "dQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7157,
+          "value": "fQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7178,
+          "value": "hQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7199,
+          "value": "jQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7220,
+          "value": "lQAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7229,
+          "value": "nQA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7235,
+          "value": "oQA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7241,
+          "value": "pQA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 7246,
+          "value": "q9A5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 10458,
+          "value": "ctcx",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 10990,
+          "value": "\"AA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 11004,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 11030,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 12984,
+          "value": "throttlePercent",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13012,
+          "value": "sDelta",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13032,
+          "value": "totalHPI",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13052,
+          "value": "availableNitrousPower",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13088,
+          "value": "tqFlywheel",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13112,
+          "value": "tQwheel",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13132,
+          "value": "wheelThrust",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13172,
+          "value": "rpmZone",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13192,
+          "value": "extraPower",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13216,
+          "value": "wheelThrustApplied",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13248,
+          "value": "engineAccel",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13272,
+          "value": "raceGasUsed",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13296,
+          "value": "engineResistanceTPercent",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13332,
+          "value": "engineResistance",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13360,
+          "value": "carInertia",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13384,
+          "value": "drivetrainFnd",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13412,
+          "value": "carFnd",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13432,
+          "value": "mphGrip",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13484,
+          "value": "gripIncrease",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13508,
+          "value": "speedoAccel",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13532,
+          "value": "vDiff",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13552,
+          "value": "speedTween",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13576,
+          "value": "clutchocity",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13600,
+          "value": "preStaged",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13624,
+          "value": "staged",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13644,
+          "value": "rtRandom",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13664,
+          "value": "msNow",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13860,
+          "value": "adjustedBoost",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 13888,
+          "value": "nitrousDangerLevel",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13920,
+          "value": "tmpFlow",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13940,
+          "value": "tmpDangerLevel",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13968,
+          "value": "newTmpFlow",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13992,
+          "value": "newTmpDangerLevel",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14102,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14132,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14375,
+          "value": "!9A5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14631,
+          "value": "+\"A5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14789,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14798,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14824,
+          "value": "6QA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14869,
+          "value": "6QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14921,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14962,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15078,
+          "value": "QA>6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15111,
+          "value": "@QA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15235,
+          "value": "!9A5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15742,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15750,
+          "value": "5QAB6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15770,
+          "value": "O9B:",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15837,
+          "value": "QAC6",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15856,
+          "value": "O9C:",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16003,
+          "value": ":AA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16049,
+          "value": "QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16094,
+          "value": "5QA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16126,
+          "value": "QQA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16383,
+          "value": "5QAA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16442,
+          "value": ")AA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16455,
+          "value": ";QA5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16581,
+          "value": "WQA;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16589,
+          "value": "Y9A5",
+          "raceEngineHint": 0
+        }
+      ],
+      "embeddedCodeOffsets": [
+        0,
+        344,
+        3032,
+        5972,
+        10964,
+        11368,
+        11760,
+        11992,
+        14012,
+        31980,
+        34244,
+        34828,
+        35024,
+        35848,
+        36764,
+        36964,
+        37252,
+        39320,
+        41116,
+        43264,
+        48232
+      ],
+      "embeddedCodeBlocks": [
+        {
+          "offset": 0,
+          "length": 344,
+          "hexPreview": "03 00 ad de fb 00 00 00 03 00 00 00 96 00 00 00 7d 00 00 00 3b 00 01 35 00 02 80 00 04 36 00 03",
+          "headerWord0": 251,
+          "headerWord1": 3,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 288,
+              "value": "Function",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 344,
+          "length": 2688,
+          "hexPreview": "03 00 ad de c8 01 00 00 00 00 00 00 96 00 00 00 41 3e 36 00 00 51 41 3e 36 00 01 51 41 3c 00 03",
+          "headerWord0": 456,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 47,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 365,
+              "value": "QA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 467,
+              "value": "QA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 489,
+              "value": "QAX'",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 528,
+              "value": " QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 536,
+              "value": "\"QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 544,
+              "value": "$QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 552,
+              "value": "&QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 560,
+              "value": "'QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 568,
+              "value": "(QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 576,
+              "value": ")QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 584,
+              "value": "+QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 592,
+              "value": ",QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 600,
+              "value": "-QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 608,
+              "value": ".QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 616,
+              "value": "/QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 624,
+              "value": "1QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 632,
+              "value": "3QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 640,
+              "value": "4QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 648,
+              "value": "6QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 656,
+              "value": "8QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 664,
+              "value": "9QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 672,
+              "value": ";QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 680,
+              "value": "=QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 688,
+              "value": ">QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 696,
+              "value": "@QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 704,
+              "value": "AQAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 712,
+              "value": "BQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 720,
+              "value": "CQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 728,
+              "value": "EQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 736,
+              "value": "GQAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 744,
+              "value": "IQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 752,
+              "value": "JQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 760,
+              "value": "LQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 768,
+              "value": "NQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 776,
+              "value": "OQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 784,
+              "value": "QQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 792,
+              "value": "SQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 800,
+              "value": "TQA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 808,
+              "value": "VQA?6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 1016,
+              "value": "333333",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 1636,
+              "value": "ffffff",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 1672,
+              "value": "333333",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 1917,
+              "value": "zt?1",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2044,
+              "value": "333333",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2376,
+              "value": "ffffff",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2436,
+              "value": "ffffff",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3024,
+              "value": "raceType",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 3032,
+          "length": 2940,
+          "hexPreview": "03 00 ad de f0 01 00 00 00 00 00 00 96 00 00 00 41 3e 36 00 00 51 41 3e 36 00 01 51 41 3e 36 00",
+          "headerWord0": 496,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 1,
+          "label": "torqueArray",
+          "stringCount": 46,
+          "numericHintCount": 8,
+          "numericHints": [
+            {
+              "offset": 5416,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.5,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 500
+            },
+            {
+              "offset": 5436,
+              "type": "float32",
+              "endianness": "big",
+              "value": 2.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 480
+            },
+            {
+              "offset": 5464,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 452
+            },
+            {
+              "offset": 5480,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 436
+            },
+            {
+              "offset": 5496,
+              "type": "float32",
+              "endianness": "big",
+              "value": 128.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 420
+            },
+            {
+              "offset": 5516,
+              "type": "float32",
+              "endianness": "big",
+              "value": 512.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 400
+            },
+            {
+              "offset": 5568,
+              "type": "float32",
+              "endianness": "little",
+              "value": -0.00795810297131538,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 348
+            },
+            {
+              "offset": 5800,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 116
+            }
+          ],
+          "strings": [
+            {
+              "offset": 3053,
+              "value": "QA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3059,
+              "value": "QA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3065,
+              "value": "QA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3071,
+              "value": "QA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3077,
+              "value": "QA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3099,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3108,
+              "value": "QAC6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3114,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3123,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3132,
+              "value": "QA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3138,
+              "value": "QAB6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3144,
+              "value": "QAB6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3150,
+              "value": "QAB6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3156,
+              "value": "QAB6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3162,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3171,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3190,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3225,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3234,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3243,
+              "value": " QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3252,
+              "value": "\"QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3261,
+              "value": "#QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3270,
+              "value": "$QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3279,
+              "value": "%QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3288,
+              "value": "&QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3297,
+              "value": "'QAB6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3303,
+              "value": "(QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3312,
+              "value": ")QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3318,
+              "value": "+>76",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3323,
+              "value": "*QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3331,
+              "value": ",QA<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3339,
+              "value": ".QA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3345,
+              "value": "/QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3354,
+              "value": "0QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3363,
+              "value": "1QAX",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3371,
+              "value": "2QA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3479,
+              "value": "9QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3487,
+              "value": ";QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3495,
+              "value": "<QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3504,
+              "value": "=QAB6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3510,
+              "value": ">QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3519,
+              "value": "?QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3533,
+              "value": "AQA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 5896,
+              "value": "carXML",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 5916,
+              "value": "torqueArray",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 5940,
+              "value": "gParserObject",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 5972,
+          "length": 4992,
+          "hexPreview": "03 00 ad de f4 04 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 23 00 01 57 00 00 51 56 00",
+          "headerWord0": 1268,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 43,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 6207,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6409,
+              "value": " QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6430,
+              "value": "(QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6451,
+              "value": "*QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6472,
+              "value": ",QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6493,
+              "value": ".QA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6514,
+              "value": ",QA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6538,
+              "value": "2QAT",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6546,
+              "value": "2QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6567,
+              "value": "3QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6588,
+              "value": "5QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6609,
+              "value": "6QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6630,
+              "value": "8QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6651,
+              "value": ":QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6672,
+              "value": "<QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6693,
+              "value": ">QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6714,
+              "value": "@QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6735,
+              "value": "BQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6756,
+              "value": "DQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6777,
+              "value": "FQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6798,
+              "value": "HQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6819,
+              "value": "JQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6840,
+              "value": "LQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6861,
+              "value": "NQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6882,
+              "value": "PQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6903,
+              "value": "RQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6924,
+              "value": "TQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6960,
+              "value": "VQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6996,
+              "value": "ZQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7032,
+              "value": "\\QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7063,
+              "value": "^QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7094,
+              "value": "`QA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7115,
+              "value": "bQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7136,
+              "value": "dQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7157,
+              "value": "fQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7178,
+              "value": "hQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7199,
+              "value": "jQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7220,
+              "value": "lQAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7229,
+              "value": "nQA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7235,
+              "value": "oQA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7241,
+              "value": "pQA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 7246,
+              "value": "q9A5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 10458,
+              "value": "ctcx",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 10964,
+          "length": 404,
+          "hexPreview": "03 00 ad de 3c 00 00 00 00 00 00 00 96 00 00 00 41 35 00 00 3d 00 01 12 07 00 22 41 41 35 00 03",
+          "headerWord0": 60,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 3,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 10990,
+              "value": "\"AA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 11004,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 11030,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 11368,
+          "length": 392,
+          "hexPreview": "03 00 ad de 3b 00 00 00 00 00 00 00 96 00 00 00 41 35 00 00 83 27 3d 00 01 12 07 00 0f 41 35 00",
+          "headerWord0": 59,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 11760,
+          "length": 232,
+          "hexPreview": "03 00 ad de 19 00 00 00 00 00 00 00 96 00 00 00 41 35 00 00 83 27 3d 00 01 12 07 00 0f 41 35 00",
+          "headerWord0": 25,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 11992,
+          "length": 2020,
+          "hexPreview": "03 00 ad de 2d 01 00 00 00 00 00 00 96 00 00 00 41 35 00 00 07 00 78 41 35 00 01 41 35 00 02 22",
+          "headerWord0": 301,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 1,
+          "label": "throttlePercent, availableNitrousPower, rpmZone",
+          "stringCount": 33,
+          "numericHintCount": 17,
+          "numericHints": [
+            {
+              "offset": 12560,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32768.0,
+              "nearestHint": "throttlePercent",
+              "distanceToNearestHint": 424
+            },
+            {
+              "offset": 12672,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8.02685546875,
+              "nearestHint": "throttlePercent",
+              "distanceToNearestHint": 312
+            },
+            {
+              "offset": 13224,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15.27818775177001953,
+              "nearestHint": "extraPower",
+              "distanceToNearestHint": 22
+            },
+            {
+              "offset": 13276,
+              "type": "float32",
+              "endianness": "big",
+              "value": 57715.33203125,
+              "nearestHint": "raceGasUsed",
+              "distanceToNearestHint": 0
+            },
+            {
+              "offset": 13412,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15512.3466796875,
+              "nearestHint": "carInertia",
+              "distanceToNearestHint": 42
+            },
+            {
+              "offset": 13432,
+              "type": "float32",
+              "endianness": "little",
+              "value": 59504.42578125,
+              "nearestHint": "carInertia",
+              "distanceToNearestHint": 62
+            },
+            {
+              "offset": 13676,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.001953125,
+              "nearestHint": "clutchocity",
+              "distanceToNearestHint": 89
+            },
+            {
+              "offset": 13692,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.03125,
+              "nearestHint": "clutchocity",
+              "distanceToNearestHint": 105
+            },
+            {
+              "offset": 13708,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.5,
+              "nearestHint": "clutchocity",
+              "distanceToNearestHint": 121
+            },
+            {
+              "offset": 13724,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8.0,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 136
+            },
+            {
+              "offset": 13740,
+              "type": "float32",
+              "endianness": "big",
+              "value": 128.0,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 120
+            },
+            {
+              "offset": 13756,
+              "type": "float32",
+              "endianness": "big",
+              "value": 2048.0,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 104
+            },
+            {
+              "offset": 13772,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32768.0,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 88
+            },
+            {
+              "offset": 13868,
+              "type": "float32",
+              "endianness": "big",
+              "value": 59.85883712768554688,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 0
+            },
+            {
+              "offset": 13892,
+              "type": "float32",
+              "endianness": "little",
+              "value": 973.83489990234375,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 19
+            },
+            {
+              "offset": 13920,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15387.36328125,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 47
+            },
+            {
+              "offset": 13940,
+              "type": "float32",
+              "endianness": "little",
+              "value": 961.710205078125,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 67
+            }
+          ],
+          "strings": [
+            {
+              "offset": 12984,
+              "value": "throttlePercent",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13012,
+              "value": "sDelta",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13032,
+              "value": "totalHPI",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13052,
+              "value": "availableNitrousPower",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13088,
+              "value": "tqFlywheel",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13112,
+              "value": "tQwheel",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13132,
+              "value": "wheelThrust",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13172,
+              "value": "rpmZone",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13192,
+              "value": "extraPower",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13216,
+              "value": "wheelThrustApplied",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13248,
+              "value": "engineAccel",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13272,
+              "value": "raceGasUsed",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13296,
+              "value": "engineResistanceTPercent",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13332,
+              "value": "engineResistance",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13360,
+              "value": "carInertia",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13384,
+              "value": "drivetrainFnd",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13412,
+              "value": "carFnd",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13432,
+              "value": "mphGrip",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13484,
+              "value": "gripIncrease",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13508,
+              "value": "speedoAccel",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13532,
+              "value": "vDiff",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13552,
+              "value": "speedTween",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13576,
+              "value": "clutchocity",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13600,
+              "value": "preStaged",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13624,
+              "value": "staged",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13644,
+              "value": "rtRandom",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13664,
+              "value": "msNow",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13860,
+              "value": "adjustedBoost",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 13888,
+              "value": "nitrousDangerLevel",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13920,
+              "value": "tmpFlow",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13940,
+              "value": "tmpDangerLevel",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13968,
+              "value": "newTmpFlow",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13992,
+              "value": "newTmpDangerLevel",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 14012,
+          "length": 17968,
+          "hexPreview": "03 00 ad de 8f 1e 00 00 00 00 00 00 96 00 00 00 54 00 00 41 35 00 00 14 07 00 0e 41 35 00 00 55",
+          "headerWord0": 7823,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 27,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 14102,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 14132,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 14375,
+              "value": "!9A5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 14631,
+              "value": "+\"A5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 14789,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 14798,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 14824,
+              "value": "6QA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 14869,
+              "value": "6QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 14921,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 14962,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 15078,
+              "value": "QA>6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 15111,
+              "value": "@QA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 15235,
+              "value": "!9A5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 15742,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 15750,
+              "value": "5QAB6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 15770,
+              "value": "O9B:",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 15837,
+              "value": "QAC6",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 15856,
+              "value": "O9C:",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16003,
+              "value": ":AA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16049,
+              "value": "QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16094,
+              "value": "5QA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16126,
+              "value": "QQA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16383,
+              "value": "5QAA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16442,
+              "value": ")AA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16455,
+              "value": ";QA5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16581,
+              "value": "WQA;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16589,
+              "value": "Y9A5",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 31980,
+          "length": 2264,
+          "hexPreview": "03 00 ad de c6 02 00 00 00 00 00 00 96 00 00 00 41 35 00 00 41 35 00 01 1e 57 00 00 51 56 00 00",
+          "headerWord0": 710,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 34244,
+          "length": 584,
+          "hexPreview": "03 00 ad de 6e 00 00 00 00 00 00 00 96 00 00 00 41 35 00 00 3b 00 01 12 07 00 0f 41 41 35 00 02",
+          "headerWord0": 110,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 34828,
+          "length": 196,
+          "hexPreview": "03 00 ad de 14 00 00 00 00 00 00 00 96 00 00 00 41 35 00 00 39 54 00 00 3a 00 01 51 41 54 00 01",
+          "headerWord0": 20,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 35024,
+          "length": 824,
+          "hexPreview": "03 00 ad de c6 00 00 00 00 00 00 00 96 00 00 00 56 00 00 51 41 35 00 00 58 00 06 14 07 00 12 41",
+          "headerWord0": 198,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 35848,
+          "length": 916,
+          "hexPreview": "03 00 ad de db 00 00 00 00 00 00 00 96 00 00 00 41 35 00 00 3c 00 01 16 45 00 07 41 35 00 02 83",
+          "headerWord0": 219,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 36764,
+          "length": 200,
+          "hexPreview": "03 00 ad de 17 00 00 00 00 00 00 00 96 00 00 00 54 00 00 3f 12 07 00 0c 41 43 36 00 00 51 06 00",
+          "headerWord0": 23,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 36964,
+          "length": 288,
+          "hexPreview": "03 00 ad de 36 00 00 00 00 00 00 00 96 00 00 00 54 00 00 41 35 00 00 14 07 00 0f 41 41 35 00 00",
+          "headerWord0": 54,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 37252,
+          "length": 2068,
+          "hexPreview": "03 00 ad de 1b 02 00 00 00 00 00 00 96 00 00 00 41 41 35 00 01 36 00 00 51 41 3e 36 00 02 51 41",
+          "headerWord0": 539,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 39320,
+          "length": 1796,
+          "hexPreview": "03 00 ad de a9 02 00 00 00 00 00 00 96 00 00 00 41 3b 00 01 39 54 00 01 3a 00 01 36 00 00 51 3b",
+          "headerWord0": 681,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 41116,
+          "length": 2148,
+          "hexPreview": "03 00 ad de c4 02 00 00 00 00 00 00 96 00 00 00 54 00 00 58 01 f4 36 00 00 51 54 00 00 35 00 01",
+          "headerWord0": 708,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 43264,
+          "length": 4968,
+          "hexPreview": "03 00 ad de 50 06 00 00 00 00 00 00 96 00 00 00 3d 00 00 57 00 00 51 56 00 00 41 35 00 01 3d 00",
+          "headerWord0": 1616,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 48232,
+          "length": 584,
+          "hexPreview": "03 00 ad de 76 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 41 35 00 02 1b 83",
+          "headerWord0": 118,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        }
+      ],
+      "raceEngineBlocks": [
+        {
+          "offset": 3032,
+          "length": 2940,
+          "hexPreview": "03 00 ad de f0 01 00 00 00 00 00 00 96 00 00 00 41 3e 36 00 00 51 41 3e 36 00 01 51 41 3e 36 00",
+          "headerWord0": 496,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "label": "torqueArray",
+          "stringCount": 46,
+          "numericHintCount": 8,
+          "numericHints": [
+            {
+              "offset": 5416,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.5,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 500
+            },
+            {
+              "offset": 5436,
+              "type": "float32",
+              "endianness": "big",
+              "value": 2.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 480
+            },
+            {
+              "offset": 5464,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 452
+            },
+            {
+              "offset": 5480,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 436
+            },
+            {
+              "offset": 5496,
+              "type": "float32",
+              "endianness": "big",
+              "value": 128.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 420
+            },
+            {
+              "offset": 5516,
+              "type": "float32",
+              "endianness": "big",
+              "value": 512.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 400
+            },
+            {
+              "offset": 5568,
+              "type": "float32",
+              "endianness": "little",
+              "value": -0.00795810297131538,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 348
+            },
+            {
+              "offset": 5800,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32.0,
+              "nearestHint": "torqueArray",
+              "distanceToNearestHint": 116
+            }
+          ],
+          "hints": [
+            {
+              "offset": 5916,
+              "value": "torqueArray"
+            }
+          ]
+        },
+        {
+          "offset": 11992,
+          "length": 2020,
+          "hexPreview": "03 00 ad de 2d 01 00 00 00 00 00 00 96 00 00 00 41 35 00 00 07 00 78 41 35 00 01 41 35 00 02 22",
+          "headerWord0": 301,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "label": "throttlePercent, availableNitrousPower, rpmZone",
+          "stringCount": 33,
+          "numericHintCount": 17,
+          "numericHints": [
+            {
+              "offset": 12560,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32768.0,
+              "nearestHint": "throttlePercent",
+              "distanceToNearestHint": 424
+            },
+            {
+              "offset": 12672,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8.02685546875,
+              "nearestHint": "throttlePercent",
+              "distanceToNearestHint": 312
+            },
+            {
+              "offset": 13224,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15.27818775177001953,
+              "nearestHint": "extraPower",
+              "distanceToNearestHint": 22
+            },
+            {
+              "offset": 13276,
+              "type": "float32",
+              "endianness": "big",
+              "value": 57715.33203125,
+              "nearestHint": "raceGasUsed",
+              "distanceToNearestHint": 0
+            },
+            {
+              "offset": 13412,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15512.3466796875,
+              "nearestHint": "carInertia",
+              "distanceToNearestHint": 42
+            },
+            {
+              "offset": 13432,
+              "type": "float32",
+              "endianness": "little",
+              "value": 59504.42578125,
+              "nearestHint": "carInertia",
+              "distanceToNearestHint": 62
+            },
+            {
+              "offset": 13676,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.001953125,
+              "nearestHint": "clutchocity",
+              "distanceToNearestHint": 89
+            },
+            {
+              "offset": 13692,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.03125,
+              "nearestHint": "clutchocity",
+              "distanceToNearestHint": 105
+            },
+            {
+              "offset": 13708,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.5,
+              "nearestHint": "clutchocity",
+              "distanceToNearestHint": 121
+            },
+            {
+              "offset": 13724,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8.0,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 136
+            },
+            {
+              "offset": 13740,
+              "type": "float32",
+              "endianness": "big",
+              "value": 128.0,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 120
+            },
+            {
+              "offset": 13756,
+              "type": "float32",
+              "endianness": "big",
+              "value": 2048.0,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 104
+            },
+            {
+              "offset": 13772,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32768.0,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 88
+            },
+            {
+              "offset": 13868,
+              "type": "float32",
+              "endianness": "big",
+              "value": 59.85883712768554688,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 0
+            },
+            {
+              "offset": 13892,
+              "type": "float32",
+              "endianness": "little",
+              "value": 973.83489990234375,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 19
+            },
+            {
+              "offset": 13920,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15387.36328125,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 47
+            },
+            {
+              "offset": 13940,
+              "type": "float32",
+              "endianness": "little",
+              "value": 961.710205078125,
+              "nearestHint": "adjustedBoost",
+              "distanceToNearestHint": 67
+            }
+          ],
+          "hints": [
+            {
+              "offset": 12984,
+              "value": "throttlePercent"
+            },
+            {
+              "offset": 13052,
+              "value": "availableNitrousPower"
+            },
+            {
+              "offset": 13172,
+              "value": "rpmZone"
+            },
+            {
+              "offset": 13192,
+              "value": "extraPower"
+            },
+            {
+              "offset": 13248,
+              "value": "engineAccel"
+            },
+            {
+              "offset": 13272,
+              "value": "raceGasUsed"
+            },
+            {
+              "offset": 13296,
+              "value": "engineResistanceTPercent"
+            },
+            {
+              "offset": 13332,
+              "value": "engineResistance"
+            },
+            {
+              "offset": 13360,
+              "value": "carInertia"
+            },
+            {
+              "offset": 13508,
+              "value": "speedoAccel"
+            },
+            {
+              "offset": 13552,
+              "value": "speedTween"
+            },
+            {
+              "offset": 13576,
+              "value": "clutchocity"
+            },
+            {
+              "offset": 13860,
+              "value": "adjustedBoost"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 48816,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 48816,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    }
+  ],
+  "raceEngineMap": [
+    {
+      "literalIndex": 0,
+      "literalOffset": 0,
+      "blockOffset": 3032,
+      "blockLength": 2940,
+      "hexPreview": "03 00 ad de f0 01 00 00 00 00 00 00 96 00 00 00 41 3e 36 00 00 51 41 3e 36 00 01 51 41 3e 36 00",
+      "headerWord0": 496,
+      "headerWord1": 0,
+      "headerWord2": 150,
+      "label": "torqueArray",
+      "numericHintCount": 8,
+      "hints": [
+        {
+          "offset": 5916,
+          "value": "torqueArray"
+        }
+      ],
+      "numericHints": [
+        {
+          "offset": 5416,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.5,
+          "nearestHint": "torqueArray",
+          "distanceToNearestHint": 500
+        },
+        {
+          "offset": 5436,
+          "type": "float32",
+          "endianness": "big",
+          "value": 2.0,
+          "nearestHint": "torqueArray",
+          "distanceToNearestHint": 480
+        },
+        {
+          "offset": 5464,
+          "type": "float32",
+          "endianness": "big",
+          "value": 8.0,
+          "nearestHint": "torqueArray",
+          "distanceToNearestHint": 452
+        },
+        {
+          "offset": 5480,
+          "type": "float32",
+          "endianness": "big",
+          "value": 32.0,
+          "nearestHint": "torqueArray",
+          "distanceToNearestHint": 436
+        },
+        {
+          "offset": 5496,
+          "type": "float32",
+          "endianness": "big",
+          "value": 128.0,
+          "nearestHint": "torqueArray",
+          "distanceToNearestHint": 420
+        },
+        {
+          "offset": 5516,
+          "type": "float32",
+          "endianness": "big",
+          "value": 512.0,
+          "nearestHint": "torqueArray",
+          "distanceToNearestHint": 400
+        },
+        {
+          "offset": 5568,
+          "type": "float32",
+          "endianness": "little",
+          "value": -0.00795810297131538,
+          "nearestHint": "torqueArray",
+          "distanceToNearestHint": 348
+        },
+        {
+          "offset": 5800,
+          "type": "float32",
+          "endianness": "big",
+          "value": 32.0,
+          "nearestHint": "torqueArray",
+          "distanceToNearestHint": 116
+        }
+      ]
+    },
+    {
+      "literalIndex": 0,
+      "literalOffset": 0,
+      "blockOffset": 11992,
+      "blockLength": 2020,
+      "hexPreview": "03 00 ad de 2d 01 00 00 00 00 00 00 96 00 00 00 41 35 00 00 07 00 78 41 35 00 01 41 35 00 02 22",
+      "headerWord0": 301,
+      "headerWord1": 0,
+      "headerWord2": 150,
+      "label": "throttlePercent, availableNitrousPower, rpmZone",
+      "numericHintCount": 17,
+      "hints": [
+        {
+          "offset": 12984,
+          "value": "throttlePercent"
+        },
+        {
+          "offset": 13052,
+          "value": "availableNitrousPower"
+        },
+        {
+          "offset": 13172,
+          "value": "rpmZone"
+        },
+        {
+          "offset": 13192,
+          "value": "extraPower"
+        },
+        {
+          "offset": 13248,
+          "value": "engineAccel"
+        },
+        {
+          "offset": 13272,
+          "value": "raceGasUsed"
+        },
+        {
+          "offset": 13296,
+          "value": "engineResistanceTPercent"
+        },
+        {
+          "offset": 13332,
+          "value": "engineResistance"
+        },
+        {
+          "offset": 13360,
+          "value": "carInertia"
+        },
+        {
+          "offset": 13508,
+          "value": "speedoAccel"
+        },
+        {
+          "offset": 13552,
+          "value": "speedTween"
+        },
+        {
+          "offset": 13576,
+          "value": "clutchocity"
+        },
+        {
+          "offset": 13860,
+          "value": "adjustedBoost"
+        }
+      ],
+      "numericHints": [
+        {
+          "offset": 12560,
+          "type": "float32",
+          "endianness": "big",
+          "value": 32768.0,
+          "nearestHint": "throttlePercent",
+          "distanceToNearestHint": 424
+        },
+        {
+          "offset": 12672,
+          "type": "float32",
+          "endianness": "big",
+          "value": 8.02685546875,
+          "nearestHint": "throttlePercent",
+          "distanceToNearestHint": 312
+        },
+        {
+          "offset": 13224,
+          "type": "float32",
+          "endianness": "little",
+          "value": 15.27818775177001953,
+          "nearestHint": "extraPower",
+          "distanceToNearestHint": 22
+        },
+        {
+          "offset": 13276,
+          "type": "float32",
+          "endianness": "big",
+          "value": 57715.33203125,
+          "nearestHint": "raceGasUsed",
+          "distanceToNearestHint": 0
+        },
+        {
+          "offset": 13412,
+          "type": "float32",
+          "endianness": "little",
+          "value": 15512.3466796875,
+          "nearestHint": "carInertia",
+          "distanceToNearestHint": 42
+        },
+        {
+          "offset": 13432,
+          "type": "float32",
+          "endianness": "little",
+          "value": 59504.42578125,
+          "nearestHint": "carInertia",
+          "distanceToNearestHint": 62
+        },
+        {
+          "offset": 13676,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.001953125,
+          "nearestHint": "clutchocity",
+          "distanceToNearestHint": 89
+        },
+        {
+          "offset": 13692,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.03125,
+          "nearestHint": "clutchocity",
+          "distanceToNearestHint": 105
+        },
+        {
+          "offset": 13708,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.5,
+          "nearestHint": "clutchocity",
+          "distanceToNearestHint": 121
+        },
+        {
+          "offset": 13724,
+          "type": "float32",
+          "endianness": "big",
+          "value": 8.0,
+          "nearestHint": "adjustedBoost",
+          "distanceToNearestHint": 136
+        },
+        {
+          "offset": 13740,
+          "type": "float32",
+          "endianness": "big",
+          "value": 128.0,
+          "nearestHint": "adjustedBoost",
+          "distanceToNearestHint": 120
+        },
+        {
+          "offset": 13756,
+          "type": "float32",
+          "endianness": "big",
+          "value": 2048.0,
+          "nearestHint": "adjustedBoost",
+          "distanceToNearestHint": 104
+        },
+        {
+          "offset": 13772,
+          "type": "float32",
+          "endianness": "big",
+          "value": 32768.0,
+          "nearestHint": "adjustedBoost",
+          "distanceToNearestHint": 88
+        },
+        {
+          "offset": 13868,
+          "type": "float32",
+          "endianness": "big",
+          "value": 59.85883712768554688,
+          "nearestHint": "adjustedBoost",
+          "distanceToNearestHint": 0
+        },
+        {
+          "offset": 13892,
+          "type": "float32",
+          "endianness": "little",
+          "value": 973.83489990234375,
+          "nearestHint": "adjustedBoost",
+          "distanceToNearestHint": 19
+        },
+        {
+          "offset": 13920,
+          "type": "float32",
+          "endianness": "little",
+          "value": 15387.36328125,
+          "nearestHint": "adjustedBoost",
+          "distanceToNearestHint": 47
+        },
+        {
+          "offset": 13940,
+          "type": "float32",
+          "endianness": "little",
+          "value": 961.710205078125,
+          "nearestHint": "adjustedBoost",
+          "distanceToNearestHint": 67
+        }
+      ]
+    }
+  ]
+}

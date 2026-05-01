@@ -1,0 +1,291 @@
+-- Lscr-109 embedded block decompile
+-- scriptNumber: 9
+-- 6 blocks
+
+on connectSocket
+  -- block offset=0 length=140 codeLen=20
+  -- names: 0=Function, 1=connectSocket
+  // prologue: Function
+  // prologue: connectSocket
+  // prologue: id_2
+  // prologue: id_3
+  // prologue: id_4
+end
+
+on sockConnTimeout
+  -- block offset=140 length=1288 codeLen=155
+  -- names: 0=timeout, 1=sockConnTO, 2=symbol, 3=sockConnTimeout, 4=_global, 5=gMultiuserInstance, 6=xtra, 7=Multiuser, 8=setNetMessageHandler, 9=socketMessageHandler, 10=script, 11=Connection Script, 12=connectToNetServer, 13=Rick, 14=MySecret, 15=socketURL, 16=CieServer, 17=sprite, 18=flashSP, 19=showConnectionErrorCB, 20=Connection Error, 21=Connection could not be established. Please check your firewall. (Error: 004-, 22=)
+  // [0x0017] op_04
+  sockConnTO
+  !50000(sockConnTimeout)
+  _global
+  gMultiuserInstance = Multiuser
+  ?
+  timeout = ?(?, _global.gMultiuserInstance.setNetMessageHandler()(socketMessageHandler)(Connection Script))
+  ?
+  timeout = ?(?, ?, ?, MySecret, _global.socketURL, !CieServer)
+  ?
+  (timeout < false)
+  // goto @158
+  ?(?, (? + )))
+end
+
+on socketMessageHandler
+  -- block offset=1428 length=1456 codeLen=205
+  -- names: 0=timeout, 1=sockConnTO, 2=forget, 3=symbol, 4=sockConnTimeout, 5=_global, 6=gMultiuserInstance, 7=setNetMessageHandler, 8=socketMessageHandler, 9=script, 10=Connection Script, 11=connectToNetServer, 12=Rick, 13=MySecret, 14=socketURL, 15=CieServer, 16=sprite, 17=flashSP, 18=showConnectionErrorCB, 19=Connection Error, 20=Connection could not be established. Please check your firewall. (Error: 004-, 21=), 22=showSocketConnectionErrorCB
+  if (!param_timeout) { /* else goto @172 */ }
+  ?(sockConnTO).forget()()
+  // [0x0033] op_04
+  50000(sockConnTimeout)
+  sockConnTO
+  2
+  timeout = ?(?, _global.gMultiuserInstance.setNetMessageHandler()(socketMessageHandler)(Connection Script))
+  ?
+  timeout = ?(?, ?, ?, MySecret, _global.socketURL, !CieServer)
+  ?
+  (timeout < false)
+  // goto @169
+  ?(?, (? + )))
+  // goto @168
+  // [0x00a8] op_27
+  ?(sockConnTO).forget()()
+  ?(flashSP).showSocketConnectionErrorCB()()
+end
+
+on executeCall
+  -- block offset=2884 length=3024 codeLen=612
+  -- names: 0=_global, 1=gMultiuserInstance, 2=getNetMessage, 3=errorCode, 4=content, 5=undefined, 6=socketBuffer, 7=indexOf, 8=ld, 10=substr, 11=eval, 12=propList(, 13=), 14=Object, 15=ex, 16=isEnc, 17=decrypt, 18=exEnc, 19=sprite, 20=flashSP, 21=showConnectionErrorCB, 22=Protocol Error, 23=Connection protocol could not be established. (Error: 010), 24=ex2, 25=Connection protocol could not be established. (Error: 005), 26=Connection protocol could not be established. (Error: 006), 27=procSocket, 28=length, 29=subject, 30=ConnectToNetServer, 31=isConnected, 32=LOGIN, 34=showDisconnectedErrorCB, 35=Disconnected, 36=You have been disconnected from the game. Please restart the application to continue playing., 37=Connection Error, 38=Connection could not be established. (Error: 007-, 40=_system, 41=gc
+  // [0x0000] op_85
+  _global = _global.gMultiuserInstance.getNetMessage()()
+  ?
+  _global.errorCode
+  if (false) { /* else goto @189 */ }
+  (_global.content < undefined)
+  // goto @413
+  _global
+  socketBuffer = (_global.socketBuffer + _global.content)
+  ?
+  gMultiuserInstance = _global.socketBuffer.indexOf()(ld)
+  ?
+  (gMultiuserInstance >= c_9)
+  // goto @410
+  getNetMessage
+  errorCode = _global.socketBuffer.substr()(false, gMultiuserInstance)
+  ?
+  // [0x0075] op_85
+  // [0x0085] op_79
+  getNetMessage = (? + ))
+  ?
+  // goto @142
+  // [0x008e] op_bc
+  // [0x008f] op_75
+  // [0x0097] op_59
+  // [0x0098] op_74
+  // [0x0099] op_82
+  // [0x009b] op_0f
+  // [0x009c] op_03
+  _global.isEnc
+  Object()
+  // goto @302
+  // [0x00a6] op_85
+  // [0x00a7] op_85
+  errorCode = decrypt()(errorCode)
+  ?
+  // goto @184
+  // [0x00b8] op_2e
+  // [0x00b9] op_75
+  // [0x00c1] op_59
+  // [0x00c2] op_74
+  // [0x00c3] op_82
+  if (Object()) { /* else goto @201 */ }
+  ?(?, Connection protocol could not be established. (Error: 010))
+  // [0x00df] op_04
+  // goto @226
+  // [0x00e2] op_04
+  // [0x00f3] op_79
+  getNetMessage = (? + ))
+  ?
+  // goto @252
+  // [0x00fc] op_2e
+  // [0x00fd] op_75
+  // [0x0105] op_59
+  // [0x0106] op_74
+  // [0x0107] op_82
+  // [0x0109] op_18
+  // [0x010a] op_03
+  ?(?, Connection protocol could not be established. (Error: 005))
+  // [0x0123] op_04
+  // goto @294
+  // [0x0126] op_04
+  // goto @298
+  ?(?, Connection protocol could not be established. (Error: 006))
+  // [0x0143] op_04
+  // goto @326
+  // [0x0146] op_04
+  getNetMessage
+  // goto @348
+  procSocket()(getNetMessage)
+  1849856
+  gMultiuserInstance
+  _global.socketBuffer.length
+  (_global.socketBuffer.substr() + !gMultiuserInstance)
+  _global
+  socketBuffer = ?
+  ?
+  gMultiuserInstance = _global.socketBuffer.indexOf()(ld)
+  ?
+  // goto @660
+  // [0x0196] op_be
+  // goto @409
+  // [0x0199] op_20
+  if (ConnectToNetServer) { /* else goto @442 */ }
+  _global
+  isConnected = 1
+  ?
+  LOGIN()()
+  // goto @441
+  id_15104 = ?
+  ?.isConnected
+  // goto @529
+  _global.errorCode
+  if (c_33) { /* else goto @494 */ }
+  ?(?, You have been disconnected from the game. Please restart the application to continue playing.)
+  // goto @490
+  // [0x01ea] op_26
+  ?(?, (? + )))
+  // [0x020e] op_72
+  // [0x0210] op_48
+  // goto @531
+  // [0x0213] op_53
+  // [0x0214] op_75
+  // [0x021c] op_59
+  // [0x021d] op_74
+  // [0x021e] op_82
+  // [0x0220] op_0f
+  // [0x0221] op_03
+  _global.isConnected
+  Object()
+  // goto @586
+  ?(?, (id_39 + ex))
+  // [0x0247] op_04
+  // [0x0248] op_72
+  // [0x024a] op_0e
+  // goto @589
+  // [0x024d] op_19
+  // [0x024e] op_75
+  // [0x0251] op_72
+  // [0x0253] op_05
+  // [0x0254] op_74
+  // [0x0255] op_6e
+  // [0x0256] op_86
+  _system.gc()()
+  // [0x0262] op_73
+end
+
+on ssm
+  -- block offset=5908 length=2528 codeLen=638
+  -- names: 0=buypartugg, 1=buypart, 2=action=, 3=&aid=, 4=_global, 5=aid, 6=&sk=, 7=guid, 8=login, 9=&fbt=, 10=facebookToken, 11=&fbi=, 12=facebookID, 13=fbgetsession, 14=agreetoterms, 15=createaccount, 16=xtra, 17=caluMD5, 18=&md5=, 19=getFileMD5, 20=_player, 21=applicationPath, 22=applicationName, 23=&, 24=getPCInfo, 25=changehomemachine, 26=buycar, 27=buyenginepart, 28=buyengine, 29=swapengine, 30=changeemail, 31=changepassword, 32=ebep, 33=sellcar, 34=sellcarpart, 35=sellenginepart, 36=sellengine, 37=buygears, 38=sellallspare, 39=activatepoints, 40=activatemember, 41=repairparts, 42=fbremovefacebook, 43=changepasswordreq, 44=isEnc, 45=gameURL, 46=?, 47=escape, 48=encrypt, 49=Array, 50=getNetText, 51=gNetID, 52=push
+  buypartugg
+  if (buypartugg) { /* else goto @29 */ }
+  // [0x0011] op_55
+  buypart
+  buypartugg = 1
+  ?
+  buypart = ((? + &sk=) + _global.guid)
+  ?
+  if (login) { /* else goto @108 */ }
+  buypart = (? + (&fbt= + _global.facebookToken))
+  ?
+  buypart = (? + (&fbi= + _global.facebookID))
+  ?
+  if (fbgetsession) { /* else goto @136 */ }
+  buypart = (? + (&fbt= + _global.facebookToken))
+  ?
+  if (agreetoterms) { /* else goto @182 */ }
+  buypart = (? + (&fbt= + _global.facebookToken))
+  ?
+  buypart = (? + (&fbi= + _global.facebookID))
+  ?
+  if (login) { /* else goto @209 */ }
+  if (createaccount) { /* else goto @209 */ }
+  if (fbgetsession) { /* else goto @285 */ }
+  action= = caluMD5
+  ?
+  buypart = (? + (&md5= + action=.getFileMD5()((_player.applicationPath + _player.applicationName))))
+  ?
+  buypart = (? + (& + getPCInfo()()))
+  ?
+  // goto @281
+  // [0x0119] op_de
+  if (changehomemachine) { /* else goto @482 */ }
+  if (buycar) { /* else goto @482 */ }
+  if (buypart) { /* else goto @482 */ }
+  if (buyenginepart) { /* else goto @482 */ }
+  if (buyengine) { /* else goto @482 */ }
+  if (swapengine) { /* else goto @482 */ }
+  if (changeemail) { /* else goto @482 */ }
+  if (changepassword) { /* else goto @482 */ }
+  if (ebep) { /* else goto @482 */ }
+  if (sellcar) { /* else goto @482 */ }
+  if (sellcarpart) { /* else goto @482 */ }
+  if (sellenginepart) { /* else goto @482 */ }
+  if (sellengine) { /* else goto @482 */ }
+  if (buygears) { /* else goto @482 */ }
+  if (sellallspare) { /* else goto @482 */ }
+  if (activatepoints) { /* else goto @482 */ }
+  if (activatemember) { /* else goto @482 */ }
+  if (repairparts) { /* else goto @482 */ }
+  if (fbremovefacebook) { /* else goto @482 */ }
+  if (changepasswordreq) { /* else goto @504 */ }
+  buypart = (? + (& + getPCInfo()()))
+  ?
+  param_buypart
+  // goto @525
+  buypart = (? + (& + param_buypart))
+  ?
+  _global.isEnc
+  // goto @569
+  buypart = ((? + ?) + escape()(encrypt()(buypart)))
+  ?
+  // goto @565
+  // [0x0235] op_15
+  buypart = ((? + ?) + buypart)
+  ?
+  buypartugg
+  // goto @600
+  // [0x0251] op_55
+  buypartugg
+  getNetText()(buypart)
+  param_buypartugg
+  Array()
+  &aid= = ?
+  ?
+  _global.gNetID.push()(&aid=)
+end
+
+on block_5
+  -- block offset=8436 length=892 codeLen=146
+  -- names: 0=_global, 1=isConnected, 2=isEnc, 3=gMultiuserInstance, 4=sendNetMessage, 5=System, 6=String, 7=encrypt, 8=ld, 9=Object, 10=ex, 11=sprite, 12=flashSP, 13=showConnectionErrorCB, 14=Connection Error
+  _global.isConnected
+  // goto @149
+  // [0x0009] op_85
+  (? && _global.isEnc)
+  // goto @21525
+  // [0x0016] op_20
+  // goto @69
+  ?(?, String, (encrypt()(param__global) + _global.ld))
+  // goto @65
+  // [0x0041] op_21
+  ?(?, String, (param__global + _global.ld))
+  // goto @98
+  // [0x0062] op_32
+  // [0x0063] op_75
+  // [0x006b] op_59
+  // [0x006c] op_74
+  // [0x006d] op_82
+  // [0x0070] op_03
+  ?(?, (id_15 + ex))
+  // [0x008d] op_04
+  // goto @144
+  // [0x0090] op_04
+end

@@ -1,0 +1,299 @@
+on LOGIN
+  -- unk26
+end
+
+on SENDNIMMESSAGE
+  -- unk26
+end
+
+on UPDATENIMUSER
+  -- unk26
+end
+
+on DELETENIMUSER
+  -- unk26
+end
+
+on BLOCKNIMUSER
+  -- unk26
+end
+
+on UNBLOCKNIMUSER
+  -- unk26
+end
+
+on INQUIRYNIMUSER
+  -- unk26
+end
+
+on ALLOWNIMUSER
+  -- unk26
+end
+
+on NIMOKRESPONSE
+  -- unk26
+end
+
+on DELETENIMINQUIREDUSER
+  -- unk26
+end
+
+on GETNIMINREQUESTS
+  -- unk26
+end
+
+on GETNIMOUTREQUESTS
+  -- unk26
+end
+
+on LISTRACECHATROOMS2
+  -- unk26
+end
+
+on CREATECHATROOM
+  -- unk26
+end
+
+on JOINRACECHAT
+  -- unk26
+end
+
+on LEAVERACECHAT
+  -- unk26
+end
+
+on LISTRACECHATUSERS
+  -- unk26
+end
+
+on SENDRACECHAT
+  -- unk26
+end
+
+on TEAMKICK
+  -- unk26
+end
+
+on TEAMCHANGEROLE
+  -- unk26
+end
+
+on TEAMUPDATEMAXBET
+  -- unk26
+end
+
+on TEAMDEPOSIT
+  -- unk26
+end
+
+on TEAMWITHDRAW
+  -- unk26
+end
+
+on TEAMQUIT
+  -- unk26
+end
+
+on TEAMACCEPT
+  -- unk26
+end
+
+on TEAMDISPERSE
+  -- unk26
+end
+
+on TEAMCREATE
+  -- unk26
+end
+
+on TEAMSTEPDOWN
+  -- unk26
+end
+
+on GETKOTH
+  -- unk26
+end
+
+on JOINKOTH
+  -- unk26
+end
+
+on LEAVEKOTH
+  -- unk26
+end
+
+on KCNT
+  -- unk26
+end
+
+on SENDVOTE
+  -- unk26
+end
+
+on KDONE
+  -- unk26
+end
+
+on KRT
+  -- unk26
+end
+
+on STG
+  -- unk26
+end
+
+on int
+  -- unk26
+end
+
+on KOK
+  -- unk26
+end
+
+on KREADY
+  -- unk26
+end
+
+on GETRIVALS
+  -- unk26
+end
+
+on RREQ
+  -- unk26
+end
+
+on RRSP
+  -- unk26
+end
+
+on RLVE
+  -- unk26
+end
+
+on RIVOK
+  -- unk26
+end
+
+on RIVREADY
+  -- unk26
+end
+
+on RIVRT
+  -- unk26
+end
+
+on RIVDONE
+  -- unk26
+end
+
+on HTJOIN
+  -- unk26
+end
+
+on HQOK
+  -- unk26
+end
+
+on HTGET32
+  -- unk26
+end
+
+on HTGETTREE
+  -- unk26
+end
+
+on HTSPECTATE
+  -- unk26
+end
+
+on HTQUIT
+  -- unk26
+end
+
+on HTINFO
+  -- unk26
+end
+
+on HTQREADY
+  -- unk26
+end
+
+on HTQD
+  -- unk26
+end
+
+on HTQRT
+  -- unk26
+end
+
+on HTREADY
+  -- unk26
+end
+
+on HTD
+  -- unk26
+end
+
+on HTRT
+  -- unk26
+end
+
+on TRGETRACERS
+  -- unk26
+end
+
+on TRGETTEAMS
+  -- unk26
+end
+
+on TRPREREQUEST
+  -- unk26
+end
+
+on TRREQUEST
+  -- unk26
+end
+
+on TRCOUNTER
+  -- unk26
+end
+
+on TRRESPONSE
+  -- unk26
+end
+
+on TROK
+  -- unk26
+end
+
+on TRIVREADY
+  -- unk26
+end
+
+on JOINELECTION
+  -- unk26
+end
+
+on ELECTIONINTERVIEWLIST
+  -- unk26
+end
+
+on m
+  -- unk26
+end
+
+on CLOSEGAME
+  -- unk26
+end
+
+on IsMyProcessNameCorrect
+  -- unk26
+end
+
+on CheckNittoProcesses
+  -- unk26
+end
+
+on CheckNittoProcessesCB
+  -- unk26
+end

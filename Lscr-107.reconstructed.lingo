@@ -1,0 +1,39 @@
+on prepareMovie
+  -- unk26
+end
+
+on startMovie
+  -- unk26
+end
+
+on stopMovie
+  -- unk26
+end
+
+on resizeWindow
+  -- unk26
+end
+
+on zoomWindow
+  -- unk26
+end
+
+on resizeFlashSprite
+  -- unk26
+end
+
+on setInactive
+  -- unk26
+end
+
+on sendHeartbeat
+  -- unk26
+end
+
+on openURL
+  -- unk26
+end
+
+on clearFB
+  -- unk26
+end

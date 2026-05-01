@@ -1,0 +1,304 @@
+-- Lscr-4 decompiled Lingo
+-- scriptNumber: 4
+-- castID: 65548
+-- handlersCount: 75
+
+on LOGIN
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on SENDNIMMESSAGE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on UPDATENIMUSER
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on DELETENIMUSER
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on BLOCKNIMUSER
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on UNBLOCKNIMUSER
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on INQUIRYNIMUSER
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on ALLOWNIMUSER
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on NIMOKRESPONSE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on DELETENIMINQUIREDUSER
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on GETNIMINREQUESTS
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on GETNIMOUTREQUESTS
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on LISTRACECHATROOMS2
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on CREATECHATROOM
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on JOINRACECHAT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on LEAVERACECHAT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on LISTRACECHATUSERS
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on SENDRACECHAT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TEAMKICK
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TEAMCHANGEROLE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TEAMUPDATEMAXBET
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TEAMDEPOSIT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TEAMWITHDRAW
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TEAMQUIT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TEAMACCEPT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TEAMDISPERSE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TEAMCREATE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TEAMSTEPDOWN
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on GETKOTH
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on JOINKOTH
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on LEAVEKOTH
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on KCNT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on SENDVOTE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on KDONE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on KRT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on STG
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on int
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on KOK
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on KREADY
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on GETRIVALS
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on RREQ
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on RRSP
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on RLVE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on RIVOK
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on RIVREADY
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on RIVRT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on RIVDONE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTJOIN
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HQOK
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTGET32
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTGETTREE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTSPECTATE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTQUIT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTINFO
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTQREADY
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTQD
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTQRT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTREADY
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTD
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on HTRT
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TRGETRACERS
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TRGETTEAMS
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TRPREREQUEST
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TRREQUEST
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TRCOUNTER
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TRRESPONSE
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TROK
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on TRIVREADY
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on JOINELECTION
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on ELECTIONINTERVIEWLIST
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on m
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on CLOSEGAME
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on IsMyProcessNameCorrect
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on CheckNittoProcesses
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on CheckNittoProcessesCB
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end

@@ -1,0 +1,155 @@
+-- Lscr-108.bin-only scaffold
+-- Source bin:
+--   C:\Users\Dilldo\Nitto\Lingo Stuff\Lscr-108.bin
+--
+-- This file is intentionally conservative.
+-- It preserves only exact structure and late ASCII literal records
+-- that were directly decoded from the raw bin.
+-- No handler names are claimed in this pass.
+
+-- file size:
+--   1928 bytes = 0x0788
+--
+-- proven region map:
+--   0x0000..0x02C3  header and early opaque region
+--   0x02C4..0x053B  pre-literal raw region
+--   0x053C..0x0623  late literal index region
+--   0x0624..0x0787  late ASCII literal region
+--
+-- selected big-endian 16-bit header pairs:
+--   0x000A = 1928
+--   0x000E = 1928
+--   0x0010 = 92
+--   0x0012 = 8
+--   0x0014 = 1
+--   0x0016 = 65535
+--   0x001E = 708
+--   0x0020 = 42052
+--   0x0028 = 2
+--   0x002C = 1
+--   0x002E = 17
+--   0x0040 = 92
+--   0x0042 = 1
+--   0x0048 = 15
+--   0x004C = 94
+--   0x004E = 29
+--   0x0052 = 1340
+--   0x0056 = 356
+--   0x005A = 1572
+--
+-- proven header correlations:
+--   0x004E = 29    matches the late ASCII literal record count
+--   0x0052 = 0x53C matches the late literal index region start
+--   0x0056 = 0x164 matches the late ASCII literal region byte length
+--   0x005A = 0x624 matches the late ASCII literal region start
+--
+-- candidate absolute offsets copied verbatim from header words:
+--   0x001E = 0x02C4
+--   0x0052 = 0x053C
+--   0x005A = 0x0624
+--   0x0068 = 0x0310
+--   0x006E = 0x0354
+--   0x0074 = 0x0354
+--   0x007A = 0x0356
+--
+-- pre-literal raw region:
+--   start 0x02C4
+--   end   0x053C
+--   motif-dense subregion:
+--     0x0310..0x053B
+--   exact repeated byte-shapes in that subregion:
+--     0157        count=30
+--     430157      count=16
+--     4201579C    count=14
+--     0A44        count=13
+--     52004C00    count=2
+--   exact selected occurrence offsets:
+--     430157      at 0x0315 0x0319 0x0343 0x0379 0x038C 0x0396 0x03C7 0x03CE 0x03D5 0x042A 0x043A 0x045E 0x046E 0x047E 0x048E 0x04E2
+--     4201579C    at 0x0414 0x042E 0x043E 0x0450 0x0462 0x0472 0x0482 0x0492 0x04A8 0x04CA 0x04E6 0x04FA 0x0527 0x052F
+--     52004C00    at 0x031D 0x051A
+--     0A44        at 0x0325 0x0328 0x032B 0x032E 0x0331 0x0334 0x0337 0x03C4 0x03CB 0x03D2 0x03F6 0x050E 0x0511
+--
+-- late literal index region:
+--   start 0x053C
+--   end   0x0624
+--   29 records
+--   each record uses:
+--     4-byte big-endian relative record start
+--     4-byte big-endian opaque value
+--   the relative record starts match the late ASCII literal record starts
+--   when resolved against base 0x0624
+--
+-- exact late literal index records:
+--   0x053C relative=0x0000 opaque=0x00000001
+--   0x0544 relative=0x000C opaque=0x00000001
+--   0x054C relative=0x0012 opaque=0x00000001
+--   0x0554 relative=0x0018 opaque=0x00000001
+--   0x055C relative=0x001E opaque=0x00000001
+--   0x0564 relative=0x0024 opaque=0x00000001
+--   0x056C relative=0x002A opaque=0x00000001
+--   0x0574 relative=0x0030 opaque=0x00000001
+--   0x057C relative=0x0036 opaque=0x00000001
+--   0x0584 relative=0x0056 opaque=0x00000001
+--   0x058C relative=0x0066 opaque=0x00000001
+--   0x0594 relative=0x0072 opaque=0x00000001
+--   0x059C relative=0x007E opaque=0x00000001
+--   0x05A4 relative=0x008A opaque=0x00000001
+--   0x05AC relative=0x0094 opaque=0x00000001
+--   0x05B4 relative=0x00A0 opaque=0x00000001
+--   0x05BC relative=0x00AA opaque=0x00000001
+--   0x05C4 relative=0x00B4 opaque=0x00000001
+--   0x05CC relative=0x00BE opaque=0x00000001
+--   0x05D4 relative=0x00CA opaque=0x00000001
+--   0x05DC relative=0x00FC opaque=0x00000001
+--   0x05E4 relative=0x010A opaque=0x00000001
+--   0x05EC relative=0x011A opaque=0x00000001
+--   0x05F4 relative=0x0132 opaque=0x00000001
+--   0x05FC relative=0x013C opaque=0x00000001
+--   0x0604 relative=0x0142 opaque=0x00000001
+--   0x060C relative=0x014A opaque=0x00000001
+--   0x0614 relative=0x0152 opaque=0x00000001
+--   0x061C relative=0x015A opaque=0x00000007
+--
+-- late ASCII literal table:
+--   start 0x0624
+--   end   0x0788
+--   each record uses:
+--     4-byte big-endian length
+--     ASCII payload including trailing 0x00
+--     2-byte alignment after each record
+--
+-- exact literal records:
+--   0x0624 len=7  value=fileio
+--   0x0630 len=2  value=l
+--   0x0636 len=2  value=i
+--   0x063C len=2  value=n
+--   0x0642 len=2  value=g
+--   0x0648 len=2  value=o
+--   0x064E len=2  value=.
+--   0x0654 len=2  value=I
+--   0x065A len=27 value=agree with the usage terms
+--   0x067A len=12 value=setInactive
+--   0x068A len=8  value=simInet
+--   0x0696 len=8  value=windows
+--   0x06A2 len=7  value=number
+--   0x06AE len=5  value=mid=
+--   0x06B8 len=7  value=vendor
+--   0x06C4 len=5  value=type
+--   0x06CE len=6  value=model
+--   0x06D8 len=6  value=&nid=
+--   0x06E2 len=7  value=&prid=
+--   0x06EE len=45 value=SOFTWARE\\Microsoft\\Windows\\CurrentVersion
+--   0x0720 len=10 value=ProductId
+--   0x072E len=12 value=NoProductId
+--   0x073E len=19 value=HKEY_LOCAL_MACHINE
+--   0x0756 len=6  value=&cna=
+--   0x0760 len=1  value=
+--   0x0766 len=3  value=ch
+--   0x076E len=4  value=eat
+--   0x0776 len=4  value= en
+--   0x077E len=5  value=gine
+--
+-- unresolved:
+--   no direct handler names recovered from the raw bin in this pass
+--   no clean aligned UTF-16 id/type/payload table recovered in this pass
+--   the pre-literal raw region 0x02C4..0x053B remains unlifted in this pass

@@ -1,0 +1,1469 @@
+{
+  "totalLength": 5380,
+  "totalLength2": 5380,
+  "headerLength": 92,
+  "scriptNumber": 3,
+  "unk20": 1,
+  "parentNumber": -1,
+  "scriptFlags": 49154,
+  "unk42": 0,
+  "castID": 65539,
+  "factoryNameID": -1,
+  "handlerVectorsCount": 0,
+  "handlerVectorsOffset": 5380,
+  "handlerVectorsSize": 0,
+  "propertiesCount": 0,
+  "propertiesOffset": 92,
+  "globalsCount": 0,
+  "globalsOffset": 92,
+  "handlersCount": 10,
+  "handlersOffset": 92,
+  "literalsCount": 12,
+  "literalsOffset": 612,
+  "literalsDataCount": 4672,
+  "literalsDataOffset": 708,
+  "propertyNameIDs": [],
+  "globalNameIDs": [],
+  "handlers": [
+    {
+      "nameID": 2,
+      "name": "runEngineStart",
+      "dispatchSlot": 2,
+      "dispatchBlockIndex": 0,
+      "dispatchBlockOffset": 0,
+      "dispatchBlockLength": 140,
+      "dispatchBlockHeaderWord0": 40,
+      "dispatchBlockHeaderWord1": 30,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 552,
+      "argumentCount": 0,
+      "argumentOffset": 558,
+      "localsCount": 0,
+      "localsOffset": 558,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 0,
+      "lineCount": 0,
+      "lineOffset": 558,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 2
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 3,
+      "name": "runEngineStop",
+      "dispatchSlot": 3,
+      "dispatchBlockIndex": 1,
+      "dispatchBlockOffset": 140,
+      "dispatchBlockLength": 224,
+      "dispatchBlockHeaderWord0": 14,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 558,
+      "argumentCount": 0,
+      "argumentOffset": 564,
+      "localsCount": 0,
+      "localsOffset": 564,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 4,
+      "lineCount": 0,
+      "lineOffset": 564,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 3
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 4,
+      "name": "runEngine",
+      "dispatchSlot": 4,
+      "dispatchBlockIndex": 2,
+      "dispatchBlockOffset": 364,
+      "dispatchBlockLength": 240,
+      "dispatchBlockHeaderWord0": 14,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "dispatchBlockLabel": "throttlePercent",
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 564,
+      "argumentCount": 0,
+      "argumentOffset": 570,
+      "localsCount": 0,
+      "localsOffset": 570,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 8,
+      "lineCount": 0,
+      "lineOffset": 570,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 4
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 5,
+      "name": "runEngineGaugeInit",
+      "dispatchSlot": 5,
+      "dispatchBlockIndex": 3,
+      "dispatchBlockOffset": 604,
+      "dispatchBlockLength": 236,
+      "dispatchBlockHeaderWord0": 26,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 570,
+      "argumentCount": 0,
+      "argumentOffset": 576,
+      "localsCount": 0,
+      "localsOffset": 576,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 14,
+      "lineCount": 0,
+      "lineOffset": 576,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 5
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 6,
+      "name": "runEngineGearUp",
+      "dispatchSlot": 6,
+      "dispatchBlockIndex": 4,
+      "dispatchBlockOffset": 840,
+      "dispatchBlockLength": 516,
+      "dispatchBlockHeaderWord0": 63,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 576,
+      "argumentCount": 0,
+      "argumentOffset": 582,
+      "localsCount": 0,
+      "localsOffset": 582,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 20,
+      "lineCount": 0,
+      "lineOffset": 582,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 6
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 7,
+      "name": "runEngineGearDown",
+      "dispatchSlot": 7,
+      "dispatchBlockIndex": 5,
+      "dispatchBlockOffset": 1356,
+      "dispatchBlockLength": 236,
+      "dispatchBlockHeaderWord0": 23,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 582,
+      "argumentCount": 0,
+      "argumentOffset": 588,
+      "localsCount": 0,
+      "localsOffset": 588,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 26,
+      "lineCount": 0,
+      "lineOffset": 588,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 7
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 8,
+      "name": "runEngineSetBrake",
+      "dispatchSlot": 8,
+      "dispatchBlockIndex": 6,
+      "dispatchBlockOffset": 1592,
+      "dispatchBlockLength": 260,
+      "dispatchBlockHeaderWord0": 23,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "dispatchBlockLabel": "brake",
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 588,
+      "argumentCount": 0,
+      "argumentOffset": 594,
+      "localsCount": 0,
+      "localsOffset": 594,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 32,
+      "lineCount": 0,
+      "lineOffset": 594,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 8
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 9,
+      "name": "runEngineSetClutch",
+      "dispatchSlot": 9,
+      "dispatchBlockIndex": 7,
+      "dispatchBlockOffset": 1852,
+      "dispatchBlockLength": 272,
+      "dispatchBlockHeaderWord0": 26,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "dispatchBlockLabel": "clutchFeather",
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 594,
+      "argumentCount": 0,
+      "argumentOffset": 600,
+      "localsCount": 0,
+      "localsOffset": 600,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 38,
+      "lineCount": 0,
+      "lineOffset": 600,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 9
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 10,
+      "name": "runEngineSetNOS",
+      "dispatchSlot": 10,
+      "dispatchBlockIndex": 8,
+      "dispatchBlockOffset": 2124,
+      "dispatchBlockLength": 264,
+      "dispatchBlockHeaderWord0": 26,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "dispatchBlockLabel": "nosState",
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 600,
+      "argumentCount": 0,
+      "argumentOffset": 606,
+      "localsCount": 0,
+      "localsOffset": 606,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 44,
+      "lineCount": 0,
+      "lineOffset": 606,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 10
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 11,
+      "name": "runEngineDyno",
+      "dispatchSlot": 11,
+      "dispatchBlockIndex": 9,
+      "dispatchBlockOffset": 2388,
+      "dispatchBlockLength": 400,
+      "dispatchBlockHeaderWord0": 13,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "dispatchBlockLabel": "boostSetting, aryDynoTq",
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 606,
+      "argumentCount": 0,
+      "argumentOffset": 612,
+      "localsCount": 0,
+      "localsOffset": 612,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 48,
+      "lineCount": 0,
+      "lineOffset": 612,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 11
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    }
+  ],
+  "literals": [
+    {
+      "type": 11,
+      "offset": 0,
+      "dataLength": 4668,
+      "value": null,
+      "referenceSummary": [
+        {
+          "value": "throttlePercent",
+          "firstOffset": 588,
+          "occurrences": 1,
+          "firstBlockOffset": 364,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "brake",
+          "firstOffset": 1844,
+          "occurrences": 1,
+          "firstBlockOffset": 1592,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "clutchFeather",
+          "firstOffset": 2108,
+          "occurrences": 1,
+          "firstBlockOffset": 1852,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "nosState",
+          "firstOffset": 2380,
+          "occurrences": 1,
+          "firstBlockOffset": 2124,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "boostSetting",
+          "firstOffset": 2616,
+          "occurrences": 1,
+          "firstBlockOffset": 2388,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "aryDynoTq",
+          "firstOffset": 2664,
+          "occurrences": 1,
+          "firstBlockOffset": 2388,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "Function",
+          "firstOffset": 76,
+          "occurrences": 1,
+          "firstBlockOffset": 0,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "chipSetting",
+          "firstOffset": 2640,
+          "occurrences": 1,
+          "firstBlockOffset": 2388,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "aryAirFlow",
+          "firstOffset": 2688,
+          "occurrences": 1,
+          "firstBlockOffset": 2388,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "aryAirFuelRatio",
+          "firstOffset": 2712,
+          "occurrences": 1,
+          "firstBlockOffset": 2388,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "aryMaxIcon",
+          "firstOffset": 2740,
+          "occurrences": 1,
+          "firstBlockOffset": 2388,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "newTq",
+          "firstOffset": 2780,
+          "occurrences": 1,
+          "firstBlockOffset": 2388,
+          "raceEngineHint": 0
+        }
+      ],
+      "raceEngineHints": [
+        {
+          "value": "throttlePercent",
+          "firstOffset": 588,
+          "occurrences": 1,
+          "firstBlockOffset": 364
+        },
+        {
+          "value": "brake",
+          "firstOffset": 1844,
+          "occurrences": 1,
+          "firstBlockOffset": 1592
+        },
+        {
+          "value": "clutchFeather",
+          "firstOffset": 2108,
+          "occurrences": 1,
+          "firstBlockOffset": 1852
+        },
+        {
+          "value": "nosState",
+          "firstOffset": 2380,
+          "occurrences": 1,
+          "firstBlockOffset": 2124
+        },
+        {
+          "value": "boostSetting",
+          "firstOffset": 2616,
+          "occurrences": 1,
+          "firstBlockOffset": 2388
+        },
+        {
+          "value": "aryDynoTq",
+          "firstOffset": 2664,
+          "occurrences": 1,
+          "firstBlockOffset": 2388
+        }
+      ],
+      "asciiStrings": [
+        "Function",
+        "throttlePercent",
+        "brake",
+        "clutchFeather",
+        "nosState",
+        "boostSetting",
+        "chipSetting",
+        "aryDynoTq",
+        "aryAirFlow",
+        "aryAirFuelRatio",
+        "aryMaxIcon",
+        "newTq"
+      ],
+      "asciiStringRefs": [
+        {
+          "offset": 76,
+          "value": "Function",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 588,
+          "value": "throttlePercent",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 1844,
+          "value": "brake",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 2108,
+          "value": "clutchFeather",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 2380,
+          "value": "nosState",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 2616,
+          "value": "boostSetting",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 2640,
+          "value": "chipSetting",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2664,
+          "value": "aryDynoTq",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 2688,
+          "value": "aryAirFlow",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2712,
+          "value": "aryAirFuelRatio",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2740,
+          "value": "aryMaxIcon",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2780,
+          "value": "newTq",
+          "raceEngineHint": 0
+        }
+      ],
+      "embeddedCodeOffsets": [
+        0,
+        140,
+        364,
+        604,
+        840,
+        1356,
+        1592,
+        1852,
+        2124,
+        2388,
+        2788
+      ],
+      "embeddedCodeBlocks": [
+        {
+          "offset": 0,
+          "length": 140,
+          "hexPreview": "03 00 ad de 28 00 00 00 1e 00 00 00 96 00 00 00 7d 00 00 7d 00 01 7d 00 02 7d 00 03 7d 00 04 7d",
+          "headerWord0": 40,
+          "headerWord1": 30,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 76,
+              "value": "Function",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 140,
+          "length": 224,
+          "hexPreview": "03 00 ad de 0e 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 35 00 02 39 3a 00 00 51 00 00",
+          "headerWord0": 14,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 364,
+          "length": 240,
+          "hexPreview": "03 00 ad de 0e 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 35 00 02 39 3a 00 00 51 00 00",
+          "headerWord0": 14,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 1,
+          "label": "throttlePercent",
+          "stringCount": 1,
+          "numericHintCount": 1,
+          "numericHints": [
+            {
+              "offset": 380,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313734002411,
+              "nearestHint": "throttlePercent",
+              "distanceToNearestHint": 208
+            }
+          ],
+          "strings": [
+            {
+              "offset": 588,
+              "value": "throttlePercent",
+              "raceEngineHint": 1
+            }
+          ]
+        },
+        {
+          "offset": 604,
+          "length": 236,
+          "hexPreview": "03 00 ad de 1a 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 14 3b 00 00 35 00 01 35",
+          "headerWord0": 26,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 840,
+          "length": 516,
+          "hexPreview": "03 00 ad de 3f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 39 3b 00 02 39 3d 00 03",
+          "headerWord0": 63,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 1356,
+          "length": 236,
+          "hexPreview": "03 00 ad de 17 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 11 3b 00 00 35 00 01 35",
+          "headerWord0": 23,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 1592,
+          "length": 260,
+          "hexPreview": "03 00 ad de 17 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 11 3b 00 00 35 00 01 35",
+          "headerWord0": 23,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 1,
+          "label": "brake",
+          "stringCount": 1,
+          "numericHintCount": 3,
+          "numericHints": [
+            {
+              "offset": 1608,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313734002411,
+              "nearestHint": "brake",
+              "distanceToNearestHint": 236
+            },
+            {
+              "offset": 1712,
+              "type": "float32",
+              "endianness": "big",
+              "value": 513.734375,
+              "nearestHint": "brake",
+              "distanceToNearestHint": 132
+            },
+            {
+              "offset": 1804,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32.111328125,
+              "nearestHint": "brake",
+              "distanceToNearestHint": 40
+            }
+          ],
+          "strings": [
+            {
+              "offset": 1844,
+              "value": "brake",
+              "raceEngineHint": 1
+            }
+          ]
+        },
+        {
+          "offset": 1852,
+          "length": 272,
+          "hexPreview": "03 00 ad de 1a 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 14 3b 00 00 35 00 01 35",
+          "headerWord0": 26,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 1,
+          "label": "clutchFeather",
+          "stringCount": 1,
+          "numericHintCount": 2,
+          "numericHints": [
+            {
+              "offset": 1868,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313734002411,
+              "nearestHint": "clutchFeather",
+              "distanceToNearestHint": 240
+            },
+            {
+              "offset": 2068,
+              "type": "float32",
+              "endianness": "big",
+              "value": 128.421875,
+              "nearestHint": "clutchFeather",
+              "distanceToNearestHint": 40
+            }
+          ],
+          "strings": [
+            {
+              "offset": 2108,
+              "value": "clutchFeather",
+              "raceEngineHint": 1
+            }
+          ]
+        },
+        {
+          "offset": 2124,
+          "length": 264,
+          "hexPreview": "03 00 ad de 1a 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 14 3b 00 00 35 00 01 35",
+          "headerWord0": 26,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 1,
+          "label": "nosState",
+          "stringCount": 1,
+          "numericHintCount": 1,
+          "numericHints": [
+            {
+              "offset": 2140,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313734002411,
+              "nearestHint": "nosState",
+              "distanceToNearestHint": 240
+            }
+          ],
+          "strings": [
+            {
+              "offset": 2380,
+              "value": "nosState",
+              "raceEngineHint": 1
+            }
+          ]
+        },
+        {
+          "offset": 2388,
+          "length": 400,
+          "hexPreview": "03 00 ad de 0d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 54 00 00 36 00 02 51 00 00 00",
+          "headerWord0": 13,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 1,
+          "label": "boostSetting, aryDynoTq",
+          "stringCount": 7,
+          "numericHintCount": 4,
+          "numericHints": [
+            {
+              "offset": 2404,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313734002411,
+              "nearestHint": "boostSetting",
+              "distanceToNearestHint": 212
+            },
+            {
+              "offset": 2664,
+              "type": "float32",
+              "endianness": "little",
+              "value": 997.78717041015625,
+              "nearestHint": "aryDynoTq",
+              "distanceToNearestHint": 0
+            },
+            {
+              "offset": 2688,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15.59042453765869141,
+              "nearestHint": "aryDynoTq",
+              "distanceToNearestHint": 15
+            },
+            {
+              "offset": 2712,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15.59042453765869141,
+              "nearestHint": "aryDynoTq",
+              "distanceToNearestHint": 39
+            }
+          ],
+          "strings": [
+            {
+              "offset": 2616,
+              "value": "boostSetting",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 2640,
+              "value": "chipSetting",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2664,
+              "value": "aryDynoTq",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 2688,
+              "value": "aryAirFlow",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2712,
+              "value": "aryAirFuelRatio",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2740,
+              "value": "aryMaxIcon",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2780,
+              "value": "newTq",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 2788,
+          "length": 1880,
+          "hexPreview": "03 00 ad de 0c 02 00 00 00 00 00 00 96 00 00 00 54 00 00 3e 17 07 00 2e 54 00 00 3b 00 00 35 00",
+          "headerWord0": 524,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        }
+      ],
+      "raceEngineBlocks": [
+        {
+          "offset": 364,
+          "length": 240,
+          "hexPreview": "03 00 ad de 0e 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 35 00 02 39 3a 00 00 51 00 00",
+          "headerWord0": 14,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "label": "throttlePercent",
+          "stringCount": 1,
+          "numericHintCount": 1,
+          "numericHints": [
+            {
+              "offset": 380,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313734002411,
+              "nearestHint": "throttlePercent",
+              "distanceToNearestHint": 208
+            }
+          ],
+          "hints": [
+            {
+              "offset": 588,
+              "value": "throttlePercent"
+            }
+          ]
+        },
+        {
+          "offset": 1592,
+          "length": 260,
+          "hexPreview": "03 00 ad de 17 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 11 3b 00 00 35 00 01 35",
+          "headerWord0": 23,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "label": "brake",
+          "stringCount": 1,
+          "numericHintCount": 3,
+          "numericHints": [
+            {
+              "offset": 1608,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313734002411,
+              "nearestHint": "brake",
+              "distanceToNearestHint": 236
+            },
+            {
+              "offset": 1712,
+              "type": "float32",
+              "endianness": "big",
+              "value": 513.734375,
+              "nearestHint": "brake",
+              "distanceToNearestHint": 132
+            },
+            {
+              "offset": 1804,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32.111328125,
+              "nearestHint": "brake",
+              "distanceToNearestHint": 40
+            }
+          ],
+          "hints": [
+            {
+              "offset": 1844,
+              "value": "brake"
+            }
+          ]
+        },
+        {
+          "offset": 1852,
+          "length": 272,
+          "hexPreview": "03 00 ad de 1a 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 14 3b 00 00 35 00 01 35",
+          "headerWord0": 26,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "label": "clutchFeather",
+          "stringCount": 1,
+          "numericHintCount": 2,
+          "numericHints": [
+            {
+              "offset": 1868,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313734002411,
+              "nearestHint": "clutchFeather",
+              "distanceToNearestHint": 240
+            },
+            {
+              "offset": 2068,
+              "type": "float32",
+              "endianness": "big",
+              "value": 128.421875,
+              "nearestHint": "clutchFeather",
+              "distanceToNearestHint": 40
+            }
+          ],
+          "hints": [
+            {
+              "offset": 2108,
+              "value": "clutchFeather"
+            }
+          ]
+        },
+        {
+          "offset": 2124,
+          "length": 264,
+          "hexPreview": "03 00 ad de 1a 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 14 3b 00 00 35 00 01 35",
+          "headerWord0": 26,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "label": "nosState",
+          "stringCount": 1,
+          "numericHintCount": 1,
+          "numericHints": [
+            {
+              "offset": 2140,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313734002411,
+              "nearestHint": "nosState",
+              "distanceToNearestHint": 240
+            }
+          ],
+          "hints": [
+            {
+              "offset": 2380,
+              "value": "nosState"
+            }
+          ]
+        },
+        {
+          "offset": 2388,
+          "length": 400,
+          "hexPreview": "03 00 ad de 0d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 54 00 00 36 00 02 51 00 00 00",
+          "headerWord0": 13,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "label": "boostSetting, aryDynoTq",
+          "stringCount": 7,
+          "numericHintCount": 4,
+          "numericHints": [
+            {
+              "offset": 2404,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313734002411,
+              "nearestHint": "boostSetting",
+              "distanceToNearestHint": 212
+            },
+            {
+              "offset": 2664,
+              "type": "float32",
+              "endianness": "little",
+              "value": 997.78717041015625,
+              "nearestHint": "aryDynoTq",
+              "distanceToNearestHint": 0
+            },
+            {
+              "offset": 2688,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15.59042453765869141,
+              "nearestHint": "aryDynoTq",
+              "distanceToNearestHint": 15
+            },
+            {
+              "offset": 2712,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15.59042453765869141,
+              "nearestHint": "aryDynoTq",
+              "distanceToNearestHint": 39
+            }
+          ],
+          "hints": [
+            {
+              "offset": 2616,
+              "value": "boostSetting"
+            },
+            {
+              "offset": 2664,
+              "value": "aryDynoTq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 4668,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    }
+  ],
+  "raceEngineMap": [
+    {
+      "literalIndex": 0,
+      "literalOffset": 0,
+      "blockOffset": 364,
+      "blockLength": 240,
+      "hexPreview": "03 00 ad de 0e 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 35 00 02 39 3a 00 00 51 00 00",
+      "headerWord0": 14,
+      "headerWord1": 0,
+      "headerWord2": 150,
+      "label": "throttlePercent",
+      "numericHintCount": 1,
+      "hints": [
+        {
+          "offset": 588,
+          "value": "throttlePercent"
+        }
+      ],
+      "numericHints": [
+        {
+          "offset": 380,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.00195313734002411,
+          "nearestHint": "throttlePercent",
+          "distanceToNearestHint": 208
+        }
+      ]
+    },
+    {
+      "literalIndex": 0,
+      "literalOffset": 0,
+      "blockOffset": 1592,
+      "blockLength": 260,
+      "hexPreview": "03 00 ad de 17 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 11 3b 00 00 35 00 01 35",
+      "headerWord0": 23,
+      "headerWord1": 0,
+      "headerWord2": 150,
+      "label": "brake",
+      "numericHintCount": 3,
+      "hints": [
+        {
+          "offset": 1844,
+          "value": "brake"
+        }
+      ],
+      "numericHints": [
+        {
+          "offset": 1608,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.00195313734002411,
+          "nearestHint": "brake",
+          "distanceToNearestHint": 236
+        },
+        {
+          "offset": 1712,
+          "type": "float32",
+          "endianness": "big",
+          "value": 513.734375,
+          "nearestHint": "brake",
+          "distanceToNearestHint": 132
+        },
+        {
+          "offset": 1804,
+          "type": "float32",
+          "endianness": "big",
+          "value": 32.111328125,
+          "nearestHint": "brake",
+          "distanceToNearestHint": 40
+        }
+      ]
+    },
+    {
+      "literalIndex": 0,
+      "literalOffset": 0,
+      "blockOffset": 1852,
+      "blockLength": 272,
+      "hexPreview": "03 00 ad de 1a 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 14 3b 00 00 35 00 01 35",
+      "headerWord0": 26,
+      "headerWord1": 0,
+      "headerWord2": 150,
+      "label": "clutchFeather",
+      "numericHintCount": 2,
+      "hints": [
+        {
+          "offset": 2108,
+          "value": "clutchFeather"
+        }
+      ],
+      "numericHints": [
+        {
+          "offset": 1868,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.00195313734002411,
+          "nearestHint": "clutchFeather",
+          "distanceToNearestHint": 240
+        },
+        {
+          "offset": 2068,
+          "type": "float32",
+          "endianness": "big",
+          "value": 128.421875,
+          "nearestHint": "clutchFeather",
+          "distanceToNearestHint": 40
+        }
+      ]
+    },
+    {
+      "literalIndex": 0,
+      "literalOffset": 0,
+      "blockOffset": 2124,
+      "blockLength": 264,
+      "hexPreview": "03 00 ad de 1a 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 14 3b 00 00 35 00 01 35",
+      "headerWord0": 26,
+      "headerWord1": 0,
+      "headerWord2": 150,
+      "label": "nosState",
+      "numericHintCount": 1,
+      "hints": [
+        {
+          "offset": 2380,
+          "value": "nosState"
+        }
+      ],
+      "numericHints": [
+        {
+          "offset": 2140,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.00195313734002411,
+          "nearestHint": "nosState",
+          "distanceToNearestHint": 240
+        }
+      ]
+    },
+    {
+      "literalIndex": 0,
+      "literalOffset": 0,
+      "blockOffset": 2388,
+      "blockLength": 400,
+      "hexPreview": "03 00 ad de 0d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 54 00 00 36 00 02 51 00 00 00",
+      "headerWord0": 13,
+      "headerWord1": 0,
+      "headerWord2": 150,
+      "label": "boostSetting, aryDynoTq",
+      "numericHintCount": 4,
+      "hints": [
+        {
+          "offset": 2616,
+          "value": "boostSetting"
+        },
+        {
+          "offset": 2664,
+          "value": "aryDynoTq"
+        }
+      ],
+      "numericHints": [
+        {
+          "offset": 2404,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.00195313734002411,
+          "nearestHint": "boostSetting",
+          "distanceToNearestHint": 212
+        },
+        {
+          "offset": 2664,
+          "type": "float32",
+          "endianness": "little",
+          "value": 997.78717041015625,
+          "nearestHint": "aryDynoTq",
+          "distanceToNearestHint": 0
+        },
+        {
+          "offset": 2688,
+          "type": "float32",
+          "endianness": "little",
+          "value": 15.59042453765869141,
+          "nearestHint": "aryDynoTq",
+          "distanceToNearestHint": 15
+        },
+        {
+          "offset": 2712,
+          "type": "float32",
+          "endianness": "little",
+          "value": 15.59042453765869141,
+          "nearestHint": "aryDynoTq",
+          "distanceToNearestHint": 39
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,584 @@
+-- Lscr-102 first comprehensive Lingo reconstruction
+-- Source:
+--   chunks/Lscr-102.bin
+--   chunks/Lscr-102.json
+--
+-- Confidence:
+--   This is a high-information reconstruction from hidden embedded blocks.
+--   It is not byte-perfect recompilable source yet. The exact hidden-VM stack
+--   behavior and branch polarity still need a full opcode interpreter.
+--
+-- Recovered purpose:
+--   MovieScript 2: Race Engine. The visible RaceEngine handler dispatches a
+--   hidden constructor/object table. The body implements race state setup, car
+--   XML parsing, per-frame physics, boost/NOS/damage, torque lookup, gear and
+--   staging UI callbacks, dyno/config calculation, and random/math helpers.
+
+-- Recovered globals/properties used across the hidden implementation:
+global sendInterval, runInterval, secondBuffer, DAfp
+global goodCounterRT, badCounterRT, goodCounterET, badCounterET
+global avgFps, fpsCount, guid, raceType, timeAnchor
+global staging, stagingLightPos1, stagingLightPos2, greenDelay
+global preStaged, staged, brake, isMidMd5sent, isNos, pb
+global stockRedLine, redLine, revLimiter, detuneHp, stockBoost
+global boostType, boostSetting, boostLag, boostRange, boostPsi
+global hpi, hp, systemPower, ECUtune, compressionPowerDelta
+global nitrousRemaining, nitrousTankSize, NOS, availableNitrousPower
+global carV, carAccel, speedoV, engineV, mph, gearValue, gr, grs, fgr
+global engineDamage, engineDamageRisk, isEngineLightOn
+global pistonDurability, rodDurability, valveDurability
+global headGasketDurability, engineBlockDurability, oilDurability
+global rpm, idleRPM, tqArray, tqFlyFactor, rpmGearConversion
+global brakeDecleration, revLimiterDeceleration, vToMph
+global fuelFlowLimit, airFuelMeter, airFuelDelta, turboFlow
+global overallAirFlowLimit, airFlowLimit, airhpi, chipSetting, maxPsi
+global pistonCompressionLevel, cylinderNumber, valveNumber
+global clutchFeather, slip, launchControl, tireStick, tireScrub
+global flashSP, lightTO1, lightTO2, lightDelayTO
+
+
+on RaceEngine
+  -- Visible public stub:
+  --   pushcons 1
+  --   pushcons 2
+  --   unk26
+  --
+  -- v12 dispatcher rule maps this to embedded block 0.
+  return __Lscr102_block00_RaceEngineConstructor()
+end
+
+
+on __Lscr102_block00_RaceEngineConstructor
+  -- Block 0 is a constructor/registration table. It repeatedly loads a common
+  -- object/function context, indexes even-numbered implementation slots, and
+  -- stores odd-numbered function objects. This likely creates the RaceEngine
+  -- object returned by the public RaceEngine() handler.
+
+  engine = [:]
+
+  engine[#initConstants] = __Lscr102_block01_initConstants
+  engine[#initRaceState] = __Lscr102_block02_initRaceState
+  engine[#loadCarXML] = __Lscr102_block03_loadCarXML
+  engine[#calculateBoostRange] = __Lscr102_block04_calculateBoostRange
+  engine[#forgetSendInterval] = __Lscr102_block05_forgetSendInterval
+  engine[#forgetRunInterval] = __Lscr102_block06_forgetRunInterval
+  engine[#runStagingState] = __Lscr102_block07_runStagingState
+  engine[#runEngineFrame] = __Lscr102_block08_runEngineFrame
+  engine[#calculateBoostPower] = __Lscr102_block09_calculateBoostPower
+  engine[#getTorque] = __Lscr102_block10_getTorque
+  engine[#initBtd] = __Lscr102_block11_initBtd
+  engine[#updateGearAndSpeedUI] = __Lscr102_block12_updateGearAndSpeedUI
+  engine[#shiftGear] = __Lscr102_block13_shiftGear
+  engine[#setBrake] = __Lscr102_block14_setBrake
+  engine[#setClutch] = __Lscr102_block15_setClutch
+  engine[#updateRaceTimingCounters] = __Lscr102_block16_updateRaceTimingCounters
+  engine[#scheduleStagingLights] = __Lscr102_block17_scheduleStagingLights
+  engine[#runStagingLight] = __Lscr102_block18_runStagingLight
+  engine[#initDynoAndConfig] = __Lscr102_block19_initDynoAndConfig
+  engine[#randomMathHelper] = __Lscr102_block20_randomMathHelper
+
+  return engine
+end
+
+
+on __Lscr102_block01_initConstants
+  -- Recovered names: sendInterval, secondBuffer, DAfp.
+  sendInterval = VOID
+  secondBuffer = VOID
+  DAfp = VOID
+
+  -- This block contains a large encoded/numeric lookup region. Based on block
+  -- 19's later constant table, these values feed constants such as:
+  --   0, 0.005, 0.0075, 0.015, 0.016, 0.02, 0.05, 0.07, 0.09,
+  --   0.1, 0.18, 0.2, 0.4, 0.5, 0.6, 0.65, 0.7, 0.95,
+  --   1, 1.15, 1.25, 1.7, 1.8, 2, 2.5, 3, 4, 5, 5.5,
+  --   7, 7.5, 8, 9, 10, 13, 50, 80, 100, 200, 299, 300,
+  --   760, 1000, 10000, 1320
+  return VOID
+end
+
+
+on __Lscr102_block02_initRaceState
+  -- High-confidence state variables recovered from the table.
+  goodCounterRT = 0
+  badCounterRT = 0
+  goodCounterET = 0
+  badCounterET = 0
+  avgFps = 0
+  fpsCount = 0
+
+  guid = EMPTY
+  raceType = EMPTY
+  timeAnchor = 0
+
+  staging = 0
+  stagingLightPos1 = 0
+  stagingLightPos2 = 0
+  greenDelay = 0
+  preStaged = 0
+  staged = 0
+
+  brake = 0
+  isMidMd5sent = 0
+  isNos = 0
+  pb = 0
+
+  turboFlow = 0
+  stockRedLine = 0
+  avgDurability = 0
+  pistonDurability = 0
+  rodDurability = 0
+  valveDurability = 0
+  headGasketDurability = 0
+  engineBlockDurability = 0
+
+  hp = 0
+  carV = 0
+  carAccel = 0
+  speedoV = 0
+  engineV = 0
+  mph = 0
+  engineDamage = 0
+  isEngineLightOn = 0
+  gearValue = 0
+  gr = 0
+  grs = []
+  theTime = 0
+
+  return VOID
+end
+
+
+on __Lscr102_block03_loadCarXML carXML
+  -- Recovered parser path:
+  --   xtra("xmlparser")
+  --   parseString
+  --   makeList
+  --   parseInt / parseFloat
+  -- plus many setup fields.
+
+  parser = xtra("xmlparser")
+  parser.parseString(carXML)
+
+  w = parser.makeList("w")
+  r = parser.makeList("r")
+  hpi = parseInt(parser.getAProp("hpi"))
+  stockRedLine = parseInt(parser.getAProp("stockRedLine"))
+  redLine = parseInt(parser.getAProp("redLine"))
+  revLimiter = parseInt(parser.getAProp("revLimiter"))
+  detuneHp = parseFloat(parser.getAProp("detuneHp"))
+
+  stockBoost = parseFloat(parser.getAProp("stockBoost"))
+  boostSetting = parseFloat(parser.getAProp("boostSetting"))
+  boostType = parser.getAProp("boostType")
+  initBoost = parseFloat(parser.getAProp("initBoost"))
+
+  grs = parser.getAProp("grs")
+  fgr = parseFloat(parser.getAProp("fgr"))
+  NOS = parser.getAProp("NOS")
+  nitrousRemaining = parseFloat(parser.getAProp("nitrousRemaining"))
+  nitrousTankSize = parseFloat(parser.getAProp("nitrousTankSize"))
+
+  turboFlow = parseFloat(parser.getAProp("turboFlow"))
+  fuelFlowLimit = parseFloat(parser.getAProp("fuelFlowLimit"))
+  overallAirFlowLimit = parseFloat(parser.getAProp("overallAirFlowLimit"))
+  airFlowLimit = parseFloat(parser.getAProp("airFlowLimit"))
+  chipSetting = parseFloat(parser.getAProp("chipSetting"))
+  maxPsi = parseFloat(parser.getAProp("maxPsi"))
+  pistonCompressionLevel = parseFloat(parser.getAProp("pistonCompressionLevel"))
+
+  pistonDurability = parseFloat(parser.getAProp("pistonDurability"))
+  rodDurability = parseFloat(parser.getAProp("rodDurability"))
+  valveDurability = parseFloat(parser.getAProp("valveDurability"))
+  headGasketDurability = parseFloat(parser.getAProp("headGasketDurability"))
+  engineBlockDurability = parseFloat(parser.getAProp("engineBlockDurability"))
+  oilDurability = parseFloat(parser.getAProp("oilDurability"))
+
+  setClutch(0)
+
+  return VOID
+end
+
+
+on __Lscr102_block04_calculateBoostRange
+  -- Names: boostType, T, boostLag, c0_7, boostSetting, boostRange, c1_7, c0.
+  if boostType = "T" then
+    boostRange = boostSetting * 1.7
+    boostLag = boostSetting * 0.7
+  else
+    boostRange = boostSetting
+    boostLag = 0
+  end if
+
+  return boostRange
+end
+
+
+on __Lscr102_block05_forgetSendInterval
+  -- Names: runInterval, object, forget, timeout, sendInterval, symbol, sendPos.
+  if sendInterval <> VOID then
+    sendInterval.forget()
+  end if
+  sendInterval = timeout("sendPos")
+  return VOID
+end
+
+
+on __Lscr102_block06_forgetRunInterval
+  -- Names: runInterval, object, forget.
+  if runInterval <> VOID then
+    runInterval.forget()
+  end if
+  return VOID
+end
+
+
+on __Lscr102_block07_runStagingState
+  -- Names: staging, rt, c1, raceType, KOTH, RIVAL, TEAMRIVAL, HT,
+  -- gearValue, STG, carV, carAccel, c1320, timeAnchor, INT,
+  -- _system, milliseconds.
+
+  if staging then
+    rt = _system.milliseconds - timeAnchor
+  end if
+
+  if raceType = "KOTH" or raceType = "RIVAL" or raceType = "TEAMRIVAL" or raceType = "HT" then
+    -- Special race modes alter staging and elapsed-time handling.
+    staging = 1
+  end if
+
+  if gearValue > 0 and carV >= 1320 then
+    staging = 0
+    carAccel = 0
+  end if
+
+  return rt
+end
+
+
+on __Lscr102_block08_runEngineFrame
+  -- Main physics loop. This is the largest block and carries the real engine
+  -- simulation. Exact branch nesting is still approximate, but the recovered
+  -- names and repeated stores are very strong.
+
+  theTime = _system.milliseconds
+  timeFromLastFrame = theTime - timeAnchor
+  theActualTime = timeFromLastFrame / 1000.0
+  timeAnchor = theTime
+
+  fpsCount = fpsCount + 1
+  avgFps = (avgFps + timeFromLastFrame) / 2.0
+
+  extraPower = calculateExtraHpi()
+  boostCreatedPower = __Lscr102_block09_calculateBoostPower(rpm)
+  -- Pass 5 resolved the core power cluster:
+  --   hpi + boostCreatedPower + systemPower + ECUtune + compressionPowerDelta
+  -- The exact accumulator naming is still stack-dependent, but these are the
+  -- contributing terms.
+  systemPower = hpi + boostCreatedPower + ECUtune + compressionPowerDelta + extraPower
+
+  -- NOS path is confirmed by `NOS`, `runEngineNOSCB`, `nitrousRemaining`,
+  -- `nitrousTankSize`, `raceGas`, and `c0_02`.
+  if isNos and NOS and nitrousRemaining > 0 then
+    availableNitrousPower = min(nitrousTankSize, nitrousRemaining)
+    nitrousRemaining = nitrousRemaining - (0.02 * raceGas)
+    runEngineNOSCB(nitrousRemaining)
+  else
+    availableNitrousPower = 0
+  end if
+
+  tq = __Lscr102_block10_getTorque(rpm)
+
+  engineAccel = tq + systemPower + availableNitrousPower - detuneHp
+  engineResistance = brake * brakeDecleration
+  carAccel = engineAccel - engineResistance
+
+  if clutchFeather > 0 then
+    carAccel = carAccel * clutchFeather
+  end if
+
+  carV = carV + (carAccel * theActualTime)
+  -- Pass 5 confirms car velocity conversion through vToMph and later traction
+  -- coefficients UsInit / UkInit / tireStick.
+  mph = carV * vToMph
+  speedoV = mph
+  engineV = rpmGearConversion * gearValue * carV
+
+  if rpm > revLimiter then
+    engineV = engineV - revLimiterDeceleration
+  end if
+
+  if engineDamageRisk > 0 then
+    engineDamage = engineDamage + engineDamageRisk
+  end if
+
+  if engineDamage > 0 then
+    isEngineLightOn = 1
+  end if
+
+  __Lscr102_block12_updateGearAndSpeedUI()
+
+  return carV
+end
+
+
+on __Lscr102_block09_calculateBoostPower rpm
+  -- Names: rpm, pb, stockBoost, boostSetting, boostRange, boostLag, boostPsi,
+  -- compressionPowerDelta, pistonCompressionLevel, maxPsi, turboFlow,
+  -- fuelFlowLimit, airFuelMeter, airFuelDelta, engineDamageRisk,
+  -- boostCreatedPower.
+
+  -- Prototype stack pass shows `rpm / pb`, then boost lag/range shaping.
+  -- Exact curve is still approximate, but variable dependencies are strong.
+  pb = rpm / pb
+  if pb < 1 then
+    pb = 1
+  end if
+
+  boostPsi = stockBoost + (boostSetting * pb)
+
+  if boostLag > 0 then
+    boostPsi = boostPsi - (boostLag * pb)
+  end if
+
+  if boostPsi < 0 then
+    boostPsi = 0
+  end if
+
+  if boostPsi > maxPsi then
+    boostPsi = maxPsi
+  end if
+
+  compressionPowerDelta = boostPsi * pistonCompressionLevel
+  airFlowLimit = overallAirFlowLimit
+  if fuelFlowLimit < airFlowLimit then
+    airFlowLimit = fuelFlowLimit
+  end if
+
+  airFuelMeter = airFlowLimit - fuelFlowLimit
+  airFuelDelta = abs(airFuelMeter)
+
+  if airFuelDelta > dangerLevel then
+    if boostPsi > 5 then
+      engineDamageRisk = airFuelDelta * 0.09
+    else
+      engineDamageRisk = airFuelDelta * 0.07
+    end if
+  else
+    engineDamageRisk = 0
+  end if
+
+  ECUtune = chipSetting / 100.0
+  systemPower = airhpi * ((airFlowLimit - stockBoost / 2.0) / 100.0)
+  boostCreatedPower = (pb * boostSetting) / 100.0
+  return boostCreatedPower
+end
+
+
+on __Lscr102_block10_getTorque rpm
+  -- Names: rpm, undefined, idleRPM, c10000, posTq, tqArray, parseInt,
+  -- c100, negTq, c200.
+  if voidP(rpm) then
+    rpm = idleRPM
+  end if
+
+  if rpm < idleRPM then
+    rpm = idleRPM
+  end if
+
+  if rpm > 10000 then
+    rpm = 10000
+  end if
+
+  posTq = parseInt(rpm / 100)
+  negTq = posTq + 200
+
+  if posTq < 1 then
+    posTq = 1
+  end if
+
+  if negTq > tqArray.count then
+    negTq = tqArray.count
+  end if
+
+  -- `negTq = posTq + 200` is recovered from the stack prototype. The original
+  -- likely keeps positive/negative torque curves in one array.
+  if tqArray.count >= negTq then
+    return (tqArray[posTq] + tqArray[negTq]) / 2.0
+  end if
+
+  return tqArray[posTq]
+end
+
+
+on __Lscr102_block11_initBtd
+  init()
+  btd = VOID
+  return btd
+end
+
+
+on __Lscr102_block12_updateGearAndSpeedUI
+  -- Names: gearValue, grs, mph, carAccel, carV, slip, sprite, flashSP,
+  -- runEngineTractionLightCB, engineV, speedoV, hp, runEngineGearUpdateCB.
+
+  if gearValue > 0 and gearValue <= grs.count then
+    gr = grs[gearValue]
+  else
+    gr = 0
+    mph = 0
+    carAccel = 0
+    carV = 0
+  end if
+
+  slip = carAccel > carV and gearValue > 0
+  sprite(flashSP).runEngineTractionLightCB(slip)
+  sprite(flashSP).runEngineGearUpdateCB(gearValue, engineV, speedoV, hp)
+
+  return VOID
+end
+
+
+on __Lscr102_block13_shiftGear direction
+  -- Mostly encoded table, but gearValue is the exposed state.
+  gearValue = gearValue + direction
+
+  if gearValue < 0 then
+    gearValue = 0
+  end if
+
+  if gearValue > grs.count then
+    gearValue = grs.count
+  end if
+
+  return gearValue
+end
+
+
+on __Lscr102_block14_setBrake brakeState
+  if brakeState then
+    brake = 1
+  else
+    brake = 0
+  end if
+  return brake
+end
+
+
+on __Lscr102_block15_setClutch clutchValue
+  -- Constants recovered: c0_05, clutchFeather, c0_2.
+  clutchFeather = clutchValue
+
+  if clutchFeather < 0.05 then
+    clutchFeather = 0.05
+  end if
+
+  if clutchFeather > 0.2 then
+    clutchFeather = 0.2
+  end if
+
+  return clutchFeather
+end
+
+
+on __Lscr102_block16_updateRaceTimingCounters
+  -- Names: timeAnchor, goodCounterRT, badCounterRT, goodCounterET,
+  -- badCounterET, lightDelayTO, staging, gearValue.
+  if staging and gearValue > 0 then
+    goodCounterRT = goodCounterRT + 1
+  else
+    badCounterRT = badCounterRT + 1
+  end if
+
+  if carV >= 1320 then
+    goodCounterET = goodCounterET + 1
+  else
+    badCounterET = badCounterET + 1
+  end if
+
+  return VOID
+end
+
+
+on __Lscr102_block17_scheduleStagingLights
+  -- Names: greenDelay, setSpectateDelayCB, timeAnchor, _system.milliseconds,
+  -- lightTO1, object, forget, stagingLightPos1, timeout, symbol, runLight,
+  -- secondBuffer, lightTO2, stagingLightPos2.
+  timeAnchor = _system.milliseconds
+  sprite(flashSP).setSpectateDelayCB(greenDelay)
+
+  if lightTO1 <> VOID then
+    lightTO1.forget()
+  end if
+  if lightTO2 <> VOID then
+    lightTO2.forget()
+  end if
+
+  lightTO1 = timeout("runLight", stagingLightPos1)
+  lightTO2 = timeout("runLight", stagingLightPos2 + secondBuffer)
+
+  return VOID
+end
+
+
+on __Lscr102_block18_runStagingLight period, name
+  -- Names: runEngineSetLightOnCB, amber1/2/3, greenDelay, timeGreen,
+  -- raceStartTimeCB, raceType.
+
+  sprite(flashSP).runEngineSetLightOnCB(name, 1)
+
+  if name = "amber1" or name = "amber2" or name = "amber3" then
+    -- amber sequence
+  end if
+
+  if period >= greenDelay then
+    timeGreen = _system.milliseconds
+    sprite(flashSP).raceStartTimeCB(timeGreen, raceType)
+  end if
+
+  return VOID
+end
+
+
+on __Lscr102_block19_initDynoAndConfig
+  -- Dense configuration initializer. This block overlaps heavily with car XML
+  -- fields and dyno/race physics constants.
+
+  stockRedLine = redLine
+  detuneHp = detuneHp
+  stockBoost = stockBoost
+  boostType = boostType
+  boostSetting = boostSetting
+  grs = grs
+  fgr = fgr
+
+  NOS = NOS
+  nitrousTankSize = nitrousTankSize
+  maxPsi = maxPsi
+  hpi = hpi
+  airhpi = airhpi
+  turboFlow = turboFlow
+  fuelFlowLimit = fuelFlowLimit
+
+  engineBlockDurability = engineBlockDurability
+  rpmGearConversion = rpmGearConversion
+  brakeDecleration = brakeDecleration
+  idleRPM = idleRPM
+  engineDamage = 0
+
+  -- MD5/check telemetry is present in this block:
+  --   xtra, caluMD5, getStringMD5, guid, good/bad counters, lagPercent,
+  --   nogood. This probably builds a race-integrity checksum over key engine
+  --   parameters and counters.
+  if objectP(xtra("caluMD5")) then
+    guid = caluMD5_getStringMD5(string(stockRedLine) & "," & string(detuneHp) & "," & string(stockBoost))
+  end if
+
+  return VOID
+end
+
+
+on __Lscr102_block20_randomMathHelper
+  -- Names: Math, log, random, round, constants c1, c5, c0_6, c2, c1000.
+  return round((Math.log(random(1000) + 1) * 0.6) + 2)
+end

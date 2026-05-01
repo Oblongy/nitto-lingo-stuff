@@ -1,0 +1,124 @@
+-- Lscr-6 decompiled Lingo
+-- scriptNumber: 6
+-- castID: 65550
+-- handlersCount: 30
+
+on initFileHandler
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on getAvatar
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on downloadAvatar
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on compareAvatarAge
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on loadLocalAvatar
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on avatarIDtoPath
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on downloadUgg
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on loadLocalUgg
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on fileBrowse
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on uggUpload
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on uggUploadSuccess
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on uggUploadFail
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on downloadNewInstaller
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on downloadInstallerUpdateFlash
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on runInstaller
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on fetchCacheXML
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on fetchCacheXMLDone
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on createCacheFolders
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on downloadCache
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on downloadCacheInProgress
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on downloadCacheDone
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on downloadCacheUpdateFlash
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on loadDyno
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on saveDyno
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on getTxtFileName
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on saveFile
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on openfile
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on fileClearAllDecals
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on fileClearADecal
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on loadExternalValues
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end

@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-04-29T21:00:18.694Z",
+  "results": [
+    {
+      "chunkBase": "Lscr-93",
+      "status": "ok",
+      "handlerCount": 1,
+      "hasRealBytecode": false
+    },
+    {
+      "chunkBase": "Lscr-102",
+      "status": "ok",
+      "handlerCount": 1,
+      "hasRealBytecode": false
+    },
+    {
+      "chunkBase": "Lscr-103",
+      "status": "ok",
+      "handlerCount": 10,
+      "hasRealBytecode": false
+    },
+    {
+      "chunkBase": "Lscr-104",
+      "status": "ok",
+      "handlerCount": 75,
+      "hasRealBytecode": false
+    },
+    {
+      "chunkBase": "Lscr-105",
+      "status": "ok",
+      "handlerCount": 1,
+      "hasRealBytecode": false
+    },
+    {
+      "chunkBase": "Lscr-106",
+      "status": "ok",
+      "handlerCount": 30,
+      "hasRealBytecode": false
+    },
+    {
+      "chunkBase": "Lscr-107",
+      "status": "ok",
+      "handlerCount": 10,
+      "hasRealBytecode": false
+    },
+    {
+      "chunkBase": "Lscr-108",
+      "status": "ok",
+      "handlerCount": 15,
+      "hasRealBytecode": true
+    },
+    {
+      "chunkBase": "Lscr-109",
+      "status": "ok",
+      "handlerCount": 5,
+      "hasRealBytecode": false
+    }
+  ]
+}

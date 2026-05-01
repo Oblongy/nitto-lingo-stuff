@@ -1,0 +1,389 @@
+# Mechanical Lingo Reconstruction Report
+
+Inventory pass:
+- Deliverable `rightful.ls`: `83` lines, `15` visible `on` blocks.
+- Visible handlers in the promoted deliverable:
+  - `lingoXtraNoDebug`
+  - `lingoXtraInit`
+  - `getPCInfo`
+  - `baLingoFolderExists`
+  - `baLingoCreateFolder`
+  - `baLingoFileList`
+  - `baLingoFileExists`
+  - `baLingoTempFileName`
+  - `baLingoFileAge`
+  - `baLingoDeleteFile`
+  - `baLingoFileDateEx`
+  - `baLingoSetFileDate`
+  - `baLingoSysFolder`
+  - `baLingoRunProgram`
+  - `isCheatEngineRunning`
+
+Raw-evidence pass:
+- Raw metadata: `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.json`
+  - `scriptNumber = 8`
+  - `castID = 65553`
+  - `handlerVectorsCount = 0`
+  - `propertiesCount = 0`
+  - `handlersCount = 15`
+  - `globalsCount = 1`
+  - `globalNameIDs = [145]`
+  - `literalsCount = 29`
+  - unlike the earlier staged report, every handler here does have a `bytecode` array with exact opcode listings
+- key handler metadata anchors:
+    - `lingoXtraNoDebug`: `compiledOffset = 784`, `lineCount = 5`, `lineOffset = 854`, `stackHeight = 4`, local `myFile`
+    - `lingoXtraInit`: `compiledOffset = 860`, `lineCount = 6`, `lineOffset = 900`, `stackHeight = 3`
+    - `getPCInfo`: `compiledOffset = 906`, `lineCount = 9`, `lineOffset = 1054`, `stackHeight = 6`, locals `bdi`, `qs`
+    - `isCheatEngineRunning`: `compiledOffset = 1288`, `lineCount = 6`, `lineOffset = 1334`, `stackHeight = 4`, local `ceHandle`
+  - substantive-handler packing invariants:
+    - for `lingoXtraNoDebug`, `lingoXtraInit`, `getPCInfo`, and `isCheatEngineRunning`, `argumentOffset = compiledOffset + compiledLen`
+    - for those same four handlers, `localsOffset = argumentOffset`
+    - `lineOffset = localsOffset + (localsCount * 2)` across the same set:
+      - `lingoXtraNoDebug`: `852 -> 854` with `localsCount = 1`
+      - `lingoXtraInit`: `900 -> 900` with `localsCount = 0`
+      - `getPCInfo`: `1050 -> 1054` with `localsCount = 2`
+      - `isCheatEngineRunning`: `1332 -> 1334` with `localsCount = 1`
+- Raw reconstructed surfaces:
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.decompiled.lingo`
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.decompiled.js`
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.reconstructed.lingo`
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.bin-only.reconstructed.lingo`
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.pass7-whole-file-inventory.md`
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\sibling-artifacts\17-lingo-xtra.js`
+- Byte-pattern corroboration:
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.bin-only.pass1-header-and-tail.md`
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.bin-only.pass2-ascii-literal-table.md`
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.bin-only.pass3-negative-structure.md`
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.bin-only.pass4-literal-index-and-header-correlation.md`
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.bin-only.pass5-region-map.md`
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.bin-only.pass6-raw-motifs.md`
+- Literal-table anchors recovered directly from the JSON and bin-only passes:
+  - `"fileio"` at JSON literal offset `0`
+  - `"agree with the usage terms"` at JSON literal offset `54`
+  - `"simInet"` at JSON literal offset `102`
+  - `"windows"` at JSON literal offset `114`
+  - `"ProductId"` at JSON literal offset `252`
+  - `"NoProductId"` at JSON literal offset `266`
+  - `"HKEY_LOCAL_MACHINE"` at JSON literal offset `282`
+  - `"ch"`, `"eat"`, `" en"`, `"gine"` at JSON literal offsets `322`, `330`, `338`, `346`
+  - empty string at JSON literal offset `316`
+
+Reconstruction pass:
+- `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\evidence\reconstructed\rightful.ls`: only the 3-line header shell; no executable body
+- `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\evidence\reconstructed (1)\rightful.ls`: appendix-only counters; no executable body
+- stronger local source exists outside those two evidence trees:
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.decompiled.lingo`
+- `final-clean\Lscr-108\rightful.ls` now intentionally diverges from the staged appendix-only `reconstructed (1)\rightful.ls` because the JSON bytecode-backed decompiled body is stronger and local
+
+Readable-Lingo lift pass:
+- Recovered Lingo artifact:
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\final-clean\Lscr-108\rightful.ls`
+- Promoted handlers and byte-backed anchors:
+
+| Handler | JSON compiledOffset | JSON compiledLen | Readable lift evidence | Remaining unresolved |
+|---|---:|---:|---|---|
+| `lingoXtraNoDebug` | `784` | `68` | `pushzero -> setmovieprop 138`; `pushcons 0`; `extcall 140`; `extcall 139`; `setlocal 0`; `pushcons 1..6`; repeated `joinstr`; `pushint8 1`; `extcall 111`; `getlocal 0`; `extcall 141`; `eq`; `jmpifz 7`; `extcall 142`; `pushzero`; `setlocal 0` | no raw extcall-id-to-name table is emitted in the JSON; names come from the local decompiled surface |
+| `lingoXtraInit` | `860` | `40` | `pushint8 1 -> setmovieprop 138`; `pushcons 7`; `pushcons 8`; `extcall 144`; `pushint32 216000`; `set 7`; `pushcons 9`; `pushint8 5`; `set 0`; `pushcons 10`; `extcall 140`; `objcall 139`; `setglobal 145` | global id `145` is surfaced only as `gSimInet` through the local decompiled surface |
+| `getPCInfo` | `906` | `143` | `pushcons 11`; `extcall 148`; `pushcons 12`; `extcall 147`; `extcall 146`; `setlocal 0`; `pushcons 6`; `getlocal 0`; `extcall 149`; `gt`; `jmpifz 26`; `objcall 151`; chained `joinstr`; `extcall 152`; `extcall 154`; `extcall 155`; final `extcall 156` | extcall/object-call symbol table is still indirect; raw bin-only pass does not name those call targets |
+| `baLingoFolderExists` | `1064` | `11` | `getparam 0`; `extcall 159`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `baLingoCreateFolder` | `1080` | `11` | `getparam 0`; `extcall 161`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `baLingoFileList` | `1096` | `13` | `getparam 0`; `getparam 1`; `extcall 162`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `baLingoFileExists` | `1116` | `11` | `getparam 0`; `extcall 164`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `baLingoTempFileName` | `1132` | `11` | `getparam 0`; `extcall 165`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `baLingoFileAge` | `1148` | `11` | `getparam 0`; `extcall 166`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `baLingoDeleteFile` | `1164` | `11` | `getparam 0`; `extcall 167`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `baLingoFileDateEx` | `1180` | `17` | `getparam 0..3`; `extcall 168`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `baLingoSetFileDate` | `1208` | `23` | `getparam 0..6`; `extcall 171`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `baLingoSysFolder` | `1248` | `11` | `getparam 0`; `extcall 148`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `baLingoRunProgram` | `1264` | `15` | `getparam 0..2`; `extcall 175`; `extcall 156`; `ret` | none beyond indirect extcall ids |
+| `isCheatEngineRunning` | `1288` | `44` | `pushcons 24`; `pushcons 25`; `pushcons 26`; `joinstr`; `pushcons 27`; `joinstr`; `pushcons 28`; `joinstr`; `pushzero`; `extcall 176`; `setlocal 0`; `getobjprop 177`; `gt`; `jmpifz 12`; `pushint8 1`; `extcall 156`; `jmp 8`; `pushzero`; `extcall 156`; `ret` | property id `177` is only surfaced as `.count` through the local decompiled surface |
+
+- Wrapper-family metadata the JSON proves directly:
+  - `baLingoFolderExists`, `baLingoCreateFolder`, `baLingoFileList`, `baLingoFileExists`, `baLingoTempFileName`, `baLingoFileAge`, `baLingoDeleteFile`, `baLingoFileDateEx`, `baLingoSetFileDate`, `baLingoSysFolder`, and `baLingoRunProgram` each have `lineCount = 1`
+  - those wrapper handlers expose only generic exported argument names (`param1` through `param7`) and `localsCount = 0`
+  - each wrapper is a forwarding shape: `getparam...`, one target `extcall`, one trailing `extcall 156`, then `ret`
+  - wrapper offset grid is tightly packed and monotonic:
+    - `baLingoFolderExists`: `compiledOffset 1064`, `argumentOffset 1076`, `localsOffset 1078`, `lineOffset 1078`, `unknown1 1025`, `unknown2 33`
+    - `baLingoCreateFolder`: `compiledOffset 1080`, `argumentOffset 1092`, `localsOffset 1094`, `lineOffset 1094`, `unknown1 1093`, `unknown2 37`
+    - `baLingoFileList`: `compiledOffset 1096`, `argumentOffset 1110`, `localsOffset 1114`, `lineOffset 1114`, `unknown1 1157`, `unknown2 41`
+    - `baLingoFileExists`: `compiledOffset 1116`, `argumentOffset 1128`, `localsOffset 1130`, `lineOffset 1130`, `unknown1 1235`, `unknown2 45`
+    - `baLingoTempFileName`: `compiledOffset 1132`, `argumentOffset 1144`, `localsOffset 1146`, `lineOffset 1146`, `unknown1 1301`, `unknown2 49`
+    - `baLingoFileAge`: `compiledOffset 1148`, `argumentOffset 1160`, `localsOffset 1162`, `lineOffset 1162`, `unknown1 1364`, `unknown2 53`
+    - `baLingoDeleteFile`: `compiledOffset 1164`, `argumentOffset 1176`, `localsOffset 1178`, `lineOffset 1178`, `unknown1 1425`, `unknown2 57`
+    - `baLingoFileDateEx`: `compiledOffset 1180`, `argumentOffset 1198`, `localsOffset 1206`, `lineOffset 1206`, `unknown1 1489`, `unknown2 61`
+    - `baLingoSetFileDate`: `compiledOffset 1208`, `argumentOffset 1232`, `localsOffset 1246`, `lineOffset 1246`, `unknown1 1602`, `unknown2 65`
+    - `baLingoSysFolder`: `compiledOffset 1248`, `argumentOffset 1260`, `localsOffset 1262`, `lineOffset 1262`, `unknown1 1762`, `unknown2 69`
+    - `baLingoRunProgram`: `compiledOffset 1264`, `argumentOffset 1280`, `localsOffset 1286`, `lineOffset 1286`, `unknown1 1825`, `unknown2 73`
+  - wrapper offset arithmetic stays exact across the family:
+    - `localsOffset = argumentOffset + (argumentCount * 2)` for every wrapper
+    - `lineOffset = localsOffset` for every wrapper
+    - `unknown2` advances as a strict ladder: `33, 37, 41, 45, 49, 53, 57, 61, 65, 69, 73`
+  - wrapper bytecode widths match argument count exactly:
+    - 1-arg wrappers use `compiledLen = 11` and `stackHeight = 2`
+    - `baLingoFileList` uses `compiledLen = 13` and `stackHeight = 3`
+    - `baLingoFileDateEx` uses `compiledLen = 17` and `stackHeight = 5`
+    - `baLingoRunProgram` uses `compiledLen = 15` and `stackHeight = 4`
+    - `baLingoSetFileDate` uses `compiledLen = 23` and `stackHeight = 8`
+
+- Structured control-flow lifts made in `rightful.ls`:
+  - `lingoXtraNoDebug`: the `eq` + `jmpifz 7` tail is lifted to `if status(myFile) = 0 then quit() end if`
+  - `getPCInfo`: the `gt` + `jmpifz 26` span is lifted to `if offset(".", bdi) > 0 then ... end if`
+  - `isCheatEngineRunning`: the `gt` + `jmpifz 12` + `jmp 8` span is lifted to a real `if / else` return
+- Handler tail/return convention split proven by JSON bytecode:
+  - `lingoXtraNoDebug` ends with a local reset tail (`pushzero`, `setlocal 0`) followed by plain `ret`
+  - `lingoXtraInit` ends with `setglobal 145` followed by plain `ret`
+  - `getPCInfo` ends with `getlocal 1`, `pusharglistnoret 1`, `extcall 156`, `ret`
+  - `isCheatEngineRunning` ends both boolean arms through `pusharglistnoret 1`, `extcall 156`, then reaches `ret`
+  - all eleven `baLingo*` forwarding handlers also terminate through the same `pusharglistnoret 1`, `extcall 156`, `ret` return veneer
+- Exact branch-span tightening from JSON bytecode:
+  - `lingoXtraNoDebug`
+    - branch test is `49..57`: `getlocal 0`, `pusharglist 1`, `extcall 141`, `pushzero`, `eq`, `jmpifz 7`
+    - taken body is `60..62`: `pusharglistnoret 0`, `extcall 142`
+    - unconditional tail is `64..65`: `pushzero`, `setlocal 0`, which is why `myFile = 0` stays as a standalone line after the `if`
+  - `getPCInfo`
+    - branch test is `18..28`: `pushcons 6`, `getlocal 0`, `pusharglist 2`, `extcall 149`, `pushzero`, `gt`, `jmpifz 26`
+    - taken body is `31..52`: the `pushsymb 150` through `objcall 151` slice ending in `setlocal 0`
+    - fallthrough resumes at `54` with the `qs = "mid=" ...` construction
+  - `isCheatEngineRunning`
+    - branch test is `20..26`: `getlocal 0`, `getobjprop 177`, `pushzero`, `gt`, `jmpifz 12`
+    - true arm is `29..33`: `pushint8 1`, `pusharglistnoret 1`, `extcall 156`
+    - false arm is `38..41`: `pushzero`, `pusharglistnoret 1`, `extcall 156`
+    - `35..35` is the join skip `jmp 8`
+- Standalone-tail audit result:
+  - no fake standalone tail line was found in the promoted `rightful.ls`
+  - `myFile = 0` in `lingoXtraNoDebug` is a proven unconditional tail from `64..65`, not part of the `quit()` branch body
+  - `bdi = bdi.charRange(...)` in `getPCInfo` is the entire taken branch body at `31..52`, ending in `setlocal 0`
+  - the later `qs = ...` assignments in `getPCInfo` are plain fallthrough after `54`, not hidden branch tails
+  - `return 1` and `return 0` in `isCheatEngineRunning` already align exactly to the true and false arms proven by `29..33` and `38..41`
+- Byte-backed literal assembly preserved in `rightful.ls`:
+  - `lingoXtraNoDebug` uses JSON literal ids `1,2,3,4,5,6,2,3,2` to build `"l" & "i" & "n" & "g" & "o" & "." & "i" & "n" & "i"`
+  - `isCheatEngineRunning` uses JSON literal ids `24,25,26,27,28` to build `""` and `"ch" & "eat" & " en" & "gine"`
+- Export-surface contradiction preserved explicitly:
+  - `root-artifacts\Lscr-108.decompiled.lingo` and `root-artifacts\Lscr-108.decompiled.js` both carry inverted goto-comment scaffolding for `lingoXtraNoDebug`, `getPCInfo`, and `isCheatEngineRunning`
+  - raw JSON opcode order proves the current structured branches in `rightful.ls` instead:
+    - `lingoXtraNoDebug`: `getlocal 0`, `extcall 141`, `pushzero`, `eq`, `jmpifz 7`, then `extcall 142`
+    - `getPCInfo`: `extcall 149`, `pushzero`, `gt`, `jmpifz 26`, then the `objcall 151` slice
+    - `isCheatEngineRunning`: `getobjprop 177`, `pushzero`, `gt`, `jmpifz 12`, `pushint8 1`, `extcall 156`, `jmp 8`, `pushzero`, `extcall 156`
+  - `sibling-artifacts\17-lingo-xtra.js` agrees with the promoted structured branches, so it is the corroborating adjacent asset for branch shape while the JSON remains the primary proof
+  - `sibling-artifacts\17-lingo-xtra.js` uses bridge syntax that is not copied back into `rightful.ls`:
+    - `lingoNew(xtra("fileio"))` in sibling JS vs `new(xtra("fileio"))` in promoted Lingo
+    - `charRange(...)` helper in sibling JS vs `.charRange(#char, ...)` in promoted Lingo
+    - `EMPTY` in sibling JS vs the JSON-backed empty string literal at offset `316` and `""` in promoted Lingo
+- Handler-local unresolved id map:
+  - `lingoXtraNoDebug`
+    - `setmovieprop 138` at `1` remains unnamed at raw-id layer
+    - `extcall 140` at `7` and `extcall 139` at `11` are accepted only through the decompiled `xtra("fileio")` / constructor surface
+    - `extcall 111` at `47`, `extcall 141` at `53`, and `extcall 142` at `62` remain unnamed at raw-id layer
+  - `lingoXtraInit`
+    - `setmovieprop 138` at `2` remains unnamed at raw-id layer
+    - `extcall 144` at `10` remains unnamed at raw-id layer
+    - `set 7` at `19` and `set 0` at `25` remain unnamed property slots at raw-id layer
+    - `extcall 140` at `31`, `objcall 139` at `35`, and `setglobal 145` at `37` are only surfaced symbolically through the decompiled body
+  - `getPCInfo`
+    - `extcall 148` at `4`, `extcall 147` at `10`, `extcall 146` at `14`, and `extcall 149` at `24` / `43` remain unnamed at raw-id layer
+    - `pushsymb 150` at `33` / `91` and `objcall 151` at `50` / `99` remain unnamed at raw-id layer
+    - `extcall 152` at `63`, `70`, and `77`; `extcall 153` at `89`; `extcall 154` at `119`; `extcall 155` at `131`; and return veneer `extcall 156` at `140` remain unnamed at raw-id layer
+  - `isCheatEngineRunning`
+    - `extcall 176` at `16` remains unnamed at raw-id layer
+    - `getobjprop 177` at `22` is only surfaced as `.count` through the decompiled body
+    - return veneer `extcall 156` at `33` and `41` remains unnamed at raw-id layer
+- Handler-local unresolved span map:
+  - `lingoXtraNoDebug`
+    - setup cluster `1..11`: movie property id `138`, then constructor-call ids `140` and `139`
+    - open/status/quit cluster `47..62`: call ids `111`, `141`, and `142` around the only branch in the handler
+    - resolved islands between those clusters are literal assembly, branch test ops, and the unconditional `64..65` local reset tail
+  - `lingoXtraInit`
+    - startup cluster `2..10`: movie property id `138` and call id `144`
+    - timeout/property cluster `19..25`: unnamed `set 7` and `set 0`
+    - xtra/global cluster `31..37`: call id `140`, object-call id `139`, and global id `145`
+  - `getPCInfo`
+    - disk/system probe cluster `4..24`: call ids `148`, `147`, `146`, and first `149`
+    - substring cluster `33..50`: symbol id `150`, second `149`, and object-call id `151`
+    - CPU/mac cluster `63..99`: three `152` calls, `153`, second `150`, and second `151`
+    - registry/name tail cluster `119..140`: call ids `154`, `155`, and return veneer `156`
+    - resolved islands between those clusters are locals, literal joins, branch test ops, and explicit `setlocal` stores
+  - `isCheatEngineRunning`
+    - window-list probe cluster `16..22`: call id `176` and property id `177`
+    - return veneer cluster `33..41`: two `156` calls separated by the join-skip `jmp 8`
+- Cross-handler unresolved id reuse the JSON proves directly:
+  - `setmovieprop 138` appears only at the leading movie-property write in:
+    - `lingoXtraNoDebug` at `1`
+    - `lingoXtraInit` at `2`
+  - constructor/system-call reuse:
+    - `extcall 140` appears in `lingoXtraNoDebug` at `7` and `lingoXtraInit` at `31`
+    - raw id `139` is reused across opcode classes:
+      - `lingoXtraNoDebug` uses `extcall 139` at `11`
+      - `lingoXtraInit` uses `objcall 139` at `35`
+  - folder/disk helper reuse:
+    - `extcall 148` appears in `getPCInfo` at `4` and `baLingoSysFolder` at `4`
+  - repeated handler-local helper ids:
+    - `getPCInfo` reuses `extcall 149` at `24` and `43`
+    - `getPCInfo` reuses `pushsymb 150` at `33` and `91`
+    - `getPCInfo` reuses `objcall 151` at `50` and `99`
+    - `getPCInfo` reuses `extcall 152` at `63`, `70`, and `77`
+    - `isCheatEngineRunning` reuses the return-veneer `extcall 156` at `33` and `41`
+  - wrapper-family return veneer:
+    - every `baLingo*` wrapper ends with `pusharglistnoret 1`, `extcall 156`, `ret`
+    - `getPCInfo` also ends through `pusharglistnoret 1`, `extcall 156`, `ret` at `138..142`
+    - `isCheatEngineRunning` uses the same `extcall 156` veneer on both boolean arms at `31..33` and `39..41`
+  - opcode-class caution the JSON itself proves:
+    - raw numeric ids are not safe to unify across opcode classes
+    - direct example: raw id `139` is `extcall 139` at `lingoXtraNoDebug@11`, but `objcall 139` at `lingoXtraInit@35`
+    - that means the report can safely track same-number reuse only within the same opcode family unless the decompiled body independently corroborates more
+  - wrapper target-call map:
+    - `baLingoFolderExists` uses unique target `extcall 159` before the shared `156` return veneer
+    - `baLingoCreateFolder` uses unique target `extcall 161`
+    - `baLingoFileList` uses unique target `extcall 162`
+    - `baLingoFileExists` uses unique target `extcall 164`
+    - `baLingoTempFileName` uses unique target `extcall 165`
+    - `baLingoFileAge` uses unique target `extcall 166`
+    - `baLingoDeleteFile` uses unique target `extcall 167`
+    - `baLingoFileDateEx` uses unique target `extcall 168`
+    - `baLingoSetFileDate` uses unique target `extcall 171`
+    - `baLingoSysFolder` is the only wrapper that reuses a substantive-handler target, `extcall 148`, which also appears in `getPCInfo@4`
+    - `baLingoRunProgram` uses unique target `extcall 175`
+  - singleton-versus-family split from the full JSON id histogram:
+    - true reused families:
+      - `setmovieprop 138` appears `2` times
+      - `extcall 140` appears `2` times
+      - `extcall 148` appears `2` times
+      - `extcall 149` appears `2` times
+      - `pushsymb 150` appears `2` times
+      - `objcall 151` appears `2` times
+      - `extcall 152` appears `3` times
+      - `extcall 156` appears `14` times
+    - singleton opaque ids inside the substantive handlers:
+      - `lingoXtraNoDebug`: `extcall 111`, `extcall 139`, `extcall 141`, `extcall 142`
+      - `lingoXtraInit`: `extcall 144`, `set 7`, `set 0`, `objcall 139`, `setglobal 145`
+      - `getPCInfo`: `extcall 146`, `extcall 147`, `extcall 153`, `extcall 154`, `extcall 155`
+      - `isCheatEngineRunning`: `extcall 176`, `getobjprop 177`
+    - singleton wrapper target ids:
+      - `extcall 159`, `161`, `162`, `164`, `165`, `166`, `167`, `168`, `171`, and `175` each occur exactly once in the entire script
+  - family locality split inside the opaque clusters:
+    - reused ids confined to one handler-local cluster family:
+      - `extcall 149` stays inside `getPCInfo`, split between the disk/system probe cluster at `24` and the substring cluster at `43`
+      - `pushsymb 150` stays inside `getPCInfo`, split between the substring cluster at `33` and the CPU/mac cluster at `91`
+      - `objcall 151` stays inside `getPCInfo`, split between the substring cluster at `50` and the CPU/mac cluster at `99`
+      - `extcall 152` stays entirely inside the `getPCInfo` CPU/mac cluster at `63`, `70`, and `77`
+      - `extcall 156` stays inside return-veneer territory only: `getPCInfo@140`, both `isCheatEngineRunning` arms at `33` and `41`, and every wrapper tail
+    - reused ids that cross handler boundaries:
+      - `setmovieprop 138` crosses from `lingoXtraNoDebug` setup cluster `1..11` to `lingoXtraInit` startup cluster `2..10`
+      - `extcall 140` crosses from `lingoXtraNoDebug` setup cluster `1..11` to `lingoXtraInit` xtra/global cluster `31..37`
+      - `extcall 148` crosses from the `getPCInfo` disk/system probe cluster at `4` into the `baLingoSysFolder` wrapper target slot at `4`
+  - singleton locality split inside the opaque clusters:
+    - cluster-edge singletons:
+      - `lingoXtraNoDebug` ends its setup cluster with `extcall 139` at `11`, immediately before the resolved `setlocal 0` at `13`
+      - `lingoXtraNoDebug` ends its open/status/quit cluster with `extcall 142` at `62`, immediately before the resolved tail begins at `64`
+      - `lingoXtraInit` ends its startup cluster with `extcall 144` at `10`, immediately before the resolved timeout literal/load island at `12`
+      - `lingoXtraInit` ends its timeout/property cluster with `set 0` at `25`, immediately before the resolved literal/load island at `27`
+      - `getPCInfo` ends its CPU/mac cluster with `objcall 151` at `99`, immediately before the resolved join/store island at `101`
+      - `isCheatEngineRunning` ends its window-list probe cluster with `getobjprop 177` at `22`, immediately before the resolved branch ops at `24`
+    - cluster-interior singletons:
+      - `lingoXtraNoDebug` carries `extcall 111` at `47` and `extcall 141` at `53` inside the open/status/quit cluster, with further cluster opcodes on both sides
+      - `lingoXtraInit` carries `set 7` at `19` inside the timeout/property cluster and `objcall 139` at `35` inside the xtra/global cluster
+      - `getPCInfo` carries `extcall 147` at `10`, `extcall 146` at `14`, `extcall 153` at `89`, and `extcall 154` at `119` as interior opaque helper sites
+      - `isCheatEngineRunning` carries `extcall 176` at `16` as the interior opaque call before the final probe property read
+    - tail-only singleton:
+      - `getPCInfo` uses `extcall 155` at `131` only in the registry/name tail cluster, before the shared return veneer at `140`
+  - reused-family role split from exact byte positions:
+    - cluster-entry family:
+      - `pushsymb 150` appears at the leading edge of two `getPCInfo` opaque clusters, entering the substring cluster at `33` and the CPU/mac cluster at `91`
+    - cluster-exit family:
+      - `objcall 151` appears at the trailing edge of two `getPCInfo` opaque clusters, exiting the substring cluster at `50` and the CPU/mac cluster at `99`
+    - cross-cluster bridge family:
+      - `extcall 149` bridges from the disk/system probe cluster at `24` into the later substring cluster occurrence at `43`, but stays inside `getPCInfo`
+    - interior-repeat family:
+      - `extcall 152` repeats only inside the `getPCInfo` CPU/mac cluster at `63`, `70`, and `77`, never crossing into another cluster family
+    - return-veneer family:
+      - `extcall 156` is never used as a substantive helper target in the opaque clusters
+      - its uses are confined to the final return path of `getPCInfo@140`, both `isCheatEngineRunning` boolean arms at `33` and `41`, and every wrapper tail
+  - control-flow island edge proof from the JSON branch spans:
+    - `lingoXtraNoDebug`
+      - branch predicate island is `49..57`: `getlocal 0`, `pusharglist 1`, `extcall 141`, `pushzero`, `eq`, `jmpifz 7`
+      - taken island is `60..62`: `pusharglistnoret 0`, `extcall 142`
+      - post-branch tail begins immediately at `64`, so `myFile = 0` remains a proven standalone tail line rather than a hidden branch member
+      - branch-join semantics stay one-sided:
+        - there is no mirrored false-arm body before the tail
+        - `jmpifz 7` skips directly from `57` to the post-branch tail at `64`
+        - the taken island falls straight through from `extcall 142@62` into the same tail start at `64`
+      - opaque call roles around this branch stay stable:
+        - `extcall 111@47` is the pre-predicate cluster entry into the open/status/quit island
+        - `extcall 141@53` is interior to the predicate island
+        - `extcall 142@62` is the taken-island exit immediately before the resolved tail
+    - `getPCInfo`
+      - predicate island is `18..28`: `pushcons 6`, `getlocal 0`, `pusharglist 2`, `extcall 149`, `pushzero`, `gt`, `jmpifz 26`
+      - taken island is `31..52`: `getlocal 0` through `objcall 151`, ending in `setlocal 0`
+      - join writeback happens at `52`: the taken island closes with `setlocal 0`
+      - post-join query-build resumes at `54`, so none of the later `qs = ...` assignments are fake branch tails
+      - opaque family roles stay exact across the branch:
+        - `extcall 149@24` is predicate-local
+        - `pushsymb 150@33` is taken-island entry
+        - `objcall 151@50` is taken-island exit
+      - branch-join semantics stay one-sided:
+        - there is no mirrored false-arm body before the join
+        - `jmpifz 26` skips directly from `28` to the post-branch resume at `54`
+      - repeated-family handoff edges after the join are exact:
+        - the CPU/mac repeat family `extcall 152` at `63`, `70`, and `77` feeds resolved `joinstr` edges at `65`, `72`, and `79`, then closes into the first query writeback `setlocal 1@80`
+        - the second `pushsymb 150` / `objcall 151` pair at `91..99` feeds directly into resolved `joinstr@101`, then closes into `setlocal 1@102`
+        - `extcall 154@119` feeds directly into resolved `joinstr@121`, then closes into `setlocal 1@122`
+        - tail singleton `extcall 155@131` feeds directly into resolved `joinstr@133`, then closes into the last query writeback `setlocal 1@134`
+    - `isCheatEngineRunning`
+      - predicate island is `20..26`: `getlocal 0`, `getobjprop 177`, `pushzero`, `gt`, `jmpifz 12`
+      - true return island is `29..33`: `pushint8 1`, `pusharglistnoret 1`, `extcall 156`
+      - join skip is `35`: `jmp 8`
+      - false return island is `38..41`: `pushzero`, `pusharglistnoret 1`, `extcall 156`
+      - no hidden tail exists after the false arm; handler termination is the plain `ret` at `43`
+      - branch-join semantics are exact:
+        - the true arm exits through `extcall 156@33`, then uses `jmp 8@35` to skip over the false-arm entry at `38`
+        - the false arm falls straight from `jmpifz 12@26` into `38..41`, then reaches the shared terminal `ret@43`
+- Substantive-handler range partition:
+  - `lingoXtraNoDebug`
+    - resolved prefix `0..0`: `pushzero`
+    - opaque setup cluster `1..11`
+    - resolved literal/openfile build `13..45`
+    - opaque open/status/quit cluster `47..62`
+    - resolved tail `64..67`: local reset plus `ret`
+  - `lingoXtraInit`
+    - resolved prefix `0..0`: `pushint8 1`
+    - opaque startup cluster `2..10`
+    - resolved timeout literal/load island `12..17`
+    - opaque timeout/property cluster `19..25`
+    - resolved literal/load island `27..29`
+    - opaque xtra/global cluster `31..37`
+    - resolved tail `39..39`: `ret`
+  - `getPCInfo`
+    - resolved prefix `0..2`: first literal load and arglist setup
+    - opaque disk/system probe cluster `4..24`
+    - resolved branch ops `26..28`
+    - opaque substring cluster `33..50`
+    - resolved `setlocal` and first query build island `52..61`
+    - opaque CPU/mac cluster `63..99`
+    - resolved join/store island `101..117`
+    - opaque registry/name tail cluster `119..140`
+    - resolved tail `142..142`: `ret`
+  - `isCheatEngineRunning`
+    - resolved literal assembly prefix `0..14`
+    - opaque window-list probe cluster `16..22`
+    - resolved branch ops `24..31`
+    - opaque return veneer cluster `33..41`
+    - resolved tail `43..43`: `ret`
+
+JS mirror pass:
+- Accepted same-body JS translation:
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\root-artifacts\Lscr-108.decompiled.js`
+- Corroborating adjacent asset only:
+  - `C:\Users\Dilldo\Nitto\Lingo Stuff\clean\Lscr-108\sibling-artifacts\17-lingo-xtra.js`
+- The accepted JS mirror now follows the same promoted handler bodies as `final-clean\Lscr-108\rightful.ls`
+- The adjacent sibling JS is useful for branch direction corroboration, but it is not the accepted same-body export surface because it introduces JS-side bridge helpers (`lingoNew`, `charRange`, `EMPTY`)
+
+Unresolved:
+- The raw bin-only motif region `0x0310..0x053B` remains unlabeled at the opcode-semantic layer in `bin-only.pass6`; it corroborates byte density only
+- The local export-backed evidence still does not expose a direct extcall-id/object-id name table inside `Lscr-108.json`; call names such as `baFolderExists`, `baDiskInfo`, `baReadRegString`, and property surface `.count` are accepted from the stronger local decompiled Lingo/JS artifacts rather than from a raw id table in the JSON dump itself
+- No separate `pass-block*.md` family exists for `Lscr-108`; handler-level proof comes from the JSON `bytecode` arrays plus the decompiled surfaces, not from per-block tables
+- The root decompiled Lingo/JS surfaces still preserve misleading goto comments on three branch sites; those comments were not copied into `rightful.ls`
+- The export-backed artifacts still do not surface symbolic names for movie property id `138`, extcall ids `111`, `139`..`176`, object-call id `151`, or object property id `177`; only their structured use-sites are proven locally
+
+Verification:
+- Metadata, handler inventory, and bytecode verification were not blocked
+- Same-body JS mirror verification was not blocked because `Lscr-108.decompiled.js` exists locally and matches the promoted handler set
+- Additional structured JSON scraping via local Node was blocked by the known Windows `ncrypto::CSPRNG(nullptr, 0)` failure, so verification here stayed with PowerShell plus the already-exported local artifacts

@@ -1,0 +1,119 @@
+on initFileHandler
+  -- unk26
+end
+
+on getAvatar
+  -- unk26
+end
+
+on downloadAvatar
+  -- unk26
+end
+
+on compareAvatarAge
+  -- unk26
+end
+
+on loadLocalAvatar
+  -- unk26
+end
+
+on avatarIDtoPath
+  -- unk26
+end
+
+on downloadUgg
+  -- unk26
+end
+
+on loadLocalUgg
+  -- unk26
+end
+
+on fileBrowse
+  -- unk26
+end
+
+on uggUpload
+  -- unk26
+end
+
+on uggUploadSuccess
+  -- unk26
+end
+
+on uggUploadFail
+  -- unk26
+end
+
+on downloadNewInstaller
+  -- unk26
+end
+
+on downloadInstallerUpdateFlash
+  -- unk26
+end
+
+on runInstaller
+  -- unk26
+end
+
+on fetchCacheXML
+  -- unk26
+end
+
+on fetchCacheXMLDone
+  -- unk26
+end
+
+on createCacheFolders
+  -- unk26
+end
+
+on downloadCache
+  -- unk26
+end
+
+on downloadCacheInProgress
+  -- unk26
+end
+
+on downloadCacheDone
+  -- unk26
+end
+
+on downloadCacheUpdateFlash
+  -- unk26
+end
+
+on loadDyno
+  -- unk26
+end
+
+on saveDyno
+  -- unk26
+end
+
+on getTxtFileName
+  -- unk26
+end
+
+on saveFile
+  -- unk26
+end
+
+on openfile
+  -- unk26
+end
+
+on fileClearAllDecals
+  -- unk26
+end
+
+on fileClearADecal
+  -- unk26
+end
+
+on loadExternalValues
+  -- unk26
+end

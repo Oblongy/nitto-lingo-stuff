@@ -1,0 +1,5492 @@
+{
+  "totalLength": 32904,
+  "totalLength2": 32904,
+  "headerLength": 92,
+  "scriptNumber": 4,
+  "unk20": 1,
+  "parentNumber": -1,
+  "scriptFlags": 49154,
+  "unk42": 0,
+  "castID": 65548,
+  "factoryNameID": -1,
+  "handlerVectorsCount": 0,
+  "handlerVectorsOffset": 32904,
+  "handlerVectorsSize": 0,
+  "propertiesCount": 0,
+  "propertiesOffset": 92,
+  "globalsCount": 0,
+  "globalsOffset": 92,
+  "handlersCount": 75,
+  "handlersOffset": 92,
+  "literalsCount": 77,
+  "literalsOffset": 3992,
+  "literalsDataCount": 28296,
+  "literalsDataOffset": 4608,
+  "propertyNameIDs": [],
+  "globalNameIDs": [],
+  "handlers": [
+    {
+      "nameID": 12,
+      "name": "LOGIN",
+      "dispatchSlot": 2,
+      "dispatchBlockIndex": 0,
+      "dispatchBlockOffset": 0,
+      "dispatchBlockLength": 384,
+      "dispatchBlockHeaderWord0": 300,
+      "dispatchBlockHeaderWord1": 225,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3542,
+      "argumentCount": 0,
+      "argumentOffset": 3548,
+      "localsCount": 0,
+      "localsOffset": 3548,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 0,
+      "lineCount": 0,
+      "lineOffset": 3548,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 2
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 13,
+      "name": "SENDNIMMESSAGE",
+      "dispatchSlot": 3,
+      "dispatchBlockIndex": 1,
+      "dispatchBlockOffset": 384,
+      "dispatchBlockLength": 332,
+      "dispatchBlockHeaderWord0": 32,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3548,
+      "argumentCount": 0,
+      "argumentOffset": 3554,
+      "localsCount": 0,
+      "localsOffset": 3554,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 7,
+      "lineCount": 0,
+      "lineOffset": 3554,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 3
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 14,
+      "name": "UPDATENIMUSER",
+      "dispatchSlot": 4,
+      "dispatchBlockIndex": 2,
+      "dispatchBlockOffset": 716,
+      "dispatchBlockLength": 328,
+      "dispatchBlockHeaderWord0": 54,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3554,
+      "argumentCount": 0,
+      "argumentOffset": 3560,
+      "localsCount": 0,
+      "localsOffset": 3560,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 11,
+      "lineCount": 0,
+      "lineOffset": 3560,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 4
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 15,
+      "name": "DELETENIMUSER",
+      "dispatchSlot": 5,
+      "dispatchBlockIndex": 3,
+      "dispatchBlockOffset": 1044,
+      "dispatchBlockLength": 272,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3560,
+      "argumentCount": 0,
+      "argumentOffset": 3566,
+      "localsCount": 0,
+      "localsOffset": 3566,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 15,
+      "lineCount": 0,
+      "lineOffset": 3566,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 5
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 16,
+      "name": "BLOCKNIMUSER",
+      "dispatchSlot": 6,
+      "dispatchBlockIndex": 4,
+      "dispatchBlockOffset": 1316,
+      "dispatchBlockLength": 264,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3566,
+      "argumentCount": 0,
+      "argumentOffset": 3572,
+      "localsCount": 0,
+      "localsOffset": 3572,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 19,
+      "lineCount": 0,
+      "lineOffset": 3572,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 6
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 17,
+      "name": "UNBLOCKNIMUSER",
+      "dispatchSlot": 7,
+      "dispatchBlockIndex": 5,
+      "dispatchBlockOffset": 1580,
+      "dispatchBlockLength": 268,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3572,
+      "argumentCount": 0,
+      "argumentOffset": 3578,
+      "localsCount": 0,
+      "localsOffset": 3578,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 23,
+      "lineCount": 0,
+      "lineOffset": 3578,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 7
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 18,
+      "name": "INQUIRYNIMUSER",
+      "dispatchSlot": 8,
+      "dispatchBlockIndex": 6,
+      "dispatchBlockOffset": 1848,
+      "dispatchBlockLength": 272,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3578,
+      "argumentCount": 0,
+      "argumentOffset": 3584,
+      "localsCount": 0,
+      "localsOffset": 3584,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 27,
+      "lineCount": 0,
+      "lineOffset": 3584,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 8
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 19,
+      "name": "ALLOWNIMUSER",
+      "dispatchSlot": 9,
+      "dispatchBlockIndex": 7,
+      "dispatchBlockOffset": 2120,
+      "dispatchBlockLength": 312,
+      "dispatchBlockHeaderWord0": 36,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3584,
+      "argumentCount": 0,
+      "argumentOffset": 3590,
+      "localsCount": 0,
+      "localsOffset": 3590,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 31,
+      "lineCount": 0,
+      "lineOffset": 3590,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 9
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 20,
+      "name": "NIMOKRESPONSE",
+      "dispatchSlot": 10,
+      "dispatchBlockIndex": 8,
+      "dispatchBlockOffset": 2432,
+      "dispatchBlockLength": 288,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3590,
+      "argumentCount": 0,
+      "argumentOffset": 3596,
+      "localsCount": 0,
+      "localsOffset": 3596,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 35,
+      "lineCount": 0,
+      "lineOffset": 3596,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 10
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 21,
+      "name": "DELETENIMINQUIREDUSER",
+      "dispatchSlot": 11,
+      "dispatchBlockIndex": 9,
+      "dispatchBlockOffset": 2720,
+      "dispatchBlockLength": 284,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3596,
+      "argumentCount": 0,
+      "argumentOffset": 3602,
+      "localsCount": 0,
+      "localsOffset": 3602,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 39,
+      "lineCount": 0,
+      "lineOffset": 3602,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 11
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 22,
+      "name": "GETNIMINREQUESTS",
+      "dispatchSlot": 12,
+      "dispatchBlockIndex": 10,
+      "dispatchBlockOffset": 3004,
+      "dispatchBlockLength": 260,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3602,
+      "argumentCount": 0,
+      "argumentOffset": 3608,
+      "localsCount": 0,
+      "localsOffset": 3608,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 43,
+      "lineCount": 0,
+      "lineOffset": 3608,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 12
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 23,
+      "name": "GETNIMOUTREQUESTS",
+      "dispatchSlot": 13,
+      "dispatchBlockIndex": 11,
+      "dispatchBlockOffset": 3264,
+      "dispatchBlockLength": 176,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3608,
+      "argumentCount": 0,
+      "argumentOffset": 3614,
+      "localsCount": 0,
+      "localsOffset": 3614,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 47,
+      "lineCount": 0,
+      "lineOffset": 3614,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 13
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 24,
+      "name": "LISTRACECHATROOMS2",
+      "dispatchSlot": 14,
+      "dispatchBlockIndex": 12,
+      "dispatchBlockOffset": 3440,
+      "dispatchBlockLength": 208,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3614,
+      "argumentCount": 0,
+      "argumentOffset": 3620,
+      "localsCount": 0,
+      "localsOffset": 3620,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 55,
+      "lineCount": 0,
+      "lineOffset": 3620,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 14
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 25,
+      "name": "CREATECHATROOM",
+      "dispatchSlot": 15,
+      "dispatchBlockIndex": 13,
+      "dispatchBlockOffset": 3648,
+      "dispatchBlockLength": 412,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3620,
+      "argumentCount": 0,
+      "argumentOffset": 3626,
+      "localsCount": 0,
+      "localsOffset": 3626,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 59,
+      "lineCount": 0,
+      "lineOffset": 3626,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 15
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 26,
+      "name": "JOINRACECHAT",
+      "dispatchSlot": 16,
+      "dispatchBlockIndex": 14,
+      "dispatchBlockOffset": 4060,
+      "dispatchBlockLength": 516,
+      "dispatchBlockHeaderWord0": 165,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3626,
+      "argumentCount": 0,
+      "argumentOffset": 3632,
+      "localsCount": 0,
+      "localsOffset": 3632,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 65,
+      "lineCount": 0,
+      "lineOffset": 3632,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 16
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 27,
+      "name": "LEAVERACECHAT",
+      "dispatchSlot": 17,
+      "dispatchBlockIndex": 15,
+      "dispatchBlockOffset": 4576,
+      "dispatchBlockLength": 368,
+      "dispatchBlockHeaderWord0": 97,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3632,
+      "argumentCount": 0,
+      "argumentOffset": 3638,
+      "localsCount": 0,
+      "localsOffset": 3638,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 70,
+      "lineCount": 0,
+      "lineOffset": 3638,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 17
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 28,
+      "name": "LISTRACECHATUSERS",
+      "dispatchSlot": 18,
+      "dispatchBlockIndex": 16,
+      "dispatchBlockOffset": 4944,
+      "dispatchBlockLength": 176,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3638,
+      "argumentCount": 0,
+      "argumentOffset": 3644,
+      "localsCount": 0,
+      "localsOffset": 3644,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 74,
+      "lineCount": 0,
+      "lineOffset": 3644,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 18
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 29,
+      "name": "SENDRACECHAT",
+      "dispatchSlot": 19,
+      "dispatchBlockIndex": 17,
+      "dispatchBlockOffset": 5120,
+      "dispatchBlockLength": 180,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3644,
+      "argumentCount": 0,
+      "argumentOffset": 3650,
+      "localsCount": 0,
+      "localsOffset": 3650,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 78,
+      "lineCount": 0,
+      "lineOffset": 3650,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 19
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 30,
+      "name": "TEAMKICK",
+      "dispatchSlot": 20,
+      "dispatchBlockIndex": 18,
+      "dispatchBlockOffset": 5300,
+      "dispatchBlockLength": 304,
+      "dispatchBlockHeaderWord0": 43,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3650,
+      "argumentCount": 0,
+      "argumentOffset": 3656,
+      "localsCount": 0,
+      "localsOffset": 3656,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 84,
+      "lineCount": 0,
+      "lineOffset": 3656,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 20
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 31,
+      "name": "TEAMCHANGEROLE",
+      "dispatchSlot": 21,
+      "dispatchBlockIndex": 19,
+      "dispatchBlockOffset": 5604,
+      "dispatchBlockLength": 300,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3656,
+      "argumentCount": 0,
+      "argumentOffset": 3662,
+      "localsCount": 0,
+      "localsOffset": 3662,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 88,
+      "lineCount": 0,
+      "lineOffset": 3662,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 21
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 32,
+      "name": "TEAMUPDATEMAXBET",
+      "dispatchSlot": 22,
+      "dispatchBlockIndex": 20,
+      "dispatchBlockOffset": 5904,
+      "dispatchBlockLength": 336,
+      "dispatchBlockHeaderWord0": 65,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3662,
+      "argumentCount": 0,
+      "argumentOffset": 3668,
+      "localsCount": 0,
+      "localsOffset": 3668,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 92,
+      "lineCount": 0,
+      "lineOffset": 3668,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 22
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 33,
+      "name": "TEAMDEPOSIT",
+      "dispatchSlot": 23,
+      "dispatchBlockIndex": 21,
+      "dispatchBlockOffset": 6240,
+      "dispatchBlockLength": 288,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3668,
+      "argumentCount": 0,
+      "argumentOffset": 3674,
+      "localsCount": 0,
+      "localsOffset": 3674,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 96,
+      "lineCount": 0,
+      "lineOffset": 3674,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 23
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 34,
+      "name": "TEAMWITHDRAW",
+      "dispatchSlot": 24,
+      "dispatchBlockIndex": 22,
+      "dispatchBlockOffset": 6528,
+      "dispatchBlockLength": 268,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3674,
+      "argumentCount": 0,
+      "argumentOffset": 3680,
+      "localsCount": 0,
+      "localsOffset": 3680,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 100,
+      "lineCount": 0,
+      "lineOffset": 3680,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 24
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 35,
+      "name": "TEAMQUIT",
+      "dispatchSlot": 25,
+      "dispatchBlockIndex": 23,
+      "dispatchBlockOffset": 6796,
+      "dispatchBlockLength": 240,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3680,
+      "argumentCount": 0,
+      "argumentOffset": 3686,
+      "localsCount": 0,
+      "localsOffset": 3686,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 104,
+      "lineCount": 0,
+      "lineOffset": 3686,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 25
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 36,
+      "name": "TEAMACCEPT",
+      "dispatchSlot": 26,
+      "dispatchBlockIndex": 24,
+      "dispatchBlockOffset": 7036,
+      "dispatchBlockLength": 172,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3686,
+      "argumentCount": 0,
+      "argumentOffset": 3692,
+      "localsCount": 0,
+      "localsOffset": 3692,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 108,
+      "lineCount": 0,
+      "lineOffset": 3692,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 26
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 37,
+      "name": "TEAMDISPERSE",
+      "dispatchSlot": 27,
+      "dispatchBlockIndex": 25,
+      "dispatchBlockOffset": 7208,
+      "dispatchBlockLength": 284,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3692,
+      "argumentCount": 0,
+      "argumentOffset": 3698,
+      "localsCount": 0,
+      "localsOffset": 3698,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 112,
+      "lineCount": 0,
+      "lineOffset": 3698,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 27
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 38,
+      "name": "TEAMCREATE",
+      "dispatchSlot": 28,
+      "dispatchBlockIndex": 26,
+      "dispatchBlockOffset": 7492,
+      "dispatchBlockLength": 284,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3698,
+      "argumentCount": 0,
+      "argumentOffset": 3704,
+      "localsCount": 0,
+      "localsOffset": 3704,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 116,
+      "lineCount": 0,
+      "lineOffset": 3704,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 28
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 39,
+      "name": "TEAMSTEPDOWN",
+      "dispatchSlot": 29,
+      "dispatchBlockIndex": 27,
+      "dispatchBlockOffset": 7776,
+      "dispatchBlockLength": 280,
+      "dispatchBlockHeaderWord0": 36,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3704,
+      "argumentCount": 0,
+      "argumentOffset": 3710,
+      "localsCount": 0,
+      "localsOffset": 3710,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 120,
+      "lineCount": 0,
+      "lineOffset": 3710,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 29
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 40,
+      "name": "GETKOTH",
+      "dispatchSlot": 30,
+      "dispatchBlockIndex": 28,
+      "dispatchBlockOffset": 8056,
+      "dispatchBlockLength": 152,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3710,
+      "argumentCount": 0,
+      "argumentOffset": 3716,
+      "localsCount": 0,
+      "localsOffset": 3716,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 126,
+      "lineCount": 0,
+      "lineOffset": 3716,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 30
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 41,
+      "name": "JOINKOTH",
+      "dispatchSlot": 31,
+      "dispatchBlockIndex": 29,
+      "dispatchBlockOffset": 8208,
+      "dispatchBlockLength": 184,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3716,
+      "argumentCount": 0,
+      "argumentOffset": 3722,
+      "localsCount": 0,
+      "localsOffset": 3722,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 130,
+      "lineCount": 0,
+      "lineOffset": 3722,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 31
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 42,
+      "name": "LEAVEKOTH",
+      "dispatchSlot": 32,
+      "dispatchBlockIndex": 30,
+      "dispatchBlockOffset": 8392,
+      "dispatchBlockLength": 512,
+      "dispatchBlockHeaderWord0": 78,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3722,
+      "argumentCount": 0,
+      "argumentOffset": 3728,
+      "localsCount": 0,
+      "localsOffset": 3728,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 136,
+      "lineCount": 0,
+      "lineOffset": 3728,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 32
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 43,
+      "name": "KCNT",
+      "dispatchSlot": 33,
+      "dispatchBlockIndex": 31,
+      "dispatchBlockOffset": 8904,
+      "dispatchBlockLength": 176,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3728,
+      "argumentCount": 0,
+      "argumentOffset": 3734,
+      "localsCount": 0,
+      "localsOffset": 3734,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 140,
+      "lineCount": 0,
+      "lineOffset": 3734,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 33
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 44,
+      "name": "SENDVOTE",
+      "dispatchSlot": 34,
+      "dispatchBlockIndex": 32,
+      "dispatchBlockOffset": 9080,
+      "dispatchBlockLength": 416,
+      "dispatchBlockHeaderWord0": 64,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3734,
+      "argumentCount": 0,
+      "argumentOffset": 3740,
+      "localsCount": 0,
+      "localsOffset": 3740,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 145,
+      "lineCount": 0,
+      "lineOffset": 3740,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 34
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 45,
+      "name": "KDONE",
+      "dispatchSlot": 35,
+      "dispatchBlockIndex": 33,
+      "dispatchBlockOffset": 9496,
+      "dispatchBlockLength": 544,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3740,
+      "argumentCount": 0,
+      "argumentOffset": 3746,
+      "localsCount": 0,
+      "localsOffset": 3746,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 149,
+      "lineCount": 0,
+      "lineOffset": 3746,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 35
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 46,
+      "name": "KRT",
+      "dispatchSlot": 36,
+      "dispatchBlockIndex": 34,
+      "dispatchBlockOffset": 10040,
+      "dispatchBlockLength": 1248,
+      "dispatchBlockHeaderWord0": 537,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3746,
+      "argumentCount": 0,
+      "argumentOffset": 3752,
+      "localsCount": 0,
+      "localsOffset": 3752,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 156,
+      "lineCount": 0,
+      "lineOffset": 3752,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 36
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 47,
+      "name": "STG",
+      "dispatchSlot": 37,
+      "dispatchBlockIndex": 35,
+      "dispatchBlockOffset": 11288,
+      "dispatchBlockLength": 380,
+      "dispatchBlockHeaderWord0": 72,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3752,
+      "argumentCount": 0,
+      "argumentOffset": 3758,
+      "localsCount": 0,
+      "localsOffset": 3758,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 161,
+      "lineCount": 0,
+      "lineOffset": 3758,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 37
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 48,
+      "name": "int",
+      "dispatchSlot": 38,
+      "dispatchBlockIndex": 36,
+      "dispatchBlockOffset": 11668,
+      "dispatchBlockLength": 480,
+      "dispatchBlockHeaderWord0": 140,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3758,
+      "argumentCount": 0,
+      "argumentOffset": 3764,
+      "localsCount": 0,
+      "localsOffset": 3764,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 168,
+      "lineCount": 0,
+      "lineOffset": 3764,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 38
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 49,
+      "name": "KOK",
+      "dispatchSlot": 39,
+      "dispatchBlockIndex": 37,
+      "dispatchBlockOffset": 12148,
+      "dispatchBlockLength": 456,
+      "dispatchBlockHeaderWord0": 158,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3764,
+      "argumentCount": 0,
+      "argumentOffset": 3770,
+      "localsCount": 0,
+      "localsOffset": 3770,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 175,
+      "lineCount": 0,
+      "lineOffset": 3770,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 39
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 50,
+      "name": "KREADY",
+      "dispatchSlot": 40,
+      "dispatchBlockIndex": 38,
+      "dispatchBlockOffset": 12604,
+      "dispatchBlockLength": 392,
+      "dispatchBlockHeaderWord0": 46,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3770,
+      "argumentCount": 0,
+      "argumentOffset": 3776,
+      "localsCount": 0,
+      "localsOffset": 3776,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 180,
+      "lineCount": 0,
+      "lineOffset": 3776,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 40
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 51,
+      "name": "GETRIVALS",
+      "dispatchSlot": 41,
+      "dispatchBlockIndex": 39,
+      "dispatchBlockOffset": 12996,
+      "dispatchBlockLength": 264,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3776,
+      "argumentCount": 0,
+      "argumentOffset": 3782,
+      "localsCount": 0,
+      "localsOffset": 3782,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 251,
+      "lineCount": 0,
+      "lineOffset": 3782,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 41
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 52,
+      "name": "RREQ",
+      "dispatchSlot": 42,
+      "dispatchBlockIndex": 40,
+      "dispatchBlockOffset": 13260,
+      "dispatchBlockLength": 228,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3782,
+      "argumentCount": 0,
+      "argumentOffset": 3788,
+      "localsCount": 0,
+      "localsOffset": 3788,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 256,
+      "lineCount": 0,
+      "lineOffset": 3788,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 42
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 53,
+      "name": "RRSP",
+      "dispatchSlot": 43,
+      "dispatchBlockIndex": 41,
+      "dispatchBlockOffset": 13488,
+      "dispatchBlockLength": 376,
+      "dispatchBlockHeaderWord0": 101,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3788,
+      "argumentCount": 0,
+      "argumentOffset": 3794,
+      "localsCount": 0,
+      "localsOffset": 3794,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 266,
+      "lineCount": 0,
+      "lineOffset": 3794,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 43
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 54,
+      "name": "RLVE",
+      "dispatchSlot": 44,
+      "dispatchBlockIndex": 42,
+      "dispatchBlockOffset": 13864,
+      "dispatchBlockLength": 280,
+      "dispatchBlockHeaderWord0": 65,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3794,
+      "argumentCount": 0,
+      "argumentOffset": 3800,
+      "localsCount": 0,
+      "localsOffset": 3800,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 271,
+      "lineCount": 0,
+      "lineOffset": 3800,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 44
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 55,
+      "name": "RIVOK",
+      "dispatchSlot": 45,
+      "dispatchBlockIndex": 43,
+      "dispatchBlockOffset": 14144,
+      "dispatchBlockLength": 148,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3800,
+      "argumentCount": 0,
+      "argumentOffset": 3806,
+      "localsCount": 0,
+      "localsOffset": 3806,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 276,
+      "lineCount": 0,
+      "lineOffset": 3806,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 45
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 56,
+      "name": "RIVREADY",
+      "dispatchSlot": 46,
+      "dispatchBlockIndex": 44,
+      "dispatchBlockOffset": 14292,
+      "dispatchBlockLength": 308,
+      "dispatchBlockHeaderWord0": 28,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3806,
+      "argumentCount": 0,
+      "argumentOffset": 3812,
+      "localsCount": 0,
+      "localsOffset": 3812,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 282,
+      "lineCount": 0,
+      "lineOffset": 3812,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 46
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 57,
+      "name": "RIVRT",
+      "dispatchSlot": 47,
+      "dispatchBlockIndex": 45,
+      "dispatchBlockOffset": 14600,
+      "dispatchBlockLength": 288,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3812,
+      "argumentCount": 0,
+      "argumentOffset": 3818,
+      "localsCount": 0,
+      "localsOffset": 3818,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 287,
+      "lineCount": 0,
+      "lineOffset": 3818,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 47
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 58,
+      "name": "RIVDONE",
+      "dispatchSlot": 48,
+      "dispatchBlockIndex": 46,
+      "dispatchBlockOffset": 14888,
+      "dispatchBlockLength": 632,
+      "dispatchBlockHeaderWord0": 72,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3818,
+      "argumentCount": 0,
+      "argumentOffset": 3824,
+      "localsCount": 0,
+      "localsOffset": 3824,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 293,
+      "lineCount": 0,
+      "lineOffset": 3824,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 48
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 59,
+      "name": "HTJOIN",
+      "dispatchSlot": 49,
+      "dispatchBlockIndex": 47,
+      "dispatchBlockOffset": 15520,
+      "dispatchBlockLength": 1448,
+      "dispatchBlockHeaderWord0": 636,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3824,
+      "argumentCount": 0,
+      "argumentOffset": 3830,
+      "localsCount": 0,
+      "localsOffset": 3830,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 307,
+      "lineCount": 0,
+      "lineOffset": 3830,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 49
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 60,
+      "name": "HQOK",
+      "dispatchSlot": 50,
+      "dispatchBlockIndex": 48,
+      "dispatchBlockOffset": 16968,
+      "dispatchBlockLength": 248,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3830,
+      "argumentCount": 0,
+      "argumentOffset": 3836,
+      "localsCount": 0,
+      "localsOffset": 3836,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 311,
+      "lineCount": 0,
+      "lineOffset": 3836,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 50
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 61,
+      "name": "HTGET32",
+      "dispatchSlot": 51,
+      "dispatchBlockIndex": 49,
+      "dispatchBlockOffset": 17216,
+      "dispatchBlockLength": 244,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3836,
+      "argumentCount": 0,
+      "argumentOffset": 3842,
+      "localsCount": 0,
+      "localsOffset": 3842,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 315,
+      "lineCount": 0,
+      "lineOffset": 3842,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 51
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 62,
+      "name": "HTGETTREE",
+      "dispatchSlot": 52,
+      "dispatchBlockIndex": 50,
+      "dispatchBlockOffset": 17460,
+      "dispatchBlockLength": 160,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3842,
+      "argumentCount": 0,
+      "argumentOffset": 3848,
+      "localsCount": 0,
+      "localsOffset": 3848,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 319,
+      "lineCount": 0,
+      "lineOffset": 3848,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 52
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 63,
+      "name": "HTSPECTATE",
+      "dispatchSlot": 53,
+      "dispatchBlockIndex": 51,
+      "dispatchBlockOffset": 17620,
+      "dispatchBlockLength": 160,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3848,
+      "argumentCount": 0,
+      "argumentOffset": 3854,
+      "localsCount": 0,
+      "localsOffset": 3854,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 323,
+      "lineCount": 0,
+      "lineOffset": 3854,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 53
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 64,
+      "name": "HTQUIT",
+      "dispatchSlot": 54,
+      "dispatchBlockIndex": 52,
+      "dispatchBlockOffset": 17780,
+      "dispatchBlockLength": 152,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3854,
+      "argumentCount": 0,
+      "argumentOffset": 3860,
+      "localsCount": 0,
+      "localsOffset": 3860,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 327,
+      "lineCount": 0,
+      "lineOffset": 3860,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 54
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 65,
+      "name": "HTINFO",
+      "dispatchSlot": 55,
+      "dispatchBlockIndex": 53,
+      "dispatchBlockOffset": 17932,
+      "dispatchBlockLength": 156,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3860,
+      "argumentCount": 0,
+      "argumentOffset": 3866,
+      "localsCount": 0,
+      "localsOffset": 3866,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 331,
+      "lineCount": 0,
+      "lineOffset": 3866,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 55
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 66,
+      "name": "HTQREADY",
+      "dispatchSlot": 56,
+      "dispatchBlockIndex": 54,
+      "dispatchBlockOffset": 18088,
+      "dispatchBlockLength": 188,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3866,
+      "argumentCount": 0,
+      "argumentOffset": 3872,
+      "localsCount": 0,
+      "localsOffset": 3872,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 336,
+      "lineCount": 0,
+      "lineOffset": 3872,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 56
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 67,
+      "name": "HTQD",
+      "dispatchSlot": 57,
+      "dispatchBlockIndex": 55,
+      "dispatchBlockOffset": 18276,
+      "dispatchBlockLength": 544,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3872,
+      "argumentCount": 0,
+      "argumentOffset": 3878,
+      "localsCount": 0,
+      "localsOffset": 3878,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 340,
+      "lineCount": 0,
+      "lineOffset": 3878,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 57
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 68,
+      "name": "HTQRT",
+      "dispatchSlot": 58,
+      "dispatchBlockIndex": 56,
+      "dispatchBlockOffset": 18820,
+      "dispatchBlockLength": 1256,
+      "dispatchBlockHeaderWord0": 537,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3878,
+      "argumentCount": 0,
+      "argumentOffset": 3884,
+      "localsCount": 0,
+      "localsOffset": 3884,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 347,
+      "lineCount": 0,
+      "lineOffset": 3884,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 58
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 69,
+      "name": "HTREADY",
+      "dispatchSlot": 59,
+      "dispatchBlockIndex": 57,
+      "dispatchBlockOffset": 20076,
+      "dispatchBlockLength": 372,
+      "dispatchBlockHeaderWord0": 72,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3884,
+      "argumentCount": 0,
+      "argumentOffset": 3890,
+      "localsCount": 0,
+      "localsOffset": 3890,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 353,
+      "lineCount": 0,
+      "lineOffset": 3890,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 59
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 70,
+      "name": "HTD",
+      "dispatchSlot": 60,
+      "dispatchBlockIndex": 58,
+      "dispatchBlockOffset": 20448,
+      "dispatchBlockLength": 544,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3890,
+      "argumentCount": 0,
+      "argumentOffset": 3896,
+      "localsCount": 0,
+      "localsOffset": 3896,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 357,
+      "lineCount": 0,
+      "lineOffset": 3896,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 60
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 71,
+      "name": "HTRT",
+      "dispatchSlot": 61,
+      "dispatchBlockIndex": 59,
+      "dispatchBlockOffset": 20992,
+      "dispatchBlockLength": 1252,
+      "dispatchBlockHeaderWord0": 537,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3896,
+      "argumentCount": 0,
+      "argumentOffset": 3902,
+      "localsCount": 0,
+      "localsOffset": 3902,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 364,
+      "lineCount": 0,
+      "lineOffset": 3902,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 61
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 72,
+      "name": "TRGETRACERS",
+      "dispatchSlot": 62,
+      "dispatchBlockIndex": 60,
+      "dispatchBlockOffset": 22244,
+      "dispatchBlockLength": 348,
+      "dispatchBlockHeaderWord0": 72,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3902,
+      "argumentCount": 0,
+      "argumentOffset": 3908,
+      "localsCount": 0,
+      "localsOffset": 3908,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 371,
+      "lineCount": 0,
+      "lineOffset": 3908,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 62
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 73,
+      "name": "TRGETTEAMS",
+      "dispatchSlot": 63,
+      "dispatchBlockIndex": 61,
+      "dispatchBlockOffset": 22592,
+      "dispatchBlockLength": 160,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3908,
+      "argumentCount": 0,
+      "argumentOffset": 3914,
+      "localsCount": 0,
+      "localsOffset": 3914,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 375,
+      "lineCount": 0,
+      "lineOffset": 3914,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 63
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 74,
+      "name": "TRPREREQUEST",
+      "dispatchSlot": 64,
+      "dispatchBlockIndex": 62,
+      "dispatchBlockOffset": 22752,
+      "dispatchBlockLength": 180,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3914,
+      "argumentCount": 0,
+      "argumentOffset": 3920,
+      "localsCount": 0,
+      "localsOffset": 3920,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 379,
+      "lineCount": 0,
+      "lineOffset": 3920,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 64
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 75,
+      "name": "TRREQUEST",
+      "dispatchSlot": 65,
+      "dispatchBlockIndex": 63,
+      "dispatchBlockOffset": 22932,
+      "dispatchBlockLength": 484,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3920,
+      "argumentCount": 0,
+      "argumentOffset": 3926,
+      "localsCount": 0,
+      "localsOffset": 3926,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 383,
+      "lineCount": 0,
+      "lineOffset": 3926,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 65
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 76,
+      "name": "TRCOUNTER",
+      "dispatchSlot": 66,
+      "dispatchBlockIndex": 64,
+      "dispatchBlockOffset": 23416,
+      "dispatchBlockLength": 448,
+      "dispatchBlockHeaderWord0": 155,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3926,
+      "argumentCount": 0,
+      "argumentOffset": 3932,
+      "localsCount": 0,
+      "localsOffset": 3932,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 387,
+      "lineCount": 0,
+      "lineOffset": 3932,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 66
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 77,
+      "name": "TRRESPONSE",
+      "dispatchSlot": 67,
+      "dispatchBlockIndex": 65,
+      "dispatchBlockOffset": 23864,
+      "dispatchBlockLength": 304,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3932,
+      "argumentCount": 0,
+      "argumentOffset": 3938,
+      "localsCount": 0,
+      "localsOffset": 3938,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 391,
+      "lineCount": 0,
+      "lineOffset": 3938,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 67
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 78,
+      "name": "TROK",
+      "dispatchSlot": 68,
+      "dispatchBlockIndex": 66,
+      "dispatchBlockOffset": 24168,
+      "dispatchBlockLength": 280,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3938,
+      "argumentCount": 0,
+      "argumentOffset": 3944,
+      "localsCount": 0,
+      "localsOffset": 3944,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 395,
+      "lineCount": 0,
+      "lineOffset": 3944,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 68
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 79,
+      "name": "TRIVREADY",
+      "dispatchSlot": 69,
+      "dispatchBlockIndex": 67,
+      "dispatchBlockOffset": 24448,
+      "dispatchBlockLength": 280,
+      "dispatchBlockHeaderWord0": 29,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3944,
+      "argumentCount": 0,
+      "argumentOffset": 3950,
+      "localsCount": 0,
+      "localsOffset": 3950,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 400,
+      "lineCount": 0,
+      "lineOffset": 3950,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 69
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 80,
+      "name": "JOINELECTION",
+      "dispatchSlot": 70,
+      "dispatchBlockIndex": 68,
+      "dispatchBlockOffset": 24728,
+      "dispatchBlockLength": 272,
+      "dispatchBlockHeaderWord0": 47,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3950,
+      "argumentCount": 0,
+      "argumentOffset": 3956,
+      "localsCount": 0,
+      "localsOffset": 3956,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 406,
+      "lineCount": 0,
+      "lineOffset": 3956,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 70
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 81,
+      "name": "ELECTIONINTERVIEWLIST",
+      "dispatchSlot": 71,
+      "dispatchBlockIndex": 69,
+      "dispatchBlockOffset": 25000,
+      "dispatchBlockLength": 180,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3956,
+      "argumentCount": 0,
+      "argumentOffset": 3962,
+      "localsCount": 0,
+      "localsOffset": 3962,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 410,
+      "lineCount": 0,
+      "lineOffset": 3962,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 71
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 82,
+      "name": "m",
+      "dispatchSlot": 72,
+      "dispatchBlockIndex": 70,
+      "dispatchBlockOffset": 25180,
+      "dispatchBlockLength": 320,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3962,
+      "argumentCount": 0,
+      "argumentOffset": 3968,
+      "localsCount": 0,
+      "localsOffset": 3968,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 416,
+      "lineCount": 0,
+      "lineOffset": 3968,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 72
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 83,
+      "name": "CLOSEGAME",
+      "dispatchSlot": 73,
+      "dispatchBlockIndex": 71,
+      "dispatchBlockOffset": 25500,
+      "dispatchBlockLength": 476,
+      "dispatchBlockHeaderWord0": 209,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3968,
+      "argumentCount": 0,
+      "argumentOffset": 3974,
+      "localsCount": 0,
+      "localsOffset": 3974,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 421,
+      "lineCount": 0,
+      "lineOffset": 3974,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 73
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 391,
+      "name": "IsMyProcessNameCorrect",
+      "dispatchSlot": 74,
+      "dispatchBlockIndex": 72,
+      "dispatchBlockOffset": 25976,
+      "dispatchBlockLength": 220,
+      "dispatchBlockHeaderWord0": 11,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3974,
+      "argumentCount": 0,
+      "argumentOffset": 3980,
+      "localsCount": 0,
+      "localsOffset": 3980,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 425,
+      "lineCount": 0,
+      "lineOffset": 3980,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 74
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 389,
+      "name": "CheckNittoProcesses",
+      "dispatchSlot": 75,
+      "dispatchBlockIndex": 73,
+      "dispatchBlockOffset": 26196,
+      "dispatchBlockLength": 348,
+      "dispatchBlockHeaderWord0": 40,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3980,
+      "argumentCount": 0,
+      "argumentOffset": 3986,
+      "localsCount": 0,
+      "localsOffset": 3986,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 436,
+      "lineCount": 0,
+      "lineOffset": 3986,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 75
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 392,
+      "name": "CheckNittoProcessesCB",
+      "dispatchSlot": 76,
+      "dispatchBlockIndex": 74,
+      "dispatchBlockOffset": 26544,
+      "dispatchBlockLength": 640,
+      "dispatchBlockHeaderWord0": 43,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 3986,
+      "argumentCount": 0,
+      "argumentOffset": 3992,
+      "localsCount": 0,
+      "localsOffset": 3992,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 445,
+      "lineCount": 0,
+      "lineOffset": 3992,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 76
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    }
+  ],
+  "literals": [
+    {
+      "type": 11,
+      "offset": 0,
+      "dataLength": 28292,
+      "value": null,
+      "referenceSummary": [
+        {
+          "value": "Function",
+          "firstOffset": 336,
+          "occurrences": 1,
+          "firstBlockOffset": 0,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "raID",
+          "firstOffset": 696,
+          "occurrences": 1,
+          "firstBlockOffset": 384,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "uname",
+          "firstOffset": 2112,
+          "occurrences": 1,
+          "firstBlockOffset": 1848,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "rtid",
+          "firstOffset": 3940,
+          "occurrences": 1,
+          "firstBlockOffset": 3648,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "rname",
+          "firstOffset": 3972,
+          "occurrences": 1,
+          "firstBlockOffset": 3648,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "ipriv",
+          "firstOffset": 3992,
+          "occurrences": 1,
+          "firstBlockOffset": 3648,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "memberOnly",
+          "firstOffset": 4028,
+          "occurrences": 1,
+          "firstBlockOffset": 3648,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "isPro",
+          "firstOffset": 4052,
+          "occurrences": 1,
+          "firstBlockOffset": 3648,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "isBoo",
+          "firstOffset": 9472,
+          "occurrences": 1,
+          "firstBlockOffset": 9080,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "acid",
+          "firstOffset": 13416,
+          "occurrences": 1,
+          "firstBlockOffset": 13260,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "baid",
+          "firstOffset": 13432,
+          "occurrences": 1,
+          "firstBlockOffset": 13260,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "bacid",
+          "firstOffset": 13448,
+          "occurrences": 1,
+          "firstBlockOffset": 13260,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "cebt",
+          "firstOffset": 13844,
+          "occurrences": 1,
+          "firstBlockOffset": 13488,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "challengeeTeamID",
+          "firstOffset": 23196,
+          "occurrences": 1,
+          "firstBlockOffset": 22932,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "challengerAccountIDs",
+          "firstOffset": 23224,
+          "occurrences": 1,
+          "firstBlockOffset": 22932,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "challengeeAccountIDs",
+          "firstOffset": 23256,
+          "occurrences": 1,
+          "firstBlockOffset": 22932,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "challengerAccountCarIDs",
+          "firstOffset": 23288,
+          "occurrences": 1,
+          "firstBlockOffset": 22932,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "challengeeAccountCarIDs",
+          "firstOffset": 23324,
+          "occurrences": 1,
+          "firstBlockOffset": 22932,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "betAmount",
+          "firstOffset": 23360,
+          "occurrences": 2,
+          "firstBlockOffset": 22932,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "isHeadsUp",
+          "firstOffset": 23384,
+          "occurrences": 1,
+          "firstBlockOffset": 22932,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "isRanked",
+          "firstOffset": 23408,
+          "occurrences": 1,
+          "firstBlockOffset": 22932,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "accept",
+          "firstOffset": 24160,
+          "occurrences": 1,
+          "firstBlockOffset": 23864,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "bracketTime",
+          "firstOffset": 24436,
+          "occurrences": 1,
+          "firstBlockOffset": 24168,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "returnValue",
+          "firstOffset": 26184,
+          "occurrences": 1,
+          "firstBlockOffset": 25976,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "result",
+          "firstOffset": 27068,
+          "occurrences": 1,
+          "firstBlockOffset": 26544,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "flashReturnValue",
+          "firstOffset": 27088,
+          "occurrences": 1,
+          "firstBlockOffset": 26544,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "processString",
+          "firstOffset": 27116,
+          "occurrences": 1,
+          "firstBlockOffset": 26544,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "processArray",
+          "firstOffset": 27144,
+          "occurrences": 1,
+          "firstBlockOffset": 26544,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "numOfProcesses",
+          "firstOffset": 27168,
+          "occurrences": 1,
+          "firstBlockOffset": 26544,
+          "raceEngineHint": 0
+        }
+      ],
+      "raceEngineHints": [],
+      "asciiStrings": [
+        "Function",
+        "raID",
+        "uname",
+        "rtid",
+        "rname",
+        "ipriv",
+        "memberOnly",
+        "isPro",
+        "isBoo",
+        "acid",
+        "baid",
+        "bacid",
+        "cebt",
+        "challengeeTeamID",
+        "challengerAccountIDs",
+        "challengeeAccountIDs",
+        "challengerAccountCarIDs",
+        "challengeeAccountCarIDs",
+        "betAmount",
+        "isHeadsUp",
+        "isRanked",
+        "betAmount",
+        "accept",
+        "bracketTime",
+        "returnValue",
+        "result",
+        "flashReturnValue",
+        "processString",
+        "processArray",
+        "numOfProcesses"
+      ],
+      "asciiStringRefs": [
+        {
+          "offset": 336,
+          "value": "Function",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 696,
+          "value": "raID",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2112,
+          "value": "uname",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3940,
+          "value": "rtid",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3972,
+          "value": "rname",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3992,
+          "value": "ipriv",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 4028,
+          "value": "memberOnly",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 4052,
+          "value": "isPro",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 9472,
+          "value": "isBoo",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13416,
+          "value": "acid",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13432,
+          "value": "baid",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13448,
+          "value": "bacid",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13844,
+          "value": "cebt",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 23196,
+          "value": "challengeeTeamID",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 23224,
+          "value": "challengerAccountIDs",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 23256,
+          "value": "challengeeAccountIDs",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 23288,
+          "value": "challengerAccountCarIDs",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 23324,
+          "value": "challengeeAccountCarIDs",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 23360,
+          "value": "betAmount",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 23384,
+          "value": "isHeadsUp",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 23408,
+          "value": "isRanked",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 23852,
+          "value": "betAmount",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 24160,
+          "value": "accept",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 24436,
+          "value": "bracketTime",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 26184,
+          "value": "returnValue",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 27068,
+          "value": "result",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 27088,
+          "value": "flashReturnValue",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 27116,
+          "value": "processString",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 27144,
+          "value": "processArray",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 27168,
+          "value": "numOfProcesses",
+          "raceEngineHint": 0
+        }
+      ],
+      "embeddedCodeOffsets": [
+        0,
+        384,
+        716,
+        1044,
+        1316,
+        1580,
+        1848,
+        2120,
+        2432,
+        2720,
+        3004,
+        3264,
+        3440,
+        3648,
+        4060,
+        4576,
+        4944,
+        5120,
+        5300,
+        5604,
+        5904,
+        6240,
+        6528,
+        6796,
+        7036,
+        7208,
+        7492,
+        7776,
+        8056,
+        8208,
+        8392,
+        8904,
+        9080,
+        9496,
+        10040,
+        11288,
+        11668,
+        12148,
+        12604,
+        12996,
+        13260,
+        13488,
+        13864,
+        14144,
+        14292,
+        14600,
+        14888,
+        15520,
+        16968,
+        17216,
+        17460,
+        17620,
+        17780,
+        17932,
+        18088,
+        18276,
+        18820,
+        20076,
+        20448,
+        20992,
+        22244,
+        22592,
+        22752,
+        22932,
+        23416,
+        23864,
+        24168,
+        24448,
+        24728,
+        25000,
+        25180,
+        25500,
+        25976,
+        26196,
+        26544,
+        27184
+      ],
+      "embeddedCodeBlocks": [
+        {
+          "offset": 0,
+          "length": 384,
+          "hexPreview": "03 00 ad de 2c 01 00 00 e1 00 00 00 96 00 00 00 7d 00 00 7d 00 01 7d 00 02 7d 00 03 7d 00 04 7d",
+          "headerWord0": 300,
+          "headerWord1": 225,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 336,
+              "value": "Function",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 384,
+          "length": 332,
+          "hexPreview": "03 00 ad de 20 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 32,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 696,
+              "value": "raID",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 716,
+          "length": 328,
+          "hexPreview": "03 00 ad de 36 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 54,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 1044,
+          "length": 272,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 1316,
+          "length": 264,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 1580,
+          "length": 268,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 1848,
+          "length": 272,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 2112,
+              "value": "uname",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 2120,
+          "length": 312,
+          "hexPreview": "03 00 ad de 24 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 36,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 2432,
+          "length": 288,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 2720,
+          "length": 284,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 3004,
+          "length": 260,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 3264,
+          "length": 176,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 3440,
+          "length": 208,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 3648,
+          "length": 412,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 5,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 3940,
+              "value": "rtid",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3972,
+              "value": "rname",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3992,
+              "value": "ipriv",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 4028,
+              "value": "memberOnly",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 4052,
+              "value": "isPro",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 4060,
+          "length": 516,
+          "hexPreview": "03 00 ad de a5 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 54 00 02 3a 00 01 55 00 02 51 3b 00",
+          "headerWord0": 165,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 4576,
+          "length": 368,
+          "hexPreview": "03 00 ad de 61 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 54 00 02 3a 00 01 55 00 02 51 3b 00",
+          "headerWord0": 97,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 4944,
+          "length": 176,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 5120,
+          "length": 180,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 5300,
+          "length": 304,
+          "hexPreview": "03 00 ad de 2b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 54 00 00 3a 00 01 55 00 00 51 3b 00",
+          "headerWord0": 43,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 5604,
+          "length": 300,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 5904,
+          "length": 336,
+          "hexPreview": "03 00 ad de 41 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 65,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 6240,
+          "length": 288,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 6528,
+          "length": 268,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 6796,
+          "length": 240,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 7036,
+          "length": 172,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 7208,
+          "length": 284,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 7492,
+          "length": 284,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 7776,
+          "length": 280,
+          "hexPreview": "03 00 ad de 24 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 36,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 8056,
+          "length": 152,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 8208,
+          "length": 184,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 8392,
+          "length": 512,
+          "hexPreview": "03 00 ad de 4e 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 78,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 8904,
+          "length": 176,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 9080,
+          "length": 416,
+          "hexPreview": "03 00 ad de 40 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 64,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 9472,
+              "value": "isBoo",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 9496,
+          "length": 544,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 10040,
+          "length": 1248,
+          "hexPreview": "03 00 ad de 19 02 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 58 03 e8 1d 3a 00",
+          "headerWord0": 537,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 11288,
+          "length": 380,
+          "hexPreview": "03 00 ad de 48 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 58 03 e8 1d 3a 00",
+          "headerWord0": 72,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 11668,
+          "length": 480,
+          "hexPreview": "03 00 ad de 8c 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 58 03 e8 1d 3a 00",
+          "headerWord0": 140,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 12148,
+          "length": 456,
+          "hexPreview": "03 00 ad de 9e 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 58 03 e8 1d 3a 00",
+          "headerWord0": 158,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 12604,
+          "length": 392,
+          "hexPreview": "03 00 ad de 2e 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 46,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 12996,
+          "length": 264,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 13260,
+          "length": 228,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 3,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 13416,
+              "value": "acid",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13432,
+              "value": "baid",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13448,
+              "value": "bacid",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 13488,
+          "length": 376,
+          "hexPreview": "03 00 ad de 65 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 101,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 13844,
+              "value": "cebt",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 13864,
+          "length": 280,
+          "hexPreview": "03 00 ad de 41 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 65,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 14144,
+          "length": 148,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 14292,
+          "length": 308,
+          "hexPreview": "03 00 ad de 1c 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 3b 00 02 35 00",
+          "headerWord0": 28,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 14600,
+          "length": 288,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 14888,
+          "length": 632,
+          "hexPreview": "03 00 ad de 48 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 58 03 e8 1d 3a 00",
+          "headerWord0": 72,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 15520,
+          "length": 1448,
+          "hexPreview": "03 00 ad de 7c 02 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 58 03 e8 1d 3a 00",
+          "headerWord0": 636,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 16968,
+          "length": 248,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 17216,
+          "length": 244,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 17460,
+          "length": 160,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 17620,
+          "length": 160,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 17780,
+          "length": 152,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 17932,
+          "length": 156,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 18088,
+          "length": 188,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 18276,
+          "length": 544,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 18820,
+          "length": 1256,
+          "hexPreview": "03 00 ad de 19 02 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 58 03 e8 1d 3a 00",
+          "headerWord0": 537,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 20076,
+          "length": 372,
+          "hexPreview": "03 00 ad de 48 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 58 03 e8 1d 3a 00",
+          "headerWord0": 72,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 20448,
+          "length": 544,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 20992,
+          "length": 1252,
+          "hexPreview": "03 00 ad de 19 02 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 58 03 e8 1d 3a 00",
+          "headerWord0": 537,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 22244,
+          "length": 348,
+          "hexPreview": "03 00 ad de 48 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 58 03 e8 1d 3a 00",
+          "headerWord0": 72,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 22592,
+          "length": 160,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 22752,
+          "length": 180,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 22932,
+          "length": 484,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 8,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 23196,
+              "value": "challengeeTeamID",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 23224,
+              "value": "challengerAccountIDs",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 23256,
+              "value": "challengeeAccountIDs",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 23288,
+              "value": "challengerAccountCarIDs",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 23324,
+              "value": "challengeeAccountCarIDs",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 23360,
+              "value": "betAmount",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 23384,
+              "value": "isHeadsUp",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 23408,
+              "value": "isRanked",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 23416,
+          "length": 448,
+          "hexPreview": "03 00 ad de 9b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 155,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 23852,
+              "value": "betAmount",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 23864,
+          "length": 304,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 24160,
+              "value": "accept",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 24168,
+          "length": 280,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 24436,
+              "value": "bracketTime",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 24448,
+          "length": 280,
+          "hexPreview": "03 00 ad de 1d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 29,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 24728,
+          "length": 272,
+          "hexPreview": "03 00 ad de 2f 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 47,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 25000,
+          "length": 180,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 25180,
+          "length": 320,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 25500,
+          "length": 476,
+          "hexPreview": "03 00 ad de d1 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3b 00 02 35 00 03 39 58 00",
+          "headerWord0": 209,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 25976,
+          "length": 220,
+          "hexPreview": "03 00 ad de 0b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 3a 00 00 51 00 02 00 00 00",
+          "headerWord0": 11,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 26184,
+              "value": "returnValue",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 26196,
+          "length": 348,
+          "hexPreview": "03 00 ad de 28 00 00 00 00 00 00 00 96 00 00 00 42 57 00 00 51 3b 00 00 35 00 01 35 00 02 39 3b",
+          "headerWord0": 40,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 26544,
+          "length": 640,
+          "hexPreview": "03 00 ad de 2b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 3f 12 07 00 03 3b 00 02 3e 36",
+          "headerWord0": 43,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 5,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 27068,
+              "value": "result",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 27088,
+              "value": "flashReturnValue",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 27116,
+              "value": "processString",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 27144,
+              "value": "processArray",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 27168,
+              "value": "numOfProcesses",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 27184,
+          "length": 1108,
+          "hexPreview": "03 00 ad de 91 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 54 00 00 1b 3a 00 01 51 3e",
+          "headerWord0": 145,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        }
+      ],
+      "raceEngineBlocks": []
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 28292,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    }
+  ],
+  "raceEngineMap": []
+}

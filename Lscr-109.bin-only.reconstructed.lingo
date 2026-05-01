@@ -1,0 +1,640 @@
+-- Lscr-109.bin-only scaffold
+-- Source bin:
+--   C:\Users\Dilldo\Nitto\Lingo Stuff\Lscr-109.bin
+--
+-- This file is intentionally conservative.
+-- It preserves only exact structure and exact visible string runs
+-- that were directly decoded from the raw bin.
+-- No handler body is claimed in this pass.
+--
+-- file size:
+--   9740 bytes = 0x260C
+--
+-- proven region map:
+--   0x0000..0x015F  header and prelude region
+--   0x0160..0x0197  small 8-byte record region
+--   0x0198..0x260B  late data region
+--
+-- selected big-endian 16-bit header pairs:
+--   0x000A = 9740
+--   0x000E = 9740
+--   0x0010 = 92
+--   0x0012 = 9
+--   0x0014 = 1
+--   0x0016 = 65535
+--   0x0018 = 65535
+--   0x001E = 715
+--   0x0020 = 17040
+--   0x0028 = 49154
+--   0x002C = 1
+--   0x002E = 10
+--   0x0030 = 65535
+--   0x0036 = 9740
+--   0x0040 = 92
+--   0x0046 = 92
+--   0x0048 = 5
+--   0x004C = 92
+--   0x004E = 7
+--   0x0052 = 352
+--   0x0056 = 9332
+--   0x005A = 408
+--   0x005C = 179
+--   0x005E = 65535
+--   0x0062 = 5
+--   0x0066 = 322
+--   0x006C = 328
+--
+-- proven header correlations:
+--   0x004E = 7
+--     and 0x0198 - 0x0160 = 0x38 = 56 = 7 * 8
+--   0x0052 = 0x0160 matches the small 8-byte record region start
+--   0x0056 = 0x2474 matches the late data region byte length
+--     because 0x0198 + 0x2474 = 0x260C
+--   0x005A = 0x0198 matches the late data region start
+--
+-- small 8-byte record region:
+--   0x0160 a=0x0000000B b=0x00000000
+--   0x0168 a=0x00000000 b=0x00000000
+--   0x0170 a=0x00000000 b=0x00000000
+--   0x0178 a=0x00000000 b=0x00000000
+--   0x0180 a=0x00000000 b=0x00000000
+--   0x0188 a=0x00000000 b=0x00000000
+--   0x0190 a=0x00000000 b=0x00000000
+--
+-- observed raw string-record families:
+--   family A at 0x01CC
+--     prefix 01 00 00 00 08 00 00 00
+--     ASCII payload at 0x01D4: Function
+--   family B at 0x01DC
+--     prefix 01 00 00 00 00 00 00 00 0D 00 00 00
+--     UTF-16LE payload at 0x01E8: connectSocket
+--   family C1 at 0x0330
+--     prefix 04 00 00 00 0F 00 00 00
+--     UTF-16LE payload at 0x0338: sockConnTimeout
+--   family C2 at 0x040C
+--     prefix 04 00 00 00 14 00 00 00
+--     UTF-16LE payload at 0x0418: socketMessageHandler
+--   family C3 at 0x045C
+--     prefix 04 00 00 00 11 00 00 00
+--     UTF-16LE payload at 0x0464: Connection Script
+--   family C4 at 0x0560
+--     prefix 04 00 00 00 15 00 00 00
+--     UTF-16LE payload at 0x0568: showConnectionErrorCB
+--   family C5 at 0x11C4
+--     prefix 04 00 00 00 0E 00 00 00
+--     UTF-16LE payload at 0x11CC: Protocol Error
+--   family D at 0x1808
+--     prefix 00 00 00 00 0B 00 00 00
+--     UTF-16LE payload at 0x1810: executeCall
+--
+-- bulk repeated record shape:
+--   type-04 + lenLE + UTF-16LE payload
+--   scan region start 0x0198
+--   total matching records: 153
+--   records with immediate 00 00 terminator after payload: 79
+--   selected examples:
+--     0x02DC len=7  payload=0x02E4 timeout termOk=TRUE
+--     0x0330 len=15 payload=0x0338 sockConnTimeout termOk=TRUE
+--     0x0410 len=20 payload=0x0418 socketMessageHandler termOk=FALSE
+--     0x045C len=17 payload=0x0464 Connection Script termOk=TRUE
+--     0x0560 len=21 payload=0x0568 showConnectionErrorCB termOk=TRUE
+--     0x11EC len=58 payload=0x11F4 Connection protocol could not be established. (Error: 010) termOk=FALSE
+--     0x1DFC len=9  payload=0x1E04 getPCInfo termOk=TRUE
+--     0x24A4 len=21 payload=0x24AC showConnectionErrorCB termOk=TRUE
+--
+-- aligned printable non-type04 clusters:
+--   type 0:
+--     0x01E0 connectSocket
+--     0x06D0 sockConnTimeout
+--     0x0C4C socketMessageHandler
+--     0x1808 executeCall
+--     0x2250 ssm
+--   type 1:
+--     0x01CC Function
+--     0x0218 errCode
+--     0x070C tryNo
+--     0x0720 errCode
+--     0x0C90 newMessage
+--     0x183C action
+--     0x1860 isBuyPartUgg
+--   type 3:
+--     0x0CA8 idx
+--     0x1850 data
+--     0x1878 qs
+--     0x2284 dne
+--   type 5:
+--     0x0CB8 retVal
+--     0x1888 xtra_md5
+--   type 7:
+--     0x0CCC resultStr
+--     0x189C tempArray
+--
+-- aligned type02 wrapper clusters:
+--   02->01/07 at 0x0214 and 0x071C with ASCII payload errCode
+--   02->04/06 at 0x0314 and 0x0850 with UTF-16LE payloads symbol and forget
+--   02->01/10 at 0x0C8C with ASCII payload newMessage
+--   02->03/03 at 0x0CA4 with ASCII payload idx
+--   02->05/06 at 0x0CB4 with ASCII payload retVal
+--   02->07/09 at 0x0CC8 and 0x1898 with ASCII payloads resultStr and tempArray
+--   02->01/12 at 0x185C with ASCII payload isBuyPartUgg
+--   02->03/02 at 0x1874 with ASCII payload qs
+--   02->05/08 at 0x1884 with ASCII payload xtra_md5
+--   02->04/13 at 0x0FA4 with UTF-16LE payload getNetMessage
+--   02->04/07 at 0x1B80 with UTF-16LE payload action=
+--   02->04/05 at 0x2378 with UTF-16LE payload isEnc
+--   02->00/00 at 0x0C3C 0x2260 0x25BC as opaque zero-heavy records
+--
+-- type00 composite anchor windows:
+--   0x01E0 connectSocket
+--     preceded by type01 ASCII Function at 0x01CC
+--     followed by zero-heavy bytes at 0x0200..0x020F
+--     followed by aligned type02->01/07 errCode at 0x0214
+--   0x06D0 sockConnTimeout
+--     preceded by zero-heavy bytes at 0x06B0..0x06CF
+--     followed by type01 ASCII tryNo at 0x070C
+--     followed by aligned type02->01/07 errCode at 0x071C
+--   0x0C4C socketMessageHandler
+--     preceded by type02->00/00 opaque zero-heavy block at 0x0C3C
+--     followed by zero-heavy bytes at 0x0C7C..0x0C83
+--     followed by exact bytes 04 00 00 00 80 00 00 00 at 0x0C84
+--     followed by aligned type02->01/10 newMessage at 0x0C8C
+--   0x1808 executeCall
+--     preceded by zero-heavy bytes at 0x17F8..0x1803
+--     followed by aligned type02->00/04 at 0x1828
+--     followed by type01 ASCII action at 0x183C
+--     followed by type03 ASCII data at 0x1850
+--     followed by aligned type02->01/12 isBuyPartUgg at 0x185C
+--   0x2250 ssm
+--     preceded by zero-heavy bytes and exact 04 00 00 00 00 00 00 00 at 0x2240
+--     followed by aligned type02->00/00 opaque zero-heavy block at 0x2260
+--     followed by type01 UTF-16LE s at 0x2274
+--     followed by type03 ASCII dne at 0x2284
+--
+-- recurring opaque non-type04 clusters:
+--   00/150
+--     offsets 0x0230 0x0738 0x0CE8 0x18B8 0x2298
+--     example first bytes:
+--       00 00 00 00 96 00 00 00 3B 00 00 39 3D 00 01 58
+--       00 00 00 00 96 00 00 00 54 00 00 3F 12 07 00 A4
+--       00 00 00 00 96 00 00 00 85 3B 00 00 35 00 01 35
+--   02/00
+--     offsets 0x0C3C 0x1828 0x2260 0x25BC
+--     example first bytes:
+--       02 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00
+--       02 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00
+--       02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+--   01/41
+--     offsets 0x0670 0x0B90 0x10D8
+--     example first bytes:
+--       01 00 00 00 29 00 00 00 30 00 00 00 B0 D1 60 07
+--       01 00 00 00 29 00 00 00 16 00 00 00 04 00 00 00
+--       01 00 00 00 29 00 00 00 0E 00 00 00 04 00 00 00
+--
+-- overlapping wrapper->type04 ladders:
+--   ladder A
+--     type0 at 0x02D8 -> 0x02DC timeout
+--     type1 at 0x02F4 -> 0x02F8 sockConnTO
+--     type2 at 0x0314 -> 0x0318 symbol
+--     type3 at 0x032C -> 0x0330 sockConnTimeout
+--     type4 at 0x0358 -> 0x035C _global
+--     type5 at 0x0374 -> 0x0378 gMultiuserInstance
+--     type6 at 0x03A4 -> 0x03A8 xtra
+--     type7 at 0x03B8 -> 0x03BC Multiuser
+--     type8 at 0x03D8 -> 0x03DC setNetMessageHandler
+--     type9 at 0x040C -> 0x0410 socketMessageHandler
+--     type10 at 0x0440 -> 0x0444 script
+--     type11 at 0x0458 -> 0x045C Connection Script
+--     type12 at 0x0488 -> 0x048C connectToNetServer
+--     type13 at 0x04B8 -> 0x04BC Rick
+--     type14 at 0x04D4 -> 0x04D8 MySecret
+--     type15 at 0x04F0 -> 0x04F4 socketURL
+--     type16 at 0x0510 -> 0x0514 CieServer
+--     type17 at 0x0530 -> 0x0534 sprite
+--     type18 at 0x0548 -> 0x054C flashSP
+--     type19 at 0x055C -> 0x0560 showConnectionErrorCB
+--     type20 at 0x0594 -> 0x0598 Connection Error
+--     type21 at 0x05C0 -> 0x05C4 Connection could not be established. Please check your firewall. (Error: 004-
+--     type22 at 0x0668 -> 0x066C )
+--   ladder B
+--     type0 at 0x0814 -> 0x0818 timeout
+--     type1 at 0x0830 -> 0x0834 sockConnTO
+--     type2 at 0x0850 -> 0x0854 forget
+--     type3 at 0x0868 -> 0x086C symbol
+--     type4 at 0x0880 -> 0x0884 sockConnTimeout
+--     type5 at 0x08AC -> 0x08B0 _global
+--     type6 at 0x08C8 -> 0x08CC gMultiuserInstance
+--     type7 at 0x08F8 -> 0x08FC setNetMessageHandler
+--     type8 at 0x092C -> 0x0930 socketMessageHandler
+--     type9 at 0x0960 -> 0x0964 script
+--     type10 at 0x0978 -> 0x097C Connection Script
+--     type11 at 0x09A8 -> 0x09AC connectToNetServer
+--     type12 at 0x09D8 -> 0x09DC Rick
+--     type13 at 0x09EC -> 0x09F0 MySecret
+--     type14 at 0x0A08 -> 0x0A0C socketURL
+--     type15 at 0x0A28 -> 0x0A2C CieServer
+--     type16 at 0x0A48 -> 0x0A4C sprite
+--     type17 at 0x0A60 -> 0x0A64 flashSP
+--     type18 at 0x0A7C -> 0x0A80 showConnectionErrorCB
+--     type19 at 0x0AB4 -> 0x0AB8 Connection Error
+--     type20 at 0x0AE0 -> 0x0AE4 Connection could not be established. Please check your firewall. (Error: 004-
+--     type21 at 0x0B88 -> 0x0B8C )
+--     type22 at 0x0B98 -> 0x0B9C showSocketConnectionErrorCB
+--   ladder C
+--     type0 at 0x0F58 -> 0x0F5C _global
+--     type1 at 0x0F74 -> 0x0F78 gMultiuserInstance
+--     type2 at 0x0FA4 -> 0x0FA8 getNetMessage
+--     type3 at 0x0FCC -> 0x0FD0 errorCode
+--     type4 at 0x0FEC -> 0x0FF0 content
+--     type5 at 0x1008 -> 0x100C undefined
+--     type6 at 0x1028 -> 0x102C socketBuffer
+--     type7 at 0x104C -> 0x1050 indexOf
+--     type8 at 0x1068 -> 0x106C ld
+--   ladder D
+--     type0 at 0x1B44 -> 0x1B48 buypartugg
+--     type1 at 0x1B64 -> 0x1B68 buypart
+--     type2 at 0x1B80 -> 0x1B84 action=
+--     type3 at 0x1B9C -> 0x1BA0 &aid=
+--     type4 at 0x1BB4 -> 0x1BB8 _global
+--     type5 at 0x1BD0 -> 0x1BD4 aid
+--     type6 at 0x1BE4 -> 0x1BE8 &sk=
+--     type7 at 0x1BF8 -> 0x1BFC guid
+--     type8 at 0x1C0C -> 0x1C10 login
+--     type9 at 0x1C24 -> 0x1C28 &fbt=
+--     type10 at 0x1C3C -> 0x1C40 facebookToken
+--     type11 at 0x1C64 -> 0x1C68 &fbi=
+--     type12 at 0x1C7C -> 0x1C80 facebookID
+--     type13 at 0x1C9C -> 0x1CA0 fbgetsession
+--     type14 at 0x1CC0 -> 0x1CC4 agreetoterms
+--     type15 at 0x1CE8 -> 0x1CEC createaccount
+--     type16 at 0x1D10 -> 0x1D14 xtra
+--     type17 at 0x1D24 -> 0x1D28 caluMD5
+--     type18 at 0x1D40 -> 0x1D44 &md5=
+--     type19 at 0x1D58 -> 0x1D5C getFileMD5
+--     type20 at 0x1D78 -> 0x1D7C _player
+--     type21 at 0x1D94 -> 0x1D98 applicationPath
+--     type22 at 0x1DBC -> 0x1DC0 applicationName
+--     type23 at 0x1DE4 -> 0x1DE8 &
+--     type24 at 0x1DF8 -> 0x1DFC getPCInfo
+--     type25 at 0x1E14 -> 0x1E18 changehomemachine
+--     type26 at 0x1E44 -> 0x1E48 buycar
+--     type27 at 0x1E5C -> 0x1E60 buyenginepart
+--     type28 at 0x1E84 -> 0x1E88 buyengine
+--     type29 at 0x1EA4 -> 0x1EA8 swapengine
+--     type30 at 0x1EC4 -> 0x1EC8 changeemail
+--     type31 at 0x1EE8 -> 0x1EEC changepassword
+--     type32 at 0x1F10 -> 0x1F14 ebep
+--     type33 at 0x1F28 -> 0x1F2C sellcar
+--     type34 at 0x1F44 -> 0x1F48 sellcarpart
+--     type35 at 0x1F68 -> 0x1F6C sellenginepart
+--     type36 at 0x1F90 -> 0x1F94 sellengine
+--     type37 at 0x1FB0 -> 0x1FB4 buygears
+--     type38 at 0x1FCC -> 0x1FD0 sellallspare
+--     type39 at 0x1FF0 -> 0x1FF4 activatepoints
+--     type40 at 0x2018 -> 0x201C activatemember
+--     type41 at 0x2040 -> 0x2044 repairparts
+--     type42 at 0x2064 -> 0x2068 fbremovefacebook
+--     type43 at 0x2090 -> 0x2094 changepasswordreq
+--     type44 at 0x20C0 -> 0x20C4 isEnc
+--     type45 at 0x20D8 -> 0x20DC gameURL
+--     type46 at 0x20F4 -> 0x20F8 ?
+--     type47 at 0x2104 -> 0x2108 escape
+--     type48 at 0x211C -> 0x2120 encrypt
+--     type49 at 0x2138 -> 0x213C Array
+--     type50 at 0x2150 -> 0x2154 getNetText
+--     type51 at 0x2170 -> 0x2174 gNetID
+--     type52 at 0x2188 -> 0x218C push
+--   ladder E
+--     type0 at 0x2338 -> 0x233C _global
+--     type1 at 0x2354 -> 0x2358 isConnected
+--     type2 at 0x2378 -> 0x237C isEnc
+--     type3 at 0x2390 -> 0x2394 gMultiuserInstance
+--     type4 at 0x23C0 -> 0x23C4 sendNetMessage
+--     type5 at 0x23E8 -> 0x23EC System
+--     type6 at 0x2400 -> 0x2404 String
+--     type7 at 0x2418 -> 0x241C encrypt
+--     type8 at 0x2434 -> 0x2438 ld
+--     type9 at 0x2444 -> 0x2448 Object
+--     type10 at 0x245C -> 0x2460 ex
+--     type11 at 0x246C -> 0x2470 sprite
+--     type12 at 0x2484 -> 0x2488 flashSP
+--     type13 at 0x24A0 -> 0x24A4 showConnectionErrorCB
+--     type14 at 0x24D8 -> 0x24DC Connection Error
+--
+-- handler-anchor to ladder adjacency:
+--   0x01E0 connectSocket -> ladder A at 0x02D8
+--     gap bytes: 0x00F8
+--     ladder count: 23
+--     ladder payload span: timeout .. )
+--   0x06D0 sockConnTimeout -> ladder B at 0x0814
+--     gap bytes: 0x0144
+--     ladder count: 23
+--     ladder payload span: timeout .. showSocketConnectionErrorCB
+--   0x0C4C socketMessageHandler -> ladder C at 0x0F58
+--     gap bytes: 0x030C
+--     ladder count: 9
+--     ladder payload span: _global .. ld
+--   0x1808 executeCall -> ladder D at 0x1B44
+--     gap bytes: 0x033C
+--     ladder count: 53
+--     ladder payload span: buypartugg .. push
+--   0x2250 ssm -> ladder E at 0x2338
+--     gap bytes: 0x00E8
+--     ladder count: 15
+--     ladder payload span: _global .. Connection Error
+--
+-- visible payloads inside handler-anchor to ladder gaps:
+--   connectSocket gap 0x01E0..0x02D7
+--     ASCII payloads:
+--       0x0220 errCode
+--     type04 payloads:
+--       none
+--   sockConnTimeout gap 0x06D0..0x0813
+--     ASCII payloads:
+--       0x0714 tryNo
+--       0x0728 errCode
+--     type04 payloads:
+--       none
+--   socketMessageHandler gap 0x0C4C..0x0F57
+--     ASCII payloads:
+--       0x0C98 newMessage
+--       0x0CC0 retVal
+--       0x0CD4 resultStr
+--     type04 payloads:
+--       none
+--   executeCall gap 0x1808..0x1B43
+--     ASCII payloads:
+--       0x1844 action
+--       0x1858 data
+--       0x1868 isBuyPartUgg
+--       0x1890 xtra_md5
+--       0x18A4 tempArray
+--       0x19C1 QBQV
+--     type04 payloads:
+--       none
+--   ssm gap 0x2250..0x2337
+--     ASCII payloads:
+--       none
+--     type04 payloads:
+--       none
+--
+-- primary aligned record sequence inside handler-anchor gaps:
+--   connectSocket gap 0x01E0..0x02D7
+--     0x01E0 type0-utf16 len13 -> 0x01E8 connectSocket
+--     0x0214 type2-wrap-type1 len7 -> 0x0220 errCode
+--     0x0230 type0-opaque firstBytes 00000000960000003B0000393D000158
+--   sockConnTimeout gap 0x06D0..0x0813
+--     0x06D0 type0-utf16 len15 -> 0x06D8 sockConnTimeout
+--     0x070C type1-ascii len5 -> 0x0714 tryNo
+--     0x071C type2-wrap-type1 len7 -> 0x0728 errCode
+--     0x0738 type0-opaque firstBytes 00000000960000005400003F120700A4
+--   socketMessageHandler gap 0x0C4C..0x0F57
+--     0x0C4C type0-utf16 len20 -> 0x0C54 socketMessageHandler
+--     0x0C8C type2-wrap-type1 len10 -> 0x0C98 newMessage
+--     0x0CA4 type2-wrap-type3 len3 -> 0x0CB0 idx
+--     0x0CB4 type2-wrap-type5 len6 -> 0x0CC0 retVal
+--     0x0CC8 type2-wrap-type7 len9 -> 0x0CD4 resultStr
+--     0x0CE8 type0-opaque firstBytes 0000000096000000853B000035000135
+--   executeCall gap 0x1808..0x1B43
+--     0x1808 type0-utf16 len11 -> 0x1810 executeCall
+--     0x1828 type2-opaque subType0 len4 firstBytes 0200000000000000040000000000000001000000
+--     0x183C type1-ascii len6 -> 0x1844 action
+--     0x1850 type3-ascii len4 -> 0x1858 data
+--     0x185C type2-wrap-type1 len12 -> 0x1868 isBuyPartUgg
+--     0x1874 type2-wrap-type3 len2 -> 0x1880 qs
+--     0x1884 type2-wrap-type5 len8 -> 0x1890 xtra_md5
+--     0x1898 type2-wrap-type7 len9 -> 0x18A4 tempArray
+--     0x18B8 type0-opaque firstBytes 0000000096000000560000515400003D
+--   ssm gap 0x2250..0x2337
+--     0x2250 type0-utf16 len3 -> 0x2258 ssm
+--     0x2260 type2-opaque subType0 len0 firstBytes 0200000000000000000000000000000001000000
+--     0x2274 type1-ascii len1 -> 0x227C s
+--     0x2284 type3-ascii len3 -> 0x228C dne
+--     0x2298 type0-opaque firstBytes 00000000960000003B00003500010700
+--
+-- opaque tail family at the end of each handler-anchor gap:
+--   shared prefix length: 8 bytes
+--   shared prefix hex: 0000000096000000
+--   shared suffix length: 3 bytes
+--   shared suffix hex: 000000
+--   connectSocket tail:
+--     0x0230..0x02D7 len 0x00A8
+--     first32 00000000960000003B0000393D000158C3503B0002393D00033A00013F230004
+--   sockConnTimeout tail:
+--     0x0738..0x0813 len 0x00DC
+--     first32 00000000960000005400003F120700A43B0000393D00013A0001350002393A00
+--   socketMessageHandler tail:
+--     0x0CE8..0x0F57 len 0x0270
+--     first32 0000000096000000853B0000350001350002393A000057000051560000350003
+--   executeCall tail:
+--     0x18B8..0x1B43 len 0x028C
+--     first32 0000000096000000560000515400003D00001207000F3D000155000051435700
+--   ssm tail:
+--     0x2298..0x2337 len 0x00A0
+--     first32 00000000960000003B000035000107008C853B00003500024500075400012007
+--
+-- visible runs inside opaque tails:
+--   connectSocket tail:
+--     no ASCII runs of length >= 4
+--     no UTF-16LE runs of length >= 4
+--   sockConnTimeout tail:
+--     no ASCII runs of length >= 4
+--     no UTF-16LE runs of length >= 4
+--   socketMessageHandler tail:
+--     no ASCII runs of length >= 4
+--     no UTF-16LE runs of length >= 4
+--   executeCall tail:
+--     ASCII 0x19C1 QBQV
+--     no UTF-16LE runs of length >= 4
+--   ssm tail:
+--     no ASCII runs of length >= 4
+--     no UTF-16LE runs of length >= 4
+--
+-- pairwise strongest common spans across opaque tails:
+--   connectSocket <-> sockConnTimeout
+--     len 18
+--     0x02A3 <-> 0x07B6
+--     3F3A0006570000515600003E130700233B00
+--   connectSocket <-> ssm
+--     len 11
+--     0x0230 <-> 0x2298
+--     00000000960000003B0000
+--   sockConnTimeout <-> socketMessageHandler
+--     len 9
+--     0x0750 <-> 0x0CF5
+--     0001350002393A0000
+--   socketMessageHandler <-> ssm
+--     len 9
+--     0x0DCB <-> 0x2329
+--     3A0002510406000400
+--   all remaining strongest pairwise spans are the shared 8-byte family prefix:
+--     0000000096000000
+--
+-- repeated-token islands inside long opaque tails:
+--   socketMessageHandler tail 0x0CE8..0x0F57
+--     repeated4_count2 islands:
+--       0x0D2A..0x0D3A
+--       0x0D50..0x0D52
+--       0x0D66..0x0D82
+--       0x0DA6..0x0E30
+--       0x0E4C..0x0E4E
+--       0x0E6C..0x0E7C
+--       0x0EAA..0x0EAA
+--       0x0EDC..0x0EE6
+--       0x0F12..0x0F26
+--     repeated4_count3 islands:
+--       0x0D2E..0x0D2E
+--       0x0D50..0x0D50
+--       0x0D82..0x0D82
+--       0x0DAC..0x0DCC
+--       0x0DF0..0x0E30
+--       0x0E4C..0x0E4C
+--       0x0E70..0x0E70
+--       0x0EDC..0x0EE2
+--       0x0F1C..0x0F24
+--   executeCall tail 0x18B8..0x1B43
+--     repeated4_count2 islands:
+--       0x18F6..0x1972
+--       0x1988..0x1988
+--       0x19BA..0x19CE
+--       0x1AA2..0x1AAC
+--       0x1AC2..0x1AC2
+--     repeated4_count3 islands:
+--       0x18F6..0x18F8
+--       0x1906..0x190E
+--       0x1924..0x1926
+--       0x1934..0x1942
+--       0x1950..0x1958
+--       0x1976..0x1978
+--
+-- repeated-token cores inside long opaque tails:
+--   socketMessageHandler
+--     count5 word7 at 0x0DB8 0x0DFC 0x0E1C 0x0EDC 0x0F1C
+--       1300 3D39 1400 003A 3501 1500 3D39
+--     count3 word9 at 0x0DB8 0x0DFC 0x0E1C
+--       1300 3D39 1400 003A 3501 1500 3D39 1600 003D
+--     count2 word12 at 0x0D2A 0x0E6C
+--       0036 5106 003B 3500 0600 0035 3907 003B 3A08 0100 0057 5101
+--   executeCall
+--     count4 word5 at 0x18F6 0x1924 0x1940 0x196E
+--       571B 0100 5451 0000 003D
+--     count3 word8 at 0x1906 0x1934 0x1950
+--       0100 003D 3B09 0400 0035 1B0A 571B 0100
+--     count2 word20 at 0x1902 0x194C
+--       0007 5627 0100 003D 3B09 0400 0035 1B0A 571B 0100 5651 0100 003D 3B0B 0400 0035 1B0C 571B 0100 5451
+--
+-- residual spans after removing repeated-token islands from long opaque tails:
+--   socketMessageHandler residual spans:
+--     0x0CE8..0x0D29 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x0D3B..0x0D4F no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x0D53..0x0D65 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x0D83..0x0DA5 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x0E31..0x0E4B no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x0E4F..0x0E6B no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x0E7D..0x0EA9 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x0EAB..0x0EDB no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x0EE7..0x0F11 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x0F27..0x0F57 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--   executeCall residual spans:
+--     0x18B8..0x18F5 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x1973..0x1987 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x1989..0x19B9 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x19CF..0x1AA1 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x1AAD..0x1AC1 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--     0x1AC3..0x1B43 no ASCII runs >= 4 and no UTF-16LE runs >= 4
+--
+-- repeated-token core instance flanks:
+--   socketMessageHandler count5_word7 byteLen14
+--     0x0DB8..0x0DC5 pre4 0012033B post4 00163D00
+--     0x0DFC..0x0E09 pre4 0018033B post4 00163D00
+--     0x0E1C..0x0E29 pre4 06001B3B post4 00163D00
+--     0x0EDC..0x0EE9 pre4 0600263B post4 00253D00
+--     0x0F1C..0x0F29 pre4 07001F3B post4 00253D00
+--   executeCall count4_word5 byteLen10
+--     0x18F6..0x18FF pre4 04350007 post4 08120700
+--     0x1924..0x192D pre4 35000C1B post4 0D120700
+--     0x1940..0x1949 pre4 35000A1B post4 0E120700
+--     0x196E..0x1977 pre4 35000C1B post4 08124400
+--   executeCall count3_word8 byteLen16
+--     0x1906..0x1915 pre4 07002756 post4 51560001
+--     0x1934..0x1943 pre4 07001556 post4 51540000
+--     0x1950..0x195F pre4 07002756 post4 51560001
+--
+-- repeated-token core position templates:
+--   socketMessageHandler count5_word7_window15
+--     fixed positions:
+--       4=1300 5=3D39 6=1400 7=003A 8=3501 9=1500 10=3D39 12=003D
+--     varying positions:
+--       0 in {5939,0006,003A,3500}
+--       1 in {8274,0004,5102,1F00}
+--       2 in {1200,1800,0006,0007}
+--       3 in {3B03,3B1B,3B26,3B1F}
+--       11 in {1600,2500}
+--       13 in {3A17,3A19,3A1A,5626,3B27}
+--       14 in {0200,0000,0F00}
+--   executeCall count4_word5_window13
+--     fixed positions:
+--       4=571B 5=0100 6=5451 7=0000 8=003D
+--     varying positions:
+--       0 in {1B06,3B0B,3B09}
+--       1 in {003B,0400}
+--       2 in {3504,0035}
+--       3 in {0700,1B0C,1B0A}
+--       9 in {1208,120D,120E}
+--       10 in {0007,0044}
+--       11 in {5627,5615,5414}
+--       12 in {0100,0000}
+--   executeCall count3_word8_window16
+--     fixed positions:
+--       0=003D 2=0007 4=0100 5=003D 6=3B09 7=0400 8=0035 9=1B0A 10=571B 11=0100 14=003D
+--     varying positions:
+--       1 in {1208,120D,120E}
+--       3 in {5627,5615}
+--       12 in {5651,5451}
+--       13 in {0100,0000}
+--       15 in {3B0B,120E}
+--
+-- repeated-token core subfamilies:
+--   socketMessageHandler count5_word7_window15
+--     family A offsets 0x0DB8 0x0DFC 0x0E1C
+--       pos11=1600 pos14=0200
+--       shared post4 00163D00
+--     family B offsets 0x0EDC 0x0F1C
+--       pos11=2500
+--       shared post4 00253D00
+--   executeCall count3_word8_window16
+--     family A offsets 0x1906 0x1950
+--       pos3=5627 pos12=5651 pos13=0100 pos15=3B0B
+--       shared pre4 07002756 post4 51560001
+--     family B offset 0x1934
+--       pos3=5615 pos12=5451 pos13=0000 pos15=120E
+--       shared pre4 07001556 post4 51540000
+--
+-- selected exact visible ASCII runs:
+--   0x01D4 Function
+--   0x0220 errCode
+--   0x0714 tryNo
+--   0x0728 errCode
+--   0x0C98 newMessage
+--   0x0CC0 retVal
+--   0x0CD4 resultStr
+--   0x1844 action
+--   0x1858 data
+--   0x1868 isBuyPartUgg
+--   0x1890 xtra_md5
+--   0x18A4 tempArray
+--   0x19C1 QBQV
+--
+-- selected exact visible UTF-16LE runs:
+--   0x01E8 connectSocket
+--   0x0338 sockConnTimeout
+--   0x0418 socketMessageHandler
+--   0x0464 Connection Script
+--   0x0568 showConnectionErrorCB
+--   0x0BA4 showSocketConnectionErrorCB
+--   0x1388 procSocket
+--   0x1810 executeCall
+--   0x1E04 getPCInfo
+--
+-- unresolved:
+--   the late data region 0x0198..0x260B remains unlifted in this pass
+--   no handler body is reconstructed from the raw bin alone in this pass

@@ -1,0 +1,155 @@
+{
+  "totalLength": 21408,
+  "totalLength2": 21408,
+  "headerLength": 92,
+  "scriptNumber": 5,
+  "unk20": 1,
+  "parentNumber": -1,
+  "scriptFlags": 49154,
+  "unk42": 0,
+  "castID": 65549,
+  "factoryNameID": -1,
+  "handlerVectorsCount": 0,
+  "handlerVectorsOffset": 21408,
+  "handlerVectorsSize": 0,
+  "propertiesCount": 0,
+  "propertiesOffset": 92,
+  "globalsCount": 0,
+  "globalsOffset": 92,
+  "handlersCount": 1,
+  "handlersOffset": 92,
+  "literalsCount": 3,
+  "literalsOffset": 144,
+  "literalsDataCount": 21240,
+  "literalsDataOffset": 168,
+  "propertyNameIDs": [],
+  "globalNameIDs": [],
+  "handlers": [
+    {
+      "nameID": 84,
+      "name": "procSocket",
+      "dispatchSlot": 2,
+      "dispatchBlockIndex": 0,
+      "dispatchBlockOffset": 0,
+      "dispatchBlockLength": 112,
+      "dispatchBlockHeaderWord0": 4,
+      "dispatchBlockHeaderWord1": 3,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 138,
+      "argumentCount": 0,
+      "argumentOffset": 144,
+      "localsCount": 0,
+      "localsOffset": 144,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 0,
+      "lineCount": 0,
+      "lineOffset": 144,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 2
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    }
+  ],
+  "literals": [
+    {
+      "type": 11,
+      "offset": 0,
+      "dataLength": 21236,
+      "value": null,
+      "referenceSummary": [
+        {
+          "value": "Function",
+          "firstOffset": 40,
+          "occurrences": 1,
+          "firstBlockOffset": 0,
+          "raceEngineHint": 0
+        }
+      ],
+      "raceEngineHints": [],
+      "asciiStrings": [
+        "Function"
+      ],
+      "asciiStringRefs": [
+        {
+          "offset": 40,
+          "value": "Function",
+          "raceEngineHint": 0
+        }
+      ],
+      "embeddedCodeOffsets": [
+        0,
+        112
+      ],
+      "embeddedCodeBlocks": [
+        {
+          "offset": 0,
+          "length": 112,
+          "hexPreview": "03 00 ad de 04 00 00 00 03 00 00 00 96 00 00 00 7d 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00",
+          "headerWord0": 4,
+          "headerWord1": 3,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 40,
+              "value": "Function",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 112,
+          "length": 21124,
+          "hexPreview": "03 00 ad de a5 1d 00 00 00 00 00 00 96 00 00 00 54 00 00 35 00 00 39 3d 00 01 3a 00 01 47 1d 95",
+          "headerWord0": 7589,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        }
+      ],
+      "raceEngineBlocks": []
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21236,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21236,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    }
+  ],
+  "raceEngineMap": []
+}

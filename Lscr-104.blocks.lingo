@@ -1,0 +1,639 @@
+-- Lscr-104 embedded block decompile
+-- scriptNumber: 4
+-- 76 blocks
+
+on LOGIN
+  -- block offset=0 length=384 codeLen=300
+  -- names: 0=Function, 1=LOGIN
+  // prologue: Function
+  // prologue: LOGIN
+  // prologue: id_2
+  // prologue: id_3
+  // prologue: id_4
+  // prologue: id_5
+  // prologue: id_6
+  // prologue: id_7
+  // prologue: id_8
+  // prologue: id_9
+  // prologue: id_10
+  // prologue: id_11
+  // prologue: id_12
+  // prologue: id_13
+  // prologue: id_14
+  // prologue: id_15
+  // prologue: id_16
+  // prologue: id_17
+  // prologue: id_18
+  // prologue: id_19
+  // prologue: id_20
+  // prologue: id_21
+  // prologue: id_22
+  // prologue: id_23
+  // prologue: id_24
+  // prologue: id_25
+  // prologue: id_26
+  // prologue: id_27
+  // prologue: id_28
+  // prologue: id_29
+  // prologue: id_30
+  // prologue: id_31
+  // prologue: id_32
+  // prologue: id_33
+  // prologue: id_34
+  // prologue: id_35
+  // prologue: id_36
+  // prologue: id_37
+  // prologue: id_38
+  // prologue: id_39
+  // prologue: id_40
+  // prologue: id_41
+  // prologue: id_42
+  // prologue: id_43
+  // prologue: id_44
+  // prologue: id_45
+  // prologue: id_46
+  // prologue: id_47
+  // prologue: id_48
+  // prologue: id_49
+  // prologue: id_50
+  // prologue: id_51
+  // prologue: id_52
+  // prologue: id_53
+  // prologue: id_54
+  // prologue: id_55
+  // prologue: id_56
+  // prologue: id_57
+  // prologue: id_58
+  // prologue: id_59
+  // prologue: id_60
+  // prologue: id_61
+  // prologue: id_62
+  // prologue: id_63
+  // prologue: id_64
+  // prologue: id_65
+  // prologue: id_66
+  // prologue: id_67
+  // prologue: id_68
+  // prologue: id_69
+  // prologue: id_70
+  // prologue: id_71
+  // prologue: id_72
+  // prologue: id_73
+  // prologue: id_74
+end
+
+on SENDNIMMESSAGE
+  -- block offset=384 length=332 codeLen=32
+  -- names: 0=ssm, 1=L, 2=String, 3=fromCharCode, 4=_global, 5=guid
+  ?(((L + String.fromCharCode()(30)) + _global.guid))
+end
+
+on UPDATENIMUSER
+  -- block offset=716 length=328 codeLen=54
+  -- names: 0=ssm, 1=SN, 2=String, 3=fromCharCode, 4=unescape
+  ?(((((SN + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + unescape()(param_SN)))
+end
+
+on DELETENIMUSER
+  -- block offset=1044 length=272 codeLen=29
+  -- names: 0=ssm, 1=UNU, 2=String, 3=fromCharCode
+  ?(((UNU + String.fromCharCode()(30)) + param_ssm))
+end
+
+on BLOCKNIMUSER
+  -- block offset=1316 length=264 codeLen=29
+  -- names: 0=ssm, 1=DU, 2=String, 3=fromCharCode
+  ?(((DU + String.fromCharCode()(30)) + param_ssm))
+end
+
+on UNBLOCKNIMUSER
+  -- block offset=1580 length=268 codeLen=29
+  -- names: 0=ssm, 1=BU, 2=String, 3=fromCharCode
+  ?(((BU + String.fromCharCode()(30)) + param_ssm))
+end
+
+on INQUIRYNIMUSER
+  -- block offset=1848 length=272 codeLen=29
+  -- names: 0=ssm, 1=UU, 2=String, 3=fromCharCode
+  ?(((UU + String.fromCharCode()(30)) + param_ssm))
+end
+
+on ALLOWNIMUSER
+  -- block offset=2120 length=312 codeLen=36
+  -- names: 0=ssm, 1=IU, 2=String, 3=fromCharCode, 4=unescape
+  ?(((IU + String.fromCharCode()(30)) + unescape()(param_ssm)))
+end
+
+on NIMOKRESPONSE
+  -- block offset=2432 length=288 codeLen=47
+  -- names: 0=ssm, 1=AU, 2=String, 3=fromCharCode
+  ?(((((AU + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_AU))
+end
+
+on DELETENIMINQUIREDUSER
+  -- block offset=2720 length=284 codeLen=29
+  -- names: 0=ssm, 1=OR, 2=String, 3=fromCharCode
+  ?(((OR + String.fromCharCode()(30)) + param_ssm))
+end
+
+on GETNIMINREQUESTS
+  -- block offset=3004 length=260 codeLen=29
+  -- names: 0=ssm, 1=DIU, 2=String, 3=fromCharCode
+  ?(((DIU + String.fromCharCode()(30)) + param_ssm))
+end
+
+on GETNIMOUTREQUESTS
+  -- block offset=3264 length=176 codeLen=11
+  -- names: 0=ssm, 1=GIR
+  ?(GIR)
+end
+
+on LISTRACECHATROOMS2
+  -- block offset=3440 length=208 codeLen=11
+  -- names: 0=ssm, 1=GOR
+  ?(GOR)
+end
+
+on CREATECHATROOM
+  -- block offset=3648 length=412 codeLen=47
+  -- names: 0=ssm, 1=LRCR2, 2=String, 3=fromCharCode
+  ?(((((LRCR2 + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_LRCR2))
+end
+
+on JOINRACECHAT
+  -- block offset=4060 length=516 codeLen=165
+  -- names: 0=unescape, 1=ssm, 2=CRC, 3=String, 4=fromCharCode
+  // [0x000a] op_55
+  unescape()(param_CRC)
+  ?
+  // [0x0018] op_55
+  // [0x001a] op_04
+  unescape()(param_fromCharCode)
+  ?(((((((((((((((CRC + String.fromCharCode()(30)) + param_unescape) + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_CRC) + String.fromCharCode()(30)) + param_String) + String.fromCharCode()(30)) + param_fromCharCode) + String.fromCharCode()(30)) + param_id_5) + String.fromCharCode()(30)) + param_id_6))
+end
+
+on LEAVERACECHAT
+  -- block offset=4576 length=368 codeLen=97
+  -- names: 0=unescape, 1=ssm, 2=JRC, 3=String, 4=fromCharCode
+  // [0x000a] op_55
+  unescape()(param_JRC)
+  ?
+  ?(((((((((JRC + String.fromCharCode()(30)) + param_unescape) + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_JRC) + String.fromCharCode()(30)) + param_String))
+end
+
+on LISTRACECHATUSERS
+  -- block offset=4944 length=176 codeLen=11
+  -- names: 0=ssm, 1=LRC
+  ?(LRC)
+end
+
+on SENDRACECHAT
+  -- block offset=5120 length=180 codeLen=11
+  -- names: 0=ssm, 1=LRCU
+  ?(LRCU)
+end
+
+on TEAMKICK
+  -- block offset=5300 length=304 codeLen=43
+  -- names: 0=unescape, 1=ssm, 2=SRC, 3=String, 4=fromCharCode
+  // [0x000a] op_55
+  unescape()(param_unescape)
+  ?(((SRC + String.fromCharCode()(30)) + param_unescape))
+end
+
+on TEAMCHANGEROLE
+  -- block offset=5604 length=300 codeLen=29
+  -- names: 0=ssm, 1=TK, 2=String, 3=fromCharCode
+  ?(((TK + String.fromCharCode()(30)) + param_ssm))
+end
+
+on TEAMUPDATEMAXBET
+  -- block offset=5904 length=336 codeLen=65
+  -- names: 0=ssm, 1=TCR, 2=String, 3=fromCharCode
+  ?(((((((TCR + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_TCR) + String.fromCharCode()(30)) + param_String))
+end
+
+on TEAMDEPOSIT
+  -- block offset=6240 length=288 codeLen=47
+  -- names: 0=ssm, 1=TUB, 2=String, 3=fromCharCode
+  ?(((((TUB + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_TUB))
+end
+
+on TEAMWITHDRAW
+  -- block offset=6528 length=268 codeLen=29
+  -- names: 0=ssm, 1=TDP, 2=String, 3=fromCharCode
+  ?(((TDP + String.fromCharCode()(30)) + param_ssm))
+end
+
+on TEAMQUIT
+  -- block offset=6796 length=240 codeLen=29
+  -- names: 0=ssm, 1=TW, 2=String, 3=fromCharCode
+  ?(((TW + String.fromCharCode()(30)) + param_ssm))
+end
+
+on TEAMACCEPT
+  -- block offset=7036 length=172 codeLen=11
+  -- names: 0=ssm, 1=TQ
+  ?(TQ)
+end
+
+on TEAMDISPERSE
+  -- block offset=7208 length=284 codeLen=29
+  -- names: 0=ssm, 1=TAT, 2=String, 3=fromCharCode
+  ?(((TAT + String.fromCharCode()(30)) + param_ssm))
+end
+
+on TEAMCREATE
+  -- block offset=7492 length=284 codeLen=47
+  -- names: 0=ssm, 1=TDB, 2=String, 3=fromCharCode
+  ?(((((TDB + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_TDB))
+end
+
+on TEAMSTEPDOWN
+  -- block offset=7776 length=280 codeLen=36
+  -- names: 0=ssm, 1=TC, 2=String, 3=fromCharCode, 4=unescape
+  ?(((TC + String.fromCharCode()(30)) + unescape()(param_ssm)))
+end
+
+on GETKOTH
+  -- block offset=8056 length=152 codeLen=11
+  -- names: 0=ssm, 1=TL
+  ?(TL)
+end
+
+on JOINKOTH
+  -- block offset=8208 length=184 codeLen=11
+  -- names: 0=ssm, 1=GK
+  ?(GK)
+end
+
+on LEAVEKOTH
+  -- block offset=8392 length=512 codeLen=78
+  -- names: 0=ssm, 1=JK, 2=String, 3=fromCharCode, 4=_global, 5=objRace, 6=raceType, 7=KOTH, 8=executeCall, 9=getonecarengine, 10=acid=
+  ?(((((JK + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_JK))
+  raceType = KOTH
+  ?
+  ?(?, (acid= + param_ssm))
+end
+
+on KCNT
+  -- block offset=8904 length=176 codeLen=11
+  -- names: 0=ssm, 1=LK
+  ?(LK)
+end
+
+on SENDVOTE
+  -- block offset=9080 length=416 codeLen=64
+  -- names: 0=ssm, 1=KC, 2=String, 3=fromCharCode, 4=_global, 5=objRace, 6=init, 7=KOTH
+  ?(((((KC + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_KC))
+  ?(KOTH)
+end
+
+on KDONE
+  -- block offset=9496 length=544 codeLen=47
+  -- names: 0=ssm, 1=SV, 2=String, 3=fromCharCode
+  ?(((((SV + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_SV))
+end
+
+on KRT
+  -- block offset=10040 length=1248 codeLen=537
+  -- names: 0=Math, 1=floor, 2=ssm, 3=KD, 4=String, 5=fromCharCode, 6=isCheatEngineRunning, 7=CheckProcesses, 8=decrypt, 9=_global, 10=cp, 11=CheckWindows, 12=cw, 13=CheckWindowsClass, 14=cwc
+  // [0x0015] op_55
+  (Math.floor()((param_Math * 1000)) / 1000)
+  // [0x002e] op_55
+  (Math.floor()((param_floor * 100)) / 100)
+  // [0x0047] op_55
+  // [0x0049] op_11
+  (Math.floor()((param_id_17 * 1000)) / 1000)
+  ?(((((((((((((((((((((((((((((((((((((((((((((KD + String.fromCharCode()(30)) + param_Math) + String.fromCharCode()(30)) + param_floor) + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_KD) + String.fromCharCode()(30)) + param_String) + String.fromCharCode()(30)) + param_fromCharCode) + String.fromCharCode()(30)) + param_isCheatEngineRunning) + String.fromCharCode()(30)) + param_CheckProcesses) + String.fromCharCode()(30)) + param_decrypt) + String.fromCharCode()(30)) + param__global) + String.fromCharCode()(30)) + param_cp) + String.fromCharCode()(30)) + param_CheckWindows) + String.fromCharCode()(30)) + param_cw) + String.fromCharCode()(30)) + param_CheckWindowsClass) + String.fromCharCode()(30)) + param_cwc) + String.fromCharCode()(30)) + param_id_15) + String.fromCharCode()(30)) + param_id_16) + String.fromCharCode()(30)) + isCheatEngineRunning()()) + String.fromCharCode()(30)) + param_id_17) + String.fromCharCode()(30)) + CheckProcesses()(decrypt()(_global.cp))) + String.fromCharCode()(30)) + CheckWindows()(decrypt()(_global.cw))) + String.fromCharCode()(30)) + CheckWindowsClass()(decrypt()(_global.cwc))))
+end
+
+on STG
+  -- block offset=11288 length=380 codeLen=72
+  -- names: 0=Math, 1=floor, 2=ssm, 3=KRT, 4=String, 5=fromCharCode
+  // [0x0015] op_55
+  (Math.floor()((param_Math * 1000)) / 1000)
+  ?(((((KRT + String.fromCharCode()(30)) + param_Math) + String.fromCharCode()(30)) + param_floor))
+end
+
+on int
+  -- block offset=11668 length=480 codeLen=140
+  -- names: 0=Math, 1=floor, 2=ssm, 3=S, 4=String, 5=fromCharCode
+  // [0x0015] op_55
+  (Math.floor()((param_Math * 1000)) / 1000)
+  // [0x002e] op_55
+  (Math.floor()((param_floor * 1000)) / 1000)
+  // [0x0047] op_55
+  (Math.floor()((param_ssm * 1000)) / 1000)
+  ?
+  ?(((((((S + String.fromCharCode()(30)) + param_Math) + String.fromCharCode()(30)) + param_floor) + String.fromCharCode()(30)) + param_ssm))
+end
+
+on KOK
+  -- block offset=12148 length=456 codeLen=158
+  -- names: 0=Math, 1=floor, 2=ssm, 3=I, 4=String, 5=fromCharCode
+  // [0x0015] op_55
+  (Math.floor()((param_Math * 1000)) / 1000)
+  // [0x002e] op_55
+  (Math.floor()((param_floor * 1000)) / 1000)
+  // [0x0047] op_55
+  (Math.floor()((param_ssm * 1000)) / 1000)
+  ?
+  ?(((((((((I + String.fromCharCode()(30)) + param_Math) + String.fromCharCode()(30)) + param_floor) + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_I))
+end
+
+on KREADY
+  -- block offset=12604 length=392 codeLen=46
+  -- names: 0=ssm, 1=KOK, 2=String, 3=fromCharCode, 4=_global, 5=objRace, 6=init, 7=KOTH
+  ?(((KOK + String.fromCharCode()(30)) + param_ssm))
+  ?(KOTH)
+end
+
+on GETRIVALS
+  -- block offset=12996 length=264 codeLen=47
+  -- names: 0=ssm, 1=KR, 2=String, 3=fromCharCode
+  ?(((((KR + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_KR))
+end
+
+on RREQ
+  -- block offset=13260 length=228 codeLen=11
+  -- names: 0=ssm, 1=GR
+  ?(GR)
+end
+
+on RRSP
+  -- block offset=13488 length=376 codeLen=101
+  -- names: 0=ssm, 1=RRQ, 2=String, 3=fromCharCode
+  ?(((((((((((RRQ + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_RRQ) + String.fromCharCode()(30)) + param_String) + String.fromCharCode()(30)) + param_fromCharCode) + String.fromCharCode()(30)) + param_id_4))
+end
+
+on RLVE
+  -- block offset=13864 length=280 codeLen=65
+  -- names: 0=ssm, 1=RRS, 2=String, 3=fromCharCode
+  ?(((((((RRS + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_RRS) + String.fromCharCode()(30)) + param_String))
+end
+
+on RIVOK
+  -- block offset=14144 length=148 codeLen=11
+  -- names: 0=ssm, 1=RL
+  ?(RL)
+end
+
+on RIVREADY
+  -- block offset=14292 length=308 codeLen=28
+  -- names: 0=ssm, 1=RO, 2=_global, 3=objRace, 4=init, 5=RIVAL
+  ?(RO)
+  ?(RIVAL)
+end
+
+on RIVRT
+  -- block offset=14600 length=288 codeLen=47
+  -- names: 0=ssm, 1=RR, 2=String, 3=fromCharCode
+  ?(((((RR + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_RR))
+end
+
+on RIVDONE
+  -- block offset=14888 length=632 codeLen=72
+  -- names: 0=Math, 1=floor, 2=ssm, 3=RIVRT, 4=String, 5=fromCharCode
+  // [0x0015] op_55
+  (Math.floor()((param_Math * 1000)) / 1000)
+  ?(((((RIVRT + String.fromCharCode()(30)) + param_Math) + String.fromCharCode()(30)) + param_floor))
+end
+
+on HTJOIN
+  -- block offset=15520 length=1448 codeLen=636
+  -- names: 0=Math, 1=floor, 2=trace, 3=before RD, 4=decrypt, 5=_global, 6=cwc, 7=CheckWindows, 8=cw, 9=CheckWindowsClass, 10=ssm, 11=RD, 12=String, 13=fromCharCode, 14=isCheatEngineRunning, 15=CheckProcesses, 16=cp, 17=after RD
+  // [0x0015] op_55
+  (Math.floor()((param_Math * 1000)) / 1000)
+  // [0x002e] op_55
+  (Math.floor()((param_floor * 100)) / 100)
+  // [0x0047] op_55
+  // [0x0049] op_11
+  (Math.floor()((param_after RD * 1000)) / 1000)
+  ?(before RD)
+  trace()(decrypt()(_global.cwc))
+  trace()(CheckWindows()(decrypt()(_global.cw)))
+  trace()(CheckWindowsClass()(decrypt()(_global.cwc)))
+  ?(((((((((((((((((((((((((((((((((((((((((((((RD + String.fromCharCode()(30)) + param_Math) + String.fromCharCode()(30)) + param_floor) + String.fromCharCode()(30)) + param_trace) + String.fromCharCode()(30)) + param_before RD) + String.fromCharCode()(30)) + param_decrypt) + String.fromCharCode()(30)) + param__global) + String.fromCharCode()(30)) + param_cwc) + String.fromCharCode()(30)) + param_CheckWindows) + String.fromCharCode()(30)) + param_cw) + String.fromCharCode()(30)) + param_CheckWindowsClass) + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_RD) + String.fromCharCode()(30)) + param_String) + String.fromCharCode()(30)) + param_fromCharCode) + String.fromCharCode()(30)) + param_isCheatEngineRunning) + String.fromCharCode()(30)) + param_CheckProcesses) + String.fromCharCode()(30)) + param_cp) + String.fromCharCode()(30)) + isCheatEngineRunning()()) + String.fromCharCode()(30)) + param_after RD) + String.fromCharCode()(30)) + CheckProcesses()(decrypt()(_global.cp))) + String.fromCharCode()(30)) + CheckWindows()(decrypt()(_global.cw))) + String.fromCharCode()(30)) + CheckWindowsClass()(decrypt()(_global.cwc))))
+  ?(after RD)
+end
+
+on HQOK
+  -- block offset=16968 length=248 codeLen=29
+  -- names: 0=ssm, 1=JT, 2=String, 3=fromCharCode
+  ?(((JT + String.fromCharCode()(30)) + param_ssm))
+end
+
+on HTGET32
+  -- block offset=17216 length=244 codeLen=29
+  -- names: 0=ssm, 1=HQOK, 2=String, 3=fromCharCode
+  ?(((HQOK + String.fromCharCode()(30)) + param_ssm))
+end
+
+on HTGETTREE
+  -- block offset=17460 length=160 codeLen=11
+  -- names: 0=ssm, 1=HQ32
+  ?(HQ32)
+end
+
+on HTSPECTATE
+  -- block offset=17620 length=160 codeLen=11
+  -- names: 0=ssm, 1=HTFT
+  ?(HTFT)
+end
+
+on HTQUIT
+  -- block offset=17780 length=152 codeLen=11
+  -- names: 0=ssm, 1=HTS
+  ?(HTS)
+end
+
+on HTINFO
+  -- block offset=17932 length=156 codeLen=11
+  -- names: 0=ssm, 1=HTQUIT
+  ?(HTQUIT)
+end
+
+on HTQREADY
+  -- block offset=18088 length=188 codeLen=11
+  -- names: 0=ssm, 1=HTI
+  ?(HTI)
+end
+
+on HTQD
+  -- block offset=18276 length=544 codeLen=47
+  -- names: 0=ssm, 1=HQR, 2=String, 3=fromCharCode
+  ?(((((HQR + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_HQR))
+end
+
+on HTQRT
+  -- block offset=18820 length=1256 codeLen=537
+  -- names: 0=Math, 1=floor, 2=ssm, 3=HTQD, 4=String, 5=fromCharCode, 6=isCheatEngineRunning, 7=CheckProcesses, 8=decrypt, 9=_global, 10=cp, 11=CheckWindows, 12=cw, 13=CheckWindowsClass, 14=cwc
+  // [0x0015] op_55
+  (Math.floor()((param_Math * 1000)) / 1000)
+  // [0x002e] op_55
+  (Math.floor()((param_floor * 100)) / 100)
+  // [0x0047] op_55
+  // [0x0049] op_11
+  (Math.floor()((param_id_17 * 1000)) / 1000)
+  ?(((((((((((((((((((((((((((((((((((((((((((((HTQD + String.fromCharCode()(30)) + param_Math) + String.fromCharCode()(30)) + param_floor) + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_HTQD) + String.fromCharCode()(30)) + param_String) + String.fromCharCode()(30)) + param_fromCharCode) + String.fromCharCode()(30)) + param_isCheatEngineRunning) + String.fromCharCode()(30)) + param_CheckProcesses) + String.fromCharCode()(30)) + param_decrypt) + String.fromCharCode()(30)) + param__global) + String.fromCharCode()(30)) + param_cp) + String.fromCharCode()(30)) + param_CheckWindows) + String.fromCharCode()(30)) + param_cw) + String.fromCharCode()(30)) + param_CheckWindowsClass) + String.fromCharCode()(30)) + param_cwc) + String.fromCharCode()(30)) + param_id_15) + String.fromCharCode()(30)) + param_id_16) + String.fromCharCode()(30)) + isCheatEngineRunning()()) + String.fromCharCode()(30)) + param_id_17) + String.fromCharCode()(30)) + CheckProcesses()(decrypt()(_global.cp))) + String.fromCharCode()(30)) + CheckWindows()(decrypt()(_global.cw))) + String.fromCharCode()(30)) + CheckWindowsClass()(decrypt()(_global.cwc))))
+end
+
+on HTREADY
+  -- block offset=20076 length=372 codeLen=72
+  -- names: 0=Math, 1=floor, 2=ssm, 3=HQRT, 4=String, 5=fromCharCode
+  // [0x0015] op_55
+  (Math.floor()((param_Math * 1000)) / 1000)
+  ?(((((HQRT + String.fromCharCode()(30)) + param_Math) + String.fromCharCode()(30)) + param_floor))
+end
+
+on HTD
+  -- block offset=20448 length=544 codeLen=47
+  -- names: 0=ssm, 1=HTR, 2=String, 3=fromCharCode
+  ?(((((HTR + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_HTR))
+end
+
+on HTRT
+  -- block offset=20992 length=1252 codeLen=537
+  -- names: 0=Math, 1=floor, 2=ssm, 3=HTD, 4=String, 5=fromCharCode, 6=isCheatEngineRunning, 7=CheckProcesses, 8=decrypt, 9=_global, 10=cp, 11=CheckWindows, 12=cw, 13=CheckWindowsClass, 14=cwc
+  // [0x0015] op_55
+  (Math.floor()((param_Math * 1000)) / 1000)
+  // [0x002e] op_55
+  (Math.floor()((param_floor * 100)) / 100)
+  // [0x0047] op_55
+  // [0x0049] op_11
+  (Math.floor()((param_id_17 * 1000)) / 1000)
+  ?(((((((((((((((((((((((((((((((((((((((((((((HTD + String.fromCharCode()(30)) + param_Math) + String.fromCharCode()(30)) + param_floor) + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_HTD) + String.fromCharCode()(30)) + param_String) + String.fromCharCode()(30)) + param_fromCharCode) + String.fromCharCode()(30)) + param_isCheatEngineRunning) + String.fromCharCode()(30)) + param_CheckProcesses) + String.fromCharCode()(30)) + param_decrypt) + String.fromCharCode()(30)) + param__global) + String.fromCharCode()(30)) + param_cp) + String.fromCharCode()(30)) + param_CheckWindows) + String.fromCharCode()(30)) + param_cw) + String.fromCharCode()(30)) + param_CheckWindowsClass) + String.fromCharCode()(30)) + param_cwc) + String.fromCharCode()(30)) + param_id_15) + String.fromCharCode()(30)) + param_id_16) + String.fromCharCode()(30)) + isCheatEngineRunning()()) + String.fromCharCode()(30)) + param_id_17) + String.fromCharCode()(30)) + CheckProcesses()(decrypt()(_global.cp))) + String.fromCharCode()(30)) + CheckWindows()(decrypt()(_global.cw))) + String.fromCharCode()(30)) + CheckWindowsClass()(decrypt()(_global.cwc))))
+end
+
+on TRGETRACERS
+  -- block offset=22244 length=348 codeLen=72
+  -- names: 0=Math, 1=floor, 2=ssm, 3=HTRT, 4=String, 5=fromCharCode
+  // [0x0015] op_55
+  (Math.floor()((param_Math * 1000)) / 1000)
+  ?(((((HTRT + String.fromCharCode()(30)) + param_Math) + String.fromCharCode()(30)) + param_floor))
+end
+
+on TRGETTEAMS
+  -- block offset=22592 length=160 codeLen=11
+  -- names: 0=ssm, 1=GTR
+  ?(GTR)
+end
+
+on TRPREREQUEST
+  -- block offset=22752 length=180 codeLen=11
+  -- names: 0=ssm, 1=TRGT
+  ?(TRGT)
+end
+
+on TRREQUEST
+  -- block offset=22932 length=484 codeLen=29
+  -- names: 0=ssm, 1=TRPRQ, 2=String, 3=fromCharCode
+  ?(((TRPRQ + String.fromCharCode()(30)) + param_ssm))
+end
+
+on TRCOUNTER
+  -- block offset=23416 length=448 codeLen=155
+  -- names: 0=ssm, 1=TRRQ, 2=String, 3=fromCharCode
+  ?(((((((((((((((((TRRQ + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_TRRQ) + String.fromCharCode()(30)) + param_String) + String.fromCharCode()(30)) + param_fromCharCode) + String.fromCharCode()(30)) + param_id_4) + String.fromCharCode()(30)) + param_id_5) + String.fromCharCode()(30)) + param_id_6) + String.fromCharCode()(30)) + param_id_7))
+end
+
+on TRRESPONSE
+  -- block offset=23864 length=304 codeLen=47
+  -- names: 0=ssm, 1=TRCT, 2=String, 3=fromCharCode
+  ?(((((TRCT + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_TRCT))
+end
+
+on TROK
+  -- block offset=24168 length=280 codeLen=47
+  -- names: 0=ssm, 1=TRRS, 2=String, 3=fromCharCode
+  ?(((((TRRS + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_TRRS))
+end
+
+on TRIVREADY
+  -- block offset=24448 length=280 codeLen=29
+  -- names: 0=ssm, 1=TRO, 2=String, 3=fromCharCode
+  ?(((TRO + String.fromCharCode()(30)) + param_ssm))
+end
+
+on JOINELECTION
+  -- block offset=24728 length=272 codeLen=47
+  -- names: 0=ssm, 1=TRR, 2=String, 3=fromCharCode
+  ?(((((TRR + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_TRR))
+end
+
+on ELECTIONINTERVIEWLIST
+  -- block offset=25000 length=180 codeLen=11
+  -- names: 0=ssm, 1=JE
+  ?(JE)
+end
+
+on m
+  -- block offset=25180 length=320 codeLen=11
+  -- names: 0=ssm, 1=EIL
+  ?(EIL)
+end
+
+on CLOSEGAME
+  -- block offset=25500 length=476 codeLen=209
+  -- names: 0=ssm, 1=M, 2=String, 3=fromCharCode
+  ?(((((((((((((((((((((((M + String.fromCharCode()(30)) + param_ssm) + String.fromCharCode()(30)) + param_M) + String.fromCharCode()(30)) + param_String) + String.fromCharCode()(30)) + param_fromCharCode) + String.fromCharCode()(30)) + param_id_4) + String.fromCharCode()(30)) + param_id_5) + String.fromCharCode()(30)) + param_id_6) + String.fromCharCode()(30)) + param_id_7) + String.fromCharCode()(30)) + param_id_8) + String.fromCharCode()(30)) + param_id_9) + String.fromCharCode()(30)) + param_id_10))
+end
+
+on IsMyProcessNameCorrect
+  -- block offset=25976 length=220 codeLen=11
+  -- names: 0=_player, 1=quit
+  _player.quit()()
+end
+
+on CheckNittoProcesses
+  -- block offset=26196 length=348 codeLen=40
+  -- names: 0=_player, 1=applicationName, 2=search, 3=_global, 4=exeName
+  _player = 0
+  ?
+  (_player.applicationName.search()(_global.exeName) < c_5)
+  // goto @39
+  _player = 1
+  ?
+  // [0x0027] op_05
+  _player
+end
+
+on CheckNittoProcessesCB
+  -- block offset=26544 length=640 codeLen=43
+  -- names: 0=_player, 1=debugPlaybackEnabled, 2=_global, 3=checkedForOneClient, 4=checkProcessResult, 5=getNetText, 6=mainURL, 7=oneclient.html?hey=1
+  if (!_player.debugPlaybackEnabled) { /* else goto @14 */ }
+  _global
+  checkedForOneClient = false
+  ?
+  checkProcessResult = _global((getNetText() + oneclient.html?hey=1))
+  ?
+end
+
+on block_75
+  -- block offset=27184 length=1108 codeLen=145
+  -- names: 0=trace, 1=result: , 2=0, 3=CheckProcesses, 4=_global, 5=exeName, 6=split, 7=,, 8=length, 9=IsMyProcessNameCorrect, 10=flashReturnValue: , 11=sprite, 12=flashSP, 13=CheckNittoProcessesCB
+  ?((result:  + param_trace))
+  trace = false
+  ?
+  (? < 0)
+  // goto @112
+  result:  = CheckProcesses()(_global.exeName)
+  ?
+  0 = ?(,)
+  ?
+  CheckProcesses = 0.length
+  ?
+  (? >= !CheckProcesses)
+  // goto @93
+  trace = !?
+  ?
+  // goto @89
+  IsMyProcessNameCorrect()()
+  (? >= ?)
+  if (0) { /* else goto @112 */ }
+  trace = 2
+  ?
+  ?((flashReturnValue:  + trace))
+  ?(flashSP).CheckNittoProcessesCB()(trace)
+end

@@ -1,0 +1,59 @@
+on lingoXtraNoDebug
+  -- unk26
+end
+
+on lingoXtraInit
+  -- unk26
+end
+
+on getPCInfo
+  -- unk26
+end
+
+on baLingoFolderExists
+  -- unk26
+end
+
+on baLingoCreateFolder
+  -- unk26
+end
+
+on baLingoFileList
+  -- unk26
+end
+
+on baLingoFileExists
+  -- unk26
+end
+
+on baLingoTempFileName
+  -- unk26
+end
+
+on baLingoFileAge
+  -- unk26
+end
+
+on baLingoDeleteFile
+  -- unk26
+end
+
+on baLingoFileDateEx
+  -- unk26
+end
+
+on baLingoSetFileDate
+  -- unk26
+end
+
+on baLingoSysFolder
+  -- unk26
+end
+
+on baLingoRunProgram
+  -- unk26
+end
+
+on isCheatEngineRunning
+  -- unk26
+end

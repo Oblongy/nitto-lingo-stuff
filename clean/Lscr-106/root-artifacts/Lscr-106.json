@@ -1,0 +1,3666 @@
+{
+  "totalLength": 23588,
+  "totalLength2": 23588,
+  "headerLength": 92,
+  "scriptNumber": 6,
+  "unk20": 1,
+  "parentNumber": -1,
+  "scriptFlags": 49154,
+  "unk42": 0,
+  "castID": 65550,
+  "factoryNameID": -1,
+  "handlerVectorsCount": 0,
+  "handlerVectorsOffset": 23588,
+  "handlerVectorsSize": 0,
+  "propertiesCount": 0,
+  "propertiesOffset": 92,
+  "globalsCount": 0,
+  "globalsOffset": 92,
+  "handlersCount": 30,
+  "handlersOffset": 92,
+  "literalsCount": 32,
+  "literalsOffset": 1652,
+  "literalsDataCount": 21680,
+  "literalsDataOffset": 1908,
+  "propertyNameIDs": [],
+  "globalNameIDs": [],
+  "handlers": [
+    {
+      "nameID": 85,
+      "name": "initFileHandler",
+      "dispatchSlot": 2,
+      "dispatchBlockIndex": 0,
+      "dispatchBlockOffset": 0,
+      "dispatchBlockLength": 460,
+      "dispatchBlockHeaderWord0": 188,
+      "dispatchBlockHeaderWord1": 111,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1472,
+      "argumentCount": 0,
+      "argumentOffset": 1478,
+      "localsCount": 0,
+      "localsOffset": 1478,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 3,
+      "lineCount": 0,
+      "lineOffset": 1478,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 2
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 86,
+      "name": "getAvatar",
+      "dispatchSlot": 3,
+      "dispatchBlockIndex": 1,
+      "dispatchBlockOffset": 460,
+      "dispatchBlockLength": 740,
+      "dispatchBlockHeaderWord0": 157,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1478,
+      "argumentCount": 0,
+      "argumentOffset": 1484,
+      "localsCount": 0,
+      "localsOffset": 1484,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 25,
+      "lineCount": 0,
+      "lineOffset": 1484,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 3
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 87,
+      "name": "downloadAvatar",
+      "dispatchSlot": 4,
+      "dispatchBlockIndex": 2,
+      "dispatchBlockOffset": 1200,
+      "dispatchBlockLength": 1404,
+      "dispatchBlockHeaderWord0": 344,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1484,
+      "argumentCount": 0,
+      "argumentOffset": 1490,
+      "localsCount": 0,
+      "localsOffset": 1490,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 57,
+      "lineCount": 0,
+      "lineOffset": 1490,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 4
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 88,
+      "name": "compareAvatarAge",
+      "dispatchSlot": 5,
+      "dispatchBlockIndex": 3,
+      "dispatchBlockOffset": 2604,
+      "dispatchBlockLength": 700,
+      "dispatchBlockHeaderWord0": 108,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1490,
+      "argumentCount": 0,
+      "argumentOffset": 1496,
+      "localsCount": 0,
+      "localsOffset": 1496,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 64,
+      "lineCount": 0,
+      "lineOffset": 1496,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 5
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 89,
+      "name": "loadLocalAvatar",
+      "dispatchSlot": 6,
+      "dispatchBlockIndex": 4,
+      "dispatchBlockOffset": 3304,
+      "dispatchBlockLength": 1364,
+      "dispatchBlockHeaderWord0": 396,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1496,
+      "argumentCount": 0,
+      "argumentOffset": 1502,
+      "localsCount": 0,
+      "localsOffset": 1502,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 91,
+      "lineCount": 0,
+      "lineOffset": 1502,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 6
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 90,
+      "name": "avatarIDtoPath",
+      "dispatchSlot": 7,
+      "dispatchBlockIndex": 5,
+      "dispatchBlockOffset": 4668,
+      "dispatchBlockLength": 256,
+      "dispatchBlockHeaderWord0": 27,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1502,
+      "argumentCount": 0,
+      "argumentOffset": 1508,
+      "localsCount": 0,
+      "localsOffset": 1508,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 95,
+      "lineCount": 0,
+      "lineOffset": 1508,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 7
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 91,
+      "name": "downloadUgg",
+      "dispatchSlot": 8,
+      "dispatchBlockIndex": 6,
+      "dispatchBlockOffset": 4924,
+      "dispatchBlockLength": 440,
+      "dispatchBlockHeaderWord0": 122,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1508,
+      "argumentCount": 0,
+      "argumentOffset": 1514,
+      "localsCount": 0,
+      "localsOffset": 1514,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 106,
+      "lineCount": 0,
+      "lineOffset": 1514,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 8
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 92,
+      "name": "loadLocalUgg",
+      "dispatchSlot": 9,
+      "dispatchBlockIndex": 7,
+      "dispatchBlockOffset": 5364,
+      "dispatchBlockLength": 576,
+      "dispatchBlockHeaderWord0": 73,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1514,
+      "argumentCount": 0,
+      "argumentOffset": 1520,
+      "localsCount": 0,
+      "localsOffset": 1520,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 113,
+      "lineCount": 0,
+      "lineOffset": 1520,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 9
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 93,
+      "name": "fileBrowse",
+      "dispatchSlot": 10,
+      "dispatchBlockIndex": 8,
+      "dispatchBlockOffset": 5940,
+      "dispatchBlockLength": 288,
+      "dispatchBlockHeaderWord0": 24,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1520,
+      "argumentCount": 0,
+      "argumentOffset": 1526,
+      "localsCount": 0,
+      "localsOffset": 1526,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 120,
+      "lineCount": 0,
+      "lineOffset": 1526,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 10
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 94,
+      "name": "uggUpload",
+      "dispatchSlot": 11,
+      "dispatchBlockIndex": 9,
+      "dispatchBlockOffset": 6228,
+      "dispatchBlockLength": 696,
+      "dispatchBlockHeaderWord0": 75,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1526,
+      "argumentCount": 0,
+      "argumentOffset": 1532,
+      "localsCount": 0,
+      "localsOffset": 1532,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 126,
+      "lineCount": 0,
+      "lineOffset": 1532,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 11
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 95,
+      "name": "uggUploadSuccess",
+      "dispatchSlot": 12,
+      "dispatchBlockIndex": 10,
+      "dispatchBlockOffset": 6924,
+      "dispatchBlockLength": 964,
+      "dispatchBlockHeaderWord0": 178,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1532,
+      "argumentCount": 0,
+      "argumentOffset": 1538,
+      "localsCount": 0,
+      "localsOffset": 1538,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 144,
+      "lineCount": 0,
+      "lineOffset": 1538,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 12
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 96,
+      "name": "uggUploadFail",
+      "dispatchSlot": 13,
+      "dispatchBlockIndex": 11,
+      "dispatchBlockOffset": 7888,
+      "dispatchBlockLength": 236,
+      "dispatchBlockHeaderWord0": 22,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1538,
+      "argumentCount": 0,
+      "argumentOffset": 1544,
+      "localsCount": 0,
+      "localsOffset": 1544,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 147,
+      "lineCount": 0,
+      "lineOffset": 1544,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 13
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 97,
+      "name": "downloadNewInstaller",
+      "dispatchSlot": 14,
+      "dispatchBlockIndex": 12,
+      "dispatchBlockOffset": 8124,
+      "dispatchBlockLength": 336,
+      "dispatchBlockHeaderWord0": 22,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1544,
+      "argumentCount": 0,
+      "argumentOffset": 1550,
+      "localsCount": 0,
+      "localsOffset": 1550,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 155,
+      "lineCount": 0,
+      "lineOffset": 1550,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 14
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 98,
+      "name": "downloadInstallerUpdateFlash",
+      "dispatchSlot": 15,
+      "dispatchBlockIndex": 13,
+      "dispatchBlockOffset": 8460,
+      "dispatchBlockLength": 980,
+      "dispatchBlockHeaderWord0": 210,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1550,
+      "argumentCount": 0,
+      "argumentOffset": 1556,
+      "localsCount": 0,
+      "localsOffset": 1556,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 171,
+      "lineCount": 0,
+      "lineOffset": 1556,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 15
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 99,
+      "name": "runInstaller",
+      "dispatchSlot": 16,
+      "dispatchBlockIndex": 14,
+      "dispatchBlockOffset": 9440,
+      "dispatchBlockLength": 420,
+      "dispatchBlockHeaderWord0": 48,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1556,
+      "argumentCount": 0,
+      "argumentOffset": 1562,
+      "localsCount": 0,
+      "localsOffset": 1562,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 175,
+      "lineCount": 0,
+      "lineOffset": 1562,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 16
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 100,
+      "name": "fetchCacheXML",
+      "dispatchSlot": 17,
+      "dispatchBlockIndex": 15,
+      "dispatchBlockOffset": 9860,
+      "dispatchBlockLength": 1092,
+      "dispatchBlockHeaderWord0": 70,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1562,
+      "argumentCount": 0,
+      "argumentOffset": 1568,
+      "localsCount": 0,
+      "localsOffset": 1568,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 194,
+      "lineCount": 0,
+      "lineOffset": 1568,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 17
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 101,
+      "name": "fetchCacheXMLDone",
+      "dispatchSlot": 18,
+      "dispatchBlockIndex": 16,
+      "dispatchBlockOffset": 10952,
+      "dispatchBlockLength": 772,
+      "dispatchBlockHeaderWord0": 110,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1568,
+      "argumentCount": 0,
+      "argumentOffset": 1574,
+      "localsCount": 0,
+      "localsOffset": 1574,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 205,
+      "lineCount": 0,
+      "lineOffset": 1574,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 18
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 102,
+      "name": "createCacheFolders",
+      "dispatchSlot": 19,
+      "dispatchBlockIndex": 17,
+      "dispatchBlockOffset": 11724,
+      "dispatchBlockLength": 384,
+      "dispatchBlockHeaderWord0": 26,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1574,
+      "argumentCount": 0,
+      "argumentOffset": 1580,
+      "localsCount": 0,
+      "localsOffset": 1580,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 210,
+      "lineCount": 0,
+      "lineOffset": 1580,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 19
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 103,
+      "name": "downloadCache",
+      "dispatchSlot": 20,
+      "dispatchBlockIndex": 18,
+      "dispatchBlockOffset": 12108,
+      "dispatchBlockLength": 1488,
+      "dispatchBlockHeaderWord0": 446,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1580,
+      "argumentCount": 0,
+      "argumentOffset": 1586,
+      "localsCount": 0,
+      "localsOffset": 1586,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 234,
+      "lineCount": 0,
+      "lineOffset": 1586,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 20
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 104,
+      "name": "downloadCacheInProgress",
+      "dispatchSlot": 21,
+      "dispatchBlockIndex": 19,
+      "dispatchBlockOffset": 13596,
+      "dispatchBlockLength": 696,
+      "dispatchBlockHeaderWord0": 112,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1586,
+      "argumentCount": 0,
+      "argumentOffset": 1592,
+      "localsCount": 0,
+      "localsOffset": 1592,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 241,
+      "lineCount": 0,
+      "lineOffset": 1592,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 21
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 105,
+      "name": "downloadCacheDone",
+      "dispatchSlot": 22,
+      "dispatchBlockIndex": 20,
+      "dispatchBlockOffset": 14292,
+      "dispatchBlockLength": 236,
+      "dispatchBlockHeaderWord0": 14,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1592,
+      "argumentCount": 0,
+      "argumentOffset": 1598,
+      "localsCount": 0,
+      "localsOffset": 1598,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 245,
+      "lineCount": 0,
+      "lineOffset": 1598,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 22
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 106,
+      "name": "downloadCacheUpdateFlash",
+      "dispatchSlot": 23,
+      "dispatchBlockIndex": 21,
+      "dispatchBlockOffset": 14528,
+      "dispatchBlockLength": 604,
+      "dispatchBlockHeaderWord0": 80,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1598,
+      "argumentCount": 0,
+      "argumentOffset": 1604,
+      "localsCount": 0,
+      "localsOffset": 1604,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 257,
+      "lineCount": 0,
+      "lineOffset": 1604,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 23
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 107,
+      "name": "loadDyno",
+      "dispatchSlot": 24,
+      "dispatchBlockIndex": 22,
+      "dispatchBlockOffset": 15132,
+      "dispatchBlockLength": 536,
+      "dispatchBlockHeaderWord0": 45,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "dispatchBlockLabel": "aryDyno",
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1604,
+      "argumentCount": 0,
+      "argumentOffset": 1610,
+      "localsCount": 0,
+      "localsOffset": 1610,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 266,
+      "lineCount": 0,
+      "lineOffset": 1610,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 24
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 108,
+      "name": "saveDyno",
+      "dispatchSlot": 25,
+      "dispatchBlockIndex": 23,
+      "dispatchBlockOffset": 15668,
+      "dispatchBlockLength": 916,
+      "dispatchBlockHeaderWord0": 172,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "dispatchBlockLabel": "strTorque",
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1610,
+      "argumentCount": 0,
+      "argumentOffset": 1616,
+      "localsCount": 0,
+      "localsOffset": 1616,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 281,
+      "lineCount": 0,
+      "lineOffset": 1616,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 25
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 109,
+      "name": "getTxtFileName",
+      "dispatchSlot": 26,
+      "dispatchBlockIndex": 24,
+      "dispatchBlockOffset": 16584,
+      "dispatchBlockLength": 848,
+      "dispatchBlockHeaderWord0": 162,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1616,
+      "argumentCount": 0,
+      "argumentOffset": 1622,
+      "localsCount": 0,
+      "localsOffset": 1622,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 294,
+      "lineCount": 0,
+      "lineOffset": 1622,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 26
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 110,
+      "name": "saveFile",
+      "dispatchSlot": 27,
+      "dispatchBlockIndex": 25,
+      "dispatchBlockOffset": 17432,
+      "dispatchBlockLength": 356,
+      "dispatchBlockHeaderWord0": 79,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1622,
+      "argumentCount": 0,
+      "argumentOffset": 1628,
+      "localsCount": 0,
+      "localsOffset": 1628,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 308,
+      "lineCount": 0,
+      "lineOffset": 1628,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 27
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 111,
+      "name": "openfile",
+      "dispatchSlot": 28,
+      "dispatchBlockIndex": 26,
+      "dispatchBlockOffset": 17788,
+      "dispatchBlockLength": 640,
+      "dispatchBlockHeaderWord0": 139,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1628,
+      "argumentCount": 0,
+      "argumentOffset": 1634,
+      "localsCount": 0,
+      "localsOffset": 1634,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 321,
+      "lineCount": 0,
+      "lineOffset": 1634,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 28
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 112,
+      "name": "fileClearAllDecals",
+      "dispatchSlot": 29,
+      "dispatchBlockIndex": 27,
+      "dispatchBlockOffset": 18428,
+      "dispatchBlockLength": 552,
+      "dispatchBlockHeaderWord0": 112,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1634,
+      "argumentCount": 0,
+      "argumentOffset": 1640,
+      "localsCount": 0,
+      "localsOffset": 1640,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 335,
+      "lineCount": 0,
+      "lineOffset": 1640,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 29
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 113,
+      "name": "fileClearADecal",
+      "dispatchSlot": 30,
+      "dispatchBlockIndex": 28,
+      "dispatchBlockOffset": 18980,
+      "dispatchBlockLength": 604,
+      "dispatchBlockHeaderWord0": 92,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1640,
+      "argumentCount": 0,
+      "argumentOffset": 1646,
+      "localsCount": 0,
+      "localsOffset": 1646,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 345,
+      "lineCount": 0,
+      "lineOffset": 1646,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 30
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 398,
+      "name": "loadExternalValues",
+      "dispatchSlot": 31,
+      "dispatchBlockIndex": 29,
+      "dispatchBlockOffset": 19584,
+      "dispatchBlockLength": 680,
+      "dispatchBlockHeaderWord0": 87,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 1646,
+      "argumentCount": 0,
+      "argumentOffset": 1652,
+      "localsCount": 0,
+      "localsOffset": 1652,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 354,
+      "lineCount": 0,
+      "lineOffset": 1652,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 31
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    }
+  ],
+  "literals": [
+    {
+      "type": 11,
+      "offset": 0,
+      "dataLength": 21676,
+      "value": null,
+      "referenceSummary": [
+        {
+          "value": "aryDyno",
+          "firstOffset": 15660,
+          "occurrences": 1,
+          "firstBlockOffset": 15132,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "strTorque",
+          "firstOffset": 16472,
+          "occurrences": 1,
+          "firstBlockOffset": 15668,
+          "raceEngineHint": 1
+        },
+        {
+          "value": "Function",
+          "firstOffset": 392,
+          "occurrences": 1,
+          "firstBlockOffset": 0,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "avatarType",
+          "firstOffset": 1068,
+          "occurrences": 4,
+          "firstBlockOffset": 460,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "noCache",
+          "firstOffset": 1092,
+          "occurrences": 1,
+          "firstBlockOffset": 460,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "aryIDs",
+          "firstOffset": 1112,
+          "occurrences": 1,
+          "firstBlockOffset": 460,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "aryAgeIDs",
+          "firstOffset": 1132,
+          "occurrences": 1,
+          "firstBlockOffset": 460,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tempFile",
+          "firstOffset": 1172,
+          "occurrences": 2,
+          "firstBlockOffset": 460,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "timeNow",
+          "firstOffset": 1192,
+          "occurrences": 2,
+          "firstBlockOffset": 460,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "theURL",
+          "firstOffset": 2572,
+          "occurrences": 3,
+          "firstBlockOffset": 1200,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tempArray",
+          "firstOffset": 2592,
+          "occurrences": 5,
+          "firstBlockOffset": 1200,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "curDate",
+          "firstOffset": 3280,
+          "occurrences": 1,
+          "firstBlockOffset": 2604,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "7?7<",
+          "firstOffset": 3405,
+          "occurrences": 1,
+          "firstBlockOffset": 3304,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "7?7;",
+          "firstOffset": 3461,
+          "occurrences": 1,
+          "firstBlockOffset": 3304,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "7>7T",
+          "firstOffset": 3486,
+          "occurrences": 3,
+          "firstBlockOffset": 3304,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "avatarAvailable",
+          "firstOffset": 4652,
+          "occurrences": 1,
+          "firstBlockOffset": 3304,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "fname",
+          "firstOffset": 5312,
+          "occurrences": 2,
+          "firstBlockOffset": 4924,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "isAvailable",
+          "firstOffset": 5928,
+          "occurrences": 1,
+          "firstBlockOffset": 5364,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tpath",
+          "firstOffset": 6200,
+          "occurrences": 1,
+          "firstBlockOffset": 5940,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tsize",
+          "firstOffset": 6220,
+          "occurrences": 1,
+          "firstBlockOffset": 5940,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "fpathHood",
+          "firstOffset": 6804,
+          "occurrences": 1,
+          "firstBlockOffset": 6228,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "fpathSide",
+          "firstOffset": 6828,
+          "occurrences": 1,
+          "firstBlockOffset": 6228,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "fpathFront",
+          "firstOffset": 6852,
+          "occurrences": 1,
+          "firstBlockOffset": 6228,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "fpathBack",
+          "firstOffset": 6876,
+          "occurrences": 1,
+          "firstBlockOffset": 6228,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "upath",
+          "firstOffset": 6900,
+          "occurrences": 1,
+          "firstBlockOffset": 6228,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tempInstallerPath",
+          "firstOffset": 8396,
+          "occurrences": 1,
+          "firstBlockOffset": 8124,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "xtra_md5",
+          "firstOffset": 8428,
+          "occurrences": 2,
+          "firstBlockOffset": 8124,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "dlStatus",
+          "firstOffset": 9432,
+          "occurrences": 2,
+          "firstBlockOffset": 8460,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "appLocation",
+          "firstOffset": 9848,
+          "occurrences": 1,
+          "firstBlockOffset": 9440,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "parentName",
+          "firstOffset": 12040,
+          "occurrences": 1,
+          "firstBlockOffset": 11724,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "theList",
+          "firstOffset": 12064,
+          "occurrences": 1,
+          "firstBlockOffset": 11724,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "filePath",
+          "firstOffset": 13544,
+          "occurrences": 1,
+          "firstBlockOffset": 12108,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "g!c$g+4",
+          "firstOffset": 14142,
+          "occurrences": 1,
+          "firstBlockOffset": 13596,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "bytesDl",
+          "firstOffset": 15124,
+          "occurrences": 1,
+          "firstBlockOffset": 14528,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "objFile",
+          "firstOffset": 15624,
+          "occurrences": 5,
+          "firstBlockOffset": 15132,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "strFlow",
+          "firstOffset": 16496,
+          "occurrences": 1,
+          "firstBlockOffset": 15668,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "strRatio",
+          "firstOffset": 16516,
+          "occurrences": 1,
+          "firstBlockOffset": 15668,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "strMaxIcon",
+          "firstOffset": 16536,
+          "occurrences": 1,
+          "firstBlockOffset": 15668,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "XYY{",
+          "firstOffset": 19430,
+          "occurrences": 2,
+          "firstBlockOffset": 18980,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "pcid",
+          "firstOffset": 19564,
+          "occurrences": 1,
+          "firstBlockOffset": 18980,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "serverFileText",
+          "firstOffset": 20124,
+          "occurrences": 1,
+          "firstBlockOffset": 19584,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "stringArray",
+          "firstOffset": 20152,
+          "occurrences": 1,
+          "firstBlockOffset": 19584,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "wordCount",
+          "firstOffset": 20192,
+          "occurrences": 1,
+          "firstBlockOffset": 19584,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "wordCountMax",
+          "firstOffset": 20216,
+          "occurrences": 1,
+          "firstBlockOffset": 19584,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "theChar",
+          "firstOffset": 20256,
+          "occurrences": 1,
+          "firstBlockOffset": 19584,
+          "raceEngineHint": 0
+        }
+      ],
+      "raceEngineHints": [
+        {
+          "value": "aryDyno",
+          "firstOffset": 15660,
+          "occurrences": 1,
+          "firstBlockOffset": 15132
+        },
+        {
+          "value": "strTorque",
+          "firstOffset": 16472,
+          "occurrences": 1,
+          "firstBlockOffset": 15668
+        }
+      ],
+      "asciiStrings": [
+        "Function",
+        "avatarType",
+        "noCache",
+        "aryIDs",
+        "aryAgeIDs",
+        "tempFile",
+        "timeNow",
+        "avatarType",
+        "theURL",
+        "tempArray",
+        "avatarType",
+        "tempFile",
+        "timeNow",
+        "curDate",
+        "7?7<",
+        "7?7;",
+        "7>7T",
+        "7>7T",
+        "7>7T",
+        "avatarType",
+        "avatarAvailable",
+        "fname",
+        "theURL",
+        "tempArray",
+        "fname",
+        "isAvailable",
+        "tpath",
+        "tsize",
+        "fpathHood",
+        "fpathSide",
+        "fpathFront",
+        "fpathBack",
+        "upath",
+        "tempInstallerPath",
+        "xtra_md5",
+        "tempArray",
+        "dlStatus",
+        "appLocation",
+        "tempArray",
+        "parentName",
+        "theList",
+        "xtra_md5",
+        "filePath",
+        "theURL",
+        "tempArray",
+        "g!c$g+4",
+        "dlStatus",
+        "bytesDl",
+        "objFile",
+        "aryDyno",
+        "strTorque",
+        "strFlow",
+        "strRatio",
+        "strMaxIcon",
+        "objFile",
+        "objFile",
+        "objFile",
+        "XYY{",
+        "pcid",
+        "XYY{",
+        "objFile",
+        "serverFileText",
+        "stringArray",
+        "wordCount",
+        "wordCountMax",
+        "theChar"
+      ],
+      "asciiStringRefs": [
+        {
+          "offset": 392,
+          "value": "Function",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1068,
+          "value": "avatarType",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1092,
+          "value": "noCache",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1112,
+          "value": "aryIDs",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1132,
+          "value": "aryAgeIDs",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1172,
+          "value": "tempFile",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1192,
+          "value": "timeNow",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2548,
+          "value": "avatarType",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2572,
+          "value": "theURL",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2592,
+          "value": "tempArray",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3216,
+          "value": "avatarType",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3240,
+          "value": "tempFile",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3260,
+          "value": "timeNow",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3280,
+          "value": "curDate",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3405,
+          "value": "7?7<",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3461,
+          "value": "7?7;",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3486,
+          "value": "7>7T",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3509,
+          "value": "7>7T",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 3650,
+          "value": "7>7T",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 4628,
+          "value": "avatarType",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 4652,
+          "value": "avatarAvailable",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5312,
+          "value": "fname",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5332,
+          "value": "theURL",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5352,
+          "value": "tempArray",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5908,
+          "value": "fname",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5928,
+          "value": "isAvailable",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6200,
+          "value": "tpath",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6220,
+          "value": "tsize",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6804,
+          "value": "fpathHood",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6828,
+          "value": "fpathSide",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6852,
+          "value": "fpathFront",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6876,
+          "value": "fpathBack",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6900,
+          "value": "upath",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 8396,
+          "value": "tempInstallerPath",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 8428,
+          "value": "xtra_md5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 8448,
+          "value": "tempArray",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 9432,
+          "value": "dlStatus",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 9848,
+          "value": "appLocation",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 10940,
+          "value": "tempArray",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 12040,
+          "value": "parentName",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 12064,
+          "value": "theList",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 12100,
+          "value": "xtra_md5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13544,
+          "value": "filePath",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13564,
+          "value": "theURL",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 13584,
+          "value": "tempArray",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14142,
+          "value": "g!c$g+4",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 14284,
+          "value": "dlStatus",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15124,
+          "value": "bytesDl",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15624,
+          "value": "objFile",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 15660,
+          "value": "aryDyno",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 16472,
+          "value": "strTorque",
+          "raceEngineHint": 1
+        },
+        {
+          "offset": 16496,
+          "value": "strFlow",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16516,
+          "value": "strRatio",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16536,
+          "value": "strMaxIcon",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 16560,
+          "value": "objFile",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 17780,
+          "value": "objFile",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 18420,
+          "value": "objFile",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 19430,
+          "value": "XYY{",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 19564,
+          "value": "pcid",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 19964,
+          "value": "XYY{",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 20104,
+          "value": "objFile",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 20124,
+          "value": "serverFileText",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 20152,
+          "value": "stringArray",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 20192,
+          "value": "wordCount",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 20216,
+          "value": "wordCountMax",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 20256,
+          "value": "theChar",
+          "raceEngineHint": 0
+        }
+      ],
+      "embeddedCodeOffsets": [
+        0,
+        460,
+        1200,
+        2604,
+        3304,
+        4668,
+        4924,
+        5364,
+        5940,
+        6228,
+        6924,
+        7888,
+        8124,
+        8460,
+        9440,
+        9860,
+        10952,
+        11724,
+        12108,
+        13596,
+        14292,
+        14528,
+        15132,
+        15668,
+        16584,
+        17432,
+        17788,
+        18428,
+        18980,
+        19584,
+        20264
+      ],
+      "embeddedCodeBlocks": [
+        {
+          "offset": 0,
+          "length": 460,
+          "hexPreview": "03 00 ad de bc 00 00 00 6f 00 00 00 96 00 00 00 7f 00 00 7f 00 04 7d 00 05 7d 00 06 7d 00 07 7d",
+          "headerWord0": 188,
+          "headerWord1": 111,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 392,
+              "value": "Function",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 460,
+          "length": 740,
+          "hexPreview": "03 00 ad de 9d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3b 00 01 3a 00 01 20 07 00 0e 3b 00",
+          "headerWord0": 157,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 6,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 1068,
+              "value": "avatarType",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 1092,
+              "value": "noCache",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 1112,
+              "value": "aryIDs",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 1132,
+              "value": "aryAgeIDs",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 1172,
+              "value": "tempFile",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 1192,
+              "value": "timeNow",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 1200,
+          "length": 1404,
+          "hexPreview": "03 00 ad de 58 01 00 00 00 00 00 00 96 00 00 00 54 00 00 35 00 00 39 3d 00 01 3a 00 01 57 00 00",
+          "headerWord0": 344,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 3,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 2548,
+              "value": "avatarType",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2572,
+              "value": "theURL",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2592,
+              "value": "tempArray",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 2604,
+          "length": 700,
+          "hexPreview": "03 00 ad de 6c 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3a 00 00 51 3b 00 01 35 00 02 54 00",
+          "headerWord0": 108,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 4,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 3216,
+              "value": "avatarType",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3240,
+              "value": "tempFile",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3260,
+              "value": "timeNow",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3280,
+              "value": "curDate",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 3304,
+          "length": 1364,
+          "hexPreview": "03 00 ad de 8c 01 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 57 00 00 51 3b 00",
+          "headerWord0": 396,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 7,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 3405,
+              "value": "7?7<",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3461,
+              "value": "7?7;",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3486,
+              "value": "7>7T",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3509,
+              "value": "7>7T",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 3650,
+              "value": "7>7T",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 4628,
+              "value": "avatarType",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 4652,
+              "value": "avatarAvailable",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 4668,
+          "length": 256,
+          "hexPreview": "03 00 ad de 1b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 35 00 02 39 54 00",
+          "headerWord0": 27,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 4924,
+          "length": 440,
+          "hexPreview": "03 00 ad de 7a 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 39 54 00 00 3c 00 02 1e 3a 00",
+          "headerWord0": 122,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 3,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 5312,
+              "value": "fname",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 5332,
+              "value": "theURL",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 5352,
+              "value": "tempArray",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 5364,
+          "length": 576,
+          "hexPreview": "03 00 ad de 49 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 3d 00 02 1b 54 00 00 1b 57 00",
+          "headerWord0": 73,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 2,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 5908,
+              "value": "fname",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 5928,
+              "value": "isAvailable",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 5940,
+          "length": 288,
+          "hexPreview": "03 00 ad de 18 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 35 00 02 39 54 00",
+          "headerWord0": 24,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 2,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 6200,
+              "value": "tpath",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6220,
+              "value": "tsize",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 6228,
+          "length": 696,
+          "hexPreview": "03 00 ad de 4b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3d 00 02 3d 00 02 3d 00 03",
+          "headerWord0": 75,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 5,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 6804,
+              "value": "fpathHood",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6828,
+              "value": "fpathSide",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6852,
+              "value": "fpathFront",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6876,
+              "value": "fpathBack",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 6900,
+              "value": "upath",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 6924,
+          "length": 964,
+          "hexPreview": "03 00 ad de b2 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 3d 00 02 1b 3b 00 00 35 00 03",
+          "headerWord0": 178,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 7888,
+          "length": 236,
+          "hexPreview": "03 00 ad de 16 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 35 00 02 39 3f 54",
+          "headerWord0": 22,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 8124,
+          "length": 336,
+          "hexPreview": "03 00 ad de 16 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 35 00 02 39 3e 3d",
+          "headerWord0": 22,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 3,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 8396,
+              "value": "tempInstallerPath",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 8428,
+              "value": "xtra_md5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 8448,
+              "value": "tempArray",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 8460,
+          "length": 980,
+          "hexPreview": "03 00 ad de d2 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 3b 00 02 35 00 03",
+          "headerWord0": 210,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 9432,
+              "value": "dlStatus",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 9440,
+          "length": 420,
+          "hexPreview": "03 00 ad de 30 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 35 00 02 39 3b 00",
+          "headerWord0": 48,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 9848,
+              "value": "appLocation",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 9860,
+          "length": 1092,
+          "hexPreview": "03 00 ad de 46 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 54 00 00 3a 00 01 07 00 24 3b 00 01",
+          "headerWord0": 70,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 10940,
+              "value": "tempArray",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 10952,
+          "length": 772,
+          "hexPreview": "03 00 ad de 6e 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3a 00 00 51 6c 00 01 3e 6d 00 01 51",
+          "headerWord0": 110,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 11724,
+          "length": 384,
+          "hexPreview": "03 00 ad de 1a 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3b 00 01 3d 00 02 1b 54 00 00 3a 00",
+          "headerWord0": 26,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 3,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 12040,
+              "value": "parentName",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 12064,
+              "value": "theList",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 12100,
+              "value": "xtra_md5",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 12108,
+          "length": 1488,
+          "hexPreview": "03 00 ad de be 01 00 00 00 00 00 00 96 00 00 00 58 00 02 57 00 00 51 56 00 00 54 00 01 35 00 00",
+          "headerWord0": 446,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 3,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 13544,
+              "value": "filePath",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13564,
+              "value": "theURL",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 13584,
+              "value": "tempArray",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 13596,
+          "length": 696,
+          "hexPreview": "03 00 ad de 70 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3a 00 00 51 3b 00 01 35 00 02 54 00",
+          "headerWord0": 112,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 2,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 14142,
+              "value": "g!c$g+4",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 14284,
+              "value": "dlStatus",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 14292,
+          "length": 236,
+          "hexPreview": "03 00 ad de 0e 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 54 00 00 35 00 01 3a 00 01 51 00 00",
+          "headerWord0": 14,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 14528,
+          "length": 604,
+          "hexPreview": "03 00 ad de 50 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 3e 17 07 00 16 6c 00 01 0c 35 00 01 3b",
+          "headerWord0": 80,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 15124,
+              "value": "bytesDl",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 15132,
+          "length": 536,
+          "hexPreview": "03 00 ad de 2d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 35 00 02 39 3b 00",
+          "headerWord0": 45,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 1,
+          "label": "aryDyno",
+          "stringCount": 2,
+          "numericHintCount": 11,
+          "numericHints": [
+            {
+              "offset": 15148,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313827134669,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 512
+            },
+            {
+              "offset": 15152,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.03125116974115372,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 508
+            },
+            {
+              "offset": 15172,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195343676023185,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 488
+            },
+            {
+              "offset": 15172,
+              "type": "float32",
+              "endianness": "little",
+              "value": 0.00202943268232048,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 488
+            },
+            {
+              "offset": 15176,
+              "type": "float32",
+              "endianness": "little",
+              "value": 0.0027925968170166,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 484
+            },
+            {
+              "offset": 15284,
+              "type": "float32",
+              "endianness": "big",
+              "value": 128.2578125,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 376
+            },
+            {
+              "offset": 15316,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8218.25,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 344
+            },
+            {
+              "offset": 15396,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8218.25,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 264
+            },
+            {
+              "offset": 15588,
+              "type": "float32",
+              "endianness": "big",
+              "value": 513.890625,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 72
+            },
+            {
+              "offset": 15624,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15000.6083984375,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 36
+            },
+            {
+              "offset": 15660,
+              "type": "float32",
+              "endianness": "little",
+              "value": 997.78717041015625,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 0
+            }
+          ],
+          "strings": [
+            {
+              "offset": 15624,
+              "value": "objFile",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 15660,
+              "value": "aryDyno",
+              "raceEngineHint": 1
+            }
+          ]
+        },
+        {
+          "offset": 15668,
+          "length": 916,
+          "hexPreview": "03 00 ad de ac 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 23 00 01 57 00 00 51 56 00",
+          "headerWord0": 172,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 1,
+          "label": "strTorque",
+          "stringCount": 5,
+          "numericHintCount": 9,
+          "numericHints": [
+            {
+              "offset": 16044,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8218.25,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 428
+            },
+            {
+              "offset": 16096,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8218.25,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 376
+            },
+            {
+              "offset": 16220,
+              "type": "float32",
+              "endianness": "big",
+              "value": 513.890625,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 252
+            },
+            {
+              "offset": 16236,
+              "type": "float32",
+              "endianness": "big",
+              "value": 128.2578125,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 236
+            },
+            {
+              "offset": 16264,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8218.25,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 208
+            },
+            {
+              "offset": 16312,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32.0,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 160
+            },
+            {
+              "offset": 16436,
+              "type": "float32",
+              "endianness": "big",
+              "value": 513.890625,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 36
+            },
+            {
+              "offset": 16496,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15517.1123046875,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 15
+            },
+            {
+              "offset": 16560,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15000.6083984375,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 79
+            }
+          ],
+          "strings": [
+            {
+              "offset": 16472,
+              "value": "strTorque",
+              "raceEngineHint": 1
+            },
+            {
+              "offset": 16496,
+              "value": "strFlow",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16516,
+              "value": "strRatio",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16536,
+              "value": "strMaxIcon",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 16560,
+              "value": "objFile",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 16584,
+          "length": 848,
+          "hexPreview": "03 00 ad de a2 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 23 00 01 57 00 00 51 56 00",
+          "headerWord0": 162,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 17432,
+          "length": 356,
+          "hexPreview": "03 00 ad de 4f 00 00 00 00 00 00 00 96 00 00 00 54 00 00 35 00 00 57 00 00 51 56 00 00 3e 17 07",
+          "headerWord0": 79,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 17780,
+              "value": "objFile",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 17788,
+          "length": 640,
+          "hexPreview": "03 00 ad de 8b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 23 00 01 57 00 00 51 56 00",
+          "headerWord0": 139,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 18420,
+              "value": "objFile",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 18428,
+          "length": 552,
+          "hexPreview": "03 00 ad de 70 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 23 00 01 57 00 00 51 56 00",
+          "headerWord0": 112,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        },
+        {
+          "offset": 18980,
+          "length": 604,
+          "hexPreview": "03 00 ad de 5c 00 00 00 00 00 00 00 96 00 00 00 85 3b 00 00 39 3b 00 01 3d 00 02 1b 3d 00 03 3a",
+          "headerWord0": 92,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 2,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 19430,
+              "value": "XYY{",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 19564,
+              "value": "pcid",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 19584,
+          "length": 680,
+          "hexPreview": "03 00 ad de 57 00 00 00 00 00 00 00 96 00 00 00 85 3b 00 00 39 3b 00 01 3d 00 02 1b 54 00 00 1b",
+          "headerWord0": 87,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 7,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 19964,
+              "value": "XYY{",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 20104,
+              "value": "objFile",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 20124,
+              "value": "serverFileText",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 20152,
+              "value": "stringArray",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 20192,
+              "value": "wordCount",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 20216,
+              "value": "wordCountMax",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 20256,
+              "value": "theChar",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 20264,
+          "length": 1412,
+          "hexPreview": "03 00 ad de 6f 01 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 23 00 01 57 00 00 51 56 00",
+          "headerWord0": 367,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        }
+      ],
+      "raceEngineBlocks": [
+        {
+          "offset": 15132,
+          "length": 536,
+          "hexPreview": "03 00 ad de 2d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 35 00 02 39 3b 00",
+          "headerWord0": 45,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "label": "aryDyno",
+          "stringCount": 2,
+          "numericHintCount": 11,
+          "numericHints": [
+            {
+              "offset": 15148,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195313827134669,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 512
+            },
+            {
+              "offset": 15152,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.03125116974115372,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 508
+            },
+            {
+              "offset": 15172,
+              "type": "float32",
+              "endianness": "big",
+              "value": 0.00195343676023185,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 488
+            },
+            {
+              "offset": 15172,
+              "type": "float32",
+              "endianness": "little",
+              "value": 0.00202943268232048,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 488
+            },
+            {
+              "offset": 15176,
+              "type": "float32",
+              "endianness": "little",
+              "value": 0.0027925968170166,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 484
+            },
+            {
+              "offset": 15284,
+              "type": "float32",
+              "endianness": "big",
+              "value": 128.2578125,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 376
+            },
+            {
+              "offset": 15316,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8218.25,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 344
+            },
+            {
+              "offset": 15396,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8218.25,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 264
+            },
+            {
+              "offset": 15588,
+              "type": "float32",
+              "endianness": "big",
+              "value": 513.890625,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 72
+            },
+            {
+              "offset": 15624,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15000.6083984375,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 36
+            },
+            {
+              "offset": 15660,
+              "type": "float32",
+              "endianness": "little",
+              "value": 997.78717041015625,
+              "nearestHint": "aryDyno",
+              "distanceToNearestHint": 0
+            }
+          ],
+          "hints": [
+            {
+              "offset": 15660,
+              "value": "aryDyno"
+            }
+          ]
+        },
+        {
+          "offset": 15668,
+          "length": 916,
+          "hexPreview": "03 00 ad de ac 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 23 00 01 57 00 00 51 56 00",
+          "headerWord0": 172,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "label": "strTorque",
+          "stringCount": 5,
+          "numericHintCount": 9,
+          "numericHints": [
+            {
+              "offset": 16044,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8218.25,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 428
+            },
+            {
+              "offset": 16096,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8218.25,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 376
+            },
+            {
+              "offset": 16220,
+              "type": "float32",
+              "endianness": "big",
+              "value": 513.890625,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 252
+            },
+            {
+              "offset": 16236,
+              "type": "float32",
+              "endianness": "big",
+              "value": 128.2578125,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 236
+            },
+            {
+              "offset": 16264,
+              "type": "float32",
+              "endianness": "big",
+              "value": 8218.25,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 208
+            },
+            {
+              "offset": 16312,
+              "type": "float32",
+              "endianness": "big",
+              "value": 32.0,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 160
+            },
+            {
+              "offset": 16436,
+              "type": "float32",
+              "endianness": "big",
+              "value": 513.890625,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 36
+            },
+            {
+              "offset": 16496,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15517.1123046875,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 15
+            },
+            {
+              "offset": 16560,
+              "type": "float32",
+              "endianness": "little",
+              "value": 15000.6083984375,
+              "nearestHint": "strTorque",
+              "distanceToNearestHint": 79
+            }
+          ],
+          "hints": [
+            {
+              "offset": 16472,
+              "value": "strTorque"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 21676,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    }
+  ],
+  "raceEngineMap": [
+    {
+      "literalIndex": 0,
+      "literalOffset": 0,
+      "blockOffset": 15132,
+      "blockLength": 536,
+      "hexPreview": "03 00 ad de 2d 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 3a 00 01 35 00 02 39 3b 00",
+      "headerWord0": 45,
+      "headerWord1": 0,
+      "headerWord2": 150,
+      "label": "aryDyno",
+      "numericHintCount": 11,
+      "hints": [
+        {
+          "offset": 15660,
+          "value": "aryDyno"
+        }
+      ],
+      "numericHints": [
+        {
+          "offset": 15148,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.00195313827134669,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 512
+        },
+        {
+          "offset": 15152,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.03125116974115372,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 508
+        },
+        {
+          "offset": 15172,
+          "type": "float32",
+          "endianness": "big",
+          "value": 0.00195343676023185,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 488
+        },
+        {
+          "offset": 15172,
+          "type": "float32",
+          "endianness": "little",
+          "value": 0.00202943268232048,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 488
+        },
+        {
+          "offset": 15176,
+          "type": "float32",
+          "endianness": "little",
+          "value": 0.0027925968170166,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 484
+        },
+        {
+          "offset": 15284,
+          "type": "float32",
+          "endianness": "big",
+          "value": 128.2578125,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 376
+        },
+        {
+          "offset": 15316,
+          "type": "float32",
+          "endianness": "big",
+          "value": 8218.25,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 344
+        },
+        {
+          "offset": 15396,
+          "type": "float32",
+          "endianness": "big",
+          "value": 8218.25,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 264
+        },
+        {
+          "offset": 15588,
+          "type": "float32",
+          "endianness": "big",
+          "value": 513.890625,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 72
+        },
+        {
+          "offset": 15624,
+          "type": "float32",
+          "endianness": "little",
+          "value": 15000.6083984375,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 36
+        },
+        {
+          "offset": 15660,
+          "type": "float32",
+          "endianness": "little",
+          "value": 997.78717041015625,
+          "nearestHint": "aryDyno",
+          "distanceToNearestHint": 0
+        }
+      ]
+    },
+    {
+      "literalIndex": 0,
+      "literalOffset": 0,
+      "blockOffset": 15668,
+      "blockLength": 916,
+      "hexPreview": "03 00 ad de ac 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 23 00 01 57 00 00 51 56 00",
+      "headerWord0": 172,
+      "headerWord1": 0,
+      "headerWord2": 150,
+      "label": "strTorque",
+      "numericHintCount": 9,
+      "hints": [
+        {
+          "offset": 16472,
+          "value": "strTorque"
+        }
+      ],
+      "numericHints": [
+        {
+          "offset": 16044,
+          "type": "float32",
+          "endianness": "big",
+          "value": 8218.25,
+          "nearestHint": "strTorque",
+          "distanceToNearestHint": 428
+        },
+        {
+          "offset": 16096,
+          "type": "float32",
+          "endianness": "big",
+          "value": 8218.25,
+          "nearestHint": "strTorque",
+          "distanceToNearestHint": 376
+        },
+        {
+          "offset": 16220,
+          "type": "float32",
+          "endianness": "big",
+          "value": 513.890625,
+          "nearestHint": "strTorque",
+          "distanceToNearestHint": 252
+        },
+        {
+          "offset": 16236,
+          "type": "float32",
+          "endianness": "big",
+          "value": 128.2578125,
+          "nearestHint": "strTorque",
+          "distanceToNearestHint": 236
+        },
+        {
+          "offset": 16264,
+          "type": "float32",
+          "endianness": "big",
+          "value": 8218.25,
+          "nearestHint": "strTorque",
+          "distanceToNearestHint": 208
+        },
+        {
+          "offset": 16312,
+          "type": "float32",
+          "endianness": "big",
+          "value": 32.0,
+          "nearestHint": "strTorque",
+          "distanceToNearestHint": 160
+        },
+        {
+          "offset": 16436,
+          "type": "float32",
+          "endianness": "big",
+          "value": 513.890625,
+          "nearestHint": "strTorque",
+          "distanceToNearestHint": 36
+        },
+        {
+          "offset": 16496,
+          "type": "float32",
+          "endianness": "little",
+          "value": 15517.1123046875,
+          "nearestHint": "strTorque",
+          "distanceToNearestHint": 15
+        },
+        {
+          "offset": 16560,
+          "type": "float32",
+          "endianness": "little",
+          "value": 15000.6083984375,
+          "nearestHint": "strTorque",
+          "distanceToNearestHint": 79
+        }
+      ]
+    }
+  ]
+}

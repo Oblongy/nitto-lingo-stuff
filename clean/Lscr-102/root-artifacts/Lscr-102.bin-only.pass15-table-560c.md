@@ -1,0 +1,99 @@
+# Lscr-102.bin-only pass 15: aligned table at `0x560C`
+
+Source:
+- `C:\Users\Dilldo\Nitto\Lingo Stuff\Lscr-102.bin`
+
+Proven boundary:
+- start `0x560C`
+- end exclusive `0x5F44`
+
+Record count:
+- `86`
+
+Exact string records:
+- `0x560C`: `id=0`, `type=4`, `chars=2`, `c0`
+- `0x561C`: `id=1`, `type=4`, `chars=2`, `c1`
+- `0x562C`: `id=2`, `type=4`, `chars=17`, `timeFromLastFrame`
+- `0x565C`: `id=3`, `type=4`, `chars=7`, `theTime`
+- `0x5678`: `id=4`, `type=4`, `chars=7`, `_system`
+- `0x5694`: `id=5`, `type=4`, `chars=12`, `milliseconds`
+- `0x56B8`: `id=6`, `type=4`, `chars=5`, `c1000`
+- `0x56D0`: `id=7`, `type=4`, `chars=13`, `theActualTime`
+- `0x56F8`: `id=8`, `type=4`, `chars=4`, `c0_2`
+- `0x570C`: `id=9`, `type=4`, `chars=6`, `avgFps`
+- `0x5724`: `id=10`, `type=4`, `chars=8`, `fpsCount`
+- `0x5740`: `id=11`, `type=4`, `chars=17`, `calculateExtraHpi`
+- `0x5770`: `id=12`, `type=4`, `chars=4`, `carV`
+- `0x5784`: `id=13`, `type=4`, `chars=4`, `c0_5`
+- `0x5798`: `id=14`, `type=4`, `chars=8`, `carAccel`
+- `0x57B4`: `id=15`, `type=4`, `chars=9`, `gearValue`
+- `0x57D4`: `id=16`, `type=4`, `chars=3`, `hpi`
+- `0x57E8`: `id=17`, `type=4`, `chars=17`, `boostCreatedPower`
+- `0x5818`: `id=18`, `type=4`, `chars=11`, `systemPower`
+- `0x583C`: `id=19`, `type=4`, `chars=7`, `ECUtune`
+- `0x5858`: `id=20`, `type=4`, `chars=21`, `compressionPowerDelta`
+- `0x5890`: `id=21`, `type=4`, `chars=12`, `engineDamage`
+- `0x58B4`: `id=22`, `type=4`, `chars=5`, `isNos`
+- `0x58CC`: `id=23`, `type=4`, `chars=16`, `nitrousRemaining`
+- `0x58F8`: `id=24`, `type=4`, `chars=3`, `NOS`
+- `0x590C`: `id=25`, `type=4`, `chars=3`, `rpm`
+- `0x5920`: `id=26`, `type=4`, `chars=12`, `stockRedLine`
+- `0x5944`: `id=27`, `type=4`, `chars=5`, `c1_25`
+- `0x595C`: `id=28`, `type=4`, `chars=2`, `hp`
+- `0x596C`: `id=29`, `type=4`, `chars=6`, `c10000`
+- `0x5984`: `id=30`, `type=4`, `chars=2`, `c2`
+- `0x5994`: `id=31`, `type=4`, `chars=6`, `sprite`
+- `0x59AC`: `id=32`, `type=4`, `chars=7`, `flashSP`
+- `0x59C8`: `id=33`, `type=4`, `chars=14`, `runEngineNOSCB`
+- `0x59F0`: `id=34`, `type=4`, `chars=15`, `nitrousTankSize`
+- `0x5A1C`: `id=35`, `type=4`, `chars=4`, `c100`
+- `0x5A30`: `id=36`, `type=4`, `chars=10`, `revLimiter`
+- `0x5A50`: `id=37`, `type=4`, `chars=4`, `c200`
+- `0x5A64`: `id=38`, `type=4`, `chars=11`, `tqFlyFactor`
+- `0x5A88`: `id=39`, `type=4`, `chars=2`, `gr`
+- `0x5A98`: `id=40`, `type=4`, `chars=3`, `fgr`
+- `0x5AAC`: `id=41`, `type=4`, `chars=17`, `rpmGearConversion`
+- `0x5ADC`: `id=42`, `type=4`, `chars=1`, `r`
+- `0x5AEC`: `id=43`, `type=4`, `chars=5`, `negTq`
+- `0x5B04`: `id=44`, `type=4`, `chars=2`, `c9`
+- `0x5B14`: `id=45`, `type=4`, `chars=4`, `c299`
+- `0x5B28`: `id=46`, `type=4`, `chars=4`, `c300`
+- `0x5B3C`: `id=47`, `type=4`, `chars=4`, `c5_5`
+- `0x5B50`: `id=48`, `type=4`, `chars=1`, `w`
+- `0x5B60`: `id=49`, `type=4`, `chars=1`, `g`
+- `0x5B70`: `id=50`, `type=4`, `chars=22`, `revLimiterDeceleration`
+- `0x5BA8`: `id=51`, `type=4`, `chars=5`, `brake`
+- `0x5BC0`: `id=52`, `type=4`, `chars=16`, `brakeDecleration`
+- `0x5BEC`: `id=53`, `type=4`, `chars=7`, `speedoV`
+- `0x5C08`: `id=54`, `type=4`, `chars=7`, `engineV`
+- `0x5C24`: `id=55`, `type=4`, `chars=2`, `c5`
+- `0x5C34`: `id=56`, `type=4`, `chars=10`, `gConvSlipA`
+- `0x5C54`: `id=57`, `type=4`, `chars=3`, `c50`
+- `0x5C68`: `id=58`, `type=4`, `chars=9`, `getTorque`
+- `0x5C88`: `id=59`, `type=4`, `chars=3`, `mph`
+- `0x5C9C`: `id=60`, `type=4`, `chars=6`, `vToMph`
+- `0x5CB4`: `id=61`, `type=4`, `chars=4`, `slip`
+- `0x5CC8`: `id=62`, `type=4`, `chars=13`, `launchControl`
+- `0x5CF0`: `id=63`, `type=4`, `chars=5`, `posTq`
+- `0x5D08`: `id=64`, `type=4`, `chars=7`, `raceGas`
+- `0x5D24`: `id=65`, `type=4`, `chars=5`, `c0_02`
+- `0x5D3C`: `id=66`, `type=4`, `chars=8`, `detuneHp`
+- `0x5D58`: `id=67`, `type=4`, `chars=2`, `c8`
+- `0x5D68`: `id=68`, `type=4`, `chars=6`, `c0_005`
+- `0x5D80`: `id=69`, `type=4`, `chars=6`, `c0_016`
+- `0x5D98`: `id=70`, `type=4`, `chars=4`, `DAfp`
+- `0x5DAC`: `id=71`, `type=4`, `chars=6`, `UsInit`
+- `0x5DC4`: `id=72`, `type=4`, `chars=9`, `tireStick`
+- `0x5DE4`: `id=73`, `type=4`, `chars=5`, `c0_05`
+- `0x5DFC`: `id=74`, `type=4`, `chars=6`, `UkInit`
+- `0x5E14`: `id=75`, `type=4`, `chars=2`, `c3`
+- `0x5E24`: `id=76`, `type=4`, `chars=5`, `c0_09`
+- `0x5E3C`: `id=77`, `type=4`, `chars=4`, `c0_6`
+- `0x5E50`: `id=78`, `type=4`, `chars=1`, `N`
+- `0x5E60`: `id=79`, `type=4`, `chars=24`, `runEngineTractionLightCB`
+- `0x5E9C`: `id=80`, `type=4`, `chars=3`, `c10`
+- `0x5EB0`: `id=81`, `type=4`, `chars=9`, `tireScrub`
+- `0x5ED0`: `id=82`, `type=4`, `chars=6`, `c0_015`
+- `0x5EE8`: `id=83`, `type=4`, `chars=13`, `clutchFeather`
+- `0x5F10`: `id=84`, `type=4`, `chars=5`, `c0_18`
+- `0x5F28`: `id=85`, `type=4`, `chars=7`, `redLine`

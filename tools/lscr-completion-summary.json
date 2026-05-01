@@ -1,0 +1,111 @@
+{
+  "scannedAt": "2026-04-29T08:44:42.377Z",
+  "nodeExecPath": "C:\\Users\\Dilldo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+  "results": [
+    {
+      "chunkBase": "Lscr-93",
+      "expectedHiddenBlocks": 2,
+      "completionRuleSatisfied": true,
+      "status": 0,
+      "uncoveredOffsets": [],
+      "written": [],
+      "siblingArtifact": "C:\\Users\\Dilldo\\Nitto\\Lingo Stuff\\js_rewrite\\01-frame1script.js",
+      "stdout": "{\n  \"chunkBase\": \"Lscr-93\",\n  \"scriptNumber\": 1,\n  \"embeddedBlockCount\": 2,\n  \"coveredOffsets\": [\n    0,\n    412\n  ],\n  \"uncoveredOffsets\": [],\n  \"written\": [],\n  \"siblingArtifact\": \"C:\\\\Users\\\\Dilldo\\\\Nitto\\\\Lingo Stuff\\\\js_rewrite\\\\01-frame1script.js\"\n}",
+      "stderr": ""
+    },
+    {
+      "chunkBase": "Lscr-102",
+      "expectedHiddenBlocks": 21,
+      "completionRuleSatisfied": true,
+      "status": 0,
+      "uncoveredOffsets": [],
+      "written": [
+        {
+          "fileName": "Lscr-102.pass-block0-table.md",
+          "blockOffset": 0,
+          "wrote": true
+        }
+      ],
+      "siblingArtifact": "C:\\Users\\Dilldo\\Nitto\\Lingo Stuff\\js_rewrite\\02-race-engine.js",
+      "stdout": "{\n  \"chunkBase\": \"Lscr-102\",\n  \"scriptNumber\": 2,\n  \"embeddedBlockCount\": 21,\n  \"coveredOffsets\": [\n    0,\n    344,\n    3032,\n    5972,\n    10964,\n    11368,\n    11760,\n    11992,\n    14012,\n    31980,\n    34244,\n    34828,\n    35024,\n    35848,\n    36764,\n    36964,\n    37252,\n    39320,\n    41116,\n    43264,\n    48232\n  ],\n  \"uncoveredOffsets\": [],\n  \"written\": [\n    {\n      \"fileName\": \"Lscr-102.pass-block0-table.md\",\n      \"blockOffset\": 0,\n      \"wrote\": true\n    }\n  ],\n  \"siblingArtifact\": \"C:\\\\Users\\\\Dilldo\\\\Nitto\\\\Lingo Stuff\\\\js_rewrite\\\\02-race-engine.js\"\n}",
+      "stderr": ""
+    },
+    {
+      "chunkBase": "Lscr-103",
+      "expectedHiddenBlocks": 11,
+      "completionRuleSatisfied": true,
+      "status": 0,
+      "uncoveredOffsets": [],
+      "written": [],
+      "siblingArtifact": "C:\\Users\\Dilldo\\Nitto\\Lingo Stuff\\js_rewrite\\03-race-engine-from-c.js",
+      "stdout": "{\n  \"chunkBase\": \"Lscr-103\",\n  \"scriptNumber\": 3,\n  \"embeddedBlockCount\": 11,\n  \"coveredOffsets\": [\n    0,\n    140,\n    364,\n    604,\n    840,\n    1356,\n    1592,\n    1852,\n    2124,\n    2388,\n    2788\n  ],\n  \"uncoveredOffsets\": [],\n  \"written\": [],\n  \"siblingArtifact\": \"C:\\\\Users\\\\Dilldo\\\\Nitto\\\\Lingo Stuff\\\\js_rewrite\\\\03-race-engine-from-c.js\"\n}",
+      "stderr": ""
+    },
+    {
+      "chunkBase": "Lscr-104",
+      "expectedHiddenBlocks": 76,
+      "completionRuleSatisfied": true,
+      "status": 0,
+      "uncoveredOffsets": [],
+      "written": [],
+      "siblingArtifact": "C:\\Users\\Dilldo\\Nitto\\Lingo Stuff\\js_rewrite\\12-socket-client-to-server.js",
+      "stdout": "{\n  \"chunkBase\": \"Lscr-104\",\n  \"scriptNumber\": 4,\n  \"embeddedBlockCount\": 76,\n  \"coveredOffsets\": [\n    0,\n    384,\n    716,\n    1044,\n    1316,\n    1580,\n    1848,\n    2120,\n    2432,\n    2720,\n    3004,\n    3264,\n    3440,\n    3648,\n    4060,\n    4576,\n    4944,\n    5120,\n    5300,\n    5604,\n    5904,\n    6240,\n    6528,\n    6796,\n    7036,\n    7208,\n    7492,\n    7776,\n    8056,\n    8208,\n    8392,\n    8904,\n    9080,\n    9496,\n    10040,\n    11288,\n    11668,\n    12148,\n    12604,\n    12996,\n    13260,\n    13488,\n    13864,\n    14144,\n    14292,\n    14600,\n    14888,\n    15520,\n    16968,\n    17216,\n    17460,\n    17620,\n    17780,\n    17932,\n    18088,\n    18276,\n    18820,\n    20076,\n    20448,\n    20992,\n    22244,\n    22592,\n    22752,\n    22932,\n    23416,\n    23864,\n    24168,\n    24448,\n    24728,\n    25000,\n    25180,\n    25500,\n    25976,\n    26196,\n    26544,\n    27184\n  ],\n  \"uncoveredOffsets\": [],\n  \"written\": [],\n  \"siblingArtifact\": \"C:\\\\Users\\\\Dilldo\\\\Nitto\\\\Lingo Stuff\\\\js_rewrite\\\\12-socket-client-to-server.js\"\n}",
+      "stderr": ""
+    },
+    {
+      "chunkBase": "Lscr-105",
+      "expectedHiddenBlocks": 2,
+      "completionRuleSatisfied": true,
+      "status": 0,
+      "uncoveredOffsets": [],
+      "written": [],
+      "siblingArtifact": "C:\\Users\\Dilldo\\Nitto\\Lingo Stuff\\js_rewrite\\13-socket-server-to-client.js",
+      "stdout": "{\n  \"chunkBase\": \"Lscr-105\",\n  \"scriptNumber\": 5,\n  \"embeddedBlockCount\": 2,\n  \"coveredOffsets\": [\n    0,\n    112\n  ],\n  \"uncoveredOffsets\": [],\n  \"written\": [],\n  \"siblingArtifact\": \"C:\\\\Users\\\\Dilldo\\\\Nitto\\\\Lingo Stuff\\\\js_rewrite\\\\13-socket-server-to-client.js\"\n}",
+      "stderr": ""
+    },
+    {
+      "chunkBase": "Lscr-106",
+      "expectedHiddenBlocks": 31,
+      "completionRuleSatisfied": true,
+      "status": 0,
+      "uncoveredOffsets": [],
+      "written": [],
+      "siblingArtifact": "C:\\Users\\Dilldo\\Nitto\\Lingo Stuff\\js_rewrite\\14-file-handler.js",
+      "stdout": "{\n  \"chunkBase\": \"Lscr-106\",\n  \"scriptNumber\": 6,\n  \"embeddedBlockCount\": 31,\n  \"coveredOffsets\": [\n    0,\n    460,\n    1200,\n    2604,\n    3304,\n    4668,\n    4924,\n    5364,\n    5940,\n    6228,\n    6924,\n    7888,\n    8124,\n    8460,\n    9440,\n    9860,\n    10952,\n    11724,\n    12108,\n    13596,\n    14292,\n    14528,\n    15132,\n    15668,\n    16584,\n    17432,\n    17788,\n    18428,\n    18980,\n    19584,\n    20264\n  ],\n  \"uncoveredOffsets\": [],\n  \"written\": [],\n  \"siblingArtifact\": \"C:\\\\Users\\\\Dilldo\\\\Nitto\\\\Lingo Stuff\\\\js_rewrite\\\\14-file-handler.js\"\n}",
+      "stderr": ""
+    },
+    {
+      "chunkBase": "Lscr-107",
+      "expectedHiddenBlocks": 11,
+      "completionRuleSatisfied": true,
+      "status": 0,
+      "uncoveredOffsets": [],
+      "written": [],
+      "siblingArtifact": "C:\\Users\\Dilldo\\Nitto\\Lingo Stuff\\js_rewrite\\15-initialization-script.js",
+      "stdout": "{\n  \"chunkBase\": \"Lscr-107\",\n  \"scriptNumber\": 7,\n  \"embeddedBlockCount\": 11,\n  \"coveredOffsets\": [\n    0,\n    152,\n    1912,\n    2204,\n    2680,\n    2860,\n    3060,\n    3588,\n    4260,\n    4496,\n    4716\n  ],\n  \"uncoveredOffsets\": [],\n  \"written\": [],\n  \"siblingArtifact\": \"C:\\\\Users\\\\Dilldo\\\\Nitto\\\\Lingo Stuff\\\\js_rewrite\\\\15-initialization-script.js\"\n}",
+      "stderr": ""
+    },
+    {
+      "chunkBase": "Lscr-108",
+      "expectedHiddenBlocks": 0,
+      "completionRuleSatisfied": false,
+      "status": 0,
+      "uncoveredOffsets": [],
+      "written": [],
+      "siblingArtifact": "C:\\Users\\Dilldo\\Nitto\\Lingo Stuff\\js_rewrite\\17-lingo-xtra.js",
+      "stdout": "{\n  \"chunkBase\": \"Lscr-108\",\n  \"scriptNumber\": 8,\n  \"embeddedBlockCount\": 0,\n  \"coveredOffsets\": [],\n  \"uncoveredOffsets\": [],\n  \"written\": [],\n  \"siblingArtifact\": \"C:\\\\Users\\\\Dilldo\\\\Nitto\\\\Lingo Stuff\\\\js_rewrite\\\\17-lingo-xtra.js\"\n}",
+      "stderr": ""
+    },
+    {
+      "chunkBase": "Lscr-109",
+      "expectedHiddenBlocks": 6,
+      "completionRuleSatisfied": true,
+      "status": 0,
+      "uncoveredOffsets": [],
+      "written": [],
+      "siblingArtifact": "C:\\Users\\Dilldo\\Nitto\\Lingo Stuff\\js_rewrite\\10-connection-script.js",
+      "stdout": "{\n  \"chunkBase\": \"Lscr-109\",\n  \"scriptNumber\": 9,\n  \"embeddedBlockCount\": 6,\n  \"coveredOffsets\": [\n    0,\n    140,\n    1428,\n    2884,\n    5908,\n    8436\n  ],\n  \"uncoveredOffsets\": [],\n  \"written\": [],\n  \"siblingArtifact\": \"C:\\\\Users\\\\Dilldo\\\\Nitto\\\\Lingo Stuff\\\\js_rewrite\\\\10-connection-script.js\"\n}",
+      "stderr": ""
+    }
+  ]
+}

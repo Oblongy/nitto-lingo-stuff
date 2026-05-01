@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-04-29T21:01:32.274Z",
+  "results": [
+    {
+      "chunkBase": "Lscr-101",
+      "status": "error",
+      "error": "Cannot read properties of undefined (reading 'length')"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+-- Lscr-5 decompiled Lingo
+-- scriptNumber: 5
+-- castID: 65549
+-- handlersCount: 1
+
+on procSocket
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end

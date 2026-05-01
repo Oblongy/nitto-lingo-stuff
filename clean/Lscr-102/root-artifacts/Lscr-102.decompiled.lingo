@@ -1,0 +1,8 @@
+-- Lscr-2 decompiled Lingo
+-- scriptNumber: 2
+-- castID: 65538
+-- handlersCount: 1
+
+on RaceEngine
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end

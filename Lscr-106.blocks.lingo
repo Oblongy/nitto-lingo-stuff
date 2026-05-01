@@ -1,0 +1,728 @@
+-- Lscr-106 embedded block decompile
+-- scriptNumber: 6
+-- 31 blocks
+
+on initFileHandler
+  -- block offset=0 length=460 codeLen=188
+  -- names: 0=cacheFolder, 1=_player, 2=applicationPath, 3=cache, 4=fileAgeCheck
+  // [0x0000] op_7f
+  // [0x0003] op_7f
+  // [0x0005] op_04
+  // prologue: id_5
+  // prologue: id_6
+  // prologue: id_7
+  // prologue: id_8
+  // prologue: id_9
+  // prologue: id_10
+  // prologue: id_11
+  // prologue: id_12
+  // prologue: id_13
+  // prologue: id_14
+  // prologue: id_15
+  // prologue: id_16
+  // prologue: id_17
+  // prologue: id_18
+  // prologue: id_19
+  // [0x0033] op_7f
+  // [0x0035] op_14
+  // [0x0036] op_7f
+  // [0x0038] op_15
+  // [0x0039] op_7f
+  // [0x003c] op_7f
+  // [0x003e] op_17
+  // [0x003f] op_7f
+  // [0x0041] op_18
+  (? >= ?)
+  // prologue: id_25
+  // prologue: id_26
+  // prologue: id_27
+  // prologue: id_28
+  // prologue: id_29
+  // prologue: id_30
+  // prologue: id_31
+  // prologue: id_32
+  // prologue: id_33
+  // prologue: id_34
+  // prologue: id_35
+  // prologue: id_36
+  // prologue: id_37
+  // prologue: id_38
+  // prologue: id_39
+  // [0x006f] op_6c
+  // [0x007c] op_6d
+  (? + cache)
+  // [0x0080] op_6c
+  // [0x0082] op_04
+  // [0x0086] op_6d
+  // [0x0088] op_04
+  300
+  id_20
+  id_21
+  id_22
+  id_23
+  id_24
+end
+
+on getAvatar
+  -- block offset=460 length=740 codeLen=157
+  -- names: 0=baLingoFolderExists, 1=cacheFolder, 2=baLingoCreateFolder, 3=\avatars, 4=\teamAvatars, 5=\car, 6=\car\userDecals
+  // [0x000a] op_20
+  baLingoFolderExists()(cacheFolder)
+  // goto @28
+  baLingoCreateFolder()(cacheFolder)
+  // [0x0027] op_20
+  ?((baLingoFolderExists() + \avatars))
+  // goto @61
+  ?((baLingoCreateFolder() + \avatars))
+  // [0x0048] op_20
+  ?((baLingoFolderExists() + \teamAvatars))
+  // goto @94
+  ?((baLingoCreateFolder() + \teamAvatars))
+  // [0x0069] op_20
+  ?((baLingoFolderExists() + \car))
+  // goto @127
+  ?((baLingoCreateFolder() + \car))
+  // [0x008a] op_20
+  ?((baLingoFolderExists() + \car\userDecals))
+  // goto @160
+  ?((baLingoCreateFolder() + \car\userDecals))
+end
+
+on downloadAvatar
+  -- block offset=1200 length=1404 codeLen=344
+  -- names: 0=split, 1=,, 2=Array, 3=length, 4=aid, 5=downloadAvatar, 6=baLingoFileExists, 7=cacheFolder, 8=\, 9=.jpg, 10=baLingoTempFileName, 11=avage, 12=baLingoFileAge, 13=fileAgeCheck, 14=push, 15=loadLocalAvatar, 16=baLingoDeleteFile, 17=avatars, 18=executeCall, 19=getavatarage, 20=tids=, 21=join, 22=teamavatars, 23=getteamavatarage
+  split = ?(,)
+  ?
+  , = Array()
+  ?
+  Array = false
+  ?
+  // [0x002a] op_14
+  split.length
+  Array
+  // goto @257
+  // [0x002e] op_6c
+  // [0x0030] op_04
+  // [0x0038] op_6d
+  // [0x003a] op_04
+  split
+  !Array
+  if (!param_Array) { /* else goto @88 */ }
+  downloadAvatar()(aid, param_,)
+  // goto @84
+  // [0x0054] op_a5
+  ?((? + .jpg))
+  // goto @236
+  length = ?(avage)
+  ?
+  aid = baLingoFileAge()(length)
+  ?
+  // [0x00b3] op_1c
+  (?((? + .jpg)) >= fileAgeCheck)
+  // goto @207
+  ,.push()(aid)
+  // goto @203
+  if (?) { /* else goto @222 */ }
+  ?()(aid, param_,, 1)
+  baLingoDeleteFile()(length)
+  // goto @232
+  // [0x00e8] op_11
+  downloadAvatar()(aid, param_,)
+  // [0x00f7] op_64
+  ?
+  // goto @508
+  // [0x00fd] op_26
+  (,.length >= false)
+  // goto @347
+  if (avatars) { /* else goto @309 */ }
+  ?(?, (? + tids=(,)))
+  // goto @305
+  // [0x0131] op_29
+  if (teamavatars) { /* else goto @347 */ }
+  ?(?, (? + tids=(,)))
+end
+
+on compareAvatarAge
+  -- block offset=2604 length=700 codeLen=108
+  -- names: 0=clearCache, 1=_global, 2=avatarMainURL, 3=\, 4=avatarIDtoPath, 5=.jpg, 6=Array, 7=downloadNetThing, 8=cacheFolder, 9=fileNetID, 10=push
+  clearCache()()
+  clearCache = (? + .jpg)
+  ?
+  // [0x0056] op_03
+  _global = Array()(param__global, (param_clearCache + .jpg))
+  ?
+  _global.fileNetID.push()(_global)
+end
+
+on loadLocalAvatar
+  -- block offset=3304 length=1364 codeLen=396
+  -- names: 0=baLingoTempFileName, 1=avage, 2=baLingoFileAge, 3=baLingoFileDateEx, 4=accessed, 5=yyyy|m|d|, 6=h|n|s, 7=split, 8=|, 9=length, 11=cacheFolder, 12=\, 13=.jpg, 14=fileAgeCheck, 15=downloadAvatar, 16=loadLocalAvatar, 17=baLingoSetFileDate, 18=parseInt, 19=baLingoDeleteFile
+  baLingoTempFileName = ?(avage)
+  ?
+  avage = baLingoFileAge()(baLingoTempFileName)
+  ?
+  baLingoFileAge = ?(|)
+  ?
+  baLingoFileDateEx = false
+  ?
+  // [0x004b] op_14
+  param_baLingoTempFileName.length
+  baLingoFileDateEx
+  // goto @388
+  (!!!baLingoFileDateEx >= c_10)
+  param_baLingoTempFileName
+  // goto @323
+  // [0x0086] op_1c
+  // [0x0093] op_1c
+  // [0x0097] op_1c
+  (fileAgeCheck >= 360)
+  !!!baLingoFileDateEx
+  param_baLingoTempFileName
+  (avage + \)((param_baLingoTempFileName + .jpg))
+  // goto @182
+  param_baLingoTempFileName
+  downloadAvatar()
+  !baLingoFileDateEx(!false, param_avage)
+  // goto @178
+  // [0x00b2] op_8d
+  param_baLingoTempFileName
+  loadLocalAvatar()
+  !baLingoFileDateEx(!false, param_avage, 1)
+  parseInt()(!!baLingoFileAge)
+  baLingoFileAge(!false)
+  parseInt()
+  (param_baLingoTempFileName + .jpg)
+  (? + \)
+  parseInt()(baLingoFileAge(!2), parseInt(), baLingoFileAge(!3), parseInt(), baLingoFileAge(!4), parseInt(), baLingoFileAge(!5))
+  // goto @319
+  // [0x0142] op_10
+  param_baLingoTempFileName
+  id_15104()
+  !baLingoFileDateEx(!false, param_avage, 0)
+  (? + \)((param_baLingoTempFileName + .jpg))
+  // [0x017a] op_64
+  // [0x017c] op_03
+  ?
+  // goto @638
+  // [0x0180] op_c4
+  baLingoDeleteFile()(baLingoTempFileName)
+end
+
+on avatarIDtoPath
+  -- block offset=4668 length=256 codeLen=27
+  -- names: 0=sprite, 1=flashSP, 2=getAvatarCB
+  ?(flashSP).getAvatarCB()(param_sprite, param_flashSP, param_getAvatarCB)
+end
+
+on downloadUgg
+  -- block offset=4924 length=440 codeLen=122
+  -- names: 0=Math, 1=floor, 3=toString, 4=\, 2=theURL
+  // [0x002e] op_1f
+  // [0x0050] op_1f
+  // [0x006d] op_1f
+  // [0x0079] op_05
+  (Math.floor() + param_Math(100).toString()())
+  (((? + \) + \) + \)
+end
+
+on loadLocalUgg
+  -- block offset=5364 length=576 codeLen=73
+  -- names: 0=_global, 1=uggURL, 2=cache/car/userDecals/, 3=Array, 4=ugg, 5=downloadNetThing, 6=cacheFolder, 7=\car\userDecals\, 8=fileNetID, 9=push
+  _global = ((? + cache/car/userDecals/) + param__global)
+  ?
+  // [0x0033] op_03
+  ugg
+  uggURL = param__global(downloadNetThing(), ((_global + \car\userDecals\) + param__global))
+  ?
+  _global.fileNetID.push()(uggURL)
+end
+
+on fileBrowse
+  -- block offset=5940 length=288 codeLen=24
+  -- names: 0=sprite, 1=flashSP, 2=downloadUggCB
+  ?(flashSP).downloadUggCB()(param_sprite, param_flashSP)
+end
+
+on uggUpload
+  -- block offset=6228 length=696 codeLen=75
+  -- names: 0=baGetFilename, 1=open, 3=JPG,PNG,GIF Images|*.jpg;*.jpeg;*.png;*.gif, 5=Select image file, 7=baFileSize, 8=sprite, 9=flashSP, 10=fileBrowseCB, 2=upath
+  baGetFilename = ?(?, ?, ?, ?, JPG,PNG,GIF Images|*.jpg;*.jpeg;*.png;*.gif, Select image file, 0, c_6, false)
+  ?
+  open = baFileSize()(baGetFilename)
+  ?
+  ?(flashSP).fileBrowseCB()(param_baGetFilename, baGetFilename, open)
+end
+
+on uggUploadSuccess
+  -- block offset=6924 length=964 codeLen=178
+  -- names: 0=_global, 1=uggURL, 2=/Upload.aspx?NeatUpload_PostBackID=, 3=aid, 4=&accountID=, 5=Object, 6=gSimInet, 7=FieldClear, 8=length, 9=AddFieldFile, 10=hoodImage, 11=sideImage, 12=frontImage, 13=backImage, 14=SendField1, 15=uggUploadSuccess, 16=uggUploadFail
+  _global = ((? + &accountID=) + _global.aid)
+  ?
+  uggURL = Object()
+  ?
+  gSimInet.FieldClear()()
+  param__global.length
+  // goto @83
+  ?(hoodImage, param__global)
+  param_uggURL.length
+  // goto @109
+  ?(sideImage, param_uggURL)
+  param_/Upload.aspx?NeatUpload_PostBackID=.length
+  // goto @135
+  ?(frontImage, param_/Upload.aspx?NeatUpload_PostBackID=)
+  param_aid.length
+  // goto @161
+  ?(backImage, param_aid)
+  ?(?, gSimInet.SendField1(), uggUploadFail)
+end
+
+on uggUploadFail
+  -- block offset=7888 length=236 codeLen=22
+  -- names: 0=sprite, 1=flashSP, 2=uggUploadCB
+  ?(!?(flashSP).uggUploadCB(), param_sprite)
+end
+
+on downloadNewInstaller
+  -- block offset=8124 length=336 codeLen=22
+  -- names: 0=sprite, 1=flashSP, 2=uggUploadCB
+  ?(?(flashSP).uggUploadCB(), id_3)
+end
+
+on downloadInstallerUpdateFlash
+  -- block offset=8460 length=980 codeLen=210
+  -- names: 0=baLingoSysFolder, 1=temp, 2=_global, 3=installerFile, 4=baLingoFileExists, 5=xtra, 6=caluMD5, 7=getFileMD5, 8=installerMD5, 9=runInstaller, 10=Array, 11=installer, 12=downloadNetThing, 13=installerURL, 14=/, 15=fileNetID, 16=push
+  baLingoSysFolder = (?(temp) + _global.installerFile)
+  ?
+  baLingoFileExists()(baLingoSysFolder)
+  // goto @152
+  temp = caluMD5
+  ?
+  temp.getFileMD5()(baLingoSysFolder)
+  if (_global.installerMD5) { /* else goto @88 */ }
+  runInstaller()(baLingoSysFolder)
+  // goto @84
+  // [0x0054] op_40
+  // [0x007c] op_03
+  installer
+  _global = baLingoSysFolder(((downloadNetThing() + /) + _global.installerFile), baLingoSysFolder)
+  ?
+  _global.fileNetID.push()(_global)
+  // goto @148
+  // [0x0094] op_40
+  // [0x00bc] op_03
+  installer
+  _global = baLingoSysFolder(((downloadNetThing() + /) + _global.installerFile), baLingoSysFolder)
+  ?
+  _global.fileNetID.push()(_global)
+end
+
+on runInstaller
+  -- block offset=9440 length=420 codeLen=48
+  -- names: 0=sprite, 1=flashSP, 2=loadUpdateCB, 3=_global, 4=installerFile, 5=bytesSoFar, 6=bytesTotal
+  ?(flashSP).loadUpdateCB()(_global.installerFile, param_sprite.bytesSoFar, param_sprite.bytesTotal, param_sprite.bytesSoFar, param_sprite.bytesTotal)
+end
+
+on fetchCacheXML
+  -- block offset=9860 length=1092 codeLen=70
+  -- names: 0=baLingoFileExists, 1=baLingoRunProgram, 2= /silent, 3=normal, 4=_player, 5=quit, 6=sprite, 7=flashSP, 8=showConnectionErrorCB, 9=Download Failed, 10=I'm sorry, but the automatic updater is not working properly. Please visit http://www.nittolegends.com and download the latest version., 20=aryCacheFiles, 21=aryCacheFileSizes, 22=totalCacheSize, 23=totalDownloadedCacheSize, 24=aryCacheIndex
+  baLingoFileExists()(param_baLingoFileExists)
+  // goto @49
+  ?(?, normal, 0)
+  _player.quit()()
+  // goto @45
+  ?(?, I'm sorry, but the automatic updater is not working properly. Please visit http://www.nittolegends.com and download the latest version.)
+end
+
+on fetchCacheXMLDone
+  -- block offset=10952 length=772 codeLen=110
+  -- names: 0=clearCache, 1=totalCacheSize, 2=totalDownloadedCacheSize, 3=aryCacheIndex, 5=aryCacheFiles, 6=Array, 7=aryCacheFileSizes, 8=getcache, 9=getNetText, 10=_global, 11=cacheURL, 12=content.htm, 13=gNetID, 14=push
+  clearCache()()
+  // [0x0008] op_6c
+  // [0x000c] op_6d
+  // [0x0010] op_6c
+  // [0x0014] op_6d
+  false
+  ?
+  // [0x0018] op_6c
+  // [0x001a] op_03
+  // [0x001e] op_6d
+  // [0x0020] op_03
+  c_4
+  // [0x0022] op_6c
+  // [0x0024] op_05
+  // [0x002c] op_6d
+  // [0x002e] op_05
+  Array()
+  // [0x0030] op_6c
+  // goto @15157
+  // goto @112
+  // [0x003a] op_6d
+  // goto @20858
+  // goto @123
+  getcache((getNetText() + content.htm))
+  clearCache = ?
+  ?
+  _global.gNetID.push()(clearCache)
+end
+
+on createCacheFolders
+  -- block offset=11724 length=384 codeLen=26
+  -- names: 0=createCacheFolders, 1=cacheFolder, 2=\, 3=downloadCacheDone
+  ?((createCacheFolders() + \), param_createCacheFolders)
+  downloadCacheDone()()
+end
+
+on downloadCache
+  -- block offset=12108 length=1488 codeLen=446
+  -- names: 0=count, 1=!ATTRIBUTES, 2=t, 3=d, 4=baLingoFolderExists, 5=n, 6=baLingoCreateFolder, 7=createCacheFolders, 8=\, 9=f, 10=xtra, 11=caluMD5, 12=baLingoFileExists, 13=aryCacheFiles, 14=push, 15=aryCacheFileSizes, 16=parseInt, 17=s, 18=totalCacheSize, 19=getFileMD5, 20=md, 21=_system, 22=gc
+  count = 2
+  ?
+  // [0x0010] op_15
+  param_!ATTRIBUTES.count
+  count
+  // goto @449
+  param_!ATTRIBUTES
+  if (d) { /* else goto @135 */ }
+  // [0x0040] op_20
+  param_count((param_!ATTRIBUTES + !count.!ATTRIBUTES.n))
+  baLingoFolderExists()
+  // goto @96
+  baLingoCreateFolder()
+  param_count((param_!ATTRIBUTES + !count.!ATTRIBUTES.n))
+  createCacheFolders()
+  (param_count + \)(param_!ATTRIBUTES, !count)
+  // goto @132
+  id_21504 = ?
+  if (f) { /* else goto @186 */ }
+  !ATTRIBUTES = caluMD5
+  ?
+  // [0x00be] op_20
+  param_count((param_!ATTRIBUTES + !count.!ATTRIBUTES.n))
+  baLingoFileExists()
+  // goto @291
+  aryCacheFiles.push()
+  param_count((param_!ATTRIBUTES + !count.!ATTRIBUTES.n))
+  aryCacheFileSizes.push()
+  parseInt()(param_!ATTRIBUTES(!count.!ATTRIBUTES.s))
+  // [0x00fd] op_6c
+  if (?) { /* else goto @259 */ }
+  if (?) { /* else goto @279 */ }
+  // [0x0119] op_6d
+  if ((?() + param_!ATTRIBUTES(!count.!ATTRIBUTES.s))) { /* else goto @287 */ }
+  // [0x011f] op_8a
+  (param_!ATTRIBUTES < !count.!ATTRIBUTES.md)
+  param_count((param_!ATTRIBUTES + !count.!ATTRIBUTES.n))
+  !ATTRIBUTES.getFileMD5()
+  // goto @426
+  aryCacheFiles.push()
+  param_count((param_!ATTRIBUTES + !count.!ATTRIBUTES.n))
+  aryCacheFileSizes.push()
+  parseInt()(param_!ATTRIBUTES(!count.!ATTRIBUTES.s))
+  // [0x0187] op_6c
+  if (?) { /* else goto @397 */ }
+  if (?) { /* else goto @417 */ }
+  // [0x01a3] op_6d
+  if ((?() + param_!ATTRIBUTES(!count.!ATTRIBUTES.s))) { /* else goto @512 */ }
+  ?
+  _system.gc()()
+  // [0x01b7] op_64
+  ?
+  // goto @699
+  // [0x01bd] op_4c
+end
+
+on downloadCacheInProgress
+  -- block offset=13596 length=696 codeLen=112
+  -- names: 0=clearCache, 1=_global, 2=cacheURL, 3=split, 4=_player, 5=applicationPath, 6=join, 8=\, 9=/, 10=Array, 11=cache, 12=downloadNetThing, 13=fileNetID, 14=push
+  clearCache()()
+  clearCache = (? + ?(/))
+  ?
+  // [0x005a] op_03
+  param_clearCache
+  cache
+  _global = downloadNetThing()(clearCache, param_clearCache)
+  ?
+  _global.fileNetID.push()(_global)
+end
+
+on downloadCacheDone
+  -- block offset=14292 length=236 codeLen=14
+  -- names: 0=downloadCacheUpdateFlash, 1=bytesSoFar
+  downloadCacheUpdateFlash()(param_downloadCacheUpdateFlash.bytesSoFar)
+end
+
+on downloadCacheUpdateFlash
+  -- block offset=14528 length=604 codeLen=80
+  -- names: 0=aryCacheIndex, 1=totalDownloadedCacheSize, 2=aryCacheFileSizes, 3=aryCacheFiles, 4=length, 5=downloadCache, 6=sprite, 7=flashSP, 8=loadFinishCB
+  // [0x0004] op_17
+  false
+  aryCacheIndex
+  // goto @30
+  // [0x0008] op_6c
+  // [0x0017] op_6d
+  (? > ?).totalDownloadedCacheSize
+  (aryCacheFileSizes + !aryCacheIndex)
+  // [0x001b] op_2f
+  ?
+  // [0x0028] op_14
+  aryCacheFiles.length
+  aryCacheIndex
+  // goto @65
+  downloadCache()
+  aryCacheFiles(!aryCacheIndex)
+  // goto @61
+  // [0x003d] op_15
+  ?(flashSP).loadFinishCB()()
+end
+
+on loadDyno
+  -- block offset=15132 length=536 codeLen=45
+  -- names: 0=sprite, 1=flashSP, 2=loadUpdateCB, 3=aryCacheFiles, 4=aryCacheIndex, 5=aryCacheFileSizes, 6=totalDownloadedCacheSize, 7=totalCacheSize
+  aryCacheFiles
+  ?(flashSP).loadUpdateCB()
+  !aryCacheIndex(param_sprite, aryCacheFileSizes, !aryCacheIndex, (totalDownloadedCacheSize + param_sprite), totalCacheSize)
+end
+
+on saveDyno
+  -- block offset=15668 length=916 codeLen=172
+  -- names: 0=xtra, 1=fileio, 2=setFilterMask, 3=Text Files,*.txt, 4=displayOpen, 5=openFile, 6=status, 7=readFile, 8=split, 9=|, 10=sprite, 11=flashSP, 12=garageDynoLoadCB, 13=getTxtFileName, 14=closeFile
+  xtra = fileio
+  ?
+  ?(Text Files,*.txt)
+  fileio = xtra.displayOpen()()
+  ?
+  fileio
+  // goto @164
+  ?(xtra.openFile(), !fileio)
+  xtra.status()()
+  if (false) { /* else goto @164 */ }
+  setFilterMask = xtra.readFile()()
+  ?
+  setFilterMask = ?(|)
+  ?
+  setFilterMask
+  getTxtFileName()(fileio)
+  ?(flashSP).garageDynoLoadCB()
+  !false(!!setFilterMask, setFilterMask, !2, setFilterMask, !3)
+  xtra.closeFile()()
+end
+
+on getTxtFileName
+  -- block offset=16584 length=848 codeLen=162
+  -- names: 0=xtra, 1=fileio, 2=setFilterMask, 3=Text Files,*.txt, 4=displaySave, 5=Save Dyno, 7=createFile, 8=openFile, 9=writeString, 10=|, 11=closeFile, 12=sprite, 13=flashSP, 14=garageDynoSaveCB, 15=getTxtFileName
+  xtra = fileio
+  ?
+  ?(Text Files,*.txt)
+  fileio = ?(?, id_6)
+  ?
+  fileio
+  // goto @165
+  xtra.createFile()(fileio)
+  xtra.openFile()(fileio, 2)
+  ?(((? + |) + param_Text Files,*.txt))
+  xtra.closeFile()()
+  ?(flashSP).garageDynoSaveCB()(getTxtFileName()(fileio))
+end
+
+on saveFile
+  -- block offset=17432 length=356 codeLen=79
+  -- names: 0=length, 1=charAt, 2=\, 3=substr
+  length = param_length.length
+  ?
+  // [0x000e] op_17
+  false
+  length
+  // goto @78
+  if (\) { /* else goto @71 */ }
+  // [0x003b] op_1c
+  // [0x003f] op_1c
+  // [0x0043] op_05
+  // [0x0044] op_66
+  (param_length.substr() + !length)
+  param_length.length(length, 5)
+  // goto @329
+  // [0x004a] op_c2
+  // [0x004e] op_05
+  param_length
+end
+
+on openfile
+  -- block offset=17788 length=640 codeLen=139
+  -- names: 0=xtra, 1=fileio, 2=createFile, 3=openFile, 4=writeString, 5=unescape, 6=status, 7=sprite, 8=flashSP, 9=saveFileCB, 10=closeFile
+  xtra = fileio
+  ?
+  xtra.createFile()(param_xtra)
+  xtra.openFile()(param_xtra, 2)
+  xtra.writeString()(unescape()(param_fileio))
+  xtra.status()()
+  if (false) { /* else goto @109 */ }
+  ?(!?(flashSP).saveFileCB(), param_xtra)
+  // goto @105
+  // [0x0069] op_19
+  ?(flashSP).saveFileCB()(false, param_xtra)
+  xtra.closeFile()()
+end
+
+on fileClearAllDecals
+  -- block offset=18428 length=552 codeLen=112
+  -- names: 0=xtra, 1=fileio, 2=openFile, 3=status, 4=sprite, 5=flashSP, 6=openFileCB, 7=readFile, 8=closeFile
+  xtra = fileio
+  ?
+  ?(xtra.openFile(), !param_xtra)
+  xtra.status()()
+  if (false) { /* else goto @82 */ }
+  ?(!?(flashSP).openFileCB(), param_xtra, xtra.readFile()())
+  // goto @78
+  // [0x004e] op_19
+  ?(flashSP).openFileCB()(false, param_xtra)
+  xtra.closeFile()()
+end
+
+on fileClearADecal
+  -- block offset=18980 length=604 codeLen=92
+  -- names: 0=baLingoFileList, 1=cacheFolder, 2=\car\userDecals, 3=*.*, 4=count, 5=baLingoDeleteFile, 6=\car\userDecals\, 7=Object, 8=ex, 92=H
+  // [0x0000] op_85
+  baLingoFileList = ?(?, *.*)
+  ?
+  cacheFolder = !?
+  ?
+  // [0x0024] op_15
+  baLingoFileList.count
+  cacheFolder
+  // goto @73
+  (baLingoDeleteFile() + \car\userDecals\)((baLingoFileList + !cacheFolder))
+  // [0x003f] op_64
+  ?
+  // goto @324
+  // [0x0045] op_d8
+  // goto @72
+  // [0x0049] op_75
+  // [0x0051] op_59
+  // [0x0052] op_74
+  // [0x0053] op_82
+  // [0x0055] op_08
+  // [0x0056] op_03
+  // [0x0057] op_04
+  Object()
+  (? >= ?)
+  // goto @90
+  // [0x005a] op_04
+end
+
+on loadExternalValues
+  -- block offset=19584 length=680 codeLen=87
+  -- names: 0=baLingoFileExists, 1=cacheFolder, 2=\car\userDecals\, 3=_, 4=.swf, 5=baLingoDeleteFile, 6=Object, 7=ex, 87=C
+  // [0x0000] op_85
+  ?((? + .swf))
+  // goto @68
+  ?((? + .swf))
+  // goto @67
+  // [0x0044] op_75
+  // [0x004c] op_59
+  // [0x004d] op_74
+  // [0x004e] op_82
+  Object()
+  (? >= ?)
+  // goto @855
+  // goto @85
+  // [0x0055] op_04
+end
+
+on block_30
+  -- block offset=20264 length=1412 codeLen=367
+  -- names: 0=xtra, 1=fileio, 2=openFile, 3=servers.txt, 4=readFile, 5=Array, 7=length, 8=charAt, 9=<, 10=>, 11=closeFile, 12=_global, 13=socketURL, 14=socketPort, 15=mainURL, 16=gameURL, 17=gameCode1_00.aspx, 18=avatarMainURL, 19=cacheURL, 20=uggURL, 21=exeName, 22=true, 23=isEnc
+  xtra = fileio
+  ?
+  ?(?, !servers.txt)
+  fileio = xtra.readFile()()
+  ?
+  openFile = Array()
+  ?
+  servers.txt = id_6
+  ?
+  readFile = false
+  ?
+  Array = 8
+  ?
+  id_6 = false
+  ?
+  // [0x0057] op_14
+  fileio.length
+  id_6
+  // goto @211
+  length = fileio.charAt()(id_6)
+  ?
+  if (<) { /* else goto @204 */ }
+  // [0x007f] op_38
+  openFile
+  id_6
+  (? < >)
+  // goto @180
+  // [0x008b] op_64
+  // goto @224
+  // [0x0095] op_0d
+  // [0x009b] op_38
+  openFile
+  (!readFile + servers.txt)
+  servers.txt = fileio.charAt()(id_6)
+  ?
+  // goto @431
+  // [0x00b0] op_d3
+  servers.txt = id_6
+  ?
+  // [0x00b8] op_64
+  // [0x00ba] op_04
+  ?
+  // [0x00c2] op_17
+  Array
+  readFile
+  // goto @204
+  // goto @200
+  // [0x00c9] op_64
+  (? + ?)
+  // goto @286
+  // goto @462
+  // [0x00cf] op_81
+  xtra.closeFile()()
+  openFile
+  _global
+  socketURL = !false
+  ?
+  _global
+  socketPort = !!openFile
+  ?
+  openFile
+  _global
+  mainURL = !2
+  ?
+  gameURL = (_global + gameCode1_00.aspx)
+  ?
+  openFile
+  _global
+  avatarMainURL = !3
+  ?
+  openFile
+  _global
+  cacheURL = !4
+  ?
+  openFile
+  _global
+  uggURL = !5
+  ?
+  openFile
+  _global
+  exeName = !6
+  ?
+  openFile
+  if (true) { /* else goto @358 */ }
+  _global
+  isEnc = 1
+  ?
+  // goto @354
+  _global
+  (? || ?)
+  isEnc = 0
+  ?
+  // [0x016e] op_05
+  openFile
+end

@@ -1,0 +1,44 @@
+-- Lscr-3 decompiled Lingo
+-- scriptNumber: 3
+-- castID: 65539
+-- handlersCount: 10
+
+on runEngineStart
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on runEngineStop
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on runEngine
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on runEngineGaugeInit
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on runEngineGearUp
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on runEngineGearDown
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on runEngineSetBrake
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on runEngineSetClutch
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on runEngineSetNOS
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end
+
+on runEngineDyno
+  -- dispatch stub (embedded block body not decompilable from JSON alone)
+end

@@ -1,0 +1,1956 @@
+{
+  "totalLength": 1928,
+  "totalLength2": 1928,
+  "headerLength": 92,
+  "scriptNumber": 8,
+  "unk20": 1,
+  "parentNumber": -1,
+  "scriptFlags": 2,
+  "unk42": 0,
+  "castID": 65553,
+  "factoryNameID": -1,
+  "handlerVectorsCount": 0,
+  "handlerVectorsOffset": 1928,
+  "handlerVectorsSize": 0,
+  "propertiesCount": 0,
+  "propertiesOffset": 92,
+  "globalsCount": 1,
+  "globalsOffset": 92,
+  "handlersCount": 15,
+  "handlersOffset": 94,
+  "literalsCount": 29,
+  "literalsOffset": 1340,
+  "literalsDataCount": 356,
+  "literalsDataOffset": 1572,
+  "propertyNameIDs": [],
+  "globalNameIDs": [
+    145
+  ],
+  "handlers": [
+    {
+      "nameID": 123,
+      "name": "lingoXtraNoDebug",
+      "vectorPos": 65535,
+      "compiledLen": 68,
+      "compiledOffset": 784,
+      "argumentCount": 0,
+      "argumentOffset": 852,
+      "localsCount": 1,
+      "localsOffset": 852,
+      "localNames": [
+        "myFile"
+      ],
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 36,
+      "unknown2": 3,
+      "lineCount": 5,
+      "lineOffset": 854,
+      "stackHeight": 4,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 3,
+          "opcode": "pushzero"
+        },
+        {
+          "pos": 1,
+          "opID": 96,
+          "opcode": "setmovieprop",
+          "obj": 138
+        },
+        {
+          "pos": 3,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 0
+        },
+        {
+          "pos": 5,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 7,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 140
+        },
+        {
+          "pos": 9,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 11,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 139
+        },
+        {
+          "pos": 13,
+          "opID": 82,
+          "opcode": "setlocal",
+          "obj": 0
+        },
+        {
+          "pos": 15,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 0
+        },
+        {
+          "pos": 17,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 19,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 2
+        },
+        {
+          "pos": 21,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 22,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 3
+        },
+        {
+          "pos": 24,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 25,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 4
+        },
+        {
+          "pos": 27,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 28,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 5
+        },
+        {
+          "pos": 30,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 31,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 6
+        },
+        {
+          "pos": 33,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 34,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 2
+        },
+        {
+          "pos": 36,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 37,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 3
+        },
+        {
+          "pos": 39,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 40,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 2
+        },
+        {
+          "pos": 42,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 43,
+          "opID": 65,
+          "opcode": "pushint8",
+          "obj": 1
+        },
+        {
+          "pos": 45,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 3
+        },
+        {
+          "pos": 47,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 111
+        },
+        {
+          "pos": 49,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 0
+        },
+        {
+          "pos": 51,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 53,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 141
+        },
+        {
+          "pos": 55,
+          "opID": 3,
+          "opcode": "pushzero"
+        },
+        {
+          "pos": 56,
+          "opID": 15,
+          "opcode": "eq"
+        },
+        {
+          "pos": 57,
+          "opID": 149,
+          "opcode": "jmpifz",
+          "obj": 7
+        },
+        {
+          "pos": 60,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 0
+        },
+        {
+          "pos": 62,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 142
+        },
+        {
+          "pos": 64,
+          "opID": 3,
+          "opcode": "pushzero"
+        },
+        {
+          "pos": 65,
+          "opID": 82,
+          "opcode": "setlocal",
+          "obj": 0
+        },
+        {
+          "pos": 67,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 124,
+      "name": "lingoXtraInit",
+      "vectorPos": 65535,
+      "compiledLen": 40,
+      "compiledOffset": 860,
+      "argumentCount": 0,
+      "argumentOffset": 900,
+      "localsCount": 0,
+      "localsOffset": 900,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 248,
+      "unknown2": 11,
+      "lineCount": 6,
+      "lineOffset": 900,
+      "stackHeight": 3,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 65,
+          "opcode": "pushint8",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 96,
+          "opcode": "setmovieprop",
+          "obj": 138
+        },
+        {
+          "pos": 4,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 7
+        },
+        {
+          "pos": 6,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 8
+        },
+        {
+          "pos": 8,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 2
+        },
+        {
+          "pos": 10,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 144
+        },
+        {
+          "pos": 12,
+          "opID": 239,
+          "opcode": "pushint32",
+          "obj": 216000
+        },
+        {
+          "pos": 17,
+          "opID": 65,
+          "opcode": "pushint8",
+          "obj": 31
+        },
+        {
+          "pos": 19,
+          "opID": 93,
+          "opcode": "set",
+          "obj": 7
+        },
+        {
+          "pos": 21,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 9
+        },
+        {
+          "pos": 23,
+          "opID": 65,
+          "opcode": "pushint8",
+          "obj": 5
+        },
+        {
+          "pos": 25,
+          "opID": 93,
+          "opcode": "set",
+          "obj": 0
+        },
+        {
+          "pos": 27,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 10
+        },
+        {
+          "pos": 29,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 31,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 140
+        },
+        {
+          "pos": 33,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 35,
+          "opID": 103,
+          "opcode": "objcall",
+          "obj": 139
+        },
+        {
+          "pos": 37,
+          "opID": 79,
+          "opcode": "setglobal",
+          "obj": 145
+        },
+        {
+          "pos": 39,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 125,
+      "name": "getPCInfo",
+      "vectorPos": 65535,
+      "compiledLen": 143,
+      "compiledOffset": 906,
+      "argumentCount": 0,
+      "argumentOffset": 1050,
+      "localsCount": 2,
+      "localsOffset": 1050,
+      "localNames": [
+        "bdi",
+        "qs"
+      ],
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 515,
+      "unknown2": 20,
+      "lineCount": 9,
+      "lineOffset": 1054,
+      "stackHeight": 6,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 11
+        },
+        {
+          "pos": 2,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 148
+        },
+        {
+          "pos": 6,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 12
+        },
+        {
+          "pos": 8,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 2
+        },
+        {
+          "pos": 10,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 147
+        },
+        {
+          "pos": 12,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 14,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 146
+        },
+        {
+          "pos": 16,
+          "opID": 82,
+          "opcode": "setlocal",
+          "obj": 0
+        },
+        {
+          "pos": 18,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 6
+        },
+        {
+          "pos": 20,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 0
+        },
+        {
+          "pos": 22,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 2
+        },
+        {
+          "pos": 24,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 149
+        },
+        {
+          "pos": 26,
+          "opID": 3,
+          "opcode": "pushzero"
+        },
+        {
+          "pos": 27,
+          "opID": 16,
+          "opcode": "gt"
+        },
+        {
+          "pos": 28,
+          "opID": 149,
+          "opcode": "jmpifz",
+          "obj": 26
+        },
+        {
+          "pos": 31,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 0
+        },
+        {
+          "pos": 33,
+          "opID": 69,
+          "opcode": "pushsymb",
+          "obj": 150
+        },
+        {
+          "pos": 35,
+          "opID": 65,
+          "opcode": "pushint8",
+          "obj": 1
+        },
+        {
+          "pos": 37,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 6
+        },
+        {
+          "pos": 39,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 0
+        },
+        {
+          "pos": 41,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 2
+        },
+        {
+          "pos": 43,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 149
+        },
+        {
+          "pos": 45,
+          "opID": 65,
+          "opcode": "pushint8",
+          "obj": 1
+        },
+        {
+          "pos": 47,
+          "opID": 6,
+          "opcode": "sub"
+        },
+        {
+          "pos": 48,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 4
+        },
+        {
+          "pos": 50,
+          "opID": 103,
+          "opcode": "objcall",
+          "obj": 151
+        },
+        {
+          "pos": 52,
+          "opID": 82,
+          "opcode": "setlocal",
+          "obj": 0
+        },
+        {
+          "pos": 54,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 13
+        },
+        {
+          "pos": 56,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 0
+        },
+        {
+          "pos": 58,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 59,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 14
+        },
+        {
+          "pos": 61,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 63,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 152
+        },
+        {
+          "pos": 65,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 66,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 15
+        },
+        {
+          "pos": 68,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 70,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 152
+        },
+        {
+          "pos": 72,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 73,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 16
+        },
+        {
+          "pos": 75,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 77,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 152
+        },
+        {
+          "pos": 79,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 80,
+          "opID": 82,
+          "opcode": "setlocal",
+          "obj": 1
+        },
+        {
+          "pos": 82,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 1
+        },
+        {
+          "pos": 84,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 17
+        },
+        {
+          "pos": 86,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 87,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 0
+        },
+        {
+          "pos": 89,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 153
+        },
+        {
+          "pos": 91,
+          "opID": 69,
+          "opcode": "pushsymb",
+          "obj": 150
+        },
+        {
+          "pos": 93,
+          "opID": 65,
+          "opcode": "pushint8",
+          "obj": 1
+        },
+        {
+          "pos": 95,
+          "opID": 65,
+          "opcode": "pushint8",
+          "obj": 17
+        },
+        {
+          "pos": 97,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 4
+        },
+        {
+          "pos": 99,
+          "opID": 103,
+          "opcode": "objcall",
+          "obj": 151
+        },
+        {
+          "pos": 101,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 102,
+          "opID": 82,
+          "opcode": "setlocal",
+          "obj": 1
+        },
+        {
+          "pos": 104,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 1
+        },
+        {
+          "pos": 106,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 18
+        },
+        {
+          "pos": 108,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 109,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 19
+        },
+        {
+          "pos": 111,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 20
+        },
+        {
+          "pos": 113,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 21
+        },
+        {
+          "pos": 115,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 22
+        },
+        {
+          "pos": 117,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 4
+        },
+        {
+          "pos": 119,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 154
+        },
+        {
+          "pos": 121,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 122,
+          "opID": 82,
+          "opcode": "setlocal",
+          "obj": 1
+        },
+        {
+          "pos": 124,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 1
+        },
+        {
+          "pos": 126,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 23
+        },
+        {
+          "pos": 128,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 129,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 0
+        },
+        {
+          "pos": 131,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 155
+        },
+        {
+          "pos": 133,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 134,
+          "opID": 82,
+          "opcode": "setlocal",
+          "obj": 1
+        },
+        {
+          "pos": 136,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 1
+        },
+        {
+          "pos": 138,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 140,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 142,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 126,
+      "name": "baLingoFolderExists",
+      "vectorPos": 65535,
+      "compiledLen": 11,
+      "compiledOffset": 1064,
+      "argumentCount": 1,
+      "argumentOffset": 1076,
+      "argumentNames": [
+        "param1"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1078,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1025,
+      "unknown2": 33,
+      "lineCount": 1,
+      "lineOffset": 1078,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 159
+        },
+        {
+          "pos": 6,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 8,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 10,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 127,
+      "name": "baLingoCreateFolder",
+      "vectorPos": 65535,
+      "compiledLen": 11,
+      "compiledOffset": 1080,
+      "argumentCount": 1,
+      "argumentOffset": 1092,
+      "argumentNames": [
+        "param1"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1094,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1093,
+      "unknown2": 37,
+      "lineCount": 1,
+      "lineOffset": 1094,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 161
+        },
+        {
+          "pos": 6,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 8,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 10,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 128,
+      "name": "baLingoFileList",
+      "vectorPos": 65535,
+      "compiledLen": 13,
+      "compiledOffset": 1096,
+      "argumentCount": 2,
+      "argumentOffset": 1110,
+      "argumentNames": [
+        "param1",
+        "param2"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1114,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1157,
+      "unknown2": 41,
+      "lineCount": 1,
+      "lineOffset": 1114,
+      "stackHeight": 3,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 2
+        },
+        {
+          "pos": 6,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 162
+        },
+        {
+          "pos": 8,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 10,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 12,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 129,
+      "name": "baLingoFileExists",
+      "vectorPos": 65535,
+      "compiledLen": 11,
+      "compiledOffset": 1116,
+      "argumentCount": 1,
+      "argumentOffset": 1128,
+      "argumentNames": [
+        "param1"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1130,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1235,
+      "unknown2": 45,
+      "lineCount": 1,
+      "lineOffset": 1130,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 164
+        },
+        {
+          "pos": 6,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 8,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 10,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 130,
+      "name": "baLingoTempFileName",
+      "vectorPos": 65535,
+      "compiledLen": 11,
+      "compiledOffset": 1132,
+      "argumentCount": 1,
+      "argumentOffset": 1144,
+      "argumentNames": [
+        "param1"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1146,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1301,
+      "unknown2": 49,
+      "lineCount": 1,
+      "lineOffset": 1146,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 165
+        },
+        {
+          "pos": 6,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 8,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 10,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 131,
+      "name": "baLingoFileAge",
+      "vectorPos": 65535,
+      "compiledLen": 11,
+      "compiledOffset": 1148,
+      "argumentCount": 1,
+      "argumentOffset": 1160,
+      "argumentNames": [
+        "param1"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1162,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1364,
+      "unknown2": 53,
+      "lineCount": 1,
+      "lineOffset": 1162,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 166
+        },
+        {
+          "pos": 6,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 8,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 10,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 132,
+      "name": "baLingoDeleteFile",
+      "vectorPos": 65535,
+      "compiledLen": 11,
+      "compiledOffset": 1164,
+      "argumentCount": 1,
+      "argumentOffset": 1176,
+      "argumentNames": [
+        "param1"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1178,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1425,
+      "unknown2": 57,
+      "lineCount": 1,
+      "lineOffset": 1178,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 167
+        },
+        {
+          "pos": 6,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 8,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 10,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 133,
+      "name": "baLingoFileDateEx",
+      "vectorPos": 65535,
+      "compiledLen": 17,
+      "compiledOffset": 1180,
+      "argumentCount": 4,
+      "argumentOffset": 1198,
+      "argumentNames": [
+        "param1",
+        "param2",
+        "param3",
+        "param4"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1206,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1489,
+      "unknown2": 61,
+      "lineCount": 1,
+      "lineOffset": 1206,
+      "stackHeight": 5,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 2
+        },
+        {
+          "pos": 6,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 3
+        },
+        {
+          "pos": 8,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 4
+        },
+        {
+          "pos": 10,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 168
+        },
+        {
+          "pos": 12,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 14,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 16,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 134,
+      "name": "baLingoSetFileDate",
+      "vectorPos": 65535,
+      "compiledLen": 23,
+      "compiledOffset": 1208,
+      "argumentCount": 7,
+      "argumentOffset": 1232,
+      "argumentNames": [
+        "param1",
+        "param2",
+        "param3",
+        "param4",
+        "param5",
+        "param6",
+        "param7"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1246,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1602,
+      "unknown2": 65,
+      "lineCount": 1,
+      "lineOffset": 1246,
+      "stackHeight": 8,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 2
+        },
+        {
+          "pos": 6,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 3
+        },
+        {
+          "pos": 8,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 4
+        },
+        {
+          "pos": 10,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 5
+        },
+        {
+          "pos": 12,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 6
+        },
+        {
+          "pos": 14,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 7
+        },
+        {
+          "pos": 16,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 171
+        },
+        {
+          "pos": 18,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 20,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 22,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 135,
+      "name": "baLingoSysFolder",
+      "vectorPos": 65535,
+      "compiledLen": 11,
+      "compiledOffset": 1248,
+      "argumentCount": 1,
+      "argumentOffset": 1260,
+      "argumentNames": [
+        "param1"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1262,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1762,
+      "unknown2": 69,
+      "lineCount": 1,
+      "lineOffset": 1262,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 148
+        },
+        {
+          "pos": 6,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 8,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 10,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 136,
+      "name": "baLingoRunProgram",
+      "vectorPos": 65535,
+      "compiledLen": 15,
+      "compiledOffset": 1264,
+      "argumentCount": 3,
+      "argumentOffset": 1280,
+      "argumentNames": [
+        "param1",
+        "param2",
+        "param3"
+      ],
+      "localsCount": 0,
+      "localsOffset": 1286,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1825,
+      "unknown2": 73,
+      "lineCount": 1,
+      "lineOffset": 1286,
+      "stackHeight": 4,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 0
+        },
+        {
+          "pos": 2,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 1
+        },
+        {
+          "pos": 4,
+          "opID": 75,
+          "opcode": "getparam",
+          "obj": 2
+        },
+        {
+          "pos": 6,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 3
+        },
+        {
+          "pos": 8,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 175
+        },
+        {
+          "pos": 10,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 12,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 14,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    },
+    {
+      "nameID": 137,
+      "name": "isCheatEngineRunning",
+      "vectorPos": 65535,
+      "compiledLen": 44,
+      "compiledOffset": 1288,
+      "argumentCount": 0,
+      "argumentOffset": 1332,
+      "localsCount": 1,
+      "localsOffset": 1332,
+      "localNames": [
+        "ceHandle"
+      ],
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 1924,
+      "unknown2": 77,
+      "lineCount": 6,
+      "lineOffset": 1334,
+      "stackHeight": 4,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 24
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 25
+        },
+        {
+          "pos": 4,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 26
+        },
+        {
+          "pos": 6,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 7,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 27
+        },
+        {
+          "pos": 9,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 10,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 28
+        },
+        {
+          "pos": 12,
+          "opID": 10,
+          "opcode": "joinstr"
+        },
+        {
+          "pos": 13,
+          "opID": 3,
+          "opcode": "pushzero"
+        },
+        {
+          "pos": 14,
+          "opID": 67,
+          "opcode": "pusharglist",
+          "obj": 3
+        },
+        {
+          "pos": 16,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 176
+        },
+        {
+          "pos": 18,
+          "opID": 82,
+          "opcode": "setlocal",
+          "obj": 0
+        },
+        {
+          "pos": 20,
+          "opID": 76,
+          "opcode": "getlocal",
+          "obj": 0
+        },
+        {
+          "pos": 22,
+          "opID": 97,
+          "opcode": "getobjprop",
+          "obj": 177
+        },
+        {
+          "pos": 24,
+          "opID": 3,
+          "opcode": "pushzero"
+        },
+        {
+          "pos": 25,
+          "opID": 16,
+          "opcode": "gt"
+        },
+        {
+          "pos": 26,
+          "opID": 149,
+          "opcode": "jmpifz",
+          "obj": 12
+        },
+        {
+          "pos": 29,
+          "opID": 65,
+          "opcode": "pushint8",
+          "obj": 1
+        },
+        {
+          "pos": 31,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 33,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 35,
+          "opID": 147,
+          "opcode": "jmp",
+          "obj": 8
+        },
+        {
+          "pos": 38,
+          "opID": 3,
+          "opcode": "pushzero"
+        },
+        {
+          "pos": 39,
+          "opID": 66,
+          "opcode": "pusharglistnoret",
+          "obj": 1
+        },
+        {
+          "pos": 41,
+          "opID": 87,
+          "opcode": "extcall",
+          "obj": 156
+        },
+        {
+          "pos": 43,
+          "opID": 1,
+          "opcode": "ret"
+        }
+      ]
+    }
+  ],
+  "literals": [
+    {
+      "type": 1,
+      "offset": 0,
+      "dataLength": 7,
+      "value": "fileio"
+    },
+    {
+      "type": 1,
+      "offset": 12,
+      "dataLength": 2,
+      "value": "l"
+    },
+    {
+      "type": 1,
+      "offset": 18,
+      "dataLength": 2,
+      "value": "i"
+    },
+    {
+      "type": 1,
+      "offset": 24,
+      "dataLength": 2,
+      "value": "n"
+    },
+    {
+      "type": 1,
+      "offset": 30,
+      "dataLength": 2,
+      "value": "g"
+    },
+    {
+      "type": 1,
+      "offset": 36,
+      "dataLength": 2,
+      "value": "o"
+    },
+    {
+      "type": 1,
+      "offset": 42,
+      "dataLength": 2,
+      "value": "."
+    },
+    {
+      "type": 1,
+      "offset": 48,
+      "dataLength": 2,
+      "value": "I"
+    },
+    {
+      "type": 1,
+      "offset": 54,
+      "dataLength": 27,
+      "value": "agree with the usage terms"
+    },
+    {
+      "type": 1,
+      "offset": 86,
+      "dataLength": 12,
+      "value": "setInactive"
+    },
+    {
+      "type": 1,
+      "offset": 102,
+      "dataLength": 8,
+      "value": "simInet"
+    },
+    {
+      "type": 1,
+      "offset": 114,
+      "dataLength": 8,
+      "value": "windows"
+    },
+    {
+      "type": 1,
+      "offset": 126,
+      "dataLength": 7,
+      "value": "number"
+    },
+    {
+      "type": 1,
+      "offset": 138,
+      "dataLength": 5,
+      "value": "mid="
+    },
+    {
+      "type": 1,
+      "offset": 148,
+      "dataLength": 7,
+      "value": "vendor"
+    },
+    {
+      "type": 1,
+      "offset": 160,
+      "dataLength": 5,
+      "value": "type"
+    },
+    {
+      "type": 1,
+      "offset": 170,
+      "dataLength": 6,
+      "value": "model"
+    },
+    {
+      "type": 1,
+      "offset": 180,
+      "dataLength": 6,
+      "value": "&nid="
+    },
+    {
+      "type": 1,
+      "offset": 190,
+      "dataLength": 7,
+      "value": "&prid="
+    },
+    {
+      "type": 1,
+      "offset": 202,
+      "dataLength": 45,
+      "value": "SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion"
+    },
+    {
+      "type": 1,
+      "offset": 252,
+      "dataLength": 10,
+      "value": "ProductId"
+    },
+    {
+      "type": 1,
+      "offset": 266,
+      "dataLength": 12,
+      "value": "NoProductId"
+    },
+    {
+      "type": 1,
+      "offset": 282,
+      "dataLength": 19,
+      "value": "HKEY_LOCAL_MACHINE"
+    },
+    {
+      "type": 1,
+      "offset": 306,
+      "dataLength": 6,
+      "value": "&cna="
+    },
+    {
+      "type": 1,
+      "offset": 316,
+      "dataLength": 1,
+      "value": ""
+    },
+    {
+      "type": 1,
+      "offset": 322,
+      "dataLength": 3,
+      "value": "ch"
+    },
+    {
+      "type": 1,
+      "offset": 330,
+      "dataLength": 4,
+      "value": "eat"
+    },
+    {
+      "type": 1,
+      "offset": 338,
+      "dataLength": 4,
+      "value": " en"
+    },
+    {
+      "type": 1,
+      "offset": 346,
+      "dataLength": 5,
+      "value": "gine"
+    }
+  ],
+  "raceEngineMap": []
+}

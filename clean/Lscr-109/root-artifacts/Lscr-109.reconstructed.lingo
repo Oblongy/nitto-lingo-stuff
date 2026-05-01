@@ -1,0 +1,19 @@
+on connectSocket
+  -- unk26
+end
+
+on sockConnTimeout
+  -- unk26
+end
+
+on socketMessageHandler
+  -- unk26
+end
+
+on executeCall
+  -- unk26
+end
+
+on ssm
+  -- unk26
+end

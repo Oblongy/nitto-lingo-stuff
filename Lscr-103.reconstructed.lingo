@@ -1,0 +1,39 @@
+on runEngineStart
+  -- unk26
+end
+
+on runEngineStop
+  -- unk26
+end
+
+on runEngine
+  -- unk26
+end
+
+on runEngineGaugeInit
+  -- unk26
+end
+
+on runEngineGearUp
+  -- unk26
+end
+
+on runEngineGearDown
+  -- unk26
+end
+
+on runEngineSetBrake
+  -- unk26
+end
+
+on runEngineSetClutch
+  -- unk26
+end
+
+on runEngineSetNOS
+  -- unk26
+end
+
+on runEngineDyno
+  -- unk26
+end

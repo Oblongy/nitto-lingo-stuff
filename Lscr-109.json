@@ -1,0 +1,628 @@
+{
+  "totalLength": 9740,
+  "totalLength2": 9740,
+  "headerLength": 92,
+  "scriptNumber": 9,
+  "unk20": 1,
+  "parentNumber": -1,
+  "scriptFlags": 49154,
+  "unk42": 0,
+  "castID": 65546,
+  "factoryNameID": -1,
+  "handlerVectorsCount": 0,
+  "handlerVectorsOffset": 9740,
+  "handlerVectorsSize": 0,
+  "propertiesCount": 0,
+  "propertiesOffset": 92,
+  "globalsCount": 0,
+  "globalsOffset": 92,
+  "handlersCount": 5,
+  "handlersOffset": 92,
+  "literalsCount": 7,
+  "literalsOffset": 352,
+  "literalsDataCount": 9332,
+  "literalsDataOffset": 408,
+  "propertyNameIDs": [],
+  "globalNameIDs": [],
+  "handlers": [
+    {
+      "nameID": 179,
+      "name": "connectSocket",
+      "dispatchSlot": 2,
+      "dispatchBlockIndex": 0,
+      "dispatchBlockOffset": 0,
+      "dispatchBlockLength": 140,
+      "dispatchBlockHeaderWord0": 20,
+      "dispatchBlockHeaderWord1": 15,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 322,
+      "argumentCount": 0,
+      "argumentOffset": 328,
+      "localsCount": 0,
+      "localsOffset": 328,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 0,
+      "lineCount": 0,
+      "lineOffset": 328,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 2
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 180,
+      "name": "sockConnTimeout",
+      "dispatchSlot": 3,
+      "dispatchBlockIndex": 1,
+      "dispatchBlockOffset": 140,
+      "dispatchBlockLength": 1288,
+      "dispatchBlockHeaderWord0": 155,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 328,
+      "argumentCount": 0,
+      "argumentOffset": 334,
+      "localsCount": 0,
+      "localsOffset": 334,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 10,
+      "lineCount": 0,
+      "lineOffset": 334,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 3
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 181,
+      "name": "socketMessageHandler",
+      "dispatchSlot": 4,
+      "dispatchBlockIndex": 2,
+      "dispatchBlockOffset": 1428,
+      "dispatchBlockLength": 1456,
+      "dispatchBlockHeaderWord0": 205,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 334,
+      "argumentCount": 0,
+      "argumentOffset": 340,
+      "localsCount": 0,
+      "localsOffset": 340,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 25,
+      "lineCount": 0,
+      "lineOffset": 340,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 4
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 182,
+      "name": "executeCall",
+      "dispatchSlot": 5,
+      "dispatchBlockIndex": 3,
+      "dispatchBlockOffset": 2884,
+      "dispatchBlockLength": 3024,
+      "dispatchBlockHeaderWord0": 612,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 340,
+      "argumentCount": 0,
+      "argumentOffset": 346,
+      "localsCount": 0,
+      "localsOffset": 346,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 83,
+      "lineCount": 0,
+      "lineOffset": 346,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 5
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    },
+    {
+      "nameID": 183,
+      "name": "ssm",
+      "dispatchSlot": 6,
+      "dispatchBlockIndex": 4,
+      "dispatchBlockOffset": 5908,
+      "dispatchBlockLength": 2528,
+      "dispatchBlockHeaderWord0": 638,
+      "dispatchBlockHeaderWord1": 0,
+      "dispatchBlockHeaderWord2": 150,
+      "vectorPos": 65535,
+      "compiledLen": 5,
+      "compiledOffset": 346,
+      "argumentCount": 0,
+      "argumentOffset": 352,
+      "localsCount": 0,
+      "localsOffset": 352,
+      "globalsCount": 0,
+      "globalsOffset": 92,
+      "unknown1": 0,
+      "unknown2": 137,
+      "lineCount": 0,
+      "lineOffset": 352,
+      "stackHeight": 2,
+      "bytecode": [
+        {
+          "pos": 0,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 1
+        },
+        {
+          "pos": 2,
+          "opID": 68,
+          "opcode": "pushcons",
+          "obj": 6
+        },
+        {
+          "pos": 4,
+          "opID": 38,
+          "opcode": "unk26"
+        }
+      ]
+    }
+  ],
+  "literals": [
+    {
+      "type": 11,
+      "offset": 0,
+      "dataLength": 9328,
+      "value": null,
+      "referenceSummary": [
+        {
+          "value": "Function",
+          "firstOffset": 56,
+          "occurrences": 1,
+          "firstBlockOffset": 0,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "errCode",
+          "firstOffset": 132,
+          "occurrences": 2,
+          "firstBlockOffset": 0,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tryNo",
+          "firstOffset": 1400,
+          "occurrences": 1,
+          "firstBlockOffset": 140,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "newMessage",
+          "firstOffset": 2812,
+          "occurrences": 1,
+          "firstBlockOffset": 1428,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "retVal",
+          "firstOffset": 2852,
+          "occurrences": 1,
+          "firstBlockOffset": 1428,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "resultStr",
+          "firstOffset": 2872,
+          "occurrences": 1,
+          "firstBlockOffset": 1428,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "action",
+          "firstOffset": 5800,
+          "occurrences": 1,
+          "firstBlockOffset": 2884,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "data",
+          "firstOffset": 5820,
+          "occurrences": 1,
+          "firstBlockOffset": 2884,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "isBuyPartUgg",
+          "firstOffset": 5836,
+          "occurrences": 1,
+          "firstBlockOffset": 2884,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "xtra_md5",
+          "firstOffset": 5876,
+          "occurrences": 1,
+          "firstBlockOffset": 2884,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "tempArray",
+          "firstOffset": 5896,
+          "occurrences": 1,
+          "firstBlockOffset": 2884,
+          "raceEngineHint": 0
+        },
+        {
+          "value": "QBQV",
+          "firstOffset": 6181,
+          "occurrences": 1,
+          "firstBlockOffset": 5908,
+          "raceEngineHint": 0
+        }
+      ],
+      "raceEngineHints": [],
+      "asciiStrings": [
+        "Function",
+        "errCode",
+        "tryNo",
+        "errCode",
+        "newMessage",
+        "retVal",
+        "resultStr",
+        "action",
+        "data",
+        "isBuyPartUgg",
+        "xtra_md5",
+        "tempArray",
+        "QBQV"
+      ],
+      "asciiStringRefs": [
+        {
+          "offset": 56,
+          "value": "Function",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 132,
+          "value": "errCode",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1400,
+          "value": "tryNo",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 1420,
+          "value": "errCode",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2812,
+          "value": "newMessage",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2852,
+          "value": "retVal",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 2872,
+          "value": "resultStr",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5800,
+          "value": "action",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5820,
+          "value": "data",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5836,
+          "value": "isBuyPartUgg",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5876,
+          "value": "xtra_md5",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 5896,
+          "value": "tempArray",
+          "raceEngineHint": 0
+        },
+        {
+          "offset": 6181,
+          "value": "QBQV",
+          "raceEngineHint": 0
+        }
+      ],
+      "embeddedCodeOffsets": [
+        0,
+        140,
+        1428,
+        2884,
+        5908,
+        8436
+      ],
+      "embeddedCodeBlocks": [
+        {
+          "offset": 0,
+          "length": 140,
+          "hexPreview": "03 00 ad de 14 00 00 00 0f 00 00 00 96 00 00 00 7d 00 00 7d 00 01 7d 00 02 7d 00 03 7d 00 04 00",
+          "headerWord0": 20,
+          "headerWord1": 15,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 2,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 56,
+              "value": "Function",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 132,
+              "value": "errCode",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 140,
+          "length": 1288,
+          "hexPreview": "03 00 ad de 9b 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 39 3d 00 01 58 c3 50 3b 00 02 39 3d 00",
+          "headerWord0": 155,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 2,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 1400,
+              "value": "tryNo",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 1420,
+              "value": "errCode",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 1428,
+          "length": 1456,
+          "hexPreview": "03 00 ad de cd 00 00 00 00 00 00 00 96 00 00 00 54 00 00 3f 12 07 00 a4 3b 00 00 39 3d 00 01 3a",
+          "headerWord0": 205,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 3,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 2812,
+              "value": "newMessage",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2852,
+              "value": "retVal",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 2872,
+              "value": "resultStr",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 2884,
+          "length": 3024,
+          "hexPreview": "03 00 ad de 64 02 00 00 00 00 00 00 96 00 00 00 85 3b 00 00 35 00 01 35 00 02 39 3a 00 00 57 00",
+          "headerWord0": 612,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 5,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 5800,
+              "value": "action",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 5820,
+              "value": "data",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 5836,
+              "value": "isBuyPartUgg",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 5876,
+              "value": "xtra_md5",
+              "raceEngineHint": 0
+            },
+            {
+              "offset": 5896,
+              "value": "tempArray",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 5908,
+          "length": 2528,
+          "hexPreview": "03 00 ad de 7e 02 00 00 00 00 00 00 96 00 00 00 56 00 00 51 54 00 00 3d 00 00 12 07 00 0f 3d 00",
+          "headerWord0": 638,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 1,
+          "numericHintCount": 0,
+          "strings": [
+            {
+              "offset": 6181,
+              "value": "QBQV",
+              "raceEngineHint": 0
+            }
+          ]
+        },
+        {
+          "offset": 8436,
+          "length": 892,
+          "hexPreview": "03 00 ad de 92 00 00 00 00 00 00 00 96 00 00 00 3b 00 00 35 00 01 07 00 8c 85 3b 00 00 35 00 02",
+          "headerWord0": 146,
+          "headerWord1": 0,
+          "headerWord2": 150,
+          "raceEngineHint": 0,
+          "stringCount": 0,
+          "numericHintCount": 0,
+          "strings": []
+        }
+      ],
+      "raceEngineBlocks": []
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 9328,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 9328,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 9328,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 9328,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 9328,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    },
+    {
+      "type": 0,
+      "offset": 0,
+      "dataLength": 9328,
+      "duplicateData": 1,
+      "duplicateOfOffset": 0,
+      "value": null
+    }
+  ],
+  "raceEngineMap": []
+}

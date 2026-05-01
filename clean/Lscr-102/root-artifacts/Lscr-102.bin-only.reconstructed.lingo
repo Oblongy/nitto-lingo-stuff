@@ -1,0 +1,443 @@
+-- Lscr-102.bin-only pass-2 scaffold
+-- Source bins:
+--   C:\Users\Dilldo\Nitto\Lingo Stuff\Lnam-100.bin
+--   C:\Users\Dilldo\Nitto\Lingo Stuff\Lscr-102.bin
+--
+-- Proven raw markers:
+--   0x01CC: Function
+--   0x01E0: RaceEngine
+--   0x0C00: RaceEngine
+--   0x0C20: prototype
+--   0x0C40: init
+--   0x03E0..0x0B1C: aligned typed table
+--   0x0BF8..0x0C4B: secondary symbol table
+--   0x0C90: init bytecode length header = 0x00000096
+--   0x0C94..0x0D29: raw init bytecode payload
+--
+-- This file is intentionally conservative.
+-- It only carries offsets, names, scalar records, and raw init bytes
+-- directly recovered from the bin.
+-- It does not claim the original executable opcode semantics.
+
+-- script marker: RaceEngine
+
+on init
+  -- secondary symbol table at 0x0BF8
+  --   0x0BF8 id=1 type=4 chars=10 value=RaceEngine
+  --   0x0C18 id=2 type=4 chars=9 value=prototype
+  --   0x0C38 id=3 type=4 chars=4 value=init
+
+  -- typed-table names without adjacent scalar payload
+  --   0x03E0 sendInterval
+  --   0x0404 secondBuffer
+  --   0x04DC gConvSlipB
+  --   0x0578 idleRPM
+  --   0x0594 tqFlyFactor
+  --   0x063C c0
+  --   0x064C c100
+  --   0x0660 c1000
+  --   0x0678 c10000
+  --   0x06BC c13
+  --   0x0764 c9
+  --   0x0774 c299
+  --   0x0788 c300
+  --   0x07C0 c2
+  --   0x07D0 c5
+  --   0x07E0 c50
+  --   0x07F4 c8
+  --   0x0854 c3
+  --   0x08B0 c10
+  --   0x0914 c200
+  --   0x0950 c1320
+  --   0x0968 c760
+  --   0x097C c7
+  --   0x09FC c80
+  --   0x0A60 c0_2
+  --   0x0AC0 c4
+  --   0x0B1C c1
+
+  -- exact adjacent name/value pairs from the aligned typed table
+  --   0x0428 DAfp / 0x043C 0.009235545
+  --   0x044C g / 0x045C 32.1768
+  --   0x046C rpmGearConversion / 0x049C 0.85
+  --   0x04AC gConvSlipA / 0x04CC 6.28
+  --   0x04FC brakeDecleration / 0x0528 -40
+  --   0x0534 revLimiterDeceleration / 0x056C -30
+  --   0x05B8 partBreakPoint / 0x05E0 0.2
+  --   0x05F0 vToMph / 0x0608 0.68181818
+  --   0x0618 c0_5 / 0x062C 0.5
+  --   0x0690 c0_0075 / 0x06AC 0.0075
+  --   0x06D0 c0_4 / 0x06E4 0.4
+  --   0x06F4 c0_7 / 0x0708 0.7
+  --   0x0718 c1_7 / 0x072C 1.7
+  --   0x073C c1_25 / 0x0754 1.25
+  --   0x079C c5_5 / 0x07B0 5.5
+  --   0x0804 c0_005 / 0x081C 0.005
+  --   0x082C c0_016 / 0x0844 0.016
+  --   0x0864 c0_09 / 0x087C 0.09
+  --   0x088C c0_6 / 0x08A0 0.6
+  --   0x08C4 c0_015 / 0x08DC 0.015
+  --   0x08EC c0_02 / 0x0904 0.02
+  --   0x0928 c0_18 / 0x0940 0.18
+  --   0x098C c7_5 / 0x09A0 7.5
+  --   0x09B0 c1_8 / 0x09C4 1.8
+  --   0x09D4 c1_15 / 0x09EC 1.15
+  --   0x0A10 c0_95 / 0x0A28 0.95
+  --   0x0A38 c0_05 / 0x0A50 0.05
+  --   0x0A74 c0_1 / 0x0A88 0.1
+  --   0x0A98 c0_65 / 0x0AB0 0.65
+  --   0x0AD0 c0_07 / 0x0AE8 0.07
+  --   0x0AF8 c2_5 / 0x0B0C 2.5
+
+  -- raw init bytecode block
+  --   0x0C90 length = 0x00000096
+  --   0x0C94..0x0D29 hex =
+  --   41 3e 36 00 00 51 41 3e 36 00 01 51 41 3e 36 00
+  --   02 51 41 3e 36 00 03 51 41 3e 36 00 04 51 41 3e
+  --   36 00 05 51 41 3d 00 07 36 00 06 51 41 54 00 00
+  --   36 00 08 51 41 41 35 00 0a 36 00 09 51 41 43 36
+  --   00 0b 51 41 41 35 00 0a 36 00 0c 51 41 41 35 00
+  --   0a 36 00 0d 51 41 3e 36 00 0e 51 41 42 36 00 0f
+  --   51 41 42 36 00 10 51 41 42 36 00 11 51 41 42 36
+  --   00 12 51 41 41 35 00 0a 36 00 13 51 41 41 35 00
+  --   15 41 35 00 16 1d 41 35 00 17 1d 36 00 14 51 41
+  --   41 35 00 19 41 35
+
+  -- repeated raw init motifs proven inside 0x0C94..0x0D29
+  --   41 3E 36 00 nn 51 : 7 runs
+  --   41 42 36 00 nn 51 : 4 runs
+  --   41 41 35 00 nn    : 6 runs
+  --   41 35 00 nn 1D    : 2 runs
+  --
+  -- exact runs:
+  --   0x0C94 41 3E 36 00 00 51
+  --   0x0C9A 41 3E 36 00 01 51
+  --   0x0CA0 41 3E 36 00 02 51
+  --   0x0CA6 41 3E 36 00 03 51
+  --   0x0CAC 41 3E 36 00 04 51
+  --   0x0CB2 41 3E 36 00 05 51
+  --   0x0CE9 41 3E 36 00 0E 51
+  --   0x0CEF 41 42 36 00 0F 51
+  --   0x0CF5 41 42 36 00 10 51
+  --   0x0CFB 41 42 36 00 11 51
+  --   0x0D01 41 42 36 00 12 51
+  --   0x0CC8 41 41 35 00 0A
+  --   0x0CD7 41 41 35 00 0A
+  --   0x0CE0 41 41 35 00 0A
+  --   0x0D07 41 41 35 00 0A
+  --   0x0D10 41 41 35 00 15
+  --   0x0D23 41 41 35 00 19
+  --   0x0D15 41 35 00 16 1D
+  --   0x0D1A 41 35 00 17 1D
+
+  -- unresolved:
+  -- no opcode names or operand semantics are claimed in this pass.
+  --
+  -- next raw block after init:
+  --   0x0D2A..0x0E30 shows a different repeated motif set
+  --   51 41 41 35 00 0A 36 00 : 10 runs
+  --   83 27 3D 00 34 12 07 00 : 4 runs
+  --   35 00 35 39 3A 00 00 51 : 3 runs
+  --
+  -- late aligned table resumes at 0x0E88
+  --   0x0E88..0x13D4 : 45 aligned string records
+  --   0x13D4         : id=45 type=2 value=0.033
+  --   0x13E4..0x1658 : aligned tail continuing through getTorque
+  --
+  -- high-signal late table names:
+  --   goodCounterRT, badCounterRT, goodCounterET, badCounterET
+  --   avgFps, fpsCount, guid, raceType, timeAnchor
+  --   staging, stagingLightPos1, stagingLightPos2, greenDelay
+  --   preStaged, staged, brake, isMidMd5sent, isNos, pb
+  --   turboFlow, c0_0075, stockRedLine, avgDurability
+  --   pistonDurability, rodDurability, valveDurability
+  --   headGasketDurability, engineBlockDurability
+  --   carV, carAccel, speedoV, engineV, mph, engineDamage
+  --   isEngineLightOn, gearValue, gr, grs, theTime
+  --   theActualTime, timeFromLastFrame, timeGreen, timeStartLine
+  --   stagingTimeLimit, lightDelayTO, object, forget, lightTO1, lightTO2
+  --   runInterval, rt, undefined, et, ts, bt, slip, rpm, idleRPM, N, w, c0_4, getTorque
+  --
+  -- next raw block:
+  --   0x1658..0x174F
+  --   repeated motifs include:
+  --   b4 62 01 63 05 b4 : 16 runs
+  --   62 01 63 05 b4 62 : 15 runs
+  --   62 02 b4 62 02 b4 : 8 runs
+  --
+  -- startRace descriptor region:
+  --   0x1770 startRace
+  --   0x17B4 carXML
+  --   0x17C8 torqueArray
+  --   0x17E0 gParserObject
+  --   0x17FC c
+  --   raw motif stream continues through 0x1D07
+  --
+  -- next aligned table:
+  --   0x1D08..0x28BF
+  --   mostly type=4 strings with one proven scalar:
+  --   0x2170 id=49 type=2 value=0.125
+  --   high-signal names include:
+  --   xtra, xmlparser, parseString, makeList, parseInt, parseFloat
+  --   stockRedLine, redLine, revLimiter, detuneHp
+  --   stockBoost, boostSetting, boostType, initBoost, Array
+  --   nitrousRemaining, nitrousTankSize, setClutch, tqArray
+  --   maxPsi, airhpi, turboFlow, fuelFlowLimit, overallAirFlowLimit
+  --   cylinderNumber, valveNumber, pistonCompressionLevel, chipSetting
+  --   pistonDurability, rodDurability, valveDurability, headGasketDurability
+  --   engineBlockDurability, oilDurability, radiatorDurability, oilFilterDurability
+  --   coolantDurability, pistonDamage, partBreakPoint, rodDamage, valveDamage
+  --   headGasketDamage, engineBlockDamage, oilDamage, oilFilterDamage, coolantDamage
+  --   raceGas, tireStick, launchControl, beforePistonDamage, thePD, theBPD, init, raceType
+  --
+  -- next raw/descriptor bridge:
+  --   0x28C0..0x2D63
+  --   clean UTF-16 names proven inside this region:
+  --   0x2B48 initBoost
+  --   0x2BDC boostType
+  --   0x2C0C boostLag
+  --   0x2C28 c0_7
+  --   0x2C3C boostSetting
+  --   0x2C60 boostRange
+  --   0x2C80 c1_7
+  --   0x2C94 c0
+  --   0x2CDC beginRace
+  --   strongest repeated motifs include:
+  --   c8 60 03 63 06 63 0d 63 : 38 runs
+  --   60 03 63 06 63 0d 63 11 : 38 runs
+  --   03 63 06 63 0d 63 11 b4 : 37 runs
+  --   b4 c8 60 03 63 06 63 0d : 34 runs
+  --
+  -- next aligned table:
+  --   0x2D64..0x2E2B
+  --   0x2D64 id=0 runInterval
+  --   0x2D88 id=1 object
+  --   0x2DA0 id=2 forget
+  --   0x2DB8 id=3 timeout
+  --   0x2DD4 id=4 sendInterval
+  --   0x2DF8 id=5 symbol
+  --   0x2E10 id=6 sendPos
+  --
+  -- next bridge:
+  --   0x2E2C..0x30C7
+  --   0x2E5C id=11 endRace
+  --   0x2E78..0x2ECB mostly zero-filled raw block
+  --   0x2ECC id=0 runInterval
+  --   0x2EF0 id=1 object
+  --   0x2F08 id=2 forget
+  --   0x2F44 id=13 sendPos
+  --   0x2F60..0x30C7 raw block with repeated motifs including:
+  --   39 41 35 00 0B 41 35 00 : 4 runs
+  --   41 35 00 0B 41 35 00 0C : 4 runs
+  --   41 35 00 03 3D 00 04 12 : 3 runs
+  --
+  -- next aligned table:
+  --   0x30C8..0x328B
+  --   0x30C8 id=0 staging
+  --   0x30E4 id=1 rt
+  --   0x30F4 id=2 c1
+  --   0x3104 id=3 raceType
+  --   0x3120 id=4 KOTH
+  --   0x3134 id=5 RIVAL
+  --   0x314C id=6 TEAMRIVAL
+  --   0x316C id=7 HT
+  --   0x317C id=8 gearValue
+  --   0x319C id=9 c0
+  --   0x31AC id=10 STG
+  --   0x31C0 id=11 s
+  --   0x31D0 id=12 carV
+  --   0x31E4 id=13 carAccel
+  --   0x3200 id=14 c1320
+  --   0x3218 id=15 timeAnchor
+  --   0x3238 id=16 INT
+  --   0x324C id=17 _system
+  --   0x3268 id=18 milliseconds
+  --
+  -- next unresolved boundary:
+  --   0x328C begins a mixed descriptor/raw region
+  --   first clean UTF-16 name there is 0x332C run
+  --   clear ASCII names sampled inside 0x328C..0x3800 include:
+  --   0x3364 throttlePercent
+  --   0x3380 sDelta
+  --   0x3394 totalHPI
+  --   0x33A8 availableNitrousPower
+  --   0x33CC tqFlywheel
+  --   0x33E4 tQwheel
+  --   0x33F8 wheelThrust
+  --   0x3410 fnd
+  --   0x3420 rpmZone
+  --   0x3434 extraPower
+  --   0x344C wheelThrustApplied
+  --   0x346C engineAccel
+  --   0x3484 raceGasUsed
+  --   0x349C engineResistanceTPercent
+  --   0x34C0 engineResistance
+  --   0x34DC carInertia
+  --   0x34F4 drivetrainFnd
+  --   0x3510 carFnd
+  --   0x3524 mphGrip
+  --   0x3558 gripIncrease
+  --   0x3570 speedoAccel
+  --   0x3588 vDiff
+  --   0x359C speedTween
+  --   0x35B4 clutchocity
+  --   0x35CC preStaged
+  --   0x35E4 staged
+  --   0x35F8 rtRandom
+  --   0x360C msNow
+  --   0x36C0 bPD
+  --   0x36D0 adjustedBoost
+  --   0x36EC nitrousDangerLevel
+  --   0x370C tmpFlow
+  --   0x3720 tmpDangerLevel
+  --   0x373C newTmpFlow
+  --   0x3754 newTmpDangerLevel
+  --   no further clean UTF-16 runs were found in 0x3800..0x45FF in this pass
+  --
+  -- later aligned table:
+  --   0x560C..0x5F43
+  --   parsed cleanly for 86 type=4 string records
+  --   first records:
+  --   0x560C id=0 c0
+  --   0x561C id=1 c1
+  --   0x562C id=2 timeFromLastFrame
+  --   0x565C id=3 theTime
+  --   0x5678 id=4 _system
+  --   0x5694 id=5 milliseconds
+  --   0x56B8 id=6 c1000
+  --   0x56D0 id=7 theActualTime
+  --   0x56F8 id=8 c0_2
+  --   0x570C id=9 avgFps
+  --   0x5724 id=10 fpsCount
+  --   0x5740 id=11 calculateExtraHpi
+  --   high-signal middle records include:
+  --   boostCreatedPower, systemPower, ECUtune, compressionPowerDelta
+  --   engineDamage, nitrousRemaining, runEngineNOSCB, tqFlyFactor
+  --   rpmGearConversion, revLimiterDeceleration, brakeDecleration
+  --   getTorque, launchControl, detuneHp, tireStick
+  --   tail records include:
+  --   0x5E60 id=79 runEngineTractionLightCB
+  --   0x5EB0 id=81 tireScrub
+  --   0x5EE8 id=83 clutchFeather
+  --   0x5F28 id=85 redLine
+  --
+  -- next aligned table:
+  --   0x5F50..0x6FBB
+  --   parsed cleanly for 142 type=4 string records
+  --   first records:
+  --   0x5F50 id=87 s
+  --   0x5F60 id=88 Math
+  --   0x5F74 id=89 floor
+  --   0x5F8C id=90 staging
+  --   0x5FBC id=92 preStaged
+  --   0x5FF4 id=94 lightDelayTO
+  --   0x604C id=97 stagedAndReady
+  --   0x60A4 id=100 runEngineStageLightCB
+  --   0x610C id=103 lagThreshold
+  --   0x61C4 id=108 runEngineSetLightOnCB
+  --   later records in this same table include race/RT names and callback names,
+  --   and the tail ends with:
+  --   0x6DDC id=217 valveDurability
+  --   0x6E08 id=218 valveBroken
+  --   0x6E2C id=219 engineBlockDurability
+  --   0x6E64 id=220 engineBlockBroken
+  --   0x6E94 id=221 headGasketDurability
+  --   0x6EC8 id=222 headGasketBroken
+  --   0x6F34 id=226 isEngineLightOn
+  --   0x6F60 id=227 runEngineDamageLightCB
+  --   0x6F98 id=228 runEngineCB
+  --
+  -- next raw block:
+  --   0x6FBC..0x8073
+  --   strongest repeated motifs include:
+  --   64 01 0C 64 01 B7 64 01 : 19 runs
+  --   64 01 34 B4 63 03 65 01 : 18 runs
+  --   01 34 B4 63 03 65 01 64 : 18 runs
+  --
+  -- next aligned table:
+  --   0x8074..0x84D3
+  --   39 type=4 string records
+  --   head names:
+  --   rpm, pb, c1, stockBoost, c0, c1_7, c0_7, boostSetting,
+  --   c7_5, c100, boostRange, boostLag, boostPsi,
+  --   compressionPowerDelta, pistonCompressionLevel
+  --   tail names:
+  --   Math, abs, engineDamageRisk, c0_09, c0_07, c2_5, c10,
+  --   c0_1, ECUtune, systemPower, airhpi, boostCreatedPower
+  --
+  -- next aligned table:
+  --   0x86F4..0x87EB
+  --   10 type=4 string records:
+  --   rpm, undefined, idleRPM, c10000, posTq, tqArray, parseInt, c100, negTq, c200
+  --
+  -- next aligned table:
+  --   0x8A58..0x8BF3
+  --   15 type=4 string records:
+  --   gearValue, grs, c0, gr, mph, carAccel, carV, slip,
+  --   sprite, flashSP, runEngineTractionLightCB, engineV, speedoV, hp,
+  --   runEngineGearUpdateCB
+  --
+  -- next aligned table:
+  --   0x8DD0..0x8F67
+  --   15 type=4 string records:
+  --   staging, c0, gr, grs, mph, carAccel, carV, speedoV, engineV, slip,
+  --   sprite, flashSP, runEngineTractionLightCB, hp, runEngineGearUpdateCB
+  --
+  -- next aligned table:
+  --   0x9460..0x95B7
+  --   11 type=4 string records:
+  --   timeAnchor, c0, goodCounterRT, badCounterRT, goodCounterET, badCounterET,
+  --   lightDelayTO, object, forget, staging, gearValue
+  --
+  -- next aligned table:
+  --   0x95C4..0x98CF
+  --   31 type=4 string records
+  --   head names:
+  --   gearUp, raceType, KOTH, KREADY, createMd5Hash, QM, RREADY, RIVAL,
+  --   TEAMRIVAL, RIVREADY, CTQ, P, startLightTimer, p, CT, btd
+  --   tail names:
+  --   timeout, c1000, c2, symbol, runLight, b, lightTO2, stagingLightPos2,
+  --   HTQ, HTQREADY, HT, HTREADY
+  --
+  -- next aligned table:
+  --   0x9D04..0x9FD7
+  --   28 type=4 string records
+  --   head names:
+  --   greenDelay, parseInt, sprite, flashSP, setSpectateDelayCB, timeAnchor,
+  --   c0, _system, milliseconds, lightTO1, object, forget, stagingLightPos1,
+  --   timeout, symbol, runLight, secondBuffer, lightTO2, stagingLightPos2
+  --   tail names:
+  --   p, b, 1, 1T, s, sT, o, 2, 2T
+  --
+  -- next aligned table:
+  --   0xA420..0xA7DB
+  --   36 type=4 string records
+  --   head names:
+  --   period, name, stagingLightPos1, c0, sprite, flashSP,
+  --   runEngineSetLightOnCB, amber1, greenDelay, amber2, amber3, forget
+  --   tail names:
+  --   object, stagingLightPos2, raceType, CT, ctStartAnimateComputerCB,
+  --   1T, sT, o, 2, 2T
+  --
+  -- next aligned table:
+  --   0xB010..0xBACF
+  --   101 type=4 string records
+  --   head names:
+  --   empty-string, stockRedLine, comma, detuneHp, stockBoost, boostType,
+  --   boostSetting, grs, fgr, redLine, revLimiter, UsInit
+  --   tail names:
+  --   engineDamage, nogood, goodCounterRT, goodCounterET, badCounterRT,
+  --   lagPercent, badCounterET, xtra, caluMD5, getStringMD5
+  --
+  -- next aligned table:
+  --   0xBDA0..0xBE83
+  --   10 type=4 string records:
+  --   Math, log, c1, random, c5, c0_6, c2, c0, round, c1000
+  --
+  -- true file tail:
+  --   file size = 48988 bytes = 0xBF5C
+  --   0xBE84..0xBF5B is the actual remaining range before EOF
+  --   no clean aligned id/type/payload table found
+  --   no clean UTF-16 runs found
+  --   repeated 8-byte zero pattern occurs 8 times in this tail region
+end
